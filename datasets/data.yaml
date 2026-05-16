@@ -1,0 +1,9 @@
+path: /content/drive/MyDrive/Dissertação/Dataset
+
+val: images
+train: images
+
+names:
+  0: person
+  1: car
+  2: truck
