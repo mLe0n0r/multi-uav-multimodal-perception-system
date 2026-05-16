@@ -1,0 +1,38 @@
+[
+  {
+    "speaker": "Command",
+    "message": "Engine 1 here Command. Report current fire conditions near the structure. Listening"
+  },
+  {
+    "speaker": "Engine 1",
+    "message": "Command here Engine 1. Two vehicles fully involved near the sidewalk with heavy smoke moving toward the multi-story building. Finished"
+  },
+  {
+    "speaker": "Rescue 2",
+    "message": "Command here Rescue 2. Two civilians located near the sidewalk at safe distance from the burning vehicles. No confirmed injuries observed. Finished"
+  },
+  {
+    "speaker": "Command",
+    "message": "Engine 1 here Command. Prioritize suppression on the burning vehicles and protect the adjacent parked vehicles. Listening"
+  },
+  {
+    "speaker": "Engine 1",
+    "message": "Command here Engine 1. Affirmative, suppression line operating on the vehicle fire. Three parked vehicles remain exposed. Finished"
+  },
+  {
+    "speaker": "Engine 1",
+    "message": "Rescue 2 here Engine 1. Confirm civilians remain clear of the smoke and vehicle hazard area. Listening"
+  },
+  {
+    "speaker": "Rescue 2",
+    "message": "Engine 1 here Rescue 2. Confirmed, civilians remain near the sidewalk at safe distance from the burning vehicles. Finished"
+  },
+  {
+    "speaker": "Engine 1",
+    "message": "Command here Engine 1. Fire intensity reduced on one vehicle. Second vehicle still actively burning. Finished"
+  },
+  {
+    "speaker": "Command",
+    "message": "Engine 1 here Command. Continue suppression on the second vehicle and maintain exposure protection. Finished"
+  }
+]

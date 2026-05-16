@@ -1,0 +1,26 @@
+[
+{
+"speaker": "Command",
+"message": "Rescue 2 here Command. Report conditions near the house and confirm any civilian exposure. Listening"
+},
+{
+"speaker": "Rescue 2",
+"message": "Command here Rescue 2. I am near the access path to the house. I can hear at least two people calling for help from the house area. Listening"
+},
+{
+"speaker": "Command",
+"message": "Rescue 2 here Command. Confirm if you have visual contact with those persons. Listening"
+},
+{
+"speaker": "Rescue 2",
+"message": "Command here Rescue 2. Negative visual contact. Heavy smoke is crossing the front of the house. I am moving now toward the calls. Finished"
+},
+{
+"speaker": "Command",
+"message": "Rescue 2 here Command. Received. Keep voice contact if conditions change. Listening"
+},
+{
+"speaker": "Rescue 2",
+"message": "Command here Rescue 2. Calls are coming from the porch side. Two firefighters remain on the hose line near the fire truck, away from the house. I am continuing in. Finished"
+}
+]
