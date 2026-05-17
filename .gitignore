@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*_env/
+
+# Secrets
+.env
+
+# Large weights (place manually in perception/vision/data/weights/)
+perception/vision/data/weights/best.pt
+
+# Fire-detection project (keep out of git if generated locally)
+perception/vision/fire-detection/runs/
+perception/vision/fire-detection/venv/
+perception/vision/fire-detection/tf_env/
+perception/vision/fire-detection/examples/
+*.h5
+
+# IDE
+.idea/
+.vscode/
