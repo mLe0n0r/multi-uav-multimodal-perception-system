@@ -45,7 +45,7 @@ def load_yolo_model():
     if not weights.exists():
         raise FileNotFoundError(
             f"YOLO weights not found: {weights}. "
-            "Place best.pt in perception/vision/data/weights/ (not tracked in git)."
+            "Place best.pt in perception/vision/data/weights/ (not version-controlled)."
         )
     return YOLO(str(weights))
 

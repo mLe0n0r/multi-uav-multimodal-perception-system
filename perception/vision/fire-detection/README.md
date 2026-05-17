@@ -1,6 +1,4 @@
-> **In this thesis repo:** `yolov5s.pt` for inference is at `../data/weights/yolov5s.pt`.
-> Generated labels used by the vision notebooks are in `../data/fire_labels/`.
-> Training outputs (`runs/`, `venv/`, `examples/`) are not tracked in git.
+> **Integration with this repository:** Inference weights (`yolov5s.pt`) are located at `../data/weights/yolov5s.pt`. Fire-detection labels consumed by the vision notebooks are stored in `../data/fire_labels/`. Training artefacts (`runs/`, `venv/`, `examples/`) are excluded from version control.
 
 ## :fire: Fire Detection
 

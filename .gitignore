@@ -18,6 +18,12 @@ perception/vision/fire-detection/tf_env/
 perception/vision/fire-detection/examples/
 *.h5
 
+# Audio (local / generated — create folders only when needed)
+perception/audio/.env
+perception/audio/data/temp_audio/
+perception/audio/data/models/
+perception/audio/data/real_audio/
+
 # IDE
 .idea/
 .vscode/

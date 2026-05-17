@@ -1,7 +1,7 @@
 # Model weights
 
-| File | In git | Notes |
-|------|--------|-------|
-| `mobilenet_best.pth` | Yes | Vehicle day/night classifier |
-| `yolov5s.pt` | Yes | Fire detector (from `../fire-detection/`) |
-| `best.pt` | No | Main YOLO detector — copy manually (too large for git) |
+| File | Version-controlled | Description |
+|------|------------------|-------------|
+| `mobilenet_best.pth` | Yes | Day/night vehicle classifier |
+| `yolov5s.pt` | Yes | Fire detector (see `../../fire-detection/`) |
+| `best.pt` | No | Primary YOLO object detector — must be placed manually (exceeds repository size limits) |
