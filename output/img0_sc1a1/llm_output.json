@@ -1,0 +1,116 @@
+{
+  "has_fire": true,
+  "scenario_priority": "high",
+  "summary": "Engine 1 reports two civilians near the fire and is requesting thermal imagery. Fire suppression on nearest vehicle ongoing.",
+  "counts_by_class": {
+    "person": 3,
+    "normal_vehicle": 3,
+    "emergency_vehicle": 1
+  },
+  "communications": {
+    "speaker_count": 2,
+    "key_communications": [
+      {
+        "speaker": "SPEAKER_01",
+        "time": 8.864,
+        "text": "Confirm civilian presence near the fire."
+      },
+      {
+        "speaker": "SPEAKER_00",
+        "time": 12.93,
+        "text": "Two civilians located at safe distance being monitored."
+      },
+      {
+        "speaker": "SPEAKER_01",
+        "time": 20.1,
+        "text": "Begin fire suppression on nearest burning vehicle."
+      },
+      {
+        "speaker": "SPEAKER_00",
+        "time": 25.144,
+        "text": "Request thermal imagery to assess heat spread to nearby vehicles."
+      }
+    ],
+    "service_types": [
+      "voice",
+      "image_transfer"
+    ],
+    "service_inference_basis": [
+      "communications mention visual confirmation of positions"
+    ]
+  },
+  "objects": [
+    {
+      "id": 0,
+      "class": "person",
+      "inferred_role": "civilian",
+      "role_inference_basis": [],
+      "role_confidence": 1.0,
+      "risk_level": "medium",
+      "throughput_need": "high"
+    },
+    {
+      "id": 1,
+      "class": "person",
+      "inferred_role": "possible_responder",
+      "role_inference_basis": [
+        "closest person to fire while radio reports civilians at safe distance"
+      ],
+      "role_confidence": 1.0,
+      "risk_level": "medium",
+      "throughput_need": "high"
+    },
+    {
+      "id": 2,
+      "class": "normal_vehicle",
+      "inferred_role": "background_vehicle",
+      "role_inference_basis": [],
+      "role_confidence": 1.0,
+      "risk_level": "low",
+      "throughput_need": "low"
+    },
+    {
+      "id": 3,
+      "class": "normal_vehicle",
+      "inferred_role": "background_vehicle",
+      "role_inference_basis": [],
+      "role_confidence": 1.0,
+      "risk_level": "low",
+      "throughput_need": "low"
+    },
+    {
+      "id": 4,
+      "class": "normal_vehicle",
+      "inferred_role": "background_vehicle",
+      "role_inference_basis": [],
+      "role_confidence": 1.0,
+      "risk_level": "low",
+      "throughput_need": "low"
+    },
+    {
+      "id": 5,
+      "class": "emergency_vehicle",
+      "inferred_role": "emergency_vehicle",
+      "role_inference_basis": [],
+      "role_confidence": 1.0,
+      "risk_level": "medium",
+      "throughput_need": "high"
+    },
+    {
+      "id": null,
+      "class": "person",
+      "audio_only": true,
+      "inferred_role": "civilian",
+      "reason": "radio reports 2 civilian(s) at safe distance; only 1 matched visually after role inference",
+      "risk_level": "medium",
+      "throughput_need": "medium"
+    }
+  ],
+  "_metadata": {
+    "visual_json_path": "results/visual_00000.json",
+    "transcript_json_path": "audio_results/transcript_00000.json",
+    "llm_model": "qwen2.5:latest",
+    "schema": "visual_json_extended",
+    "traffic_demand_policy": "not_applied_in_llm_orchestrator"
+  }
+}
