@@ -3,9 +3,11 @@ from __future__ import annotations
 import argparse
 import json
 import math
+import sys
 from collections import Counter
+from dataclasses import dataclass
 from pathlib import Path
-from typing import Any, Dict, List, Sequence, Tuple
+from typing import Any, Dict, List, Sequence, Set, Tuple
 
 import cv2
 import numpy as np
@@ -19,6 +21,7 @@ DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
 VISION_DIR = Path(__file__).resolve().parent.parent
 DATA_DIR = VISION_DIR / "data"
 WEIGHTS_DIR = DATA_DIR / "weights"
+FIRE_DETECTION_DIR = VISION_DIR / "fire-detection"
 
 CLASS_NAME_TO_ID: Dict[str, int] = {
     "person": 0,
@@ -50,11 +53,77 @@ def load_yolo_model():
     return YOLO(str(weights))
 
 
-def load_fire_model(fire_weights: str | Path | None = None):
-    weights_path = Path(fire_weights) if fire_weights else WEIGHTS_DIR / "yolov5s.pt"
-    if not weights_path.exists():
+def _ensure_fire_detection_path() -> None:
+    root = str(FIRE_DETECTION_DIR.resolve())
+    if root not in sys.path:
+        sys.path.insert(0, root)
+
+
+@dataclass
+class FireYOLOv5Model:
+    """Wrapper for YOLOv5 fire weights (not compatible with ultralytics YOLOv8)."""
+
+    backend: Any
+    device: torch.device
+    stride: int
+    names: Any
+    fire_class_ids: Set[int]
+
+
+def _resolve_fire_weights(fire_weights: str | Path | None) -> Path:
+    if fire_weights:
+        weights_path = Path(fire_weights)
+        if weights_path.exists():
+            return weights_path
         raise FileNotFoundError(f"Fire weights not found: {weights_path}")
-    return YOLO(str(weights_path))
+
+    for candidate in (WEIGHTS_DIR / "yolov5s.pt", FIRE_DETECTION_DIR / "yolov5s.pt"):
+        if candidate.exists():
+            return candidate
+    raise FileNotFoundError(
+        f"Fire weights not found. Place yolov5s.pt in {WEIGHTS_DIR} or {FIRE_DETECTION_DIR}."
+    )
+
+
+def _fire_class_indices(names: Any) -> Set[int]:
+    if isinstance(names, dict):
+        pairs = ((int(k), v) for k, v in names.items())
+    else:
+        pairs = enumerate(names)
+    indices = {int(i) for i, n in pairs if "fire" in str(n).lower()}
+    return indices if indices else {1}
+
+
+def load_fire_model(fire_weights: str | Path | None = None) -> FireYOLOv5Model:
+    weights_path = _resolve_fire_weights(fire_weights)
+    _ensure_fire_detection_path()
+
+    from models.common import DetectMultiBackend
+    from utils.torch_utils import select_device
+
+    device = select_device(DEVICE if DEVICE == "cuda" else "cpu")
+
+    # PyTorch >= 2.6 defaults to weights_only=True; YOLOv5 checkpoints need the full pickle.
+    _orig_torch_load = torch.load
+
+    def _torch_load_yolov5(*args, **kwargs):
+        kwargs.setdefault("weights_only", False)
+        return _orig_torch_load(*args, **kwargs)
+
+    torch.load = _torch_load_yolov5  # type: ignore[assignment]
+    try:
+        backend = DetectMultiBackend(str(weights_path), device=device, dnn=False, data=None)
+    finally:
+        torch.load = _orig_torch_load
+    stride = int(backend.stride.max().item()) if hasattr(backend.stride, "max") else int(backend.stride)
+    names = backend.names
+    return FireYOLOv5Model(
+        backend=backend,
+        device=device,
+        stride=stride,
+        names=names,
+        fire_class_ids=_fire_class_indices(names),
+    )
 
 
 def load_mobilenet_model(device=DEVICE):
@@ -205,15 +274,37 @@ def process_night_img(img, yolo_model, mobilenet, transform):
     return detections, img_yolo
 
 
-def process_fire_img(img, fire_model, conf_threshold=0.25, imgsz=640):
-    results = fire_model(img, conf=conf_threshold, imgsz=imgsz, verbose=False)
-    detections = []
+def process_fire_img(
+    img: np.ndarray,
+    fire_model: FireYOLOv5Model,
+    conf_threshold: float = 0.25,
+    imgsz: int = 640,
+) -> List[Tuple[int, int, int, int, str, float, Tuple[int, int, int]]]:
+    _ensure_fire_detection_path()
+    from utils.augmentations import letterbox
+    from utils.general import non_max_suppression, scale_coords
 
-    for r in results:
-        for box in r.boxes:
-            x1, y1, x2, y2 = map(int, box.xyxy[0])
-            conf = float(box.conf[0])
-            detections.append((x1, y1, x2, y2, "fire", conf, (255, 0, 255)))
+    im0 = img.copy()
+    im, _, _ = letterbox(im0, new_shape=(imgsz, imgsz), stride=fire_model.stride, auto=True)
+    im = np.ascontiguousarray(im.transpose((2, 0, 1))[::-1])
+
+    tensor = torch.from_numpy(im).to(fire_model.device).float() / 255.0
+    if tensor.ndim == 3:
+        tensor = tensor.unsqueeze(0)
+
+    pred = fire_model.backend(tensor)
+    pred = non_max_suppression(pred, conf_threshold, 0.45)
+
+    detections: List[Tuple[int, int, int, int, str, float, Tuple[int, int, int]]] = []
+    for det in pred:
+        if det is None or len(det) == 0:
+            continue
+        det[:, :4] = scale_coords(tensor.shape[2:], det[:, :4], im0.shape).round()
+        for *xyxy, conf, cls in det:
+            if int(cls) not in fire_model.fire_class_ids:
+                continue
+            x1, y1, x2, y2 = map(int, xyxy)
+            detections.append((x1, y1, x2, y2, "fire", float(conf), (255, 0, 255)))
 
     return detections
 
@@ -537,4 +628,7 @@ if __name__ == "__main__":
     payload = dumps_output(output)
     print(payload)
     if args.output:
-        Path(args.output).write_text(payload, encoding="utf-8")
+        out_path = Path(args.output)
+        out_path.parent.mkdir(parents=True, exist_ok=True)
+        out_path.write_text(payload, encoding="utf-8")
+        print(f"Saved to {out_path}")
