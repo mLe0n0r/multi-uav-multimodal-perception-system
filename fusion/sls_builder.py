@@ -1,8 +1,22 @@
+"""Build final SLS JSON from fused LLM output + visual geometry (Mbps, risk, roles)."""
+
 import argparse
 import json
+import re
+import sys
 from collections import Counter
 from pathlib import Path
-from typing import Any, Dict, List
+from typing import Any, Dict, List, Optional
+
+_FUSION_DIR = Path(__file__).resolve().parent
+if str(_FUSION_DIR) not in sys.path:
+    sys.path.insert(0, str(_FUSION_DIR))
+
+from llm_orchestrator import (
+    normalize_key_communication_item,
+    normalize_role_inference_basis,
+    normalize_service_inference_basis,
+)
 
 VALID_CLASSES = ("person", "normal_vehicle", "emergency_vehicle")
 
@@ -26,25 +40,105 @@ def save_json(data: Any, path: str) -> None:
         json.dump(data, f, indent=2, ensure_ascii=False)
 
 
-def assign_traffic_demand(obj: Dict[str, Any], scene_service_types: List[str]) -> float:
-    need = obj.get("throughput_need", "low")
-    services = scene_service_types or ["voice"]
+def parse_distance_meters(value: Any) -> Optional[float]:
+    if value is None:
+        return None
+    text = str(value).strip().lower()
+    match = re.match(r"([\d.]+)\s*m", text)
+    if match:
+        return float(match.group(1))
+    try:
+        return float(text)
+    except ValueError:
+        return None
 
-    if need == "high" and "command_aggregation" in services:
+
+def infer_risk_level(visual_obj: Dict[str, Any], has_fire: bool) -> str:
+    """Risk from proximity, class, and incident context — not from comms services."""
+    cls = visual_obj.get("class", "person")
+    distance = parse_distance_meters(visual_obj.get("distance_to_fire"))
+    if not has_fire:
+        return "low" if distance is None else "medium"
+
+    if cls == "person":
+        if distance is not None and distance <= 1.0:
+            return "high"
+        if distance is not None and distance <= 5.0:
+            return "medium"
+        return "low"
+
+    if cls == "normal_vehicle":
+        if distance is not None and distance <= 3.0:
+            return "high"
+        if distance is not None and distance <= 8.0:
+            return "medium"
+        return "low"
+
+    if cls == "emergency_vehicle":
+        return "medium"
+
+    return "medium"
+
+
+def scene_service_tier_mbps(scene_service_types: List[str]) -> float:
+    """Technical ceiling (Mbps) implied by scene-level services."""
+    services = set(scene_service_types or ["voice"])
+    if "command_aggregation" in services:
         return 10.0
-    if need == "high" and "thermal_image" in services:
+    if "video" in services or "image_or_video" in services:
         return 7.0
-    if need == "high" and ("video" in services or "image_or_video" in services):
-        return 5.0
-    if need == "high":
+    if "thermal_image" in services:
         return 3.0
-    if need == "medium" and ("image_transfer" in services or "image_or_video" in services):
-        return 2.0
-    if need == "medium":
-        return 1.0
-    if need == "low" and "basic_data" in services:
+    if "image_transfer" in services:
+        return 3.0
+    if "basic_data" in services:
         return 0.5
     return 0.2
+
+
+def clamp_throughput_need(need: str, scene_service_types: List[str]) -> str:
+    """Align with prompt: high only when monitoring/video/coordination truly requires it."""
+    need = (need or "low").lower()
+    services = set(scene_service_types or ["voice"])
+
+    if need == "high" and services <= {"voice"}:
+        return "low"
+    if need == "high" and services <= {"voice", "basic_data"}:
+        return "low"
+
+    if need == "high" and "video" not in services:
+        if "command_aggregation" in services and not (
+            services & {"thermal_image", "image_transfer", "image_or_video"}
+        ):
+            return "medium"
+        if services <= {"voice", "thermal_image"} or services <= {
+            "voice",
+            "image_transfer",
+        } or services <= {"voice", "thermal_image", "image_transfer"}:
+            return "medium"
+
+    rich = {
+        "image_transfer",
+        "image_or_video",
+        "video",
+        "thermal_image",
+        "command_aggregation",
+    }
+    if need == "high" and not (services & rich):
+        return "medium" if "basic_data" in services else "low"
+    return need
+
+
+def assign_traffic_demand(obj: Dict[str, Any], scene_service_types: List[str]) -> float:
+    """
+    Mbps from scene services (technical demand) scaled by per-object throughput_need.
+    throughput_need must already reflect monitoring/comms requirements, not distance.
+    """
+    need = clamp_throughput_need(obj.get("throughput_need", "low"), scene_service_types)
+    tier = scene_service_tier_mbps(scene_service_types)
+    scale = {"low": 0.35, "medium": 0.65, "high": 1.0}.get(need, 0.35)
+    traffic = round(tier * scale, 2)
+    return max(0.2, traffic)
 
 
 def apply_traffic(obj: Dict[str, Any], scene_service_types: List[str]) -> float:
@@ -57,18 +151,22 @@ def apply_traffic(obj: Dict[str, Any], scene_service_types: List[str]) -> float:
 def default_semantic_for_visual(visual_obj: Dict[str, Any]) -> Dict[str, Any]:
     """Fallback when the LLM omitted a visually detected object."""
     cls = visual_obj.get("class", "person")
-    role_by_class = {
-        "person": "unknown_person",
-        "normal_vehicle": "background_vehicle",
-        "emergency_vehicle": "emergency_vehicle",
-    }
-    return {
-        "inferred_role": role_by_class.get(cls, "unknown_person"),
-        "role_inference_basis": ["visual_detection"],
-        "role_confidence": None,
+    semantic: Dict[str, Any] = {
         "risk_level": "medium",
         "throughput_need": "low",
     }
+    if cls == "person":
+        semantic.update(
+            {
+                "inferred_role": "unknown_person",
+                "role_inference_basis": {
+                    "source": "inference",
+                    "text": "visual_detection",
+                },
+                "role_confidence": None,
+            }
+        )
+    return semantic
 
 
 def index_llm_objects(
@@ -89,41 +187,50 @@ def build_visual_object_entry(
     semantic: Dict[str, Any],
     visual_obj: Dict[str, Any],
     scene_service_types: List[str],
+    has_fire: bool = True,
 ) -> Dict[str, Any]:
-    risk = semantic.get("risk_level") or "medium"
-    need = semantic.get("throughput_need") or "low"
+    risk = infer_risk_level(visual_obj, has_fire)
+    need = clamp_throughput_need(semantic.get("throughput_need") or "low", scene_service_types)
     traffic_input = {**semantic, "risk_level": risk, "throughput_need": need}
 
-    entry = {
+    obj_class = visual_obj.get("class", semantic.get("class"))
+    entry: Dict[str, Any] = {
         "id": visual_obj["id"],
-        "class": visual_obj.get("class", semantic.get("class")),
+        "class": obj_class,
         "detection_confidence": visual_obj.get("detection_confidence"),
         "position": visual_obj.get("position"),
         "localization_confidence": visual_obj.get("localization_confidence"),
         "distance_to_fire": visual_obj.get("distance_to_fire"),
-        "inferred_role": semantic.get("inferred_role"),
-        "role_inference_basis": semantic.get("role_inference_basis", []),
-        "role_confidence": semantic.get("role_confidence"),
         "risk_level": risk,
         "throughput_need": need,
         "traffic_demand_mbps": apply_traffic(traffic_input, scene_service_types),
     }
+    if obj_class == "person":
+        entry["inferred_role"] = semantic.get("inferred_role")
+        entry["role_inference_basis"] = normalize_role_inference_basis(
+            semantic.get("role_inference_basis")
+        )
+        entry["role_confidence"] = semantic.get("role_confidence")
     return entry
 
 
 def build_audio_only_object_entry(
     semantic: Dict[str, Any], scene_service_types: List[str]
 ) -> Dict[str, Any]:
-    entry = {
+    obj_class = semantic.get("class")
+    need = clamp_throughput_need(semantic.get("throughput_need") or "low", scene_service_types)
+    traffic_input = {**semantic, "throughput_need": need}
+    entry: Dict[str, Any] = {
         "id": None,
-        "class": semantic.get("class"),
+        "class": obj_class,
         "audio_only": True,
         "reason": semantic.get("reason", ""),
-        "inferred_role": semantic.get("inferred_role"),
-        "risk_level": semantic.get("risk_level"),
-        "throughput_need": semantic.get("throughput_need"),
-        "traffic_demand_mbps": apply_traffic(semantic, scene_service_types),
+        "risk_level": semantic.get("risk_level") or "medium",
+        "throughput_need": need,
+        "traffic_demand_mbps": apply_traffic(traffic_input, scene_service_types),
     }
+    if obj_class == "person":
+        entry["inferred_role"] = semantic.get("inferred_role")
     return entry
 
 
@@ -180,8 +287,15 @@ def communications_for_sls(llm_output: Dict[str, Any], service_types: List[str])
     raw = llm_output.get("communications", {}) or {}
     comms = {key: raw[key] for key in COMMUNICATIONS_KEYS if key in raw}
     comms["service_types"] = service_types
-    comms.setdefault("key_communications", [])
-    comms.setdefault("service_inference_basis", [])
+    cleaned_kc: List[Dict[str, Any]] = []
+    for item in comms.get("key_communications", []) or []:
+        normalized = normalize_key_communication_item(item)
+        if normalized:
+            cleaned_kc.append(normalized)
+    comms["key_communications"] = cleaned_kc
+    comms["service_inference_basis"] = normalize_service_inference_basis(
+        comms.get("service_inference_basis", [])
+    )
     return comms
 
 
@@ -199,6 +313,7 @@ def build_sls(llm_output: Dict[str, Any], visual_json: Dict[str, Any]) -> Dict[s
     semantic_by_id, audio_only_list = index_llm_objects(llm_output)
 
     objects_out: List[Dict[str, Any]] = []
+    has_fire = bool(llm_output.get("has_fire", visual_json.get("has_fire")))
 
     # Every visually detected object must appear in the final SLS.
     for visual_obj in visual_json.get("objects", []):
@@ -206,13 +321,15 @@ def build_sls(llm_output: Dict[str, Any], visual_json: Dict[str, Any]) -> Dict[s
         if oid is None:
             continue
         semantic = semantic_by_id.get(oid) or default_semantic_for_visual(visual_obj)
-        objects_out.append(build_visual_object_entry(semantic, visual_obj, services))
+        objects_out.append(
+            build_visual_object_entry(semantic, visual_obj, services, has_fire=has_fire)
+        )
 
     for semantic in audio_only_list:
         objects_out.append(build_audio_only_object_entry(semantic, services))
 
     return {
-        "has_fire": llm_output.get("has_fire", visual_json.get("has_fire")),
+        "has_fire": has_fire,
         "scenario_priority": llm_output.get("scenario_priority", "unknown"),
         "summary": llm_output.get("summary", ""),
         "camera": visual_json.get("camera"),
