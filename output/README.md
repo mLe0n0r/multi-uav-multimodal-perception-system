@@ -1,0 +1,60 @@
+# Output
+
+The `output/` directory stores the results of each **experiment run**: perception artefacts (image and audio) and fusion artefacts. A run is **complete** when `fusion/sls.json` exists. Pipeline details are documented in [`fusion/README.md`](../fusion/README.md).
+
+## Repository structure
+
+```text
+output/
+  ├─ <scenario>/
+  │    └─ <lighting_condition>/
+  │         └─ <run_id>/
+  │              ├─ perception/    → visual and transcript JSON
+  │              └─ fusion/        → cross-view, llm_output, sls
+  ├─ .cache/vision/                
+  └─ batch_manifest.csv            → planned runs 
+```
+
+## Run organization
+
+| Batch group | Lighting folder |
+|-------------|-----------------|
+| tarde | `afternoon_light` |
+| noite | `night_light` |
+| dia | `daylight` |
+
+**Run id:** `{image_ids}_{audio_id}` — e.g. `img0_aud1` (single view), `img16_img20_aud2` (dual view).
+
+**Example path:** `output/scenario2/night_light/img20_aud1/fusion/sls.json`
+
+## Execution flow
+
+```text
+scripts/run_all_combinations.py
+              │
+              ▼
+output/<scenario>/<lighting>/<run_id>/
+              │
+              ├─► perception/
+              │      ├─ visual.json  (or visual_<view>.json)
+              │      └─ transcript.json
+              │
+              └─► fusion/
+                     ├─ cross_view.json   (dual view only)
+                     ├─ llm_output.json
+                     └─ sls.json          ← run complete
+```
+
+## Per-run artefacts
+
+```text
+perception/
+  ├─ visual.json              → single view: detections, 3D position, localization confidence, counts
+  ├─ visual_<view_id>.json    → dual view: one file per image
+  └─ transcript.json          → WhisperX transcript, segments, analytics
+
+fusion/
+  ├─ cross_view.json          → dual view: same-incident flag, matches across cameras
+  ├─ llm_output.json          → scene lexicon after fusion
+  └─ sls.json                 → final SLS (llm_output + traffic_demand_mbps per object)
+```
