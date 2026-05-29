@@ -1,0 +1,368 @@
+{
+  "has_fire": true,
+  "summary": "Fire is extending through the upper windows and roofline, smoke is drifting between parked vehicles and civilians.",
+  "counts_by_class": {
+    "person": 12,
+    "normal_vehicle": 3,
+    "emergency_vehicle": 1
+  },
+  "communications": {
+    "speaker_count": 2,
+    "key_communications": [
+      {
+        "text": "Beta here, Alpha. Fire is extending through the upper windows and roofline, smoke pushing across the street corner. Listening.",
+        "speaker": "SPEAKER_00"
+      },
+      {
+        "text": "Alpha here, Beta. Received. Visibility is dropping near the building corner and the hose line corridor. Listening.",
+        "speaker": "SPEAKER_01"
+      }
+    ],
+    "service_types": [
+      "voice"
+    ],
+    "service_inference_basis": []
+  },
+  "objects": [
+    {
+      "class": "emergency_vehicle",
+      "detection_confidence": "0.40",
+      "position": {
+        "x": "-116.79 m",
+        "y": "-68.70 m",
+        "z": "0.00 m"
+      },
+      "localization_confidence": {
+        "x": "0.08",
+        "y": "0.03",
+        "z": "1.00"
+      },
+      "distance_to_fire": "4.93 m",
+      "risk_level": "medium",
+      "throughput_need": "medium",
+      "traffic_demand_mbps": 2.0
+    },
+    {
+      "class": "normal_vehicle",
+      "detection_confidence": "0.87",
+      "position": {
+        "x": "-109.04 m",
+        "y": "-33.09 m",
+        "z": "-1.31 m"
+      },
+      "localization_confidence": {
+        "x": "0.16",
+        "y": "0.07",
+        "z": "1.00"
+      },
+      "distance_to_fire": "37.31 m",
+      "risk_level": "medium",
+      "throughput_need": "low",
+      "traffic_demand_mbps": 0.3
+    },
+    {
+      "class": "normal_vehicle",
+      "detection_confidence": "0.83",
+      "position": {
+        "x": "-107.75 m",
+        "y": "-33.90 m",
+        "z": "0.00 m"
+      },
+      "localization_confidence": {
+        "x": "0.14",
+        "y": "0.06",
+        "z": "1.00"
+      },
+      "distance_to_fire": "33.79 m",
+      "risk_level": "medium",
+      "throughput_need": "low",
+      "traffic_demand_mbps": 0.3
+    },
+    {
+      "class": "normal_vehicle",
+      "detection_confidence": "0.74",
+      "position": {
+        "x": "-107.86 m",
+        "y": "-40.76 m",
+        "z": "0.00 m"
+      },
+      "localization_confidence": {
+        "x": "0.14",
+        "y": "0.06",
+        "z": "1.00"
+      },
+      "distance_to_fire": "27.49 m",
+      "risk_level": "medium",
+      "throughput_need": "low",
+      "traffic_demand_mbps": 0.3
+    },
+    {
+      "class": "person",
+      "detection_confidence": "0.87",
+      "position": {
+        "x": "-99.58 m",
+        "y": "-10.70 m",
+        "z": "-0.56 m"
+      },
+      "localization_confidence": {
+        "x": "0.48",
+        "y": "0.19",
+        "z": "1.00"
+      },
+      "distance_to_fire": "55.29 m",
+      "risk_level": "medium",
+      "inferred_role": "civilian",
+      "role_inference_basis": {
+        "source": "inference",
+        "text": "radio reports 7 civilian(s) at safe distance; matched to persons farther from fire"
+      },
+      "role_confidence": 0.75,
+      "throughput_need": "low",
+      "traffic_demand_mbps": 0.3
+    },
+    {
+      "class": "person",
+      "detection_confidence": "0.85",
+      "position": {
+        "x": "-98.41 m",
+        "y": "-9.30 m",
+        "z": "-0.16 m"
+      },
+      "localization_confidence": {
+        "x": "0.46",
+        "y": "0.21",
+        "z": "1.00"
+      },
+      "distance_to_fire": "56.16 m",
+      "risk_level": "medium",
+      "inferred_role": "civilian",
+      "role_inference_basis": {
+        "source": "inference",
+        "text": "radio reports 7 civilian(s) at safe distance; matched to persons farther from fire"
+      },
+      "role_confidence": 0.75,
+      "throughput_need": "low",
+      "traffic_demand_mbps": 0.3
+    },
+    {
+      "class": "person",
+      "detection_confidence": "0.84",
+      "position": {
+        "x": "-102.63 m",
+        "y": "-9.82 m",
+        "z": "-0.20 m"
+      },
+      "localization_confidence": {
+        "x": "0.57",
+        "y": "0.20",
+        "z": "1.00"
+      },
+      "distance_to_fire": "55.97 m",
+      "risk_level": "medium",
+      "inferred_role": "civilian",
+      "role_inference_basis": {
+        "source": "inference",
+        "text": "radio reports 7 civilian(s) at safe distance; matched to persons farther from fire"
+      },
+      "role_confidence": 0.75,
+      "throughput_need": "low",
+      "traffic_demand_mbps": 0.3
+    },
+    {
+      "class": "person",
+      "detection_confidence": "0.83",
+      "position": {
+        "x": "-101.87 m",
+        "y": "-11.12 m",
+        "z": "-0.08 m"
+      },
+      "localization_confidence": {
+        "x": "0.52",
+        "y": "0.20",
+        "z": "1.00"
+      },
+      "distance_to_fire": "54.46 m",
+      "risk_level": "medium",
+      "inferred_role": "civilian",
+      "role_inference_basis": {
+        "source": "inference",
+        "text": "radio reports 7 civilian(s) at safe distance; matched to persons farther from fire"
+      },
+      "role_confidence": 0.75,
+      "throughput_need": "low",
+      "traffic_demand_mbps": 0.3
+    },
+    {
+      "class": "person",
+      "detection_confidence": "0.82",
+      "position": {
+        "x": "-96.05 m",
+        "y": "-9.38 m",
+        "z": "-0.20 m"
+      },
+      "localization_confidence": {
+        "x": "0.41",
+        "y": "0.21",
+        "z": "1.00"
+      },
+      "distance_to_fire": "56.12 m",
+      "risk_level": "medium",
+      "inferred_role": "civilian",
+      "role_inference_basis": {
+        "source": "inference",
+        "text": "radio reports 7 civilian(s) at safe distance; matched to persons farther from fire"
+      },
+      "role_confidence": 0.75,
+      "throughput_need": "low",
+      "traffic_demand_mbps": 0.3
+    },
+    {
+      "class": "person",
+      "detection_confidence": "0.81",
+      "position": {
+        "x": "-103.58 m",
+        "y": "-12.30 m",
+        "z": "-0.05 m"
+      },
+      "localization_confidence": {
+        "x": "0.55",
+        "y": "0.19",
+        "z": "1.00"
+      },
+      "distance_to_fire": "53.46 m",
+      "risk_level": "medium",
+      "inferred_role": "civilian",
+      "role_inference_basis": {
+        "source": "inference",
+        "text": "radio reports 7 civilian(s) at safe distance; matched to persons farther from fire"
+      },
+      "role_confidence": 0.75,
+      "throughput_need": "low",
+      "traffic_demand_mbps": 0.3
+    },
+    {
+      "class": "person",
+      "detection_confidence": "0.74",
+      "position": {
+        "x": "-101.80 m",
+        "y": "-8.02 m",
+        "z": "-0.09 m"
+      },
+      "localization_confidence": {
+        "x": "0.57",
+        "y": "0.25",
+        "z": "1.00"
+      },
+      "distance_to_fire": "57.56 m",
+      "risk_level": "medium",
+      "inferred_role": "civilian",
+      "role_inference_basis": {
+        "source": "inference",
+        "text": "radio reports 7 civilian(s) at safe distance; matched to persons farther from fire"
+      },
+      "role_confidence": 0.75,
+      "throughput_need": "low",
+      "traffic_demand_mbps": 0.3
+    },
+    {
+      "class": "person",
+      "detection_confidence": "0.63",
+      "position": {
+        "x": "-113.71 m",
+        "y": "-16.45 m",
+        "z": "0.00 m"
+      },
+      "localization_confidence": {
+        "x": "0.48",
+        "y": "0.18",
+        "z": "1.00"
+      },
+      "distance_to_fire": "49.26 m",
+      "risk_level": "medium",
+      "throughput_need": "low",
+      "inferred_role": null,
+      "role_inference_basis": {
+        "source": "inference",
+        "text": ""
+      },
+      "role_confidence": null,
+      "traffic_demand_mbps": 0.3
+    },
+    {
+      "class": "person",
+      "detection_confidence": "0.44",
+      "position": {
+        "x": "-113.63 m",
+        "y": "-25.62 m",
+        "z": "0.00 m"
+      },
+      "localization_confidence": {
+        "x": "0.39",
+        "y": "0.11",
+        "z": "1.00"
+      },
+      "distance_to_fire": "40.20 m",
+      "risk_level": "medium",
+      "throughput_need": "medium",
+      "inferred_role": "firefighter",
+      "role_inference_basis": {
+        "source": "inference",
+        "text": "alpha, beta on scene per radio (command is off-scene support); assigned to closest person near fire"
+      },
+      "role_confidence": 0.85,
+      "traffic_demand_mbps": 1.0
+    },
+    {
+      "class": "person",
+      "detection_confidence": "0.49",
+      "position": {
+        "x": "-112.73 m",
+        "y": "-9.73 m",
+        "z": "0.00 m"
+      },
+      "localization_confidence": {
+        "x": "0.82",
+        "y": "0.72",
+        "z": "1.00"
+      },
+      "distance_to_fire": "23.90 m",
+      "risk_level": "medium",
+      "throughput_need": "medium",
+      "inferred_role": "firefighter",
+      "role_inference_basis": {
+        "source": "inference",
+        "text": "alpha, beta on scene per radio (command is off-scene support); assigned to closest person near fire"
+      },
+      "role_confidence": 0.85,
+      "traffic_demand_mbps": 1.0
+    },
+    {
+      "class": "person",
+      "audio_only": true,
+      "reason": "radio indicates 2 on-scene responder(s); 0 matched visually as firefighter",
+      "risk_level": "medium",
+      "throughput_need": "low",
+      "inferred_role": "firefighter",
+      "role_inference_basis": {
+        "source": "inference",
+        "text": ""
+      },
+      "role_confidence": null,
+      "traffic_demand_mbps": 0.3
+    },
+    {
+      "class": "person",
+      "audio_only": true,
+      "reason": "radio indicates 2 on-scene responder(s); 0 matched visually as firefighter",
+      "risk_level": "medium",
+      "throughput_need": "low",
+      "inferred_role": "firefighter",
+      "role_inference_basis": {
+        "source": "inference",
+        "text": ""
+      },
+      "role_confidence": null,
+      "traffic_demand_mbps": 0.3
+    }
+  ]
+}

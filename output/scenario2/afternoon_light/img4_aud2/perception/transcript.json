@@ -1,0 +1,3629 @@
+{
+  "language": "en",
+  "word_segments": [
+    {
+      "word": "Beta",
+      "start": 0.031,
+      "end": 0.331,
+      "score": 0.75,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "here,",
+      "start": 0.372,
+      "end": 0.552,
+      "score": 0.572,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "Alpha.",
+      "start": 0.572,
+      "end": 0.832,
+      "score": 0.765,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "Fire",
+      "start": 1.333,
+      "end": 1.533,
+      "score": 0.715,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "is",
+      "start": 1.573,
+      "end": 1.634,
+      "score": 0.926,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "extending",
+      "start": 1.694,
+      "end": 2.074,
+      "score": 0.797,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "through",
+      "start": 2.114,
+      "end": 2.315,
+      "score": 0.81,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "the",
+      "start": 2.335,
+      "end": 2.415,
+      "score": 0.527,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "upper",
+      "start": 2.475,
+      "end": 2.655,
+      "score": 0.671,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "windows",
+      "start": 2.715,
+      "end": 3.076,
+      "score": 0.827,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "and",
+      "start": 3.176,
+      "end": 3.236,
+      "score": 0.905,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "roofline,",
+      "start": 3.276,
+      "end": 3.717,
+      "score": 0.84,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "smoke",
+      "start": 3.997,
+      "end": 4.218,
+      "score": 0.828,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "pushing",
+      "start": 4.278,
+      "end": 4.558,
+      "score": 0.891,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "across",
+      "start": 4.618,
+      "end": 4.859,
+      "score": 0.914,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "the",
+      "start": 4.879,
+      "end": 4.959,
+      "score": 0.833,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "street",
+      "start": 4.979,
+      "end": 5.179,
+      "score": 0.82,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "corner.",
+      "start": 5.219,
+      "end": 6.041,
+      "score": 0.899,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "Listening.",
+      "start": 6.061,
+      "end": 6.401,
+      "score": 0.81,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "Alpha",
+      "start": 6.802,
+      "end": 7.002,
+      "score": 0.693,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "here,",
+      "start": 7.022,
+      "end": 7.183,
+      "score": 0.435,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "Beta.",
+      "start": 7.203,
+      "end": 7.884,
+      "score": 0.873,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "Received.",
+      "start": 7.904,
+      "end": 8.324,
+      "score": 0.936,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "Visibility",
+      "start": 8.665,
+      "end": 9.166,
+      "score": 0.902,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "is",
+      "start": 9.226,
+      "end": 9.286,
+      "score": 0.744,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "dropping",
+      "start": 9.366,
+      "end": 9.667,
+      "score": 0.791,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "near",
+      "start": 9.687,
+      "end": 9.807,
+      "score": 0.829,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "the",
+      "start": 9.827,
+      "end": 9.887,
+      "score": 0.668,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "building",
+      "start": 9.947,
+      "end": 10.227,
+      "score": 0.858,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "corner",
+      "start": 10.288,
+      "end": 10.528,
+      "score": 0.993,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "and",
+      "start": 10.708,
+      "end": 10.788,
+      "score": 0.695,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "the",
+      "start": 10.828,
+      "end": 10.929,
+      "score": 0.749,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "hose",
+      "start": 10.989,
+      "end": 11.189,
+      "score": 0.791,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "line",
+      "start": 11.229,
+      "end": 11.409,
+      "score": 0.983,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "corridor.",
+      "start": 11.449,
+      "end": 11.83,
+      "score": 0.936,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "Listening.",
+      "start": 12.371,
+      "end": 12.711,
+      "score": 0.817,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "Alpha",
+      "start": 13.092,
+      "end": 13.312,
+      "score": 0.771,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "here,",
+      "start": 13.352,
+      "end": 13.513,
+      "score": 0.472,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "Beta.",
+      "start": 13.533,
+      "end": 13.833,
+      "score": 0.891,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "I",
+      "start": 14.314,
+      "end": 14.374,
+      "score": 0.999,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "have",
+      "start": 14.414,
+      "end": 14.554,
+      "score": 0.867,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "visual",
+      "start": 14.634,
+      "end": 14.955,
+      "score": 0.914,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "on",
+      "start": 15.035,
+      "end": 15.095,
+      "score": 0.96,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "seven",
+      "start": 15.195,
+      "end": 15.456,
+      "score": 0.774,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "civilians",
+      "start": 15.496,
+      "end": 15.917,
+      "score": 0.814,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "near",
+      "start": 15.997,
+      "end": 16.137,
+      "score": 0.956,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "the",
+      "start": 16.157,
+      "end": 16.237,
+      "score": 0.973,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "sidewalk",
+      "start": 16.277,
+      "end": 16.698,
+      "score": 0.87,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "and",
+      "start": 16.718,
+      "end": 16.778,
+      "score": 0.657,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "tree",
+      "start": 16.818,
+      "end": 16.978,
+      "score": 0.672,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "line,",
+      "start": 16.998,
+      "end": 17.199,
+      "score": 0.988,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "holding",
+      "start": 17.499,
+      "end": 17.76,
+      "score": 0.885,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "at",
+      "start": 17.8,
+      "end": 17.86,
+      "score": 0.938,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "safe",
+      "start": 17.9,
+      "end": 18.2,
+      "score": 0.915,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "distance.",
+      "start": 18.24,
+      "end": 18.601,
+      "score": 0.931,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "Listening.",
+      "start": 19.202,
+      "end": 19.522,
+      "score": 0.85,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "Beta",
+      "start": 19.863,
+      "end": 20.103,
+      "score": 0.672,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "here,",
+      "start": 20.123,
+      "end": 20.264,
+      "score": 0.653,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "Alpha.",
+      "start": 20.324,
+      "end": 20.564,
+      "score": 0.859,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "Received.",
+      "start": 21.065,
+      "end": 21.445,
+      "score": 0.841,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "Keep",
+      "start": 21.506,
+      "end": 21.626,
+      "score": 1.0,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "that",
+      "start": 21.646,
+      "end": 21.746,
+      "score": 0.752,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "group",
+      "start": 21.786,
+      "end": 21.946,
+      "score": 0.844,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "away",
+      "start": 21.986,
+      "end": 22.127,
+      "score": 0.723,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "from",
+      "start": 22.167,
+      "end": 22.247,
+      "score": 0.776,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "the",
+      "start": 22.287,
+      "end": 22.347,
+      "score": 1.0,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "parking",
+      "start": 22.367,
+      "end": 22.647,
+      "score": 0.834,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "area",
+      "start": 22.687,
+      "end": 22.908,
+      "score": 0.784,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "and",
+      "start": 22.948,
+      "end": 23.028,
+      "score": 0.842,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "clear",
+      "start": 23.068,
+      "end": 23.208,
+      "score": 0.786,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "of",
+      "start": 23.228,
+      "end": 23.268,
+      "score": 0.999,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "the",
+      "start": 23.288,
+      "end": 23.349,
+      "score": 0.999,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "hose",
+      "start": 23.369,
+      "end": 23.569,
+      "score": 0.852,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "line.",
+      "start": 23.609,
+      "end": 23.789,
+      "score": 0.867,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "Listening.",
+      "start": 23.949,
+      "end": 24.25,
+      "score": 0.89,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "Beta",
+      "start": 24.611,
+      "end": 24.871,
+      "score": 0.721,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "here,",
+      "start": 24.911,
+      "end": 25.071,
+      "score": 0.657,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "Alpha.",
+      "start": 25.151,
+      "end": 25.532,
+      "score": 0.744,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "Three",
+      "start": 26.153,
+      "end": 26.413,
+      "score": 0.805,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "civilian",
+      "start": 26.433,
+      "end": 26.774,
+      "score": 0.8,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "vehicles",
+      "start": 26.814,
+      "end": 27.155,
+      "score": 0.676,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "remain",
+      "start": 27.195,
+      "end": 27.415,
+      "score": 0.759,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "exposed",
+      "start": 27.455,
+      "end": 27.836,
+      "score": 0.816,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "near",
+      "start": 27.856,
+      "end": 27.976,
+      "score": 0.75,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "the",
+      "start": 27.996,
+      "end": 28.076,
+      "score": 0.832,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "structure.",
+      "start": 28.096,
+      "end": 28.497,
+      "score": 0.853,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "Heat",
+      "start": 28.757,
+      "end": 28.878,
+      "score": 0.439,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "is",
+      "start": 28.918,
+      "end": 28.998,
+      "score": 0.686,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "increasing",
+      "start": 29.018,
+      "end": 29.398,
+      "score": 0.699,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "along",
+      "start": 29.439,
+      "end": 29.599,
+      "score": 0.848,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "the",
+      "start": 29.619,
+      "end": 29.679,
+      "score": 0.999,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "parking",
+      "start": 29.699,
+      "end": 29.999,
+      "score": 0.837,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "area.",
+      "start": 30.04,
+      "end": 30.28,
+      "score": 0.957,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "Listening.",
+      "start": 31.121,
+      "end": 31.482,
+      "score": 0.851,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "Alpha",
+      "start": 31.843,
+      "end": 32.063,
+      "score": 0.819,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "here,",
+      "start": 32.083,
+      "end": 32.243,
+      "score": 0.442,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "beta.",
+      "start": 32.263,
+      "end": 32.544,
+      "score": 0.925,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "Received,",
+      "start": 33.185,
+      "end": 33.666,
+      "score": 0.815,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "smoke",
+      "start": 33.886,
+      "end": 34.187,
+      "score": 0.853,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "is",
+      "start": 34.247,
+      "end": 34.307,
+      "score": 0.8,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "drifting",
+      "start": 34.367,
+      "end": 34.707,
+      "score": 0.763,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "between",
+      "start": 34.747,
+      "end": 35.008,
+      "score": 0.764,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "the",
+      "start": 35.048,
+      "end": 35.108,
+      "score": 0.998,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "parked",
+      "start": 35.148,
+      "end": 35.369,
+      "score": 0.771,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "vehicles",
+      "start": 35.409,
+      "end": 35.769,
+      "score": 0.784,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "and",
+      "start": 36.01,
+      "end": 36.09,
+      "score": 0.969,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "the",
+      "start": 36.13,
+      "end": 36.19,
+      "score": 0.997,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "civilian",
+      "start": 36.23,
+      "end": 36.591,
+      "score": 0.824,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "group.",
+      "start": 36.631,
+      "end": 36.851,
+      "score": 0.863,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "Listening.",
+      "start": 37.412,
+      "end": 37.753,
+      "score": 0.807,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "Beta",
+      "start": 38.133,
+      "end": 38.334,
+      "score": 0.75,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "here,",
+      "start": 38.374,
+      "end": 38.514,
+      "score": 0.736,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "alpha.",
+      "start": 38.594,
+      "end": 38.854,
+      "score": 0.874,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "Voice",
+      "start": 39.295,
+      "end": 39.515,
+      "score": 0.94,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "link",
+      "start": 39.536,
+      "end": 39.716,
+      "score": 0.789,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "is",
+      "start": 39.776,
+      "end": 39.836,
+      "score": 0.708,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "breaking",
+      "start": 39.876,
+      "end": 40.117,
+      "score": 0.836,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "near",
+      "start": 40.157,
+      "end": 40.277,
+      "score": 0.856,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "the",
+      "start": 40.297,
+      "end": 40.357,
+      "score": 0.995,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "smoke",
+      "start": 40.397,
+      "end": 40.617,
+      "score": 0.918,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "column.",
+      "start": 40.657,
+      "end": 40.958,
+      "score": 0.941,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "Short",
+      "start": 41.218,
+      "end": 41.399,
+      "score": 0.609,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "delay",
+      "start": 41.419,
+      "end": 41.699,
+      "score": 0.91,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "on",
+      "start": 41.759,
+      "end": 41.799,
+      "score": 0.851,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "my",
+      "start": 41.859,
+      "end": 41.96,
+      "score": 0.998,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "last",
+      "start": 42.02,
+      "end": 42.24,
+      "score": 0.815,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "transmission.",
+      "start": 42.28,
+      "end": 42.801,
+      "score": 0.889,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "Listening.",
+      "start": 43.041,
+      "end": 43.723,
+      "score": 0.859,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "Alpha",
+      "start": 43.743,
+      "end": 43.963,
+      "score": 0.832,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "here,",
+      "start": 44.003,
+      "end": 44.223,
+      "score": 0.587,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "beta.",
+      "start": 44.243,
+      "end": 44.544,
+      "score": 0.927,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "Received,",
+      "start": 45.125,
+      "end": 45.566,
+      "score": 0.826,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "signal",
+      "start": 45.826,
+      "end": 46.127,
+      "score": 0.811,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "is",
+      "start": 46.187,
+      "end": 46.247,
+      "score": 0.628,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "stronger",
+      "start": 46.307,
+      "end": 46.688,
+      "score": 0.8,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "near",
+      "start": 46.728,
+      "end": 46.848,
+      "score": 0.946,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "the",
+      "start": 46.868,
+      "end": 46.928,
+      "score": 0.666,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "sidewalk,",
+      "start": 46.968,
+      "end": 47.569,
+      "score": 0.91,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "but",
+      "start": 47.589,
+      "end": 47.689,
+      "score": 0.924,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "degraded",
+      "start": 47.749,
+      "end": 48.17,
+      "score": 0.93,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "near",
+      "start": 48.23,
+      "end": 48.37,
+      "score": 0.728,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "the",
+      "start": 48.41,
+      "end": 48.471,
+      "score": 0.998,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "tree",
+      "start": 48.511,
+      "end": 48.691,
+      "score": 0.505,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "line",
+      "start": 48.711,
+      "end": 48.911,
+      "score": 0.906,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "and",
+      "start": 49.072,
+      "end": 49.152,
+      "score": 0.854,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "building",
+      "start": 49.192,
+      "end": 49.472,
+      "score": 0.664,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "corner.",
+      "start": 49.512,
+      "end": 49.933,
+      "score": 0.811,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "Finished.",
+      "start": 50.268,
+      "end": 50.67,
+      "score": 0.926,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "Alpha",
+      "start": 51.073,
+      "end": 51.314,
+      "score": 0.839,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "here,",
+      "start": 51.334,
+      "end": 51.495,
+      "score": 0.49,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "beta.",
+      "start": 51.515,
+      "end": 51.797,
+      "score": 0.809,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "Civilian",
+      "start": 52.36,
+      "end": 52.843,
+      "score": 0.917,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "group",
+      "start": 52.903,
+      "end": 53.144,
+      "score": 0.73,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "remains",
+      "start": 53.205,
+      "end": 53.486,
+      "score": 0.697,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "stationary",
+      "start": 53.567,
+      "end": 53.969,
+      "score": 0.948,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "near",
+      "start": 54.009,
+      "end": 54.13,
+      "score": 0.852,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "the",
+      "start": 54.17,
+      "end": 54.231,
+      "score": 0.935,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "sidewalk.",
+      "start": 54.271,
+      "end": 54.673,
+      "score": 0.935,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "No",
+      "start": 55.096,
+      "end": 55.236,
+      "score": 0.998,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "visible",
+      "start": 55.297,
+      "end": 55.578,
+      "score": 0.907,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "injuries",
+      "start": 55.619,
+      "end": 55.92,
+      "score": 0.848,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "from",
+      "start": 55.96,
+      "end": 56.081,
+      "score": 0.854,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "my",
+      "start": 56.141,
+      "end": 56.262,
+      "score": 0.958,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "position.",
+      "start": 56.323,
+      "end": 56.664,
+      "score": 0.994,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "Finished.",
+      "start": 57.348,
+      "end": 57.831,
+      "score": 0.967,
+      "speaker": "SPEAKER_01"
+    }
+  ],
+  "radio_messages": [
+    {
+      "speaker": "SPEAKER_00",
+      "start": 0.031,
+      "end": 6.401,
+      "words": [
+        {
+          "word": "Beta",
+          "start": 0.031,
+          "end": 0.331,
+          "score": 0.75,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "here,",
+          "start": 0.372,
+          "end": 0.552,
+          "score": 0.572,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "Alpha.",
+          "start": 0.572,
+          "end": 0.832,
+          "score": 0.765,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "Fire",
+          "start": 1.333,
+          "end": 1.533,
+          "score": 0.715,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "is",
+          "start": 1.573,
+          "end": 1.634,
+          "score": 0.926,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "extending",
+          "start": 1.694,
+          "end": 2.074,
+          "score": 0.797,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "through",
+          "start": 2.114,
+          "end": 2.315,
+          "score": 0.81,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "the",
+          "start": 2.335,
+          "end": 2.415,
+          "score": 0.527,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "upper",
+          "start": 2.475,
+          "end": 2.655,
+          "score": 0.671,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "windows",
+          "start": 2.715,
+          "end": 3.076,
+          "score": 0.827,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "and",
+          "start": 3.176,
+          "end": 3.236,
+          "score": 0.905,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "roofline,",
+          "start": 3.276,
+          "end": 3.717,
+          "score": 0.84,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "smoke",
+          "start": 3.997,
+          "end": 4.218,
+          "score": 0.828,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "pushing",
+          "start": 4.278,
+          "end": 4.558,
+          "score": 0.891,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "across",
+          "start": 4.618,
+          "end": 4.859,
+          "score": 0.914,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "the",
+          "start": 4.879,
+          "end": 4.959,
+          "score": 0.833,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "street",
+          "start": 4.979,
+          "end": 5.179,
+          "score": 0.82,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "corner.",
+          "start": 5.219,
+          "end": 6.041,
+          "score": 0.899,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "Listening.",
+          "start": 6.061,
+          "end": 6.401,
+          "score": 0.81,
+          "speaker": "SPEAKER_00"
+        }
+      ],
+      "message": "Beta here, Alpha. Fire is extending through the upper windows and roofline, smoke pushing across the street corner. Listening."
+    },
+    {
+      "speaker": "SPEAKER_01",
+      "start": 6.802,
+      "end": 12.711,
+      "words": [
+        {
+          "word": "Alpha",
+          "start": 6.802,
+          "end": 7.002,
+          "score": 0.693,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "here,",
+          "start": 7.022,
+          "end": 7.183,
+          "score": 0.435,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "Beta.",
+          "start": 7.203,
+          "end": 7.884,
+          "score": 0.873,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "Received.",
+          "start": 7.904,
+          "end": 8.324,
+          "score": 0.936,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "Visibility",
+          "start": 8.665,
+          "end": 9.166,
+          "score": 0.902,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "is",
+          "start": 9.226,
+          "end": 9.286,
+          "score": 0.744,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "dropping",
+          "start": 9.366,
+          "end": 9.667,
+          "score": 0.791,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "near",
+          "start": 9.687,
+          "end": 9.807,
+          "score": 0.829,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "the",
+          "start": 9.827,
+          "end": 9.887,
+          "score": 0.668,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "building",
+          "start": 9.947,
+          "end": 10.227,
+          "score": 0.858,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "corner",
+          "start": 10.288,
+          "end": 10.528,
+          "score": 0.993,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "and",
+          "start": 10.708,
+          "end": 10.788,
+          "score": 0.695,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "the",
+          "start": 10.828,
+          "end": 10.929,
+          "score": 0.749,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "hose",
+          "start": 10.989,
+          "end": 11.189,
+          "score": 0.791,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "line",
+          "start": 11.229,
+          "end": 11.409,
+          "score": 0.983,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "corridor.",
+          "start": 11.449,
+          "end": 11.83,
+          "score": 0.936,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "Listening.",
+          "start": 12.371,
+          "end": 12.711,
+          "score": 0.817,
+          "speaker": "SPEAKER_01"
+        }
+      ],
+      "message": "Alpha here, Beta. Received. Visibility is dropping near the building corner and the hose line corridor. Listening."
+    },
+    {
+      "speaker": "SPEAKER_01",
+      "start": 13.092,
+      "end": 19.522,
+      "words": [
+        {
+          "word": "Alpha",
+          "start": 13.092,
+          "end": 13.312,
+          "score": 0.771,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "here,",
+          "start": 13.352,
+          "end": 13.513,
+          "score": 0.472,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "Beta.",
+          "start": 13.533,
+          "end": 13.833,
+          "score": 0.891,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "I",
+          "start": 14.314,
+          "end": 14.374,
+          "score": 0.999,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "have",
+          "start": 14.414,
+          "end": 14.554,
+          "score": 0.867,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "visual",
+          "start": 14.634,
+          "end": 14.955,
+          "score": 0.914,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "on",
+          "start": 15.035,
+          "end": 15.095,
+          "score": 0.96,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "seven",
+          "start": 15.195,
+          "end": 15.456,
+          "score": 0.774,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "civilians",
+          "start": 15.496,
+          "end": 15.917,
+          "score": 0.814,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "near",
+          "start": 15.997,
+          "end": 16.137,
+          "score": 0.956,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "the",
+          "start": 16.157,
+          "end": 16.237,
+          "score": 0.973,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "sidewalk",
+          "start": 16.277,
+          "end": 16.698,
+          "score": 0.87,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "and",
+          "start": 16.718,
+          "end": 16.778,
+          "score": 0.657,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "tree",
+          "start": 16.818,
+          "end": 16.978,
+          "score": 0.672,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "line,",
+          "start": 16.998,
+          "end": 17.199,
+          "score": 0.988,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "holding",
+          "start": 17.499,
+          "end": 17.76,
+          "score": 0.885,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "at",
+          "start": 17.8,
+          "end": 17.86,
+          "score": 0.938,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "safe",
+          "start": 17.9,
+          "end": 18.2,
+          "score": 0.915,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "distance.",
+          "start": 18.24,
+          "end": 18.601,
+          "score": 0.931,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "Listening.",
+          "start": 19.202,
+          "end": 19.522,
+          "score": 0.85,
+          "speaker": "SPEAKER_01"
+        }
+      ],
+      "message": "Alpha here, Beta. I have visual on seven civilians near the sidewalk and tree line, holding at safe distance. Listening."
+    },
+    {
+      "speaker": "SPEAKER_00",
+      "start": 19.863,
+      "end": 24.25,
+      "words": [
+        {
+          "word": "Beta",
+          "start": 19.863,
+          "end": 20.103,
+          "score": 0.672,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "here,",
+          "start": 20.123,
+          "end": 20.264,
+          "score": 0.653,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "Alpha.",
+          "start": 20.324,
+          "end": 20.564,
+          "score": 0.859,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "Received.",
+          "start": 21.065,
+          "end": 21.445,
+          "score": 0.841,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "Keep",
+          "start": 21.506,
+          "end": 21.626,
+          "score": 1.0,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "that",
+          "start": 21.646,
+          "end": 21.746,
+          "score": 0.752,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "group",
+          "start": 21.786,
+          "end": 21.946,
+          "score": 0.844,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "away",
+          "start": 21.986,
+          "end": 22.127,
+          "score": 0.723,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "from",
+          "start": 22.167,
+          "end": 22.247,
+          "score": 0.776,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "the",
+          "start": 22.287,
+          "end": 22.347,
+          "score": 1.0,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "parking",
+          "start": 22.367,
+          "end": 22.647,
+          "score": 0.834,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "area",
+          "start": 22.687,
+          "end": 22.908,
+          "score": 0.784,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "and",
+          "start": 22.948,
+          "end": 23.028,
+          "score": 0.842,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "clear",
+          "start": 23.068,
+          "end": 23.208,
+          "score": 0.786,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "of",
+          "start": 23.228,
+          "end": 23.268,
+          "score": 0.999,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "the",
+          "start": 23.288,
+          "end": 23.349,
+          "score": 0.999,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "hose",
+          "start": 23.369,
+          "end": 23.569,
+          "score": 0.852,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "line.",
+          "start": 23.609,
+          "end": 23.789,
+          "score": 0.867,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "Listening.",
+          "start": 23.949,
+          "end": 24.25,
+          "score": 0.89,
+          "speaker": "SPEAKER_00"
+        }
+      ],
+      "message": "Beta here, Alpha. Received. Keep that group away from the parking area and clear of the hose line. Listening."
+    },
+    {
+      "speaker": "SPEAKER_00",
+      "start": 24.611,
+      "end": 31.482,
+      "words": [
+        {
+          "word": "Beta",
+          "start": 24.611,
+          "end": 24.871,
+          "score": 0.721,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "here,",
+          "start": 24.911,
+          "end": 25.071,
+          "score": 0.657,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "Alpha.",
+          "start": 25.151,
+          "end": 25.532,
+          "score": 0.744,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "Three",
+          "start": 26.153,
+          "end": 26.413,
+          "score": 0.805,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "civilian",
+          "start": 26.433,
+          "end": 26.774,
+          "score": 0.8,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "vehicles",
+          "start": 26.814,
+          "end": 27.155,
+          "score": 0.676,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "remain",
+          "start": 27.195,
+          "end": 27.415,
+          "score": 0.759,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "exposed",
+          "start": 27.455,
+          "end": 27.836,
+          "score": 0.816,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "near",
+          "start": 27.856,
+          "end": 27.976,
+          "score": 0.75,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "the",
+          "start": 27.996,
+          "end": 28.076,
+          "score": 0.832,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "structure.",
+          "start": 28.096,
+          "end": 28.497,
+          "score": 0.853,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "Heat",
+          "start": 28.757,
+          "end": 28.878,
+          "score": 0.439,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "is",
+          "start": 28.918,
+          "end": 28.998,
+          "score": 0.686,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "increasing",
+          "start": 29.018,
+          "end": 29.398,
+          "score": 0.699,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "along",
+          "start": 29.439,
+          "end": 29.599,
+          "score": 0.848,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "the",
+          "start": 29.619,
+          "end": 29.679,
+          "score": 0.999,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "parking",
+          "start": 29.699,
+          "end": 29.999,
+          "score": 0.837,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "area.",
+          "start": 30.04,
+          "end": 30.28,
+          "score": 0.957,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "Listening.",
+          "start": 31.121,
+          "end": 31.482,
+          "score": 0.851,
+          "speaker": "SPEAKER_00"
+        }
+      ],
+      "message": "Beta here, Alpha. Three civilian vehicles remain exposed near the structure. Heat is increasing along the parking area. Listening."
+    },
+    {
+      "speaker": "SPEAKER_01",
+      "start": 31.843,
+      "end": 37.753,
+      "words": [
+        {
+          "word": "Alpha",
+          "start": 31.843,
+          "end": 32.063,
+          "score": 0.819,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "here,",
+          "start": 32.083,
+          "end": 32.243,
+          "score": 0.442,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "beta.",
+          "start": 32.263,
+          "end": 32.544,
+          "score": 0.925,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "Received,",
+          "start": 33.185,
+          "end": 33.666,
+          "score": 0.815,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "smoke",
+          "start": 33.886,
+          "end": 34.187,
+          "score": 0.853,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "is",
+          "start": 34.247,
+          "end": 34.307,
+          "score": 0.8,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "drifting",
+          "start": 34.367,
+          "end": 34.707,
+          "score": 0.763,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "between",
+          "start": 34.747,
+          "end": 35.008,
+          "score": 0.764,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "the",
+          "start": 35.048,
+          "end": 35.108,
+          "score": 0.998,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "parked",
+          "start": 35.148,
+          "end": 35.369,
+          "score": 0.771,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "vehicles",
+          "start": 35.409,
+          "end": 35.769,
+          "score": 0.784,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "and",
+          "start": 36.01,
+          "end": 36.09,
+          "score": 0.969,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "the",
+          "start": 36.13,
+          "end": 36.19,
+          "score": 0.997,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "civilian",
+          "start": 36.23,
+          "end": 36.591,
+          "score": 0.824,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "group.",
+          "start": 36.631,
+          "end": 36.851,
+          "score": 0.863,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "Listening.",
+          "start": 37.412,
+          "end": 37.753,
+          "score": 0.807,
+          "speaker": "SPEAKER_01"
+        }
+      ],
+      "message": "Alpha here, beta. Received, smoke is drifting between the parked vehicles and the civilian group. Listening."
+    },
+    {
+      "speaker": "SPEAKER_00",
+      "start": 38.133,
+      "end": 43.723,
+      "words": [
+        {
+          "word": "Beta",
+          "start": 38.133,
+          "end": 38.334,
+          "score": 0.75,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "here,",
+          "start": 38.374,
+          "end": 38.514,
+          "score": 0.736,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "alpha.",
+          "start": 38.594,
+          "end": 38.854,
+          "score": 0.874,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "Voice",
+          "start": 39.295,
+          "end": 39.515,
+          "score": 0.94,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "link",
+          "start": 39.536,
+          "end": 39.716,
+          "score": 0.789,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "is",
+          "start": 39.776,
+          "end": 39.836,
+          "score": 0.708,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "breaking",
+          "start": 39.876,
+          "end": 40.117,
+          "score": 0.836,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "near",
+          "start": 40.157,
+          "end": 40.277,
+          "score": 0.856,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "the",
+          "start": 40.297,
+          "end": 40.357,
+          "score": 0.995,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "smoke",
+          "start": 40.397,
+          "end": 40.617,
+          "score": 0.918,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "column.",
+          "start": 40.657,
+          "end": 40.958,
+          "score": 0.941,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "Short",
+          "start": 41.218,
+          "end": 41.399,
+          "score": 0.609,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "delay",
+          "start": 41.419,
+          "end": 41.699,
+          "score": 0.91,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "on",
+          "start": 41.759,
+          "end": 41.799,
+          "score": 0.851,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "my",
+          "start": 41.859,
+          "end": 41.96,
+          "score": 0.998,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "last",
+          "start": 42.02,
+          "end": 42.24,
+          "score": 0.815,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "transmission.",
+          "start": 42.28,
+          "end": 42.801,
+          "score": 0.889,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "Listening.",
+          "start": 43.041,
+          "end": 43.723,
+          "score": 0.859,
+          "speaker": "SPEAKER_00"
+        }
+      ],
+      "message": "Beta here, alpha. Voice link is breaking near the smoke column. Short delay on my last transmission. Listening."
+    },
+    {
+      "speaker": "SPEAKER_01",
+      "start": 43.743,
+      "end": 50.67,
+      "words": [
+        {
+          "word": "Alpha",
+          "start": 43.743,
+          "end": 43.963,
+          "score": 0.832,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "here,",
+          "start": 44.003,
+          "end": 44.223,
+          "score": 0.587,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "beta.",
+          "start": 44.243,
+          "end": 44.544,
+          "score": 0.927,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "Received,",
+          "start": 45.125,
+          "end": 45.566,
+          "score": 0.826,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "signal",
+          "start": 45.826,
+          "end": 46.127,
+          "score": 0.811,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "is",
+          "start": 46.187,
+          "end": 46.247,
+          "score": 0.628,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "stronger",
+          "start": 46.307,
+          "end": 46.688,
+          "score": 0.8,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "near",
+          "start": 46.728,
+          "end": 46.848,
+          "score": 0.946,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "the",
+          "start": 46.868,
+          "end": 46.928,
+          "score": 0.666,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "sidewalk,",
+          "start": 46.968,
+          "end": 47.569,
+          "score": 0.91,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "but",
+          "start": 47.589,
+          "end": 47.689,
+          "score": 0.924,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "degraded",
+          "start": 47.749,
+          "end": 48.17,
+          "score": 0.93,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "near",
+          "start": 48.23,
+          "end": 48.37,
+          "score": 0.728,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "the",
+          "start": 48.41,
+          "end": 48.471,
+          "score": 0.998,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "tree",
+          "start": 48.511,
+          "end": 48.691,
+          "score": 0.505,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "line",
+          "start": 48.711,
+          "end": 48.911,
+          "score": 0.906,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "and",
+          "start": 49.072,
+          "end": 49.152,
+          "score": 0.854,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "building",
+          "start": 49.192,
+          "end": 49.472,
+          "score": 0.664,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "corner.",
+          "start": 49.512,
+          "end": 49.933,
+          "score": 0.811,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "Finished.",
+          "start": 50.268,
+          "end": 50.67,
+          "score": 0.926,
+          "speaker": "SPEAKER_01"
+        }
+      ],
+      "message": "Alpha here, beta. Received, signal is stronger near the sidewalk, but degraded near the tree line and building corner. Finished."
+    },
+    {
+      "speaker": "SPEAKER_01",
+      "start": 51.073,
+      "end": 57.831,
+      "words": [
+        {
+          "word": "Alpha",
+          "start": 51.073,
+          "end": 51.314,
+          "score": 0.839,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "here,",
+          "start": 51.334,
+          "end": 51.495,
+          "score": 0.49,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "beta.",
+          "start": 51.515,
+          "end": 51.797,
+          "score": 0.809,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "Civilian",
+          "start": 52.36,
+          "end": 52.843,
+          "score": 0.917,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "group",
+          "start": 52.903,
+          "end": 53.144,
+          "score": 0.73,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "remains",
+          "start": 53.205,
+          "end": 53.486,
+          "score": 0.697,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "stationary",
+          "start": 53.567,
+          "end": 53.969,
+          "score": 0.948,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "near",
+          "start": 54.009,
+          "end": 54.13,
+          "score": 0.852,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "the",
+          "start": 54.17,
+          "end": 54.231,
+          "score": 0.935,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "sidewalk.",
+          "start": 54.271,
+          "end": 54.673,
+          "score": 0.935,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "No",
+          "start": 55.096,
+          "end": 55.236,
+          "score": 0.998,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "visible",
+          "start": 55.297,
+          "end": 55.578,
+          "score": 0.907,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "injuries",
+          "start": 55.619,
+          "end": 55.92,
+          "score": 0.848,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "from",
+          "start": 55.96,
+          "end": 56.081,
+          "score": 0.854,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "my",
+          "start": 56.141,
+          "end": 56.262,
+          "score": 0.958,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "position.",
+          "start": 56.323,
+          "end": 56.664,
+          "score": 0.994,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "Finished.",
+          "start": 57.348,
+          "end": 57.831,
+          "score": 0.967,
+          "speaker": "SPEAKER_01"
+        }
+      ],
+      "message": "Alpha here, beta. Civilian group remains stationary near the sidewalk. No visible injuries from my position. Finished."
+    }
+  ],
+  "segments": [
+    {
+      "start": 0.031,
+      "end": 6.401,
+      "text": "Beta here, Alpha. Fire is extending through the upper windows and roofline, smoke pushing across the street corner. Listening.",
+      "speaker": "SPEAKER_00",
+      "words": [
+        {
+          "word": "Beta",
+          "start": 0.031,
+          "end": 0.331,
+          "score": 0.75,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "here,",
+          "start": 0.372,
+          "end": 0.552,
+          "score": 0.572,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "Alpha.",
+          "start": 0.572,
+          "end": 0.832,
+          "score": 0.765,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "Fire",
+          "start": 1.333,
+          "end": 1.533,
+          "score": 0.715,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "is",
+          "start": 1.573,
+          "end": 1.634,
+          "score": 0.926,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "extending",
+          "start": 1.694,
+          "end": 2.074,
+          "score": 0.797,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "through",
+          "start": 2.114,
+          "end": 2.315,
+          "score": 0.81,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "the",
+          "start": 2.335,
+          "end": 2.415,
+          "score": 0.527,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "upper",
+          "start": 2.475,
+          "end": 2.655,
+          "score": 0.671,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "windows",
+          "start": 2.715,
+          "end": 3.076,
+          "score": 0.827,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "and",
+          "start": 3.176,
+          "end": 3.236,
+          "score": 0.905,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "roofline,",
+          "start": 3.276,
+          "end": 3.717,
+          "score": 0.84,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "smoke",
+          "start": 3.997,
+          "end": 4.218,
+          "score": 0.828,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "pushing",
+          "start": 4.278,
+          "end": 4.558,
+          "score": 0.891,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "across",
+          "start": 4.618,
+          "end": 4.859,
+          "score": 0.914,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "the",
+          "start": 4.879,
+          "end": 4.959,
+          "score": 0.833,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "street",
+          "start": 4.979,
+          "end": 5.179,
+          "score": 0.82,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "corner.",
+          "start": 5.219,
+          "end": 6.041,
+          "score": 0.899,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "Listening.",
+          "start": 6.061,
+          "end": 6.401,
+          "score": 0.81,
+          "speaker": "SPEAKER_00"
+        }
+      ]
+    },
+    {
+      "start": 6.802,
+      "end": 12.711,
+      "text": "Alpha here, Beta. Received. Visibility is dropping near the building corner and the hose line corridor. Listening.",
+      "speaker": "SPEAKER_01",
+      "words": [
+        {
+          "word": "Alpha",
+          "start": 6.802,
+          "end": 7.002,
+          "score": 0.693,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "here,",
+          "start": 7.022,
+          "end": 7.183,
+          "score": 0.435,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "Beta.",
+          "start": 7.203,
+          "end": 7.884,
+          "score": 0.873,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "Received.",
+          "start": 7.904,
+          "end": 8.324,
+          "score": 0.936,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "Visibility",
+          "start": 8.665,
+          "end": 9.166,
+          "score": 0.902,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "is",
+          "start": 9.226,
+          "end": 9.286,
+          "score": 0.744,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "dropping",
+          "start": 9.366,
+          "end": 9.667,
+          "score": 0.791,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "near",
+          "start": 9.687,
+          "end": 9.807,
+          "score": 0.829,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "the",
+          "start": 9.827,
+          "end": 9.887,
+          "score": 0.668,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "building",
+          "start": 9.947,
+          "end": 10.227,
+          "score": 0.858,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "corner",
+          "start": 10.288,
+          "end": 10.528,
+          "score": 0.993,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "and",
+          "start": 10.708,
+          "end": 10.788,
+          "score": 0.695,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "the",
+          "start": 10.828,
+          "end": 10.929,
+          "score": 0.749,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "hose",
+          "start": 10.989,
+          "end": 11.189,
+          "score": 0.791,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "line",
+          "start": 11.229,
+          "end": 11.409,
+          "score": 0.983,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "corridor.",
+          "start": 11.449,
+          "end": 11.83,
+          "score": 0.936,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "Listening.",
+          "start": 12.371,
+          "end": 12.711,
+          "score": 0.817,
+          "speaker": "SPEAKER_01"
+        }
+      ]
+    },
+    {
+      "start": 13.092,
+      "end": 19.522,
+      "text": "Alpha here, Beta. I have visual on seven civilians near the sidewalk and tree line, holding at safe distance. Listening.",
+      "speaker": "SPEAKER_01",
+      "words": [
+        {
+          "word": "Alpha",
+          "start": 13.092,
+          "end": 13.312,
+          "score": 0.771,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "here,",
+          "start": 13.352,
+          "end": 13.513,
+          "score": 0.472,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "Beta.",
+          "start": 13.533,
+          "end": 13.833,
+          "score": 0.891,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "I",
+          "start": 14.314,
+          "end": 14.374,
+          "score": 0.999,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "have",
+          "start": 14.414,
+          "end": 14.554,
+          "score": 0.867,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "visual",
+          "start": 14.634,
+          "end": 14.955,
+          "score": 0.914,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "on",
+          "start": 15.035,
+          "end": 15.095,
+          "score": 0.96,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "seven",
+          "start": 15.195,
+          "end": 15.456,
+          "score": 0.774,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "civilians",
+          "start": 15.496,
+          "end": 15.917,
+          "score": 0.814,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "near",
+          "start": 15.997,
+          "end": 16.137,
+          "score": 0.956,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "the",
+          "start": 16.157,
+          "end": 16.237,
+          "score": 0.973,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "sidewalk",
+          "start": 16.277,
+          "end": 16.698,
+          "score": 0.87,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "and",
+          "start": 16.718,
+          "end": 16.778,
+          "score": 0.657,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "tree",
+          "start": 16.818,
+          "end": 16.978,
+          "score": 0.672,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "line,",
+          "start": 16.998,
+          "end": 17.199,
+          "score": 0.988,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "holding",
+          "start": 17.499,
+          "end": 17.76,
+          "score": 0.885,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "at",
+          "start": 17.8,
+          "end": 17.86,
+          "score": 0.938,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "safe",
+          "start": 17.9,
+          "end": 18.2,
+          "score": 0.915,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "distance.",
+          "start": 18.24,
+          "end": 18.601,
+          "score": 0.931,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "Listening.",
+          "start": 19.202,
+          "end": 19.522,
+          "score": 0.85,
+          "speaker": "SPEAKER_01"
+        }
+      ]
+    },
+    {
+      "start": 19.863,
+      "end": 24.25,
+      "text": "Beta here, Alpha. Received. Keep that group away from the parking area and clear of the hose line. Listening.",
+      "speaker": "SPEAKER_00",
+      "words": [
+        {
+          "word": "Beta",
+          "start": 19.863,
+          "end": 20.103,
+          "score": 0.672,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "here,",
+          "start": 20.123,
+          "end": 20.264,
+          "score": 0.653,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "Alpha.",
+          "start": 20.324,
+          "end": 20.564,
+          "score": 0.859,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "Received.",
+          "start": 21.065,
+          "end": 21.445,
+          "score": 0.841,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "Keep",
+          "start": 21.506,
+          "end": 21.626,
+          "score": 1.0,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "that",
+          "start": 21.646,
+          "end": 21.746,
+          "score": 0.752,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "group",
+          "start": 21.786,
+          "end": 21.946,
+          "score": 0.844,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "away",
+          "start": 21.986,
+          "end": 22.127,
+          "score": 0.723,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "from",
+          "start": 22.167,
+          "end": 22.247,
+          "score": 0.776,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "the",
+          "start": 22.287,
+          "end": 22.347,
+          "score": 1.0,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "parking",
+          "start": 22.367,
+          "end": 22.647,
+          "score": 0.834,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "area",
+          "start": 22.687,
+          "end": 22.908,
+          "score": 0.784,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "and",
+          "start": 22.948,
+          "end": 23.028,
+          "score": 0.842,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "clear",
+          "start": 23.068,
+          "end": 23.208,
+          "score": 0.786,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "of",
+          "start": 23.228,
+          "end": 23.268,
+          "score": 0.999,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "the",
+          "start": 23.288,
+          "end": 23.349,
+          "score": 0.999,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "hose",
+          "start": 23.369,
+          "end": 23.569,
+          "score": 0.852,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "line.",
+          "start": 23.609,
+          "end": 23.789,
+          "score": 0.867,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "Listening.",
+          "start": 23.949,
+          "end": 24.25,
+          "score": 0.89,
+          "speaker": "SPEAKER_00"
+        }
+      ]
+    },
+    {
+      "start": 24.611,
+      "end": 31.482,
+      "text": "Beta here, Alpha. Three civilian vehicles remain exposed near the structure. Heat is increasing along the parking area. Listening.",
+      "speaker": "SPEAKER_00",
+      "words": [
+        {
+          "word": "Beta",
+          "start": 24.611,
+          "end": 24.871,
+          "score": 0.721,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "here,",
+          "start": 24.911,
+          "end": 25.071,
+          "score": 0.657,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "Alpha.",
+          "start": 25.151,
+          "end": 25.532,
+          "score": 0.744,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "Three",
+          "start": 26.153,
+          "end": 26.413,
+          "score": 0.805,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "civilian",
+          "start": 26.433,
+          "end": 26.774,
+          "score": 0.8,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "vehicles",
+          "start": 26.814,
+          "end": 27.155,
+          "score": 0.676,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "remain",
+          "start": 27.195,
+          "end": 27.415,
+          "score": 0.759,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "exposed",
+          "start": 27.455,
+          "end": 27.836,
+          "score": 0.816,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "near",
+          "start": 27.856,
+          "end": 27.976,
+          "score": 0.75,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "the",
+          "start": 27.996,
+          "end": 28.076,
+          "score": 0.832,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "structure.",
+          "start": 28.096,
+          "end": 28.497,
+          "score": 0.853,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "Heat",
+          "start": 28.757,
+          "end": 28.878,
+          "score": 0.439,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "is",
+          "start": 28.918,
+          "end": 28.998,
+          "score": 0.686,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "increasing",
+          "start": 29.018,
+          "end": 29.398,
+          "score": 0.699,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "along",
+          "start": 29.439,
+          "end": 29.599,
+          "score": 0.848,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "the",
+          "start": 29.619,
+          "end": 29.679,
+          "score": 0.999,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "parking",
+          "start": 29.699,
+          "end": 29.999,
+          "score": 0.837,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "area.",
+          "start": 30.04,
+          "end": 30.28,
+          "score": 0.957,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "Listening.",
+          "start": 31.121,
+          "end": 31.482,
+          "score": 0.851,
+          "speaker": "SPEAKER_00"
+        }
+      ]
+    },
+    {
+      "start": 31.843,
+      "end": 37.753,
+      "text": "Alpha here, beta. Received, smoke is drifting between the parked vehicles and the civilian group. Listening.",
+      "speaker": "SPEAKER_01",
+      "words": [
+        {
+          "word": "Alpha",
+          "start": 31.843,
+          "end": 32.063,
+          "score": 0.819,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "here,",
+          "start": 32.083,
+          "end": 32.243,
+          "score": 0.442,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "beta.",
+          "start": 32.263,
+          "end": 32.544,
+          "score": 0.925,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "Received,",
+          "start": 33.185,
+          "end": 33.666,
+          "score": 0.815,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "smoke",
+          "start": 33.886,
+          "end": 34.187,
+          "score": 0.853,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "is",
+          "start": 34.247,
+          "end": 34.307,
+          "score": 0.8,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "drifting",
+          "start": 34.367,
+          "end": 34.707,
+          "score": 0.763,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "between",
+          "start": 34.747,
+          "end": 35.008,
+          "score": 0.764,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "the",
+          "start": 35.048,
+          "end": 35.108,
+          "score": 0.998,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "parked",
+          "start": 35.148,
+          "end": 35.369,
+          "score": 0.771,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "vehicles",
+          "start": 35.409,
+          "end": 35.769,
+          "score": 0.784,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "and",
+          "start": 36.01,
+          "end": 36.09,
+          "score": 0.969,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "the",
+          "start": 36.13,
+          "end": 36.19,
+          "score": 0.997,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "civilian",
+          "start": 36.23,
+          "end": 36.591,
+          "score": 0.824,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "group.",
+          "start": 36.631,
+          "end": 36.851,
+          "score": 0.863,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "Listening.",
+          "start": 37.412,
+          "end": 37.753,
+          "score": 0.807,
+          "speaker": "SPEAKER_01"
+        }
+      ]
+    },
+    {
+      "start": 38.133,
+      "end": 43.723,
+      "text": "Beta here, alpha. Voice link is breaking near the smoke column. Short delay on my last transmission. Listening.",
+      "speaker": "SPEAKER_00",
+      "words": [
+        {
+          "word": "Beta",
+          "start": 38.133,
+          "end": 38.334,
+          "score": 0.75,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "here,",
+          "start": 38.374,
+          "end": 38.514,
+          "score": 0.736,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "alpha.",
+          "start": 38.594,
+          "end": 38.854,
+          "score": 0.874,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "Voice",
+          "start": 39.295,
+          "end": 39.515,
+          "score": 0.94,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "link",
+          "start": 39.536,
+          "end": 39.716,
+          "score": 0.789,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "is",
+          "start": 39.776,
+          "end": 39.836,
+          "score": 0.708,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "breaking",
+          "start": 39.876,
+          "end": 40.117,
+          "score": 0.836,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "near",
+          "start": 40.157,
+          "end": 40.277,
+          "score": 0.856,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "the",
+          "start": 40.297,
+          "end": 40.357,
+          "score": 0.995,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "smoke",
+          "start": 40.397,
+          "end": 40.617,
+          "score": 0.918,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "column.",
+          "start": 40.657,
+          "end": 40.958,
+          "score": 0.941,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "Short",
+          "start": 41.218,
+          "end": 41.399,
+          "score": 0.609,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "delay",
+          "start": 41.419,
+          "end": 41.699,
+          "score": 0.91,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "on",
+          "start": 41.759,
+          "end": 41.799,
+          "score": 0.851,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "my",
+          "start": 41.859,
+          "end": 41.96,
+          "score": 0.998,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "last",
+          "start": 42.02,
+          "end": 42.24,
+          "score": 0.815,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "transmission.",
+          "start": 42.28,
+          "end": 42.801,
+          "score": 0.889,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "Listening.",
+          "start": 43.041,
+          "end": 43.723,
+          "score": 0.859,
+          "speaker": "SPEAKER_00"
+        }
+      ]
+    },
+    {
+      "start": 43.743,
+      "end": 50.67,
+      "text": "Alpha here, beta. Received, signal is stronger near the sidewalk, but degraded near the tree line and building corner. Finished.",
+      "speaker": "SPEAKER_01",
+      "words": [
+        {
+          "word": "Alpha",
+          "start": 43.743,
+          "end": 43.963,
+          "score": 0.832,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "here,",
+          "start": 44.003,
+          "end": 44.223,
+          "score": 0.587,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "beta.",
+          "start": 44.243,
+          "end": 44.544,
+          "score": 0.927,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "Received,",
+          "start": 45.125,
+          "end": 45.566,
+          "score": 0.826,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "signal",
+          "start": 45.826,
+          "end": 46.127,
+          "score": 0.811,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "is",
+          "start": 46.187,
+          "end": 46.247,
+          "score": 0.628,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "stronger",
+          "start": 46.307,
+          "end": 46.688,
+          "score": 0.8,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "near",
+          "start": 46.728,
+          "end": 46.848,
+          "score": 0.946,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "the",
+          "start": 46.868,
+          "end": 46.928,
+          "score": 0.666,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "sidewalk,",
+          "start": 46.968,
+          "end": 47.569,
+          "score": 0.91,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "but",
+          "start": 47.589,
+          "end": 47.689,
+          "score": 0.924,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "degraded",
+          "start": 47.749,
+          "end": 48.17,
+          "score": 0.93,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "near",
+          "start": 48.23,
+          "end": 48.37,
+          "score": 0.728,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "the",
+          "start": 48.41,
+          "end": 48.471,
+          "score": 0.998,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "tree",
+          "start": 48.511,
+          "end": 48.691,
+          "score": 0.505,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "line",
+          "start": 48.711,
+          "end": 48.911,
+          "score": 0.906,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "and",
+          "start": 49.072,
+          "end": 49.152,
+          "score": 0.854,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "building",
+          "start": 49.192,
+          "end": 49.472,
+          "score": 0.664,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "corner.",
+          "start": 49.512,
+          "end": 49.933,
+          "score": 0.811,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "Finished.",
+          "start": 50.268,
+          "end": 50.67,
+          "score": 0.926,
+          "speaker": "SPEAKER_01"
+        }
+      ]
+    },
+    {
+      "start": 51.073,
+      "end": 57.831,
+      "text": "Alpha here, beta. Civilian group remains stationary near the sidewalk. No visible injuries from my position. Finished.",
+      "speaker": "SPEAKER_01",
+      "words": [
+        {
+          "word": "Alpha",
+          "start": 51.073,
+          "end": 51.314,
+          "score": 0.839,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "here,",
+          "start": 51.334,
+          "end": 51.495,
+          "score": 0.49,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "beta.",
+          "start": 51.515,
+          "end": 51.797,
+          "score": 0.809,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "Civilian",
+          "start": 52.36,
+          "end": 52.843,
+          "score": 0.917,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "group",
+          "start": 52.903,
+          "end": 53.144,
+          "score": 0.73,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "remains",
+          "start": 53.205,
+          "end": 53.486,
+          "score": 0.697,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "stationary",
+          "start": 53.567,
+          "end": 53.969,
+          "score": 0.948,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "near",
+          "start": 54.009,
+          "end": 54.13,
+          "score": 0.852,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "the",
+          "start": 54.17,
+          "end": 54.231,
+          "score": 0.935,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "sidewalk.",
+          "start": 54.271,
+          "end": 54.673,
+          "score": 0.935,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "No",
+          "start": 55.096,
+          "end": 55.236,
+          "score": 0.998,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "visible",
+          "start": 55.297,
+          "end": 55.578,
+          "score": 0.907,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "injuries",
+          "start": 55.619,
+          "end": 55.92,
+          "score": 0.848,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "from",
+          "start": 55.96,
+          "end": 56.081,
+          "score": 0.854,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "my",
+          "start": 56.141,
+          "end": 56.262,
+          "score": 0.958,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "position.",
+          "start": 56.323,
+          "end": 56.664,
+          "score": 0.994,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "Finished.",
+          "start": 57.348,
+          "end": 57.831,
+          "score": 0.967,
+          "speaker": "SPEAKER_01"
+        }
+      ]
+    }
+  ],
+  "speaker_count": 2,
+  "analytics": {
+    "speaker_count": 2,
+    "people_mentioned_count": 7,
+    "civilians_mentioned_count": 7,
+    "firefighters_mentioned_count": 0,
+    "on_scene_responders_count": 2,
+    "civilians_at_safe_distance_mentioned": true,
+    "vehicles_mentioned_count": 3,
+    "emergency_vehicle_mentioned_count": 0
+  }
+}
