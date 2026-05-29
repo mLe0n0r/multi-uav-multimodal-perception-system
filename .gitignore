@@ -27,3 +27,8 @@ perception/audio/data/real_audio/
 # IDE
 .idea/
 .vscode/
+
+# Experiment outputs (regenerate with scripts/run_all_combinations.py)
+output/.cache/
+output/**/perception/
+output/**/fusion/
