@@ -1,0 +1,120 @@
+{
+  "has_fire": true,
+  "summary": "Fire is active in the forested area, and visual confirmation of a person near a house has been made.",
+  "counts_by_class": {
+    "person": 3,
+    "normal_vehicle": 0,
+    "emergency_vehicle": 2
+  },
+  "communications": {
+    "speaker_count": 3,
+    "key_communications": [
+      {
+        "text": "Engine 1 here, Command.",
+        "speaker": "SPEAKER_01"
+      },
+      {
+        "text": "Command here, rescue two.",
+        "speaker": "SPEAKER_00"
+      },
+      {
+        "text": "Rescue 2 here, command.",
+        "speaker": "SPEAKER_02"
+      }
+    ],
+    "service_types": [
+      "voice"
+    ],
+    "service_inference_basis": []
+  },
+  "objects": [
+    {
+      "class": "emergency_vehicle",
+      "detection_confidence": "0.66",
+      "position": {
+        "x": "-107.71 m",
+        "y": "-108.29 m",
+        "z": "0.00 m"
+      },
+      "localization_confidence": {
+        "x": "0.22",
+        "y": "0.11",
+        "z": "1.00"
+      },
+      "distance_to_fire": "9.48 m",
+      "risk_level": "medium",
+      "throughput_need": "medium",
+      "traffic_demand_mbps": 2.0
+    },
+    {
+      "class": "person",
+      "detection_confidence": "0.78",
+      "position": {
+        "x": "-3.40 m",
+        "y": "-127.28 m",
+        "z": "0.00 m"
+      },
+      "localization_confidence": {
+        "x": "0.52",
+        "y": "0.33",
+        "z": "1.00"
+      },
+      "distance_to_fire": "17.59 m",
+      "risk_level": "medium",
+      "throughput_need": "low",
+      "inferred_role": "unknown_person",
+      "role_inference_basis": {
+        "source": "inference",
+        "text": "visual_detection"
+      },
+      "role_confidence": null,
+      "traffic_demand_mbps": 0.3
+    },
+    {
+      "class": "emergency_vehicle",
+      "detection_confidence": "0.46",
+      "position": {
+        "x": "-102.32 m",
+        "y": "-112.37 m",
+        "z": "0.00 m"
+      },
+      "localization_confidence": {
+        "x": "0.20",
+        "y": "0.10",
+        "z": "1.00"
+      },
+      "distance_to_fire": "13.03 m",
+      "risk_level": "medium",
+      "throughput_need": "medium",
+      "traffic_demand_mbps": 2.0
+    },
+    {
+      "class": "person",
+      "audio_only": true,
+      "reason": "radio indicates 2 on-scene responder(s); 0 matched visually as firefighter",
+      "risk_level": "medium",
+      "throughput_need": "low",
+      "inferred_role": "firefighter",
+      "role_inference_basis": {
+        "source": "inference",
+        "text": ""
+      },
+      "role_confidence": null,
+      "traffic_demand_mbps": 0.3
+    },
+    {
+      "class": "person",
+      "audio_only": true,
+      "reason": "radio indicates 2 on-scene responder(s); 0 matched visually as firefighter",
+      "risk_level": "medium",
+      "throughput_need": "low",
+      "inferred_role": "firefighter",
+      "role_inference_basis": {
+        "source": "inference",
+        "text": ""
+      },
+      "role_confidence": null,
+      "traffic_demand_mbps": 0.3
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "has_fire": true,
+  "image_size": {
+    "width": 3196,
+    "height": 1168
+  },
+  "camera": {
+    "position": {
+      "x": "-26.75 m",
+      "y": "-161.82 m",
+      "z": "39.02 m"
+    },
+    "orientation": {
+      "pitch": "-45.35 deg",
+      "yaw": "99.99 deg",
+      "roll": "0.00 deg"
+    }
+  },
+  "counts_by_class": {
+    "person": 1,
+    "normal_vehicle": 0,
+    "emergency_vehicle": 0
+  },
+  "objects": [
+    {
+      "id": 0,
+      "class": "person",
+      "detection_confidence": "0.78",
+      "bbox": {
+        "xc": 0.655976,
+        "yc": 0.485445,
+        "w": 0.007822,
+        "h": 0.046233
+      },
+      "position": {
+        "x": "-3.40 m",
+        "y": "-127.28 m",
+        "z": "0.00 m"
+      },
+      "localization_confidence": {
+        "x": "0.52",
+        "y": "0.33",
+        "z": "1.00"
+      },
+      "distance_to_fire": "17.59 m"
+    }
+  ]
+}

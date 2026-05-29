@@ -1,0 +1,108 @@
+{
+  "has_fire": true,
+  "summary": "Fire is active in the forested area, and units are coordinating exposure assessment near a structure.",
+  "counts_by_class": {
+    "person": 2,
+    "normal_vehicle": 0,
+    "emergency_vehicle": 2
+  },
+  "communications": {
+    "speaker_count": 2,
+    "key_communications": [
+      {
+        "text": "Unit Phi here, command. Report current fire conditions and spread direction. Listening.",
+        "speaker": "SPEAKER_01"
+      },
+      {
+        "text": "Command here, Unit Phi. Active wildfire in the forested area, multiple trees involved, heavy smoke moving across the clearing. Listening.",
+        "speaker": "SPEAKER_00"
+      }
+    ],
+    "service_types": [
+      "image_transfer",
+      "voice"
+    ],
+    "service_inference_basis": [
+      {
+        "source": "transcript",
+        "text": "Command here, Unit Phi. Negative visual confirmation of persons at this time. Smoke is limiting visibility near the house and access path. Listening."
+      }
+    ]
+  },
+  "objects": [
+    {
+      "class": "emergency_vehicle",
+      "detection_confidence": "0.66",
+      "position": {
+        "x": "-107.71 m",
+        "y": "-108.29 m",
+        "z": "0.00 m"
+      },
+      "localization_confidence": {
+        "x": "0.22",
+        "y": "0.11",
+        "z": "1.00"
+      },
+      "distance_to_fire": "9.48 m",
+      "risk_level": "medium",
+      "throughput_need": "medium",
+      "traffic_demand_mbps": 2.0
+    },
+    {
+      "class": "person",
+      "detection_confidence": "0.78",
+      "position": {
+        "x": "-3.40 m",
+        "y": "-127.28 m",
+        "z": "0.00 m"
+      },
+      "localization_confidence": {
+        "x": "0.52",
+        "y": "0.33",
+        "z": "1.00"
+      },
+      "distance_to_fire": "17.59 m",
+      "risk_level": "medium",
+      "throughput_need": "low",
+      "inferred_role": "unknown_person",
+      "role_inference_basis": {
+        "source": "inference",
+        "text": "visual_detection"
+      },
+      "role_confidence": null,
+      "traffic_demand_mbps": 0.3
+    },
+    {
+      "class": "emergency_vehicle",
+      "detection_confidence": "0.46",
+      "position": {
+        "x": "-102.32 m",
+        "y": "-112.37 m",
+        "z": "0.00 m"
+      },
+      "localization_confidence": {
+        "x": "0.20",
+        "y": "0.10",
+        "z": "1.00"
+      },
+      "distance_to_fire": "13.03 m",
+      "risk_level": "medium",
+      "throughput_need": "medium",
+      "traffic_demand_mbps": 2.0
+    },
+    {
+      "class": "person",
+      "audio_only": true,
+      "reason": "radio indicates 1 on-scene responder(s); 0 matched visually as firefighter",
+      "risk_level": "medium",
+      "throughput_need": "low",
+      "inferred_role": "firefighter",
+      "role_inference_basis": {
+        "source": "inference",
+        "text": ""
+      },
+      "role_confidence": null,
+      "traffic_demand_mbps": 0.3
+    }
+  ]
+}

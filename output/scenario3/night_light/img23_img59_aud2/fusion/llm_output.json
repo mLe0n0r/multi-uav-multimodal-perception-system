@@ -1,0 +1,104 @@
+{
+  "has_fire": true,
+  "summary": "Fire is active in the forested area, and visual confirmation of a person near a house has been made.",
+  "counts_by_class": {
+    "person": 4,
+    "normal_vehicle": 0,
+    "emergency_vehicle": 0
+  },
+  "communications": {
+    "speaker_count": 3,
+    "key_communications": [
+      {
+        "text": "Engine 1 here, Command.",
+        "speaker": "SPEAKER_01"
+      },
+      {
+        "text": "Command here, rescue two.",
+        "speaker": "SPEAKER_00"
+      },
+      {
+        "text": "Rescue 2 here, command.",
+        "speaker": "SPEAKER_02"
+      }
+    ],
+    "service_types": [
+      "voice"
+    ],
+    "service_inference_basis": []
+  },
+  "objects": [
+    {
+      "class": "person",
+      "detection_confidence": "0.80",
+      "position": {
+        "x": "-72.20 m",
+        "y": "-138.84 m",
+        "z": "0.00 m"
+      },
+      "localization_confidence": {
+        "x": "0.31",
+        "y": "0.11",
+        "z": "1.00"
+      },
+      "distance_to_fire": "13.57 m",
+      "risk_level": "medium",
+      "throughput_need": "low",
+      "inferred_role": "unknown_person",
+      "role_inference_basis": {
+        "source": "inference",
+        "text": "visual_detection"
+      },
+      "role_confidence": null
+    },
+    {
+      "class": "person",
+      "detection_confidence": "0.79",
+      "position": {
+        "x": "-74.29 m",
+        "y": "-134.38 m",
+        "z": "0.00 m"
+      },
+      "localization_confidence": {
+        "x": "0.34",
+        "y": "0.13",
+        "z": "1.00"
+      },
+      "distance_to_fire": "11.25 m",
+      "risk_level": "medium",
+      "throughput_need": "low",
+      "inferred_role": "unknown_person",
+      "role_inference_basis": {
+        "source": "inference",
+        "text": "visual_detection"
+      },
+      "role_confidence": null
+    },
+    {
+      "class": "person",
+      "audio_only": true,
+      "reason": "radio indicates 2 on-scene responder(s); 0 matched visually as firefighter",
+      "risk_level": "medium",
+      "throughput_need": "low",
+      "inferred_role": "firefighter",
+      "role_inference_basis": {
+        "source": "inference",
+        "text": ""
+      },
+      "role_confidence": null
+    },
+    {
+      "class": "person",
+      "audio_only": true,
+      "reason": "radio indicates 2 on-scene responder(s); 0 matched visually as firefighter",
+      "risk_level": "medium",
+      "throughput_need": "low",
+      "inferred_role": "firefighter",
+      "role_inference_basis": {
+        "source": "inference",
+        "text": ""
+      },
+      "role_confidence": null
+    }
+  ]
+}

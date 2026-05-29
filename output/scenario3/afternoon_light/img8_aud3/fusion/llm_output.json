@@ -1,0 +1,104 @@
+{
+  "has_fire": true,
+  "summary": "Firefighters are coordinating a response near a house, confirming no visual contact with civilians but noting calls from the porch site.",
+  "counts_by_class": {
+    "person": 3,
+    "normal_vehicle": 0,
+    "emergency_vehicle": 1
+  },
+  "communications": {
+    "speaker_count": 2,
+    "key_communications": [
+      {
+        "text": "Rescue 2 here, command.",
+        "speaker": "SPEAKER_01"
+      },
+      {
+        "text": "Command here, rescue 2.",
+        "speaker": "SPEAKER_00"
+      }
+    ],
+    "service_types": [
+      "voice"
+    ],
+    "service_inference_basis": []
+  },
+  "objects": [
+    {
+      "class": "person",
+      "detection_confidence": "0.81",
+      "position": {
+        "x": "-87.95 m",
+        "y": "-140.68 m",
+        "z": "0.00 m"
+      },
+      "localization_confidence": {
+        "x": "0.33",
+        "y": "0.10",
+        "z": "1.00"
+      },
+      "distance_to_fire": "14.77 m",
+      "risk_level": "medium",
+      "throughput_need": "medium",
+      "inferred_role": "firefighter",
+      "role_inference_basis": {
+        "source": "inference",
+        "text": "rescue_2 on scene per radio (command is off-scene support); assigned to closest person near fire"
+      },
+      "role_confidence": 0.85
+    },
+    {
+      "class": "person",
+      "detection_confidence": "0.80",
+      "position": {
+        "x": "-85.64 m",
+        "y": "-146.55 m",
+        "z": "-0.00 m"
+      },
+      "localization_confidence": {
+        "x": "0.30",
+        "y": "0.09",
+        "z": "1.00"
+      },
+      "distance_to_fire": "16.92 m",
+      "risk_level": "medium",
+      "throughput_need": "low",
+      "inferred_role": "unknown_person",
+      "role_inference_basis": {
+        "source": "inference",
+        "text": "no specific role inferred"
+      },
+      "role_confidence": 0.0
+    },
+    {
+      "class": "emergency_vehicle",
+      "detection_confidence": "0.78",
+      "position": {
+        "x": "-86.97 m",
+        "y": "-118.17 m",
+        "z": "0.00 m"
+      },
+      "localization_confidence": {
+        "x": "0.08",
+        "y": "0.07",
+        "z": "1.00"
+      },
+      "distance_to_fire": "21.87 m",
+      "risk_level": "medium",
+      "throughput_need": "medium"
+    },
+    {
+      "class": "person",
+      "audio_only": true,
+      "reason": "radio indicates 2 on-scene responder(s); 1 matched visually as firefighter",
+      "risk_level": "medium",
+      "throughput_need": "low",
+      "inferred_role": "firefighter",
+      "role_inference_basis": {
+        "source": "inference",
+        "text": ""
+      },
+      "role_confidence": null
+    }
+  ]
+}

@@ -1,0 +1,2678 @@
+{
+  "language": "en",
+  "word_segments": [
+    {
+      "word": "Unit",
+      "start": 0.031,
+      "end": 0.351,
+      "score": 0.805,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "Phi",
+      "start": 0.391,
+      "end": 0.592,
+      "score": 0.634,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "here,",
+      "start": 0.652,
+      "end": 0.792,
+      "score": 0.418,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "command.",
+      "start": 0.812,
+      "end": 1.112,
+      "score": 0.959,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "Report",
+      "start": 1.573,
+      "end": 1.873,
+      "score": 0.968,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "current",
+      "start": 1.893,
+      "end": 2.134,
+      "score": 0.939,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "fire",
+      "start": 2.154,
+      "end": 2.374,
+      "score": 0.952,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "conditions",
+      "start": 2.394,
+      "end": 2.835,
+      "score": 0.821,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "and",
+      "start": 2.895,
+      "end": 2.955,
+      "score": 0.665,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "spread",
+      "start": 2.995,
+      "end": 3.195,
+      "score": 0.984,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "direction.",
+      "start": 3.215,
+      "end": 3.575,
+      "score": 0.877,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "Listening.",
+      "start": 4.176,
+      "end": 4.497,
+      "score": 0.88,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "Command",
+      "start": 4.897,
+      "end": 5.177,
+      "score": 0.872,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "here,",
+      "start": 5.218,
+      "end": 5.358,
+      "score": 0.886,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "Unit",
+      "start": 5.478,
+      "end": 5.698,
+      "score": 0.8,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "Phi.",
+      "start": 5.758,
+      "end": 6.079,
+      "score": 0.832,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "Active",
+      "start": 6.539,
+      "end": 6.759,
+      "score": 0.922,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "wildfire",
+      "start": 6.82,
+      "end": 7.36,
+      "score": 0.793,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "in",
+      "start": 7.4,
+      "end": 7.44,
+      "score": 1.0,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "the",
+      "start": 7.48,
+      "end": 7.54,
+      "score": 0.999,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "forested",
+      "start": 7.58,
+      "end": 7.981,
+      "score": 0.822,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "area,",
+      "start": 8.001,
+      "end": 8.422,
+      "score": 0.871,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "multiple",
+      "start": 8.582,
+      "end": 8.942,
+      "score": 0.873,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "trees",
+      "start": 8.962,
+      "end": 9.183,
+      "score": 0.625,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "involved,",
+      "start": 9.243,
+      "end": 9.663,
+      "score": 0.953,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "heavy",
+      "start": 9.903,
+      "end": 10.164,
+      "score": 0.666,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "smoke",
+      "start": 10.264,
+      "end": 10.504,
+      "score": 0.872,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "moving",
+      "start": 10.584,
+      "end": 10.865,
+      "score": 0.801,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "across",
+      "start": 10.945,
+      "end": 11.205,
+      "score": 0.864,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "the",
+      "start": 11.245,
+      "end": 11.305,
+      "score": 0.999,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "clearing.",
+      "start": 11.325,
+      "end": 11.666,
+      "score": 0.788,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "Listening.",
+      "start": 12.066,
+      "end": 12.427,
+      "score": 0.869,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "Unit",
+      "start": 12.767,
+      "end": 12.967,
+      "score": 0.774,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "Phi",
+      "start": 12.987,
+      "end": 13.147,
+      "score": 0.597,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "here,",
+      "start": 13.188,
+      "end": 13.328,
+      "score": 0.345,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "command.",
+      "start": 13.348,
+      "end": 13.628,
+      "score": 0.884,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "Confirm",
+      "start": 14.069,
+      "end": 14.409,
+      "score": 0.792,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "any",
+      "start": 14.429,
+      "end": 14.549,
+      "score": 0.902,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "exposures",
+      "start": 14.609,
+      "end": 15.09,
+      "score": 0.867,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "or",
+      "start": 15.15,
+      "end": 15.21,
+      "score": 0.764,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "access",
+      "start": 15.31,
+      "end": 15.571,
+      "score": 0.878,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "concerns",
+      "start": 15.611,
+      "end": 15.991,
+      "score": 0.866,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "near",
+      "start": 16.031,
+      "end": 16.151,
+      "score": 0.814,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "the",
+      "start": 16.171,
+      "end": 16.231,
+      "score": 0.664,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "fire",
+      "start": 16.271,
+      "end": 16.492,
+      "score": 0.768,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "front.",
+      "start": 16.512,
+      "end": 16.712,
+      "score": 0.972,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "Listening.",
+      "start": 16.832,
+      "end": 17.153,
+      "score": 0.875,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "Command",
+      "start": 17.513,
+      "end": 17.773,
+      "score": 0.919,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "here,",
+      "start": 17.813,
+      "end": 17.974,
+      "score": 0.826,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "Unit",
+      "start": 18.314,
+      "end": 18.534,
+      "score": 0.767,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "Phi.",
+      "start": 18.594,
+      "end": 18.915,
+      "score": 0.812,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "There",
+      "start": 18.955,
+      "end": 19.536,
+      "score": 0.958,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "appears",
+      "start": 19.576,
+      "end": 19.816,
+      "score": 0.976,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "to",
+      "start": 19.876,
+      "end": 19.936,
+      "score": 1.0,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "be",
+      "start": 19.976,
+      "end": 20.076,
+      "score": 0.834,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "a",
+      "start": 20.136,
+      "end": 20.156,
+      "score": 0.998,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "house",
+      "start": 20.196,
+      "end": 20.437,
+      "score": 0.95,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "beyond",
+      "start": 20.477,
+      "end": 20.777,
+      "score": 0.735,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "the",
+      "start": 20.817,
+      "end": 20.897,
+      "score": 0.626,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "tree",
+      "start": 20.957,
+      "end": 21.158,
+      "score": 0.696,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "line,",
+      "start": 21.198,
+      "end": 21.478,
+      "score": 0.943,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "but",
+      "start": 21.558,
+      "end": 21.698,
+      "score": 0.933,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "occupancy",
+      "start": 21.858,
+      "end": 22.399,
+      "score": 0.966,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "is",
+      "start": 22.419,
+      "end": 22.639,
+      "score": 0.653,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "not",
+      "start": 22.72,
+      "end": 22.92,
+      "score": 0.836,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "confirmed.",
+      "start": 23.0,
+      "end": 23.581,
+      "score": 0.872,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "Fire",
+      "start": 24.001,
+      "end": 24.302,
+      "score": 0.736,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "is",
+      "start": 24.362,
+      "end": 24.422,
+      "score": 0.749,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "moving",
+      "start": 24.502,
+      "end": 24.822,
+      "score": 0.741,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "in",
+      "start": 24.842,
+      "end": 25.002,
+      "score": 0.659,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "that",
+      "start": 25.042,
+      "end": 25.163,
+      "score": 0.874,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "direction",
+      "start": 25.223,
+      "end": 25.643,
+      "score": 0.711,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "through",
+      "start": 25.683,
+      "end": 25.924,
+      "score": 0.509,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "the",
+      "start": 25.964,
+      "end": 26.064,
+      "score": 0.777,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "trees.",
+      "start": 26.104,
+      "end": 27.085,
+      "score": 0.826,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "Listening.",
+      "start": 27.065,
+      "end": 27.607,
+      "score": 0.839,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "Unit",
+      "start": 28.028,
+      "end": 28.209,
+      "score": 0.64,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "Phi",
+      "start": 28.269,
+      "end": 28.47,
+      "score": 0.696,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "here,",
+      "start": 28.51,
+      "end": 28.65,
+      "score": 0.422,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "Command.",
+      "start": 28.67,
+      "end": 28.951,
+      "score": 0.902,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "Received.",
+      "start": 29.372,
+      "end": 29.814,
+      "score": 0.893,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "Prioritize",
+      "start": 30.075,
+      "end": 30.677,
+      "score": 0.78,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "exposure",
+      "start": 30.737,
+      "end": 31.138,
+      "score": 0.728,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "assessment",
+      "start": 31.158,
+      "end": 31.539,
+      "score": 0.893,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "from",
+      "start": 31.559,
+      "end": 31.66,
+      "score": 0.872,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "a",
+      "start": 31.72,
+      "end": 31.74,
+      "score": 0.999,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "safe",
+      "start": 31.8,
+      "end": 31.981,
+      "score": 0.88,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "position",
+      "start": 32.021,
+      "end": 32.402,
+      "score": 0.952,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "and",
+      "start": 32.864,
+      "end": 32.924,
+      "score": 0.913,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "confirm",
+      "start": 32.964,
+      "end": 33.305,
+      "score": 0.881,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "if",
+      "start": 33.345,
+      "end": 33.405,
+      "score": 0.978,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "any",
+      "start": 33.506,
+      "end": 33.626,
+      "score": 0.795,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "persons",
+      "start": 33.666,
+      "end": 33.967,
+      "score": 0.889,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "are",
+      "start": 34.007,
+      "end": 34.067,
+      "score": 0.903,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "visible",
+      "start": 34.108,
+      "end": 34.409,
+      "score": 0.78,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "near",
+      "start": 34.449,
+      "end": 34.549,
+      "score": 0.854,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "that",
+      "start": 34.589,
+      "end": 34.71,
+      "score": 0.872,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "house.",
+      "start": 34.75,
+      "end": 34.95,
+      "score": 0.855,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "Listening.",
+      "start": 35.452,
+      "end": 35.813,
+      "score": 0.783,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "Command",
+      "start": 36.515,
+      "end": 36.776,
+      "score": 0.944,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "here,",
+      "start": 36.816,
+      "end": 36.957,
+      "score": 0.897,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "Unit",
+      "start": 37.057,
+      "end": 37.278,
+      "score": 0.773,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "Phi.",
+      "start": 37.378,
+      "end": 37.719,
+      "score": 0.804,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "Negative",
+      "start": 38.12,
+      "end": 38.421,
+      "score": 0.901,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "visual",
+      "start": 38.462,
+      "end": 38.803,
+      "score": 0.798,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "confirmation",
+      "start": 38.863,
+      "end": 39.304,
+      "score": 0.848,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "of",
+      "start": 39.324,
+      "end": 39.364,
+      "score": 0.994,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "persons",
+      "start": 39.445,
+      "end": 39.826,
+      "score": 0.847,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "at",
+      "start": 39.906,
+      "end": 39.966,
+      "score": 0.942,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "this",
+      "start": 40.007,
+      "end": 40.167,
+      "score": 0.744,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "time.",
+      "start": 40.227,
+      "end": 40.548,
+      "score": 0.887,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "Smoke",
+      "start": 41.411,
+      "end": 41.592,
+      "score": 0.861,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "is",
+      "start": 41.652,
+      "end": 41.712,
+      "score": 0.722,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "limiting",
+      "start": 41.792,
+      "end": 42.093,
+      "score": 0.821,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "visibility",
+      "start": 42.153,
+      "end": 42.655,
+      "score": 0.845,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "near",
+      "start": 42.695,
+      "end": 42.816,
+      "score": 0.804,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "the",
+      "start": 42.856,
+      "end": 42.936,
+      "score": 0.996,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "house",
+      "start": 42.976,
+      "end": 43.217,
+      "score": 0.842,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "and",
+      "start": 43.317,
+      "end": 43.377,
+      "score": 0.877,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "access",
+      "start": 43.417,
+      "end": 43.819,
+      "score": 0.847,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "path.",
+      "start": 43.859,
+      "end": 44.16,
+      "score": 0.84,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "Listening.",
+      "start": 45.424,
+      "end": 46.086,
+      "score": 0.747,
+      "speaker": "SPEAKER_00"
+    }
+  ],
+  "radio_messages": [
+    {
+      "speaker": "SPEAKER_01",
+      "start": 0.031,
+      "end": 4.497,
+      "words": [
+        {
+          "word": "Unit",
+          "start": 0.031,
+          "end": 0.351,
+          "score": 0.805,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "Phi",
+          "start": 0.391,
+          "end": 0.592,
+          "score": 0.634,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "here,",
+          "start": 0.652,
+          "end": 0.792,
+          "score": 0.418,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "command.",
+          "start": 0.812,
+          "end": 1.112,
+          "score": 0.959,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "Report",
+          "start": 1.573,
+          "end": 1.873,
+          "score": 0.968,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "current",
+          "start": 1.893,
+          "end": 2.134,
+          "score": 0.939,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "fire",
+          "start": 2.154,
+          "end": 2.374,
+          "score": 0.952,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "conditions",
+          "start": 2.394,
+          "end": 2.835,
+          "score": 0.821,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "and",
+          "start": 2.895,
+          "end": 2.955,
+          "score": 0.665,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "spread",
+          "start": 2.995,
+          "end": 3.195,
+          "score": 0.984,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "direction.",
+          "start": 3.215,
+          "end": 3.575,
+          "score": 0.877,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "Listening.",
+          "start": 4.176,
+          "end": 4.497,
+          "score": 0.88,
+          "speaker": "SPEAKER_01"
+        }
+      ],
+      "message": "Unit Phi here, command. Report current fire conditions and spread direction. Listening."
+    },
+    {
+      "speaker": "SPEAKER_00",
+      "start": 4.897,
+      "end": 12.427,
+      "words": [
+        {
+          "word": "Command",
+          "start": 4.897,
+          "end": 5.177,
+          "score": 0.872,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "here,",
+          "start": 5.218,
+          "end": 5.358,
+          "score": 0.886,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "Unit",
+          "start": 5.478,
+          "end": 5.698,
+          "score": 0.8,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "Phi.",
+          "start": 5.758,
+          "end": 6.079,
+          "score": 0.832,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "Active",
+          "start": 6.539,
+          "end": 6.759,
+          "score": 0.922,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "wildfire",
+          "start": 6.82,
+          "end": 7.36,
+          "score": 0.793,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "in",
+          "start": 7.4,
+          "end": 7.44,
+          "score": 1.0,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "the",
+          "start": 7.48,
+          "end": 7.54,
+          "score": 0.999,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "forested",
+          "start": 7.58,
+          "end": 7.981,
+          "score": 0.822,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "area,",
+          "start": 8.001,
+          "end": 8.422,
+          "score": 0.871,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "multiple",
+          "start": 8.582,
+          "end": 8.942,
+          "score": 0.873,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "trees",
+          "start": 8.962,
+          "end": 9.183,
+          "score": 0.625,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "involved,",
+          "start": 9.243,
+          "end": 9.663,
+          "score": 0.953,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "heavy",
+          "start": 9.903,
+          "end": 10.164,
+          "score": 0.666,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "smoke",
+          "start": 10.264,
+          "end": 10.504,
+          "score": 0.872,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "moving",
+          "start": 10.584,
+          "end": 10.865,
+          "score": 0.801,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "across",
+          "start": 10.945,
+          "end": 11.205,
+          "score": 0.864,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "the",
+          "start": 11.245,
+          "end": 11.305,
+          "score": 0.999,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "clearing.",
+          "start": 11.325,
+          "end": 11.666,
+          "score": 0.788,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "Listening.",
+          "start": 12.066,
+          "end": 12.427,
+          "score": 0.869,
+          "speaker": "SPEAKER_00"
+        }
+      ],
+      "message": "Command here, Unit Phi. Active wildfire in the forested area, multiple trees involved, heavy smoke moving across the clearing. Listening."
+    },
+    {
+      "speaker": "SPEAKER_01",
+      "start": 12.767,
+      "end": 17.153,
+      "words": [
+        {
+          "word": "Unit",
+          "start": 12.767,
+          "end": 12.967,
+          "score": 0.774,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "Phi",
+          "start": 12.987,
+          "end": 13.147,
+          "score": 0.597,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "here,",
+          "start": 13.188,
+          "end": 13.328,
+          "score": 0.345,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "command.",
+          "start": 13.348,
+          "end": 13.628,
+          "score": 0.884,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "Confirm",
+          "start": 14.069,
+          "end": 14.409,
+          "score": 0.792,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "any",
+          "start": 14.429,
+          "end": 14.549,
+          "score": 0.902,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "exposures",
+          "start": 14.609,
+          "end": 15.09,
+          "score": 0.867,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "or",
+          "start": 15.15,
+          "end": 15.21,
+          "score": 0.764,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "access",
+          "start": 15.31,
+          "end": 15.571,
+          "score": 0.878,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "concerns",
+          "start": 15.611,
+          "end": 15.991,
+          "score": 0.866,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "near",
+          "start": 16.031,
+          "end": 16.151,
+          "score": 0.814,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "the",
+          "start": 16.171,
+          "end": 16.231,
+          "score": 0.664,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "fire",
+          "start": 16.271,
+          "end": 16.492,
+          "score": 0.768,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "front.",
+          "start": 16.512,
+          "end": 16.712,
+          "score": 0.972,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "Listening.",
+          "start": 16.832,
+          "end": 17.153,
+          "score": 0.875,
+          "speaker": "SPEAKER_01"
+        }
+      ],
+      "message": "Unit Phi here, command. Confirm any exposures or access concerns near the fire front. Listening."
+    },
+    {
+      "speaker": "SPEAKER_00",
+      "start": 17.513,
+      "end": 27.607,
+      "words": [
+        {
+          "word": "Command",
+          "start": 17.513,
+          "end": 17.773,
+          "score": 0.919,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "here,",
+          "start": 17.813,
+          "end": 17.974,
+          "score": 0.826,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "Unit",
+          "start": 18.314,
+          "end": 18.534,
+          "score": 0.767,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "Phi.",
+          "start": 18.594,
+          "end": 18.915,
+          "score": 0.812,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "There",
+          "start": 18.955,
+          "end": 19.536,
+          "score": 0.958,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "appears",
+          "start": 19.576,
+          "end": 19.816,
+          "score": 0.976,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "to",
+          "start": 19.876,
+          "end": 19.936,
+          "score": 1.0,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "be",
+          "start": 19.976,
+          "end": 20.076,
+          "score": 0.834,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "a",
+          "start": 20.136,
+          "end": 20.156,
+          "score": 0.998,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "house",
+          "start": 20.196,
+          "end": 20.437,
+          "score": 0.95,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "beyond",
+          "start": 20.477,
+          "end": 20.777,
+          "score": 0.735,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "the",
+          "start": 20.817,
+          "end": 20.897,
+          "score": 0.626,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "tree",
+          "start": 20.957,
+          "end": 21.158,
+          "score": 0.696,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "line,",
+          "start": 21.198,
+          "end": 21.478,
+          "score": 0.943,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "but",
+          "start": 21.558,
+          "end": 21.698,
+          "score": 0.933,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "occupancy",
+          "start": 21.858,
+          "end": 22.399,
+          "score": 0.966,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "is",
+          "start": 22.419,
+          "end": 22.639,
+          "score": 0.653,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "not",
+          "start": 22.72,
+          "end": 22.92,
+          "score": 0.836,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "confirmed.",
+          "start": 23.0,
+          "end": 23.581,
+          "score": 0.872,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "Fire",
+          "start": 24.001,
+          "end": 24.302,
+          "score": 0.736,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "is",
+          "start": 24.362,
+          "end": 24.422,
+          "score": 0.749,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "moving",
+          "start": 24.502,
+          "end": 24.822,
+          "score": 0.741,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "in",
+          "start": 24.842,
+          "end": 25.002,
+          "score": 0.659,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "that",
+          "start": 25.042,
+          "end": 25.163,
+          "score": 0.874,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "direction",
+          "start": 25.223,
+          "end": 25.643,
+          "score": 0.711,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "through",
+          "start": 25.683,
+          "end": 25.924,
+          "score": 0.509,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "the",
+          "start": 25.964,
+          "end": 26.064,
+          "score": 0.777,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "trees.",
+          "start": 26.104,
+          "end": 27.085,
+          "score": 0.826,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "Listening.",
+          "start": 27.065,
+          "end": 27.607,
+          "score": 0.839,
+          "speaker": "SPEAKER_00"
+        }
+      ],
+      "message": "Command here, Unit Phi. There appears to be a house beyond the tree line, but occupancy is not confirmed. Fire is moving in that direction through the trees. Listening."
+    },
+    {
+      "speaker": "SPEAKER_01",
+      "start": 28.028,
+      "end": 35.813,
+      "words": [
+        {
+          "word": "Unit",
+          "start": 28.028,
+          "end": 28.209,
+          "score": 0.64,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "Phi",
+          "start": 28.269,
+          "end": 28.47,
+          "score": 0.696,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "here,",
+          "start": 28.51,
+          "end": 28.65,
+          "score": 0.422,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "Command.",
+          "start": 28.67,
+          "end": 28.951,
+          "score": 0.902,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "Received.",
+          "start": 29.372,
+          "end": 29.814,
+          "score": 0.893,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "Prioritize",
+          "start": 30.075,
+          "end": 30.677,
+          "score": 0.78,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "exposure",
+          "start": 30.737,
+          "end": 31.138,
+          "score": 0.728,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "assessment",
+          "start": 31.158,
+          "end": 31.539,
+          "score": 0.893,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "from",
+          "start": 31.559,
+          "end": 31.66,
+          "score": 0.872,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "a",
+          "start": 31.72,
+          "end": 31.74,
+          "score": 0.999,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "safe",
+          "start": 31.8,
+          "end": 31.981,
+          "score": 0.88,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "position",
+          "start": 32.021,
+          "end": 32.402,
+          "score": 0.952,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "and",
+          "start": 32.864,
+          "end": 32.924,
+          "score": 0.913,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "confirm",
+          "start": 32.964,
+          "end": 33.305,
+          "score": 0.881,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "if",
+          "start": 33.345,
+          "end": 33.405,
+          "score": 0.978,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "any",
+          "start": 33.506,
+          "end": 33.626,
+          "score": 0.795,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "persons",
+          "start": 33.666,
+          "end": 33.967,
+          "score": 0.889,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "are",
+          "start": 34.007,
+          "end": 34.067,
+          "score": 0.903,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "visible",
+          "start": 34.108,
+          "end": 34.409,
+          "score": 0.78,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "near",
+          "start": 34.449,
+          "end": 34.549,
+          "score": 0.854,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "that",
+          "start": 34.589,
+          "end": 34.71,
+          "score": 0.872,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "house.",
+          "start": 34.75,
+          "end": 34.95,
+          "score": 0.855,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "Listening.",
+          "start": 35.452,
+          "end": 35.813,
+          "score": 0.783,
+          "speaker": "SPEAKER_01"
+        }
+      ],
+      "message": "Unit Phi here, Command. Received. Prioritize exposure assessment from a safe position and confirm if any persons are visible near that house. Listening."
+    },
+    {
+      "speaker": "SPEAKER_00",
+      "start": 36.515,
+      "end": 46.086,
+      "words": [
+        {
+          "word": "Command",
+          "start": 36.515,
+          "end": 36.776,
+          "score": 0.944,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "here,",
+          "start": 36.816,
+          "end": 36.957,
+          "score": 0.897,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "Unit",
+          "start": 37.057,
+          "end": 37.278,
+          "score": 0.773,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "Phi.",
+          "start": 37.378,
+          "end": 37.719,
+          "score": 0.804,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "Negative",
+          "start": 38.12,
+          "end": 38.421,
+          "score": 0.901,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "visual",
+          "start": 38.462,
+          "end": 38.803,
+          "score": 0.798,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "confirmation",
+          "start": 38.863,
+          "end": 39.304,
+          "score": 0.848,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "of",
+          "start": 39.324,
+          "end": 39.364,
+          "score": 0.994,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "persons",
+          "start": 39.445,
+          "end": 39.826,
+          "score": 0.847,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "at",
+          "start": 39.906,
+          "end": 39.966,
+          "score": 0.942,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "this",
+          "start": 40.007,
+          "end": 40.167,
+          "score": 0.744,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "time.",
+          "start": 40.227,
+          "end": 40.548,
+          "score": 0.887,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "Smoke",
+          "start": 41.411,
+          "end": 41.592,
+          "score": 0.861,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "is",
+          "start": 41.652,
+          "end": 41.712,
+          "score": 0.722,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "limiting",
+          "start": 41.792,
+          "end": 42.093,
+          "score": 0.821,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "visibility",
+          "start": 42.153,
+          "end": 42.655,
+          "score": 0.845,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "near",
+          "start": 42.695,
+          "end": 42.816,
+          "score": 0.804,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "the",
+          "start": 42.856,
+          "end": 42.936,
+          "score": 0.996,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "house",
+          "start": 42.976,
+          "end": 43.217,
+          "score": 0.842,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "and",
+          "start": 43.317,
+          "end": 43.377,
+          "score": 0.877,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "access",
+          "start": 43.417,
+          "end": 43.819,
+          "score": 0.847,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "path.",
+          "start": 43.859,
+          "end": 44.16,
+          "score": 0.84,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "Listening.",
+          "start": 45.424,
+          "end": 46.086,
+          "score": 0.747,
+          "speaker": "SPEAKER_00"
+        }
+      ],
+      "message": "Command here, Unit Phi. Negative visual confirmation of persons at this time. Smoke is limiting visibility near the house and access path. Listening."
+    }
+  ],
+  "segments": [
+    {
+      "start": 0.031,
+      "end": 4.497,
+      "text": "Unit Phi here, command. Report current fire conditions and spread direction. Listening.",
+      "speaker": "SPEAKER_01",
+      "words": [
+        {
+          "word": "Unit",
+          "start": 0.031,
+          "end": 0.351,
+          "score": 0.805,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "Phi",
+          "start": 0.391,
+          "end": 0.592,
+          "score": 0.634,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "here,",
+          "start": 0.652,
+          "end": 0.792,
+          "score": 0.418,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "command.",
+          "start": 0.812,
+          "end": 1.112,
+          "score": 0.959,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "Report",
+          "start": 1.573,
+          "end": 1.873,
+          "score": 0.968,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "current",
+          "start": 1.893,
+          "end": 2.134,
+          "score": 0.939,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "fire",
+          "start": 2.154,
+          "end": 2.374,
+          "score": 0.952,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "conditions",
+          "start": 2.394,
+          "end": 2.835,
+          "score": 0.821,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "and",
+          "start": 2.895,
+          "end": 2.955,
+          "score": 0.665,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "spread",
+          "start": 2.995,
+          "end": 3.195,
+          "score": 0.984,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "direction.",
+          "start": 3.215,
+          "end": 3.575,
+          "score": 0.877,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "Listening.",
+          "start": 4.176,
+          "end": 4.497,
+          "score": 0.88,
+          "speaker": "SPEAKER_01"
+        }
+      ]
+    },
+    {
+      "start": 4.897,
+      "end": 12.427,
+      "text": "Command here, Unit Phi. Active wildfire in the forested area, multiple trees involved, heavy smoke moving across the clearing. Listening.",
+      "speaker": "SPEAKER_00",
+      "words": [
+        {
+          "word": "Command",
+          "start": 4.897,
+          "end": 5.177,
+          "score": 0.872,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "here,",
+          "start": 5.218,
+          "end": 5.358,
+          "score": 0.886,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "Unit",
+          "start": 5.478,
+          "end": 5.698,
+          "score": 0.8,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "Phi.",
+          "start": 5.758,
+          "end": 6.079,
+          "score": 0.832,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "Active",
+          "start": 6.539,
+          "end": 6.759,
+          "score": 0.922,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "wildfire",
+          "start": 6.82,
+          "end": 7.36,
+          "score": 0.793,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "in",
+          "start": 7.4,
+          "end": 7.44,
+          "score": 1.0,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "the",
+          "start": 7.48,
+          "end": 7.54,
+          "score": 0.999,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "forested",
+          "start": 7.58,
+          "end": 7.981,
+          "score": 0.822,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "area,",
+          "start": 8.001,
+          "end": 8.422,
+          "score": 0.871,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "multiple",
+          "start": 8.582,
+          "end": 8.942,
+          "score": 0.873,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "trees",
+          "start": 8.962,
+          "end": 9.183,
+          "score": 0.625,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "involved,",
+          "start": 9.243,
+          "end": 9.663,
+          "score": 0.953,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "heavy",
+          "start": 9.903,
+          "end": 10.164,
+          "score": 0.666,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "smoke",
+          "start": 10.264,
+          "end": 10.504,
+          "score": 0.872,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "moving",
+          "start": 10.584,
+          "end": 10.865,
+          "score": 0.801,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "across",
+          "start": 10.945,
+          "end": 11.205,
+          "score": 0.864,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "the",
+          "start": 11.245,
+          "end": 11.305,
+          "score": 0.999,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "clearing.",
+          "start": 11.325,
+          "end": 11.666,
+          "score": 0.788,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "Listening.",
+          "start": 12.066,
+          "end": 12.427,
+          "score": 0.869,
+          "speaker": "SPEAKER_00"
+        }
+      ]
+    },
+    {
+      "start": 12.767,
+      "end": 17.153,
+      "text": "Unit Phi here, command. Confirm any exposures or access concerns near the fire front. Listening.",
+      "speaker": "SPEAKER_01",
+      "words": [
+        {
+          "word": "Unit",
+          "start": 12.767,
+          "end": 12.967,
+          "score": 0.774,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "Phi",
+          "start": 12.987,
+          "end": 13.147,
+          "score": 0.597,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "here,",
+          "start": 13.188,
+          "end": 13.328,
+          "score": 0.345,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "command.",
+          "start": 13.348,
+          "end": 13.628,
+          "score": 0.884,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "Confirm",
+          "start": 14.069,
+          "end": 14.409,
+          "score": 0.792,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "any",
+          "start": 14.429,
+          "end": 14.549,
+          "score": 0.902,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "exposures",
+          "start": 14.609,
+          "end": 15.09,
+          "score": 0.867,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "or",
+          "start": 15.15,
+          "end": 15.21,
+          "score": 0.764,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "access",
+          "start": 15.31,
+          "end": 15.571,
+          "score": 0.878,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "concerns",
+          "start": 15.611,
+          "end": 15.991,
+          "score": 0.866,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "near",
+          "start": 16.031,
+          "end": 16.151,
+          "score": 0.814,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "the",
+          "start": 16.171,
+          "end": 16.231,
+          "score": 0.664,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "fire",
+          "start": 16.271,
+          "end": 16.492,
+          "score": 0.768,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "front.",
+          "start": 16.512,
+          "end": 16.712,
+          "score": 0.972,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "Listening.",
+          "start": 16.832,
+          "end": 17.153,
+          "score": 0.875,
+          "speaker": "SPEAKER_01"
+        }
+      ]
+    },
+    {
+      "start": 17.513,
+      "end": 27.607,
+      "text": "Command here, Unit Phi. There appears to be a house beyond the tree line, but occupancy is not confirmed. Fire is moving in that direction through the trees. Listening.",
+      "speaker": "SPEAKER_00",
+      "words": [
+        {
+          "word": "Command",
+          "start": 17.513,
+          "end": 17.773,
+          "score": 0.919,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "here,",
+          "start": 17.813,
+          "end": 17.974,
+          "score": 0.826,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "Unit",
+          "start": 18.314,
+          "end": 18.534,
+          "score": 0.767,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "Phi.",
+          "start": 18.594,
+          "end": 18.915,
+          "score": 0.812,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "There",
+          "start": 18.955,
+          "end": 19.536,
+          "score": 0.958,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "appears",
+          "start": 19.576,
+          "end": 19.816,
+          "score": 0.976,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "to",
+          "start": 19.876,
+          "end": 19.936,
+          "score": 1.0,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "be",
+          "start": 19.976,
+          "end": 20.076,
+          "score": 0.834,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "a",
+          "start": 20.136,
+          "end": 20.156,
+          "score": 0.998,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "house",
+          "start": 20.196,
+          "end": 20.437,
+          "score": 0.95,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "beyond",
+          "start": 20.477,
+          "end": 20.777,
+          "score": 0.735,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "the",
+          "start": 20.817,
+          "end": 20.897,
+          "score": 0.626,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "tree",
+          "start": 20.957,
+          "end": 21.158,
+          "score": 0.696,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "line,",
+          "start": 21.198,
+          "end": 21.478,
+          "score": 0.943,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "but",
+          "start": 21.558,
+          "end": 21.698,
+          "score": 0.933,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "occupancy",
+          "start": 21.858,
+          "end": 22.399,
+          "score": 0.966,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "is",
+          "start": 22.419,
+          "end": 22.639,
+          "score": 0.653,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "not",
+          "start": 22.72,
+          "end": 22.92,
+          "score": 0.836,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "confirmed.",
+          "start": 23.0,
+          "end": 23.581,
+          "score": 0.872,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "Fire",
+          "start": 24.001,
+          "end": 24.302,
+          "score": 0.736,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "is",
+          "start": 24.362,
+          "end": 24.422,
+          "score": 0.749,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "moving",
+          "start": 24.502,
+          "end": 24.822,
+          "score": 0.741,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "in",
+          "start": 24.842,
+          "end": 25.002,
+          "score": 0.659,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "that",
+          "start": 25.042,
+          "end": 25.163,
+          "score": 0.874,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "direction",
+          "start": 25.223,
+          "end": 25.643,
+          "score": 0.711,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "through",
+          "start": 25.683,
+          "end": 25.924,
+          "score": 0.509,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "the",
+          "start": 25.964,
+          "end": 26.064,
+          "score": 0.777,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "trees.",
+          "start": 26.104,
+          "end": 27.085,
+          "score": 0.826,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "Listening.",
+          "start": 27.065,
+          "end": 27.607,
+          "score": 0.839,
+          "speaker": "SPEAKER_00"
+        }
+      ]
+    },
+    {
+      "start": 28.028,
+      "end": 35.813,
+      "text": "Unit Phi here, Command. Received. Prioritize exposure assessment from a safe position and confirm if any persons are visible near that house. Listening.",
+      "speaker": "SPEAKER_01",
+      "words": [
+        {
+          "word": "Unit",
+          "start": 28.028,
+          "end": 28.209,
+          "score": 0.64,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "Phi",
+          "start": 28.269,
+          "end": 28.47,
+          "score": 0.696,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "here,",
+          "start": 28.51,
+          "end": 28.65,
+          "score": 0.422,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "Command.",
+          "start": 28.67,
+          "end": 28.951,
+          "score": 0.902,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "Received.",
+          "start": 29.372,
+          "end": 29.814,
+          "score": 0.893,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "Prioritize",
+          "start": 30.075,
+          "end": 30.677,
+          "score": 0.78,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "exposure",
+          "start": 30.737,
+          "end": 31.138,
+          "score": 0.728,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "assessment",
+          "start": 31.158,
+          "end": 31.539,
+          "score": 0.893,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "from",
+          "start": 31.559,
+          "end": 31.66,
+          "score": 0.872,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "a",
+          "start": 31.72,
+          "end": 31.74,
+          "score": 0.999,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "safe",
+          "start": 31.8,
+          "end": 31.981,
+          "score": 0.88,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "position",
+          "start": 32.021,
+          "end": 32.402,
+          "score": 0.952,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "and",
+          "start": 32.864,
+          "end": 32.924,
+          "score": 0.913,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "confirm",
+          "start": 32.964,
+          "end": 33.305,
+          "score": 0.881,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "if",
+          "start": 33.345,
+          "end": 33.405,
+          "score": 0.978,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "any",
+          "start": 33.506,
+          "end": 33.626,
+          "score": 0.795,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "persons",
+          "start": 33.666,
+          "end": 33.967,
+          "score": 0.889,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "are",
+          "start": 34.007,
+          "end": 34.067,
+          "score": 0.903,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "visible",
+          "start": 34.108,
+          "end": 34.409,
+          "score": 0.78,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "near",
+          "start": 34.449,
+          "end": 34.549,
+          "score": 0.854,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "that",
+          "start": 34.589,
+          "end": 34.71,
+          "score": 0.872,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "house.",
+          "start": 34.75,
+          "end": 34.95,
+          "score": 0.855,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "Listening.",
+          "start": 35.452,
+          "end": 35.813,
+          "score": 0.783,
+          "speaker": "SPEAKER_01"
+        }
+      ]
+    },
+    {
+      "start": 36.515,
+      "end": 46.086,
+      "text": "Command here, Unit Phi. Negative visual confirmation of persons at this time. Smoke is limiting visibility near the house and access path. Listening.",
+      "speaker": "SPEAKER_00",
+      "words": [
+        {
+          "word": "Command",
+          "start": 36.515,
+          "end": 36.776,
+          "score": 0.944,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "here,",
+          "start": 36.816,
+          "end": 36.957,
+          "score": 0.897,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "Unit",
+          "start": 37.057,
+          "end": 37.278,
+          "score": 0.773,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "Phi.",
+          "start": 37.378,
+          "end": 37.719,
+          "score": 0.804,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "Negative",
+          "start": 38.12,
+          "end": 38.421,
+          "score": 0.901,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "visual",
+          "start": 38.462,
+          "end": 38.803,
+          "score": 0.798,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "confirmation",
+          "start": 38.863,
+          "end": 39.304,
+          "score": 0.848,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "of",
+          "start": 39.324,
+          "end": 39.364,
+          "score": 0.994,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "persons",
+          "start": 39.445,
+          "end": 39.826,
+          "score": 0.847,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "at",
+          "start": 39.906,
+          "end": 39.966,
+          "score": 0.942,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "this",
+          "start": 40.007,
+          "end": 40.167,
+          "score": 0.744,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "time.",
+          "start": 40.227,
+          "end": 40.548,
+          "score": 0.887,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "Smoke",
+          "start": 41.411,
+          "end": 41.592,
+          "score": 0.861,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "is",
+          "start": 41.652,
+          "end": 41.712,
+          "score": 0.722,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "limiting",
+          "start": 41.792,
+          "end": 42.093,
+          "score": 0.821,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "visibility",
+          "start": 42.153,
+          "end": 42.655,
+          "score": 0.845,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "near",
+          "start": 42.695,
+          "end": 42.816,
+          "score": 0.804,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "the",
+          "start": 42.856,
+          "end": 42.936,
+          "score": 0.996,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "house",
+          "start": 42.976,
+          "end": 43.217,
+          "score": 0.842,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "and",
+          "start": 43.317,
+          "end": 43.377,
+          "score": 0.877,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "access",
+          "start": 43.417,
+          "end": 43.819,
+          "score": 0.847,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "path.",
+          "start": 43.859,
+          "end": 44.16,
+          "score": 0.84,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "Listening.",
+          "start": 45.424,
+          "end": 46.086,
+          "score": 0.747,
+          "speaker": "SPEAKER_00"
+        }
+      ]
+    }
+  ],
+  "speaker_count": 2,
+  "analytics": {
+    "speaker_count": 2,
+    "people_mentioned_count": 0,
+    "civilians_mentioned_count": 0,
+    "firefighters_mentioned_count": 0,
+    "on_scene_responders_count": 0,
+    "civilians_at_safe_distance_mentioned": false,
+    "vehicles_mentioned_count": 0,
+    "emergency_vehicle_mentioned_count": 0
+  }
+}

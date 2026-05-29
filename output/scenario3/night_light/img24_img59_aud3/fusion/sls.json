@@ -1,0 +1,100 @@
+{
+  "has_fire": true,
+  "summary": "Two persons are visible near the fire, and two firefighters are mentioned on the radio, indicating an active emergency response.",
+  "counts_by_class": {
+    "person": 3,
+    "normal_vehicle": 0,
+    "emergency_vehicle": 0
+  },
+  "communications": {
+    "speaker_count": 2,
+    "key_communications": [
+      {
+        "text": "Rescue 2 here, command.",
+        "speaker": "SPEAKER_01"
+      },
+      {
+        "text": "Command here, rescue 2.",
+        "speaker": "SPEAKER_00"
+      }
+    ],
+    "service_types": [
+      "voice"
+    ],
+    "service_inference_basis": []
+  },
+  "objects": [
+    {
+      "class": "person",
+      "detection_confidence": "0.75",
+      "position": {
+        "x": "-67.99 m",
+        "y": "-127.35 m",
+        "z": "0.00 m"
+      },
+      "localization_confidence": {
+        "x": "0.59",
+        "y": "0.38",
+        "z": "1.00"
+      },
+      "distance_to_fire": "18.87 m",
+      "risk_level": "medium",
+      "throughput_need": "medium",
+      "inferred_role": "firefighter",
+      "role_inference_basis": {
+        "source": "inference",
+        "text": "rescue_2 on scene per radio (command is off-scene support); assigned to closest person near fire"
+      },
+      "role_confidence": 0.85,
+      "traffic_demand_mbps": 1.0
+    },
+    {
+      "class": "person",
+      "detection_confidence": "0.80",
+      "position": {
+        "x": "-72.20 m",
+        "y": "-138.84 m",
+        "z": "0.00 m"
+      },
+      "localization_confidence": {
+        "x": "0.31",
+        "y": "0.11",
+        "z": "1.00"
+      },
+      "distance_to_fire": "13.57 m",
+      "risk_level": "medium",
+      "throughput_need": "medium",
+      "inferred_role": "firefighter",
+      "role_inference_basis": {
+        "source": "inference",
+        "text": "rescue_2 on scene per radio (command is off-scene support); assigned to closest person near fire"
+      },
+      "role_confidence": 0.85,
+      "traffic_demand_mbps": 1.0
+    },
+    {
+      "class": "person",
+      "detection_confidence": "0.79",
+      "position": {
+        "x": "-74.29 m",
+        "y": "-134.38 m",
+        "z": "0.00 m"
+      },
+      "localization_confidence": {
+        "x": "0.34",
+        "y": "0.13",
+        "z": "1.00"
+      },
+      "distance_to_fire": "11.25 m",
+      "risk_level": "medium",
+      "throughput_need": "low",
+      "inferred_role": "unknown_person",
+      "role_inference_basis": {
+        "source": "inference",
+        "text": "visual_detection"
+      },
+      "role_confidence": null,
+      "traffic_demand_mbps": 0.3
+    }
+  ]
+}

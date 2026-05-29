@@ -1,0 +1,80 @@
+{
+  "has_fire": true,
+  "summary": "Fire is active, and command is coordinating exposure assessment and visual confirmation near a structure.",
+  "counts_by_class": {
+    "person": 2,
+    "normal_vehicle": 0,
+    "emergency_vehicle": 0
+  },
+  "communications": {
+    "speaker_count": 2,
+    "key_communications": [
+      {
+        "text": "Unit Phi here, command. Report current fire conditions and spread direction. Listening.",
+        "speaker": "SPEAKER_01"
+      },
+      {
+        "text": "Command here, Unit Phi. Active wildfire in the forested area, multiple trees involved, heavy smoke moving across the clearing. Listening.",
+        "speaker": "SPEAKER_00"
+      }
+    ],
+    "service_types": [
+      "image_transfer",
+      "voice"
+    ],
+    "service_inference_basis": [
+      {
+        "source": "transcript",
+        "text": "Command here, Unit Phi. Negative visual confirmation of persons at this time. Smoke is limiting visibility near the house and access path. Listening."
+      }
+    ]
+  },
+  "objects": [
+    {
+      "class": "person",
+      "detection_confidence": "0.80",
+      "position": {
+        "x": "-72.20 m",
+        "y": "-138.84 m",
+        "z": "0.00 m"
+      },
+      "localization_confidence": {
+        "x": "0.31",
+        "y": "0.11",
+        "z": "1.00"
+      },
+      "distance_to_fire": "13.57 m",
+      "risk_level": "medium",
+      "throughput_need": "low",
+      "inferred_role": "unknown_person",
+      "role_inference_basis": {
+        "source": "inference",
+        "text": "No persons were visually confirmed near the house."
+      },
+      "role_confidence": 0.5
+    },
+    {
+      "class": "person",
+      "detection_confidence": "0.79",
+      "position": {
+        "x": "-74.29 m",
+        "y": "-134.38 m",
+        "z": "0.00 m"
+      },
+      "localization_confidence": {
+        "x": "0.34",
+        "y": "0.13",
+        "z": "1.00"
+      },
+      "distance_to_fire": "11.25 m",
+      "risk_level": "medium",
+      "throughput_need": "medium",
+      "inferred_role": "firefighter",
+      "role_inference_basis": {
+        "source": "inference",
+        "text": "field radio unit on scene per radio (command is off-scene support); assigned to closest person near fire"
+      },
+      "role_confidence": 0.85
+    }
+  ]
+}

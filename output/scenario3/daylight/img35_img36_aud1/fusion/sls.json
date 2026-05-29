@@ -1,0 +1,112 @@
+{
+  "has_fire": true,
+  "summary": "Fire is active in the forested area, and units are coordinating exposure assessment near a structure.",
+  "counts_by_class": {
+    "person": 1,
+    "normal_vehicle": 1,
+    "emergency_vehicle": 2
+  },
+  "communications": {
+    "speaker_count": 2,
+    "key_communications": [
+      {
+        "text": "Unit Phi here, command. Report current fire conditions and spread direction. Listening.",
+        "speaker": "SPEAKER_01"
+      },
+      {
+        "text": "Command here, Unit Phi. Active wildfire in the forested area, multiple trees involved, heavy smoke moving across the clearing. Listening.",
+        "speaker": "SPEAKER_00"
+      }
+    ],
+    "service_types": [
+      "image_transfer",
+      "voice"
+    ],
+    "service_inference_basis": [
+      {
+        "source": "transcript",
+        "text": "Command here, Unit Phi. Negative visual confirmation of persons at this time. Smoke is limiting visibility near the house and access path. Listening."
+      }
+    ]
+  },
+  "objects": [
+    {
+      "class": "person",
+      "detection_confidence": "0.79",
+      "position": {
+        "x": "-186.97 m",
+        "y": "-130.43 m",
+        "z": "0.00 m"
+      },
+      "localization_confidence": {
+        "x": "0.21",
+        "y": "0.29",
+        "z": "1.00"
+      },
+      "distance_to_fire": "12.62 m",
+      "risk_level": "medium",
+      "throughput_need": "medium",
+      "inferred_role": "firefighter",
+      "role_inference_basis": {
+        "source": "inference",
+        "text": "field radio unit on scene per radio (command is off-scene support); assigned to closest person near fire"
+      },
+      "role_confidence": 0.85,
+      "traffic_demand_mbps": 1.0
+    },
+    {
+      "class": "emergency_vehicle",
+      "detection_confidence": "0.66",
+      "position": {
+        "x": "-107.71 m",
+        "y": "-108.29 m",
+        "z": "0.00 m"
+      },
+      "localization_confidence": {
+        "x": "0.22",
+        "y": "0.11",
+        "z": "1.00"
+      },
+      "distance_to_fire": "9.48 m",
+      "risk_level": "medium",
+      "throughput_need": "medium",
+      "traffic_demand_mbps": 2.0
+    },
+    {
+      "class": "normal_vehicle",
+      "detection_confidence": "0.56",
+      "position": {
+        "x": "-178.98 m",
+        "y": "-113.67 m",
+        "z": "0.00 m"
+      },
+      "localization_confidence": {
+        "x": "0.08",
+        "y": "0.09",
+        "z": "1.00"
+      },
+      "distance_to_fire": "23.90 m",
+      "risk_level": "medium",
+      "throughput_need": "low",
+      "traffic_demand_mbps": 0.3
+    },
+    {
+      "class": "emergency_vehicle",
+      "detection_confidence": "0.46",
+      "position": {
+        "x": "-102.32 m",
+        "y": "-112.37 m",
+        "z": "0.00 m"
+      },
+      "localization_confidence": {
+        "x": "0.20",
+        "y": "0.10",
+        "z": "1.00"
+      },
+      "distance_to_fire": "13.03 m",
+      "risk_level": "medium",
+      "throughput_need": "medium",
+      "traffic_demand_mbps": 2.0
+    }
+  ]
+}

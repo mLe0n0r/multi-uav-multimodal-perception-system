@@ -1,0 +1,57 @@
+{
+  "has_fire": true,
+  "summary": "Fire is active in a forested area, and command is requesting exposure assessment near a structure.",
+  "counts_by_class": {
+    "person": 1,
+    "normal_vehicle": 0,
+    "emergency_vehicle": 0
+  },
+  "communications": {
+    "speaker_count": 2,
+    "key_communications": [
+      {
+        "text": "Unit Phi here, command. Report current fire conditions and spread direction. Listening.",
+        "speaker": "SPEAKER_01"
+      },
+      {
+        "text": "Command here, Unit Phi. Active wildfire in the forested area, multiple trees involved, heavy smoke moving across the clearing. Listening.",
+        "speaker": "SPEAKER_00"
+      }
+    ],
+    "service_types": [
+      "image_transfer",
+      "voice"
+    ],
+    "service_inference_basis": [
+      {
+        "source": "transcript",
+        "text": "Command here, Unit Phi. Negative visual confirmation of persons at this time. Smoke is limiting visibility near the house and access path. Listening."
+      }
+    ]
+  },
+  "objects": [
+    {
+      "class": "person",
+      "detection_confidence": "0.79",
+      "position": {
+        "x": "-89.30 m",
+        "y": "-135.91 m",
+        "z": "0.00 m"
+      },
+      "localization_confidence": {
+        "x": "0.17",
+        "y": "0.06",
+        "z": "1.00"
+      },
+      "distance_to_fire": "19.66 m",
+      "risk_level": "medium",
+      "throughput_need": "medium",
+      "inferred_role": "firefighter",
+      "role_inference_basis": {
+        "source": "inference",
+        "text": "field radio unit on scene per radio (command is off-scene support); assigned to closest person near fire"
+      },
+      "role_confidence": 0.85
+    }
+  ]
+}

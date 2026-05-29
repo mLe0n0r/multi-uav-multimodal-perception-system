@@ -1,0 +1,25 @@
+{
+  "has_fire": true,
+  "image_size": {
+    "width": 2986,
+    "height": 1258
+  },
+  "camera": {
+    "position": {
+      "x": "-112.44 m",
+      "y": "-134.71 m",
+      "z": "36.28 m"
+    },
+    "orientation": {
+      "pitch": "-89.72 deg",
+      "yaw": "132.43 deg",
+      "roll": "0.00 deg"
+    }
+  },
+  "counts_by_class": {
+    "person": 0,
+    "normal_vehicle": 0,
+    "emergency_vehicle": 0
+  },
+  "objects": []
+}
