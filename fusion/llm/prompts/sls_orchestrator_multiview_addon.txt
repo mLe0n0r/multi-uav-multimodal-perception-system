@@ -1,0 +1,21 @@
+
+## Multi-view (FUSION_CONTEXT)
+
+Read `same_incident` in FUSION_CONTEXT:
+
+### `same_incident: true` (fusion)
+Views cover the same ground scene. Cross-view matching is already applied.
+
+- Use **`fused_objects`** only: one row in `objects[]` per fused entity (`id` 0..N-1).
+- **Do not** output `view_id`, `also_seen_in`, or separate rows per camera.
+- `scene_by_view` is context only (fire flag and per-view counts); do not duplicate its detections in `objects[]`.
+- `counts_by_class` = fused entity counts (match `fused_objects` length per class), not raw per-view totals.
+- Set top-level `same_incident: true` in your JSON response.
+- Apply the same visual+audio reasoning as mono (roles, communications, audio_only, risk).
+
+### No `same_incident: true` (independent)
+Different scenes: `visuals` holds **unaltered** perception JSON per view_id; `matches` is empty.
+
+- Treat each view as its **own** scene. Do **not** fuse across views.
+- One `objects[]` row per detection; every row must include `view_id`.
+- `counts_by_class` sums detections from **all** views.
