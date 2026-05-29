@@ -1,0 +1,14 @@
+{
+  "scene": {
+    "location": "A rural/forested area bordering a residential property",
+    "incident_type": "Wildfire/Forest fire",
+    "environment": "Mountainous terrain in the distance, dense evergreen forest, and a grassy clearing containing a two-story house",
+    "key_elements": "Multiple trees engulfed in flames, heavy gray smoke covering the area, fire truck deployed in a field, active fire suppression"
+  },
+  "counts": {
+    "civilians": 2,
+    "firefighters": 2,
+    "emergency vehicle": 1
+  },
+  "description": "A serious wildfire is spreading through a dense evergreen forest, threatening a nearby two-story residential home. Multiple trees are actively burning, producing a vast wall of thick, gray smoke that drifts across the landscape. To combat the blaze, one emergency vehicle—a fire truck—has been positioned in the open field adjacent to the tree line. Two firefighters are on the ground, with one operating a high-pressure hose to douse the burning trees. Near the house, two civilians are present, appearing to observe the encroaching fire from the porch and walkway. No civilian vehicles are visible in the immediate vicinity."
+}

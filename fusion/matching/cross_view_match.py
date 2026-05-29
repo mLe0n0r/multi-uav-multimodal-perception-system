@@ -10,7 +10,7 @@ Usage:
 
 With raw assets (same paths as the notebook):
   python fusion/matching/cross_view_match.py --run-dir ... \\
-    --scenario-folder scenario1D --img-root perception/vision/data/results/annotated_imgs
+    --scenario-folder scenario1D --img-root perception/vision/results/annotated_imgs
 """
 
 from __future__ import annotations
@@ -28,7 +28,8 @@ import numpy as np
 
 _MATCHING_DIR = Path(__file__).resolve().parent
 _REPO_ROOT = _MATCHING_DIR.parents[1]
-_VISION_DATA = _REPO_ROOT / "perception" / "vision" / "data"
+_VISION_INPUT = _REPO_ROOT / "perception" / "vision" / "input"
+_VISION_RESULTS = _REPO_ROOT / "perception" / "vision" / "results"
 _FUSION_ROOT = _MATCHING_DIR.parent
 for path in (_FUSION_ROOT, _MATCHING_DIR):
     if str(path) not in sys.path:
@@ -169,11 +170,16 @@ def resolve_notebook_assets(
     view_id: str,
     *,
     img_root: Path,
-    label_dir: Path,
     pose_dir: Path,
+    label_dir: Optional[Path] = None,
     scenario_folder: Optional[str] = None,
+    require_label: bool = False,
 ) -> Optional[Dict[str, Path]]:
-    """Resolve img/label/telemetry paths like objectMatching.ipynb usage cell."""
+    """Resolve frame assets (objectMatching.ipynb layout).
+
+    Batch vision needs only image + telemetry (require_label=False).
+    Notebook / raw cross-view matching needs detection labels when require_label=True.
+    """
     frame_id = view_id_to_frame_id(view_id)
     folder = scenario_folder or ""
 
@@ -181,26 +187,30 @@ def resolve_notebook_assets(
         img_root / folder / f"{frame_id}.png",
         img_root / f"{frame_id}.png",
     ]
-    label_candidates = [
-        label_dir / folder / f"{frame_id}.txt",
-        label_dir / f"{frame_id}.txt",
-    ]
     telemetry_candidates = [
         pose_dir / folder / f"{frame_id}.txt",
         pose_dir / f"{frame_id}.txt",
     ]
 
     img_path = next((p for p in img_candidates if p.is_file()), None)
-    label_path = next((p for p in label_candidates if p.is_file()), None)
     telemetry_path = next((p for p in telemetry_candidates if p.is_file()), None)
+    if not img_path or not telemetry_path:
+        return None
 
-    if img_path and label_path and telemetry_path:
-        return {
-            "img": img_path,
-            "label": label_path,
-            "telemetry": telemetry_path,
-        }
-    return None
+    out: Dict[str, Path] = {"img": img_path, "telemetry": telemetry_path}
+
+    if label_dir is not None:
+        label_candidates = [
+            label_dir / folder / f"{frame_id}.txt",
+            label_dir / f"{frame_id}.txt",
+        ]
+        label_path = next((p for p in label_candidates if p.is_file()), None)
+        if label_path:
+            out["label"] = label_path
+
+    if require_label and "label" not in out:
+        return None
+    return out
 
 
 def _tri_to_position(tri: Any) -> Optional[Dict[str, str]]:
@@ -320,6 +330,7 @@ def run_cross_view_match(
                     label_dir=label_dir,
                     pose_dir=pose_dir,
                     scenario_folder=scenario_folder,
+                    require_label=True,
                 )
 
         ref_assets = assets_by_view.get(ref_id) if img_root else None
@@ -387,19 +398,19 @@ def main() -> None:
     parser.add_argument(
         "--img-root",
         type=Path,
-        default=_VISION_DATA / "results" / "annotated_imgs",
-        help="Notebook img_root_dir (PNG per frame)",
+        default=_VISION_RESULTS / "annotated_imgs",
+        help="Notebook img_root_dir (PNG per frame, often under scenario subfolders)",
     )
     parser.add_argument(
         "--label-dir",
         type=Path,
-        default=_VISION_DATA / "results" / "labels",
-        help="Notebook label_dir (YOLO txt)",
+        default=_VISION_RESULTS / "labels",
+        help="Notebook detection labels (default: perception/vision/results/labels)",
     )
     parser.add_argument(
         "--pose-dir",
         type=Path,
-        default=_VISION_DATA / "telemetryData",
+        default=_VISION_INPUT / "telemetry",
         help="Notebook pose_dir (telemetry txt)",
     )
     parser.add_argument(

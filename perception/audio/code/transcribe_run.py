@@ -2,7 +2,7 @@
 WhisperX (terminal) + análise do notebook audioTranscription.ipynb → transcript.json
 
   python perception/audio/code/transcribe_run.py \\
-    --audio perception/audio/data/generated_audios/scenario1_audio1.wav \\
+    --audio perception/audio/input/scenario1_audio1.wav \\
     --run-dir output/scenario1/img0_img12_aud1
 """
 
@@ -21,7 +21,7 @@ from typing import Any, Dict, List, Optional, Pattern, Set
 _CODE_DIR = Path(__file__).resolve().parent
 _AUDIO_ROOT = _CODE_DIR.parent
 _REPO_ROOT = _CODE_DIR.parents[2]
-_TRANSCRIPTIONS_DIR = _AUDIO_ROOT / "data" / "transcriptions"
+_TRANSCRIPTIONS_DIR = _AUDIO_ROOT / "transcriptions"
 
 if str(_REPO_ROOT) not in sys.path:
     sys.path.insert(0, str(_REPO_ROOT))
@@ -486,7 +486,7 @@ def main() -> None:
     parser.add_argument("--audio", required=True, help="WAV/MP3 de entrada")
     parser.add_argument("--run-dir", help="Pasta do run")
     parser.add_argument("--output", help="Caminho de saída alternativo")
-    parser.add_argument("--skip-whisperx", action="store_true", help="Usar JSON em cache")
+    parser.add_argument("--skip-whisperx", action="store_true", help="Usar JSON em transcriptions/")
     parser.add_argument("--model", default="medium")
     parser.add_argument("--language", default="en")
     parser.add_argument("--min-speakers", type=int, default=2)
@@ -510,7 +510,7 @@ def main() -> None:
     if args.skip_whisperx:
         if not whisperx_json.is_file():
             raise FileNotFoundError(f"JSON em falta: {whisperx_json}")
-        print(f"=== WhisperX (cache) ===\n{whisperx_json}")
+        print(f"=== WhisperX (transcriptions/) ===\n{whisperx_json}")
     else:
         token = load_hf_token()
         if not token:

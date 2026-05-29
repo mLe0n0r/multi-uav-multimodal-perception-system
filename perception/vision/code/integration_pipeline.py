@@ -19,8 +19,8 @@ from ultralytics import YOLO
 DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
 
 VISION_DIR = Path(__file__).resolve().parent.parent
-DATA_DIR = VISION_DIR / "data"
-WEIGHTS_DIR = DATA_DIR / "weights"
+INPUT_DIR = VISION_DIR / "input"
+WEIGHTS_DIR = VISION_DIR / "weights"
 FIRE_DETECTION_DIR = VISION_DIR / "fire-detection"
 
 CLASS_NAME_TO_ID: Dict[str, int] = {
@@ -48,7 +48,7 @@ def load_yolo_model():
     if not weights.exists():
         raise FileNotFoundError(
             f"YOLO weights not found: {weights}. "
-            "Place best.pt in perception/vision/data/weights/ (not version-controlled)."
+            "Place best.pt in perception/vision/weights/ (not version-controlled)."
         )
     return YOLO(str(weights))
 

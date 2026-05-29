@@ -1,0 +1,15 @@
+{
+  "scene": {
+    "location": "Urban street corner with a large brick commercial building",
+    "incident_type": "Structure fire",
+    "environment": "Paved street with marked parking spaces, brick sidewalks, and nearby trees",
+    "key_elements": "Building with active flames and heavy black smoke from windows and roof, deployed fire truck, active hose lines"
+  },
+  "counts": {
+    "civilians": 7,
+    "firefighters": 2,
+    "vehicle": 3,
+    "emergency vehicle": 1
+  },
+  "description": "Significant structure fire at a large brick building situated on a street corner. Flames and thick black smoke are visibly billowing from multiple upper-story windows and the roof. Two firefighters are actively engaged in combatting the blaze, directing high-pressure streams of water from positions close to the building. One emergency vehicle, a fire truck, is positioned near the intersection to supply water to the hoses. Several civilian vehicles are parked along the street adjacent to the building. A group of seven civilians has gathered at a safe distance from the fire, observing the ongoing emergency operations."
+}

@@ -1,4 +1,4 @@
-> **Integration with this repository:** Inference weights (`yolov5s.pt`) are located at `../data/weights/yolov5s.pt`. Fire-detection labels consumed by the vision notebooks are stored in `../data/fire_labels/`. Training artefacts (`runs/`, `venv/`, `examples/`) are excluded from version control.
+> **Integration with this repository:** Inference weights (`yolov5s.pt`) are located at `../weights/yolov5s.pt`. Fire-detection labels consumed by the vision notebooks are stored in `../input/fire_labels/`. Training artefacts (`runs/`, `venv/`, `examples/`) are excluded from version control.
 
 ## :fire: Fire Detection
 

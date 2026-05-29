@@ -1,0 +1,13 @@
+{
+  "scene": {
+    "location": "Two-lane highway passing through a wooded area",
+    "incident_type": "Traffic congestion and nearby brush fire",
+    "environment": "Dense deciduous forest on both sides of the road, fire active in the tree line",
+    "key_elements": "Gridlocked traffic, overturned vehicle, fire encroaching on the roadway, civilians outside of their cars"
+  },
+  "counts": {
+    "civilians": 8,
+    "vehicle": 20
+  },
+  "description": "Highway heavily congested with traffic as a brush fire burns in the adjacent woods. The road is packed with a total of 20 vehicles, including various sedans, pickup trucks, and a box truck, all stalled due to the hazard ahead. At the front of the queue, one vehicle appears to have overturned or crashed near the guardrail. Eight civilians have exited their vehicles and are standing on the asphalt, likely assessing the danger or the cause of the blockage. Active flames are visible in the grass and trees immediately next to the highway's shoulder, though no emergency vehicles have arrived on the scene yet."
+}

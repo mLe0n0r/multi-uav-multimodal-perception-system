@@ -8,8 +8,8 @@ venv/
 # Secrets
 .env
 
-# Large weights (place manually in perception/vision/data/weights/)
-perception/vision/data/weights/best.pt
+# Large weights (place manually in perception/vision/weights/)
+perception/vision/weights/best.pt
 
 # Fire-detection project (keep out of git if generated locally)
 perception/vision/fire-detection/runs/
@@ -20,9 +20,8 @@ perception/vision/fire-detection/examples/
 
 # Audio (local / generated — create folders only when needed)
 perception/audio/.env
-perception/audio/data/temp_audio/
-perception/audio/data/models/
-perception/audio/data/real_audio/
+perception/audio/data_preparation/temp_audio/
+perception/audio/models/
 
 # IDE
 .idea/

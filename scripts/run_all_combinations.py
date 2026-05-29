@@ -34,12 +34,11 @@ if str(_REPO_ROOT) not in sys.path:
 from fusion.matching.cross_view_match import resolve_notebook_assets, view_id_to_frame_id
 from fusion.run_layout import build_run_id, fusion_dir, perception_dir, run_dir_path, sls_path
 
-DATASETS = _REPO_ROOT / "datasets"
-IMG_ROOT = DATASETS / "images"
-LABEL_DIR = DATASETS / "labels"
-POSE_DIR = _REPO_ROOT / "perception" / "vision" / "data" / "telemetryData"
-AUDIO_DIR = _REPO_ROOT / "perception" / "audio" / "data" / "generated_audios"
-TRANSCRIPTIONS_DIR = _REPO_ROOT / "perception" / "audio" / "data" / "transcriptions"
+VISION_INPUT = _REPO_ROOT / "perception" / "vision" / "input"
+IMG_ROOT = VISION_INPUT / "images"
+POSE_DIR = VISION_INPUT / "telemetry"
+AUDIO_DIR = _REPO_ROOT / "perception" / "audio" / "input"
+TRANSCRIPTIONS_DIR = _REPO_ROOT / "perception" / "audio" / "transcriptions"
 VISION_CACHE = _REPO_ROOT / "output" / ".cache" / "vision"
 
 INTEGRATION = _REPO_ROOT / "perception" / "vision" / "code" / "integration_pipeline.py"
@@ -128,15 +127,12 @@ def resolve_assets(
     image_num: int,
     *,
     img_root: Path,
-    label_dir: Path,
     pose_dir: Path,
 ) -> Optional[dict]:
-    """PNG/labels in datasets/ (flat 00000.png); telemetry in perception/vision/data."""
-    view_id = img_view_id(image_num)
+    """Frame PNG and telemetry under perception/vision/input/ (batch vision inputs)."""
     return resolve_notebook_assets(
-        view_id,
+        img_view_id(image_num),
         img_root=img_root,
-        label_dir=label_dir,
         pose_dir=pose_dir,
         scenario_folder="",
     )
@@ -207,7 +203,6 @@ def ensure_vision_json(
     dest: Path,
     *,
     img_root: Path,
-    label_dir: Path,
     pose_dir: Path,
     dry_run: bool,
     force_vision: bool,
@@ -219,9 +214,7 @@ def ensure_vision_json(
             shutil.copy2(cache, dest)
         return True
 
-    assets = resolve_assets(
-        image_num, img_root=img_root, label_dir=label_dir, pose_dir=pose_dir
-    )
+    assets = resolve_assets(image_num, img_root=img_root, pose_dir=pose_dir)
     if assets is None:
         print(f"  [skip vision] missing assets for img{image_num} under {img_root}")
         return False
@@ -258,7 +251,6 @@ def execute_plan(
     *,
     output_base: Path,
     img_root: Path,
-    label_dir: Path,
     pose_dir: Path,
     dry_run: bool,
     skip_existing: bool,
@@ -291,7 +283,6 @@ def execute_plan(
                     n,
                     dest,
                     img_root=img_root,
-                    label_dir=label_dir,
                     pose_dir=pose_dir,
                     dry_run=dry_run,
                     force_vision=force_vision,
@@ -305,7 +296,6 @@ def execute_plan(
                 n,
                 dest,
                 img_root=img_root,
-                label_dir=label_dir,
                 pose_dir=pose_dir,
                 dry_run=dry_run,
                 force_vision=force_vision,
@@ -392,19 +382,13 @@ def main() -> None:
         "--img-root",
         type=Path,
         default=IMG_ROOT,
-        help="Frame PNGs (default: datasets/images)",
-    )
-    parser.add_argument(
-        "--label-dir",
-        type=Path,
-        default=LABEL_DIR,
-        help="YOLO labels (default: datasets/labels)",
+        help="Frame PNGs (default: perception/vision/input/images)",
     )
     parser.add_argument(
         "--pose-dir",
         type=Path,
         default=POSE_DIR,
-        help="Telemetry txt (default: perception/vision/data/telemetryData)",
+        help="Telemetry txt (default: perception/vision/input/telemetry)",
     )
     parser.add_argument("--dry-run", action="store_true", help="List runs only")
     parser.add_argument(
@@ -497,7 +481,6 @@ def main() -> None:
             plan,
             output_base=args.output_base,
             img_root=args.img_root,
-            label_dir=args.label_dir,
             pose_dir=args.pose_dir,
             dry_run=args.dry_run,
             skip_existing=args.skip_existing,

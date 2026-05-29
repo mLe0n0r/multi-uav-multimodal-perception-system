@@ -1,0 +1,63 @@
+[
+  {
+    "speaker": "Command",
+    "message": "Engine 1 here Command. Report conditions at the structure entrance. Listening",
+    "topic": "structure_access_assessment"
+  },
+  {
+    "speaker": "Engine 1",
+    "message": "Command here Engine 1. Heavy smoke pushing from upper windows. Visible flames near the roof line. Access near the entrance partially blocked by debris. Finished",
+    "topic": "structure_access_assessment"
+  },
+
+  {
+    "speaker": "Command",
+    "message": "Rescue 2 here Command. Confirm civilian evacuation status near the sidewalk area. Listening",
+    "topic": "civilian_evacuation"
+  },
+  {
+    "speaker": "Rescue 2",
+    "message": "Command here Rescue 2. Seven civilians accounted for near the safe perimeter. One civilian reporting smoke inhalation symptoms. Listening",
+    "topic": "civilian_evacuation"
+  },
+
+  {
+    "speaker": "Engine 1",
+    "message": "Command here Engine 1. Fire extension increasing beneath the roof structure. Interior visibility near zero. Listening",
+    "topic": "fire_extension"
+  },
+
+  {
+    "speaker": "Command",
+    "message": "Engine 1 here Command. Confirm if suppression stream is reaching the upper fire area. Listening",
+    "topic": "suppression_effectiveness"
+  },
+  {
+    "speaker": "Engine 1",
+    "message": "Command here Engine 1. Negative. Water stream losing effectiveness due to heat conditions and elevation angle. Listening",
+    "topic": "suppression_effectiveness"
+  },
+
+  {
+    "speaker": "Command",
+    "message": "Engine 1 here Command. Reposition attack line closer to the parked vehicles side and continue exposure protection. Listening",
+    "topic": "tactical_repositioning"
+  },
+  {
+    "speaker": "Engine 1",
+    "message": "Command here Engine 1. Affirmative. Repositioning hose team now. Three civilian vehicles currently exposed to heat. Listening",
+    "topic": "tactical_repositioning"
+  },
+
+  {
+    "speaker": "Command",
+    "message": "Engine 1 here Command. Confirm if there are occupants inside the vehicles. Listening",
+    "topic": "vehicle_occupancy_assessment"
+  },
+  {
+    "speaker": "Engine 1",
+    "message": "Command here Engine 1. Affirmative. Possible occupants observed inside the vehicle closest to the fire area. Finished",
+    "topic": "vehicle_occupancy_assessment"
+  }
+]
+

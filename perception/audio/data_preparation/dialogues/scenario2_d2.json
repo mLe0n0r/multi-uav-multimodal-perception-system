@@ -1,0 +1,38 @@
+[
+{
+"speaker": "Alpha",
+"message": "Beta here Alpha. Fire is extending through the upper windows and roof line, smoke pushing across the street corner. Listening"
+},
+{
+"speaker": "Beta",
+"message": "Alpha here Beta. Received, visibility is dropping near the building corner and the hose-line corridor. Listening"
+},
+{
+"speaker": "Beta",
+"message": "Alpha here Beta. I have visual on seven civilians near the sidewalk and tree line, holding at safe distance. Listening"
+},
+{
+"speaker": "Alpha",
+"message": "Beta here Alpha. Received, keep that group away from the parking area and clear of the hose line. Listening"
+},
+{
+"speaker": "Alpha",
+"message": "Beta here Alpha. Three civilian vehicles remain exposed near the structure, heat is increasing along the parking area. Listening"
+},
+{
+"speaker": "Beta",
+"message": "Alpha here Beta. Received, smoke is drifting between the parked vehicles and the civilian group. Listening"
+},
+{
+"speaker": "Alpha",
+"message": "Beta here Alpha. Voice link is breaking near the smoke column, short delay on my last transmission. Listening"
+},
+{
+"speaker": "Beta",
+"message": "Alpha here Beta. Received, signal is stronger near the sidewalk but degraded near the tree line and building corner. Finished."
+},
+{
+"speaker": "Beta",
+"message": "Alpha here Beta. Civilian group remains stationary near the sidewalk, no visible injuries from my position. Finished"
+}
+]

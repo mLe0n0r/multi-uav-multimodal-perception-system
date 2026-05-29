@@ -23,13 +23,15 @@ from fusion.run_layout import (
 )
 from scripts.run_all_combinations import (
     IMG_ROOT,
-    LABEL_DIR,
     POSE_DIR,
     SCENARIOS,
     img_view_id,
     iter_plans,
     resolve_assets,
 )
+
+VISION_RESULTS = _REPO_ROOT / "perception" / "vision" / "results"
+DETECTION_LABEL_DIR = VISION_RESULTS / "labels"
 
 def rel(path: Path) -> str:
     return str(path.relative_to(_REPO_ROOT)).replace("\\", "/")
@@ -73,20 +75,20 @@ def main() -> None:
 
         for idx, n in enumerate(plan.image_nums[:2]):
             vid = img_view_id(n)
-            assets = resolve_assets(
-                n, img_root=IMG_ROOT, label_dir=LABEL_DIR, pose_dir=POSE_DIR
-            )
+            assets = resolve_assets(n, img_root=IMG_ROOT, pose_dir=POSE_DIR)
+            frame_id = f"{n:05d}"
+            det_label = DETECTION_LABEL_DIR / f"{frame_id}.txt"
             prefix = f"view{idx + 1}_"
             row[prefix + "view_id"] = vid
             row[prefix + "image_num"] = n
-            row[prefix + "frame_id"] = f"{n:05d}"
+            row[prefix + "frame_id"] = frame_id
             if assets:
                 row[prefix + "image_path"] = rel(assets["img"])
-                row[prefix + "label_path"] = rel(assets["label"])
                 row[prefix + "telemetry_path"] = rel(assets["telemetry"])
-                row[prefix + "gt_assets_ok"] = True
+                row[prefix + "vision_inputs_ok"] = True
             else:
-                row[prefix + "gt_assets_ok"] = False
+                row[prefix + "vision_inputs_ok"] = False
+            row[prefix + "label_path"] = rel(det_label) if det_label.is_file() else ""
 
             if plan.multi:
                 vp = visual_multi_path(run_dir, vid)
@@ -125,7 +127,7 @@ def main() -> None:
             "label_path",
             "telemetry_path",
             "visual_pred_path",
-            "gt_assets_ok",
+            "vision_inputs_ok",
         ):
             view_cols.append(f"view{i}_{c}")
 

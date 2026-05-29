@@ -1,0 +1,38 @@
+[
+{
+"speaker": "Command",
+"message": "Rescue 2 here Command. Give an initial triage update and report whether the highway remains usable for incoming units. Listening"
+},
+{
+"speaker": "Rescue 2",
+"message": "Command here Rescue 2. Highway is not passable beyond the pileup; vehicles are scattered across both lanes with debris and ash over the roadway. Listening"
+},
+{
+"speaker": "Command",
+"message": "Rescue 2 here Command. Confirm number of casualties currently under care and whether any others are visible near the vehicles. Listening"
+},
+{
+"speaker": "Rescue 2",
+"message": "Command here Rescue 2. Two people are being treated at the fire truck; no other visible casualties confirmed near the vehicle cluster at this time. Listening"
+},
+{
+"speaker": "Command",
+"message": "Rescue 2 here Command. Report the scale of the pileup and any immediate hazards before further search. Listening"
+},
+{
+"speaker": "Rescue 2",
+"message": "Command here Rescue 2. It is a major pileup, roughly fifteen or more vehicles from what we can see, several burned out and unstable. Listening"
+},
+{
+"speaker": "Command",
+"message": "Rescue 2 here Command. Confirm if there is active fire, heavy smoke, or heat showing from the vehicles. Listening"
+},
+{
+"speaker": "Rescue 2",
+"message": "Command here Rescue 2. Negative active flame, only light smoke from some vehicle shells; burned forest edge remains close to the roadway. Listening"
+},
+{
+"speaker": "Command",
+"message": "Rescue 2 here Command. Keep treatment area protected and continue search only along the safe edge of the pileup. Listening"
+}
+]
