@@ -1,0 +1,501 @@
+{
+  "has_fire": false,
+  "summary": "",
+  "counts_by_class": {
+    "person": 1,
+    "normal_vehicle": 27,
+    "emergency_vehicle": 0
+  },
+  "communications": {
+    "speaker_count": 2,
+    "service_types": [
+      "voice"
+    ],
+    "key_communications": [
+      {
+        "text": "Unit Phi here command. Report highway access and immediate hazards at the pileup. Listening.",
+        "speaker": "SPEAKER_01"
+      },
+      {
+        "text": "Command here. Unit Phi. Both lanes appear obstructed by a large pileup, more than a dozen vehicles involved, with burned out cars and ash across the roadway. Listening.",
+        "speaker": "SPEAKER_00"
+      }
+    ],
+    "service_inference_basis": []
+  },
+  "objects": [
+    {
+      "class": "normal_vehicle",
+      "detection_confidence": "0.92",
+      "position": {
+        "x": "-92.22 m",
+        "y": "85.44 m",
+        "z": "0.00 m"
+      },
+      "localization_confidence": {
+        "x": "0.15",
+        "y": "0.12",
+        "z": "1.00"
+      },
+      "risk_level": "medium",
+      "throughput_need": "low",
+      "traffic_demand_mbps": 0.3
+    },
+    {
+      "class": "normal_vehicle",
+      "detection_confidence": "0.91",
+      "position": {
+        "x": "-95.42 m",
+        "y": "142.86 m",
+        "z": "0.00 m"
+      },
+      "localization_confidence": {
+        "x": "0.17",
+        "y": "0.09",
+        "z": "1.00"
+      },
+      "risk_level": "medium",
+      "throughput_need": "low",
+      "traffic_demand_mbps": 0.3
+    },
+    {
+      "class": "normal_vehicle",
+      "detection_confidence": "0.90",
+      "position": {
+        "x": "-93.12 m",
+        "y": "81.36 m",
+        "z": "0.00 m"
+      },
+      "localization_confidence": {
+        "x": "0.19",
+        "y": "0.12",
+        "z": "1.00"
+      },
+      "risk_level": "medium",
+      "throughput_need": "low",
+      "traffic_demand_mbps": 0.3
+    },
+    {
+      "class": "normal_vehicle",
+      "detection_confidence": "0.91",
+      "position": {
+        "x": "-95.52 m",
+        "y": "137.63 m",
+        "z": "0.00 m"
+      },
+      "localization_confidence": {
+        "x": "0.12",
+        "y": "0.07",
+        "z": "1.00"
+      },
+      "risk_level": "medium",
+      "throughput_need": "low",
+      "traffic_demand_mbps": 0.3
+    },
+    {
+      "class": "normal_vehicle",
+      "detection_confidence": "0.90",
+      "position": {
+        "x": "-96.17 m",
+        "y": "80.87 m",
+        "z": "0.00 m"
+      },
+      "localization_confidence": {
+        "x": "0.16",
+        "y": "0.15",
+        "z": "1.00"
+      },
+      "risk_level": "medium",
+      "throughput_need": "low",
+      "traffic_demand_mbps": 0.3
+    },
+    {
+      "class": "normal_vehicle",
+      "detection_confidence": "0.88",
+      "position": {
+        "x": "-99.36 m",
+        "y": "124.29 m",
+        "z": "0.00 m"
+      },
+      "localization_confidence": {
+        "x": "0.12",
+        "y": "0.04",
+        "z": "1.00"
+      },
+      "risk_level": "medium",
+      "throughput_need": "low",
+      "traffic_demand_mbps": 0.3
+    },
+    {
+      "class": "normal_vehicle",
+      "detection_confidence": "0.85",
+      "position": {
+        "x": "-95.69 m",
+        "y": "89.86 m",
+        "z": "0.00 m"
+      },
+      "localization_confidence": {
+        "x": "0.19",
+        "y": "0.09",
+        "z": "1.00"
+      },
+      "risk_level": "medium",
+      "throughput_need": "low",
+      "traffic_demand_mbps": 0.3
+    },
+    {
+      "class": "normal_vehicle",
+      "detection_confidence": "0.88",
+      "position": {
+        "x": "-99.05 m",
+        "y": "139.32 m",
+        "z": "0.00 m"
+      },
+      "localization_confidence": {
+        "x": "0.15",
+        "y": "0.06",
+        "z": "1.00"
+      },
+      "risk_level": "medium",
+      "throughput_need": "low",
+      "traffic_demand_mbps": 0.3
+    },
+    {
+      "class": "normal_vehicle",
+      "detection_confidence": "0.83",
+      "position": {
+        "x": "-96.73 m",
+        "y": "96.97 m",
+        "z": "0.00 m"
+      },
+      "localization_confidence": {
+        "x": "0.19",
+        "y": "0.07",
+        "z": "1.00"
+      },
+      "risk_level": "medium",
+      "throughput_need": "low",
+      "traffic_demand_mbps": 0.3
+    },
+    {
+      "class": "normal_vehicle",
+      "detection_confidence": "0.87",
+      "position": {
+        "x": "-95.14 m",
+        "y": "128.70 m",
+        "z": "0.00 m"
+      },
+      "localization_confidence": {
+        "x": "0.13",
+        "y": "0.04",
+        "z": "1.00"
+      },
+      "risk_level": "medium",
+      "throughput_need": "low",
+      "traffic_demand_mbps": 0.3
+    },
+    {
+      "class": "normal_vehicle",
+      "detection_confidence": "0.73",
+      "position": {
+        "x": "-96.47 m",
+        "y": "93.45 m",
+        "z": "0.00 m"
+      },
+      "localization_confidence": {
+        "x": "0.19",
+        "y": "0.08",
+        "z": "1.00"
+      },
+      "risk_level": "medium",
+      "throughput_need": "low",
+      "traffic_demand_mbps": 0.3
+    },
+    {
+      "class": "normal_vehicle",
+      "detection_confidence": "0.80",
+      "position": {
+        "x": "-99.67 m",
+        "y": "143.24 m",
+        "z": "0.00 m"
+      },
+      "localization_confidence": {
+        "x": "0.17",
+        "y": "0.21",
+        "z": "1.00"
+      },
+      "risk_level": "medium",
+      "throughput_need": "low",
+      "traffic_demand_mbps": 0.3
+    },
+    {
+      "class": "normal_vehicle",
+      "detection_confidence": "0.70",
+      "position": {
+        "x": "-94.38 m",
+        "y": "102.30 m",
+        "z": "0.00 m"
+      },
+      "localization_confidence": {
+        "x": "0.15",
+        "y": "0.06",
+        "z": "1.00"
+      },
+      "risk_level": "medium",
+      "throughput_need": "low",
+      "traffic_demand_mbps": 0.3
+    },
+    {
+      "class": "normal_vehicle",
+      "detection_confidence": "0.76",
+      "position": {
+        "x": "-94.66 m",
+        "y": "119.92 m",
+        "z": "0.00 m"
+      },
+      "localization_confidence": {
+        "x": "0.11",
+        "y": "0.05",
+        "z": "1.00"
+      },
+      "risk_level": "medium",
+      "throughput_need": "low",
+      "traffic_demand_mbps": 0.3
+    },
+    {
+      "class": "normal_vehicle",
+      "detection_confidence": "0.70",
+      "position": {
+        "x": "-96.27 m",
+        "y": "99.93 m",
+        "z": "0.00 m"
+      },
+      "localization_confidence": {
+        "x": "0.18",
+        "y": "0.07",
+        "z": "1.00"
+      },
+      "risk_level": "medium",
+      "throughput_need": "low",
+      "traffic_demand_mbps": 0.3
+    },
+    {
+      "class": "normal_vehicle",
+      "detection_confidence": "0.53",
+      "position": {
+        "x": "-98.60 m",
+        "y": "132.54 m",
+        "z": "0.00 m"
+      },
+      "localization_confidence": {
+        "x": "0.12",
+        "y": "0.05",
+        "z": "1.00"
+      },
+      "risk_level": "medium",
+      "throughput_need": "low",
+      "traffic_demand_mbps": 0.3
+    },
+    {
+      "class": "normal_vehicle",
+      "detection_confidence": "0.69",
+      "position": {
+        "x": "-94.68 m",
+        "y": "107.08 m",
+        "z": "0.00 m"
+      },
+      "localization_confidence": {
+        "x": "0.16",
+        "y": "0.06",
+        "z": "1.00"
+      },
+      "risk_level": "medium",
+      "throughput_need": "low",
+      "traffic_demand_mbps": 0.3
+    },
+    {
+      "class": "normal_vehicle",
+      "detection_confidence": "0.69",
+      "position": {
+        "x": "-95.82 m",
+        "y": "86.27 m",
+        "z": "0.00 m"
+      },
+      "localization_confidence": {
+        "x": "0.16",
+        "y": "0.10",
+        "z": "1.00"
+      },
+      "risk_level": "medium",
+      "throughput_need": "low",
+      "traffic_demand_mbps": 0.3
+    },
+    {
+      "class": "normal_vehicle",
+      "detection_confidence": "0.65",
+      "position": {
+        "x": "-94.36 m",
+        "y": "98.69 m",
+        "z": "0.00 m"
+      },
+      "localization_confidence": {
+        "x": "0.17",
+        "y": "0.07",
+        "z": "1.00"
+      },
+      "risk_level": "medium",
+      "throughput_need": "low",
+      "traffic_demand_mbps": 0.3
+    },
+    {
+      "class": "normal_vehicle",
+      "detection_confidence": "0.63",
+      "position": {
+        "x": "-95.59 m",
+        "y": "82.65 m",
+        "z": "0.00 m"
+      },
+      "localization_confidence": {
+        "x": "0.19",
+        "y": "0.12",
+        "z": "1.00"
+      },
+      "risk_level": "medium",
+      "throughput_need": "low",
+      "traffic_demand_mbps": 0.3
+    },
+    {
+      "class": "normal_vehicle",
+      "detection_confidence": "0.63",
+      "position": {
+        "x": "-93.60 m",
+        "y": "88.79 m",
+        "z": "0.00 m"
+      },
+      "localization_confidence": {
+        "x": "0.19",
+        "y": "0.09",
+        "z": "1.00"
+      },
+      "risk_level": "medium",
+      "throughput_need": "low",
+      "traffic_demand_mbps": 0.3
+    },
+    {
+      "class": "normal_vehicle",
+      "detection_confidence": "0.62",
+      "position": {
+        "x": "-94.72 m",
+        "y": "104.63 m",
+        "z": "0.00 m"
+      },
+      "localization_confidence": {
+        "x": "0.16",
+        "y": "0.06",
+        "z": "1.00"
+      },
+      "risk_level": "medium",
+      "throughput_need": "low",
+      "traffic_demand_mbps": 0.3
+    },
+    {
+      "class": "normal_vehicle",
+      "detection_confidence": "0.57",
+      "position": {
+        "x": "-96.74 m",
+        "y": "101.64 m",
+        "z": "0.00 m"
+      },
+      "localization_confidence": {
+        "x": "0.18",
+        "y": "0.07",
+        "z": "1.00"
+      },
+      "risk_level": "medium",
+      "throughput_need": "low",
+      "traffic_demand_mbps": 0.3
+    },
+    {
+      "class": "normal_vehicle",
+      "detection_confidence": "0.54",
+      "position": {
+        "x": "-97.08 m",
+        "y": "103.88 m",
+        "z": "-0.00 m"
+      },
+      "localization_confidence": {
+        "x": "0.17",
+        "y": "0.06",
+        "z": "1.00"
+      },
+      "risk_level": "medium",
+      "throughput_need": "low",
+      "traffic_demand_mbps": 0.3
+    },
+    {
+      "class": "normal_vehicle",
+      "detection_confidence": "0.52",
+      "position": {
+        "x": "-93.98 m",
+        "y": "92.61 m",
+        "z": "0.00 m"
+      },
+      "localization_confidence": {
+        "x": "0.14",
+        "y": "0.08",
+        "z": "1.00"
+      },
+      "risk_level": "medium",
+      "throughput_need": "low",
+      "traffic_demand_mbps": 0.3
+    },
+    {
+      "class": "normal_vehicle",
+      "detection_confidence": "0.50",
+      "position": {
+        "x": "-93.80 m",
+        "y": "96.54 m",
+        "z": "0.00 m"
+      },
+      "localization_confidence": {
+        "x": "0.16",
+        "y": "0.07",
+        "z": "1.00"
+      },
+      "risk_level": "medium",
+      "throughput_need": "low",
+      "traffic_demand_mbps": 0.3
+    },
+    {
+      "class": "normal_vehicle",
+      "detection_confidence": "0.48",
+      "position": {
+        "x": "-93.60 m",
+        "y": "92.47 m",
+        "z": "0.00 m"
+      },
+      "localization_confidence": {
+        "x": "0.18",
+        "y": "0.11",
+        "z": "1.00"
+      },
+      "risk_level": "medium",
+      "throughput_need": "low",
+      "traffic_demand_mbps": 0.3
+    },
+    {
+      "class": "person",
+      "audio_only": true,
+      "reason": "radio indicates 1 on-scene responder(s); 0 matched visually as firefighter",
+      "risk_level": "medium",
+      "throughput_need": "low",
+      "inferred_role": "firefighter",
+      "role_inference_basis": {
+        "source": "inference",
+        "text": ""
+      },
+      "role_confidence": null,
+      "traffic_demand_mbps": 0.3
+    }
+  ]
+}

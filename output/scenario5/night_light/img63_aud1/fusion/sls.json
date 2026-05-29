@@ -1,0 +1,150 @@
+{
+  "has_fire": false,
+  "summary": "Search teams are assessing a highway pileup and the surrounding area for fire and fuel leaks.",
+  "counts_by_class": {
+    "person": 2,
+    "normal_vehicle": 5,
+    "emergency_vehicle": 0
+  },
+  "communications": {
+    "speaker_count": 2,
+    "key_communications": [
+      {
+        "text": "Unit Phi here command. Report highway access and immediate hazards at the pileup. Listening.",
+        "speaker": "SPEAKER_01"
+      },
+      {
+        "text": "Command here. Unit Phi. Both lanes appear obstructed by a large pileup, more than a dozen vehicles involved, with burned out cars and ash across the roadway. Listening.",
+        "speaker": "SPEAKER_00"
+      }
+    ],
+    "service_types": [
+      "voice"
+    ],
+    "service_inference_basis": []
+  },
+  "objects": [
+    {
+      "class": "person",
+      "detection_confidence": "0.52",
+      "position": {
+        "x": "-72.68 m",
+        "y": "89.24 m",
+        "z": "0.00 m"
+      },
+      "localization_confidence": {
+        "x": "0.44",
+        "y": "0.46",
+        "z": "1.00"
+      },
+      "risk_level": "low",
+      "throughput_need": "low",
+      "inferred_role": "unknown_person",
+      "role_inference_basis": {
+        "source": "inference",
+        "text": "no persons visible"
+      },
+      "role_confidence": 0.0,
+      "traffic_demand_mbps": 0.3
+    },
+    {
+      "class": "normal_vehicle",
+      "detection_confidence": "0.93",
+      "position": {
+        "x": "-69.18 m",
+        "y": "81.36 m",
+        "z": "0.00 m"
+      },
+      "localization_confidence": {
+        "x": "0.05",
+        "y": "0.11",
+        "z": "1.00"
+      },
+      "risk_level": "low",
+      "throughput_need": "low",
+      "traffic_demand_mbps": 0.3
+    },
+    {
+      "class": "normal_vehicle",
+      "detection_confidence": "0.93",
+      "position": {
+        "x": "-68.38 m",
+        "y": "94.43 m",
+        "z": "0.00 m"
+      },
+      "localization_confidence": {
+        "x": "0.06",
+        "y": "0.09",
+        "z": "1.00"
+      },
+      "risk_level": "low",
+      "throughput_need": "low",
+      "traffic_demand_mbps": 0.3
+    },
+    {
+      "class": "normal_vehicle",
+      "detection_confidence": "0.93",
+      "position": {
+        "x": "-59.74 m",
+        "y": "83.68 m",
+        "z": "0.00 m"
+      },
+      "localization_confidence": {
+        "x": "0.03",
+        "y": "0.09",
+        "z": "1.00"
+      },
+      "risk_level": "low",
+      "throughput_need": "low",
+      "traffic_demand_mbps": 0.3
+    },
+    {
+      "class": "normal_vehicle",
+      "detection_confidence": "0.75",
+      "position": {
+        "x": "-78.01 m",
+        "y": "93.82 m",
+        "z": "0.00 m"
+      },
+      "localization_confidence": {
+        "x": "0.08",
+        "y": "0.11",
+        "z": "1.00"
+      },
+      "risk_level": "low",
+      "throughput_need": "low",
+      "traffic_demand_mbps": 0.3
+    },
+    {
+      "class": "normal_vehicle",
+      "detection_confidence": "0.64",
+      "position": {
+        "x": "-84.98 m",
+        "y": "102.84 m",
+        "z": "0.00 m"
+      },
+      "localization_confidence": {
+        "x": "0.17",
+        "y": "0.14",
+        "z": "1.00"
+      },
+      "risk_level": "low",
+      "throughput_need": "low",
+      "traffic_demand_mbps": 0.3
+    },
+    {
+      "class": "person",
+      "audio_only": true,
+      "reason": "radio indicates 1 on-scene responder(s); 0 matched visually as firefighter",
+      "risk_level": "medium",
+      "throughput_need": "medium",
+      "inferred_role": "firefighter",
+      "role_inference_basis": {
+        "source": "inference",
+        "text": ""
+      },
+      "role_confidence": null,
+      "traffic_demand_mbps": 0.3
+    }
+  ]
+}

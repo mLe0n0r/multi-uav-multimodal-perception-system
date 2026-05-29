@@ -1,0 +1,4301 @@
+{
+  "language": "en",
+  "word_segments": [
+    {
+      "word": "Rescue",
+      "start": 0.031,
+      "end": 0.411,
+      "score": 0.75,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "2",
+      "start": 0.431,
+      "end": 0.592,
+      "score": 0.666,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "here",
+      "start": 0.712,
+      "end": 0.832,
+      "score": 0.805,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "command.",
+      "start": 0.852,
+      "end": 1.132,
+      "score": 0.837,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "Give",
+      "start": 1.473,
+      "end": 1.633,
+      "score": 0.65,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "an",
+      "start": 1.653,
+      "end": 1.713,
+      "score": 0.912,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "initial",
+      "start": 1.773,
+      "end": 2.073,
+      "score": 0.851,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "triage",
+      "start": 2.133,
+      "end": 2.474,
+      "score": 0.554,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "update",
+      "start": 2.494,
+      "end": 2.794,
+      "score": 0.905,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "and",
+      "start": 2.854,
+      "end": 2.914,
+      "score": 0.706,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "report",
+      "start": 2.954,
+      "end": 3.235,
+      "score": 0.937,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "whether",
+      "start": 3.275,
+      "end": 3.435,
+      "score": 0.996,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "the",
+      "start": 3.475,
+      "end": 3.555,
+      "score": 0.759,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "highway",
+      "start": 3.595,
+      "end": 3.875,
+      "score": 0.826,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "remains",
+      "start": 3.916,
+      "end": 4.196,
+      "score": 0.744,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "usable",
+      "start": 4.316,
+      "end": 4.596,
+      "score": 0.674,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "for",
+      "start": 4.656,
+      "end": 4.736,
+      "score": 0.994,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "incoming",
+      "start": 4.777,
+      "end": 5.077,
+      "score": 0.826,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "units.",
+      "start": 5.137,
+      "end": 5.517,
+      "score": 0.858,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "Listening.",
+      "start": 5.537,
+      "end": 5.858,
+      "score": 0.934,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "Command",
+      "start": 6.198,
+      "end": 6.539,
+      "score": 0.942,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "here.",
+      "start": 6.599,
+      "end": 6.819,
+      "score": 0.866,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "Rescue",
+      "start": 7.079,
+      "end": 7.46,
+      "score": 0.874,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "2.",
+      "start": 7.48,
+      "end": 7.74,
+      "score": 0.704,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "Highway",
+      "start": 8.241,
+      "end": 8.561,
+      "score": 0.943,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "is",
+      "start": 8.601,
+      "end": 8.741,
+      "score": 0.534,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "not",
+      "start": 8.861,
+      "end": 9.021,
+      "score": 0.83,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "passable",
+      "start": 9.102,
+      "end": 9.482,
+      "score": 0.86,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "beyond",
+      "start": 9.542,
+      "end": 9.742,
+      "score": 0.962,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "the",
+      "start": 9.762,
+      "end": 9.862,
+      "score": 0.557,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "pileup.",
+      "start": 9.902,
+      "end": 10.323,
+      "score": 0.798,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "Vehicles",
+      "start": 10.683,
+      "end": 11.044,
+      "score": 0.676,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "are",
+      "start": 11.104,
+      "end": 11.184,
+      "score": 0.824,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "scattered",
+      "start": 11.204,
+      "end": 11.524,
+      "score": 0.958,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "across",
+      "start": 11.584,
+      "end": 11.825,
+      "score": 0.882,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "both",
+      "start": 11.905,
+      "end": 12.105,
+      "score": 0.982,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "lanes",
+      "start": 12.185,
+      "end": 12.425,
+      "score": 0.958,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "with",
+      "start": 12.506,
+      "end": 12.646,
+      "score": 0.971,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "debris",
+      "start": 12.686,
+      "end": 13.086,
+      "score": 0.697,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "and",
+      "start": 13.246,
+      "end": 13.326,
+      "score": 0.89,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "ash",
+      "start": 13.367,
+      "end": 13.727,
+      "score": 0.831,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "over",
+      "start": 13.867,
+      "end": 13.987,
+      "score": 0.734,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "the",
+      "start": 14.007,
+      "end": 14.087,
+      "score": 0.51,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "roadway.",
+      "start": 14.147,
+      "end": 14.548,
+      "score": 0.694,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "Listening.",
+      "start": 14.848,
+      "end": 15.229,
+      "score": 0.88,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "Rescue",
+      "start": 15.629,
+      "end": 15.93,
+      "score": 0.78,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "2",
+      "start": 15.95,
+      "end": 16.13,
+      "score": 0.677,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "here",
+      "start": 16.27,
+      "end": 16.41,
+      "score": 0.898,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "command.",
+      "start": 16.43,
+      "end": 16.71,
+      "score": 0.806,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "Confirm",
+      "start": 17.191,
+      "end": 17.471,
+      "score": 0.933,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "number",
+      "start": 17.511,
+      "end": 17.652,
+      "score": 0.999,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "of",
+      "start": 17.692,
+      "end": 17.732,
+      "score": 1.0,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "casualties",
+      "start": 17.792,
+      "end": 18.192,
+      "score": 0.857,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "currently",
+      "start": 18.232,
+      "end": 18.472,
+      "score": 0.652,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "under",
+      "start": 18.513,
+      "end": 18.653,
+      "score": 0.876,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "care",
+      "start": 18.693,
+      "end": 18.933,
+      "score": 0.864,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "and",
+      "start": 18.953,
+      "end": 19.514,
+      "score": 0.942,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "whether",
+      "start": 19.554,
+      "end": 19.774,
+      "score": 0.815,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "any",
+      "start": 19.854,
+      "end": 19.974,
+      "score": 0.852,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "others",
+      "start": 20.014,
+      "end": 20.174,
+      "score": 0.784,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "are",
+      "start": 20.235,
+      "end": 20.295,
+      "score": 0.894,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "visible",
+      "start": 20.335,
+      "end": 20.635,
+      "score": 0.859,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "near",
+      "start": 20.675,
+      "end": 20.775,
+      "score": 0.914,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "the",
+      "start": 20.815,
+      "end": 20.875,
+      "score": 0.998,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "vehicles.",
+      "start": 20.895,
+      "end": 21.236,
+      "score": 0.811,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "Listening.",
+      "start": 21.716,
+      "end": 22.377,
+      "score": 0.836,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "Command",
+      "start": 22.357,
+      "end": 22.778,
+      "score": 0.964,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "here,",
+      "start": 22.838,
+      "end": 23.038,
+      "score": 0.794,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "rescue",
+      "start": 23.078,
+      "end": 23.599,
+      "score": 0.732,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "two.",
+      "start": 23.719,
+      "end": 23.98,
+      "score": 0.893,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "Two",
+      "start": 24.5,
+      "end": 24.661,
+      "score": 0.987,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "people",
+      "start": 24.721,
+      "end": 24.981,
+      "score": 0.856,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "are",
+      "start": 25.041,
+      "end": 25.101,
+      "score": 0.836,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "being",
+      "start": 25.121,
+      "end": 25.282,
+      "score": 0.795,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "treated",
+      "start": 25.362,
+      "end": 25.662,
+      "score": 0.826,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "at",
+      "start": 25.722,
+      "end": 25.762,
+      "score": 0.996,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "the",
+      "start": 25.783,
+      "end": 25.843,
+      "score": 0.971,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "fire",
+      "start": 25.903,
+      "end": 26.123,
+      "score": 0.992,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "truck.",
+      "start": 26.163,
+      "end": 26.424,
+      "score": 0.912,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "No",
+      "start": 26.804,
+      "end": 26.924,
+      "score": 0.782,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "other",
+      "start": 26.984,
+      "end": 27.145,
+      "score": 0.89,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "visible",
+      "start": 27.205,
+      "end": 27.525,
+      "score": 0.902,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "casualties",
+      "start": 27.585,
+      "end": 28.066,
+      "score": 0.856,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "confirmed",
+      "start": 28.146,
+      "end": 28.687,
+      "score": 0.967,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "near",
+      "start": 28.968,
+      "end": 29.108,
+      "score": 0.806,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "the",
+      "start": 29.148,
+      "end": 29.208,
+      "score": 0.922,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "vehicle",
+      "start": 29.268,
+      "end": 29.589,
+      "score": 0.779,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "cluster",
+      "start": 29.649,
+      "end": 29.949,
+      "score": 0.856,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "at",
+      "start": 29.989,
+      "end": 30.029,
+      "score": 0.993,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "this",
+      "start": 30.049,
+      "end": 30.23,
+      "score": 0.682,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "time.",
+      "start": 30.31,
+      "end": 30.57,
+      "score": 0.955,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "Listening.",
+      "start": 31.231,
+      "end": 31.632,
+      "score": 0.928,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "Rescue",
+      "start": 32.053,
+      "end": 32.333,
+      "score": 0.666,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "two",
+      "start": 32.373,
+      "end": 32.533,
+      "score": 0.792,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "here",
+      "start": 32.613,
+      "end": 32.714,
+      "score": 0.839,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "command.",
+      "start": 32.754,
+      "end": 33.054,
+      "score": 0.952,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "Report",
+      "start": 33.535,
+      "end": 33.835,
+      "score": 0.926,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "the",
+      "start": 33.855,
+      "end": 33.916,
+      "score": 0.94,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "scale",
+      "start": 33.996,
+      "end": 34.296,
+      "score": 0.936,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "of",
+      "start": 34.336,
+      "end": 34.376,
+      "score": 0.998,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "the",
+      "start": 34.396,
+      "end": 34.476,
+      "score": 0.832,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "pileup",
+      "start": 34.517,
+      "end": 34.877,
+      "score": 0.935,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "and",
+      "start": 34.957,
+      "end": 35.017,
+      "score": 0.672,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "any",
+      "start": 35.077,
+      "end": 35.218,
+      "score": 0.858,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "immediate",
+      "start": 35.238,
+      "end": 35.658,
+      "score": 0.79,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "hazards",
+      "start": 35.698,
+      "end": 36.019,
+      "score": 0.873,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "before",
+      "start": 36.059,
+      "end": 36.279,
+      "score": 0.975,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "further",
+      "start": 36.319,
+      "end": 36.56,
+      "score": 0.813,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "search.",
+      "start": 36.6,
+      "end": 36.86,
+      "score": 0.807,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "Listening.",
+      "start": 37.962,
+      "end": 38.543,
+      "score": 0.902,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "Command",
+      "start": 38.607,
+      "end": 39.027,
+      "score": 0.906,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "here,",
+      "start": 39.087,
+      "end": 39.288,
+      "score": 0.678,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "rescue",
+      "start": 39.528,
+      "end": 39.928,
+      "score": 0.794,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "two.",
+      "start": 40.048,
+      "end": 40.289,
+      "score": 0.829,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "It",
+      "start": 40.789,
+      "end": 40.849,
+      "score": 0.996,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "is",
+      "start": 40.909,
+      "end": 40.969,
+      "score": 0.754,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "a",
+      "start": 41.029,
+      "end": 41.049,
+      "score": 0.761,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "major",
+      "start": 41.17,
+      "end": 41.47,
+      "score": 0.81,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "pileup.",
+      "start": 41.53,
+      "end": 41.91,
+      "score": 0.899,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "Roughly",
+      "start": 42.231,
+      "end": 42.511,
+      "score": 0.924,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "15",
+      "start": 42.531,
+      "end": 42.571,
+      "score": 1.0,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "or",
+      "start": 43.031,
+      "end": 43.071,
+      "score": 0.997,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "more",
+      "start": 43.111,
+      "end": 43.232,
+      "score": 0.654,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "vehicles",
+      "start": 43.272,
+      "end": 43.692,
+      "score": 0.764,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "from",
+      "start": 43.772,
+      "end": 43.872,
+      "score": 0.986,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "what",
+      "start": 43.912,
+      "end": 44.012,
+      "score": 0.805,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "we",
+      "start": 44.052,
+      "end": 44.132,
+      "score": 0.918,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "can",
+      "start": 44.152,
+      "end": 44.273,
+      "score": 0.981,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "see,",
+      "start": 44.333,
+      "end": 44.493,
+      "score": 0.953,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "several",
+      "start": 44.753,
+      "end": 45.073,
+      "score": 0.868,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "burned",
+      "start": 45.113,
+      "end": 45.354,
+      "score": 0.772,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "out",
+      "start": 45.474,
+      "end": 45.574,
+      "score": 0.98,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "and",
+      "start": 45.754,
+      "end": 45.854,
+      "score": 0.847,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "unstable.",
+      "start": 45.934,
+      "end": 46.495,
+      "score": 0.818,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "Listening.",
+      "start": 46.995,
+      "end": 47.436,
+      "score": 0.879,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "Rescue",
+      "start": 47.856,
+      "end": 48.136,
+      "score": 0.77,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "two",
+      "start": 48.156,
+      "end": 48.296,
+      "score": 0.69,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "here,",
+      "start": 48.336,
+      "end": 48.457,
+      "score": 0.936,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "command.",
+      "start": 48.477,
+      "end": 48.737,
+      "score": 0.91,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "Confirm",
+      "start": 49.237,
+      "end": 49.518,
+      "score": 0.875,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "if",
+      "start": 49.558,
+      "end": 49.618,
+      "score": 0.842,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "there",
+      "start": 49.638,
+      "end": 49.738,
+      "score": 0.82,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "is",
+      "start": 49.798,
+      "end": 49.858,
+      "score": 0.751,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "active",
+      "start": 49.938,
+      "end": 50.158,
+      "score": 0.952,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "fire,",
+      "start": 50.198,
+      "end": 50.459,
+      "score": 0.814,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "heavy",
+      "start": 50.539,
+      "end": 50.699,
+      "score": 0.982,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "smoke,",
+      "start": 50.739,
+      "end": 50.979,
+      "score": 0.875,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "or",
+      "start": 51.119,
+      "end": 51.159,
+      "score": 0.961,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "heat",
+      "start": 51.199,
+      "end": 51.42,
+      "score": 0.812,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "showing",
+      "start": 51.44,
+      "end": 51.66,
+      "score": 0.879,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "from",
+      "start": 51.68,
+      "end": 51.78,
+      "score": 0.874,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "the",
+      "start": 51.8,
+      "end": 51.86,
+      "score": 0.997,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "vehicles.",
+      "start": 51.9,
+      "end": 52.2,
+      "score": 0.745,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "Listening.",
+      "start": 52.721,
+      "end": 53.081,
+      "score": 0.89,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "Command",
+      "start": 53.461,
+      "end": 53.782,
+      "score": 0.946,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "here,",
+      "start": 53.822,
+      "end": 54.002,
+      "score": 0.889,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "rescue",
+      "start": 54.122,
+      "end": 54.523,
+      "score": 0.747,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "two.",
+      "start": 54.583,
+      "end": 54.863,
+      "score": 0.72,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "Negative",
+      "start": 55.303,
+      "end": 55.644,
+      "score": 0.961,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "active",
+      "start": 55.744,
+      "end": 56.024,
+      "score": 0.79,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "flame.",
+      "start": 56.064,
+      "end": 56.324,
+      "score": 0.729,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "Only",
+      "start": 56.625,
+      "end": 56.785,
+      "score": 0.987,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "light",
+      "start": 56.865,
+      "end": 57.065,
+      "score": 0.814,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "smoke",
+      "start": 57.125,
+      "end": 57.365,
+      "score": 0.987,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "from",
+      "start": 57.425,
+      "end": 57.545,
+      "score": 0.768,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "some",
+      "start": 57.626,
+      "end": 57.766,
+      "score": 0.856,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "vehicle",
+      "start": 57.806,
+      "end": 58.126,
+      "score": 0.836,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "shells.",
+      "start": 58.166,
+      "end": 58.446,
+      "score": 0.955,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "Burned",
+      "start": 58.767,
+      "end": 59.027,
+      "score": 0.762,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "forest",
+      "start": 59.127,
+      "end": 59.427,
+      "score": 0.864,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "edge",
+      "start": 59.507,
+      "end": 59.648,
+      "score": 0.932,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "remains",
+      "start": 59.708,
+      "end": 59.988,
+      "score": 0.803,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "close",
+      "start": 60.108,
+      "end": 60.328,
+      "score": 0.848,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "to",
+      "start": 60.368,
+      "end": 60.408,
+      "score": 0.587,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "the",
+      "start": 60.448,
+      "end": 60.528,
+      "score": 0.833,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "roadway.",
+      "start": 60.548,
+      "end": 60.969,
+      "score": 0.82,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "Listening.",
+      "start": 61.209,
+      "end": 61.589,
+      "score": 0.803,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "Rescue",
+      "start": 61.99,
+      "end": 62.27,
+      "score": 0.862,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "two",
+      "start": 62.29,
+      "end": 62.43,
+      "score": 0.668,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "here,",
+      "start": 62.47,
+      "end": 62.61,
+      "score": 0.843,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "command.",
+      "start": 62.63,
+      "end": 62.911,
+      "score": 0.982,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "Keep",
+      "start": 63.411,
+      "end": 63.591,
+      "score": 0.979,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "treatment",
+      "start": 63.631,
+      "end": 63.912,
+      "score": 0.804,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "area",
+      "start": 63.932,
+      "end": 64.152,
+      "score": 0.69,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "protected",
+      "start": 64.192,
+      "end": 64.592,
+      "score": 0.93,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "and",
+      "start": 64.652,
+      "end": 64.732,
+      "score": 0.881,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "continue",
+      "start": 64.773,
+      "end": 65.153,
+      "score": 0.94,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "search",
+      "start": 65.173,
+      "end": 65.393,
+      "score": 0.849,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "only",
+      "start": 65.573,
+      "end": 65.774,
+      "score": 0.956,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "along",
+      "start": 65.874,
+      "end": 66.094,
+      "score": 0.873,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "the",
+      "start": 66.114,
+      "end": 66.194,
+      "score": 0.858,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "safe",
+      "start": 66.254,
+      "end": 66.474,
+      "score": 0.72,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "edge",
+      "start": 66.554,
+      "end": 66.654,
+      "score": 0.999,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "of",
+      "start": 66.674,
+      "end": 66.714,
+      "score": 0.518,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "the",
+      "start": 66.754,
+      "end": 66.815,
+      "score": 0.997,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "pileup.",
+      "start": 66.855,
+      "end": 67.315,
+      "score": 0.708,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "listening.",
+      "start": 68.29,
+      "end": 69.054,
+      "score": 0.902,
+      "speaker": "SPEAKER_01"
+    }
+  ],
+  "radio_messages": [
+    {
+      "speaker": "SPEAKER_01",
+      "start": 0.031,
+      "end": 5.858,
+      "words": [
+        {
+          "word": "Rescue",
+          "start": 0.031,
+          "end": 0.411,
+          "score": 0.75,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "2",
+          "start": 0.431,
+          "end": 0.592,
+          "score": 0.666,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "here",
+          "start": 0.712,
+          "end": 0.832,
+          "score": 0.805,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "command.",
+          "start": 0.852,
+          "end": 1.132,
+          "score": 0.837,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "Give",
+          "start": 1.473,
+          "end": 1.633,
+          "score": 0.65,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "an",
+          "start": 1.653,
+          "end": 1.713,
+          "score": 0.912,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "initial",
+          "start": 1.773,
+          "end": 2.073,
+          "score": 0.851,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "triage",
+          "start": 2.133,
+          "end": 2.474,
+          "score": 0.554,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "update",
+          "start": 2.494,
+          "end": 2.794,
+          "score": 0.905,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "and",
+          "start": 2.854,
+          "end": 2.914,
+          "score": 0.706,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "report",
+          "start": 2.954,
+          "end": 3.235,
+          "score": 0.937,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "whether",
+          "start": 3.275,
+          "end": 3.435,
+          "score": 0.996,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "the",
+          "start": 3.475,
+          "end": 3.555,
+          "score": 0.759,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "highway",
+          "start": 3.595,
+          "end": 3.875,
+          "score": 0.826,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "remains",
+          "start": 3.916,
+          "end": 4.196,
+          "score": 0.744,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "usable",
+          "start": 4.316,
+          "end": 4.596,
+          "score": 0.674,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "for",
+          "start": 4.656,
+          "end": 4.736,
+          "score": 0.994,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "incoming",
+          "start": 4.777,
+          "end": 5.077,
+          "score": 0.826,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "units.",
+          "start": 5.137,
+          "end": 5.517,
+          "score": 0.858,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "Listening.",
+          "start": 5.537,
+          "end": 5.858,
+          "score": 0.934,
+          "speaker": "SPEAKER_01"
+        }
+      ],
+      "message": "Rescue 2 here command. Give an initial triage update and report whether the highway remains usable for incoming units. Listening."
+    },
+    {
+      "speaker": "SPEAKER_00",
+      "start": 6.198,
+      "end": 15.229,
+      "words": [
+        {
+          "word": "Command",
+          "start": 6.198,
+          "end": 6.539,
+          "score": 0.942,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "here.",
+          "start": 6.599,
+          "end": 6.819,
+          "score": 0.866,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "Rescue",
+          "start": 7.079,
+          "end": 7.46,
+          "score": 0.874,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "2.",
+          "start": 7.48,
+          "end": 7.74,
+          "score": 0.704,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "Highway",
+          "start": 8.241,
+          "end": 8.561,
+          "score": 0.943,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "is",
+          "start": 8.601,
+          "end": 8.741,
+          "score": 0.534,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "not",
+          "start": 8.861,
+          "end": 9.021,
+          "score": 0.83,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "passable",
+          "start": 9.102,
+          "end": 9.482,
+          "score": 0.86,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "beyond",
+          "start": 9.542,
+          "end": 9.742,
+          "score": 0.962,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "the",
+          "start": 9.762,
+          "end": 9.862,
+          "score": 0.557,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "pileup.",
+          "start": 9.902,
+          "end": 10.323,
+          "score": 0.798,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "Vehicles",
+          "start": 10.683,
+          "end": 11.044,
+          "score": 0.676,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "are",
+          "start": 11.104,
+          "end": 11.184,
+          "score": 0.824,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "scattered",
+          "start": 11.204,
+          "end": 11.524,
+          "score": 0.958,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "across",
+          "start": 11.584,
+          "end": 11.825,
+          "score": 0.882,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "both",
+          "start": 11.905,
+          "end": 12.105,
+          "score": 0.982,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "lanes",
+          "start": 12.185,
+          "end": 12.425,
+          "score": 0.958,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "with",
+          "start": 12.506,
+          "end": 12.646,
+          "score": 0.971,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "debris",
+          "start": 12.686,
+          "end": 13.086,
+          "score": 0.697,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "and",
+          "start": 13.246,
+          "end": 13.326,
+          "score": 0.89,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "ash",
+          "start": 13.367,
+          "end": 13.727,
+          "score": 0.831,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "over",
+          "start": 13.867,
+          "end": 13.987,
+          "score": 0.734,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "the",
+          "start": 14.007,
+          "end": 14.087,
+          "score": 0.51,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "roadway.",
+          "start": 14.147,
+          "end": 14.548,
+          "score": 0.694,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "Listening.",
+          "start": 14.848,
+          "end": 15.229,
+          "score": 0.88,
+          "speaker": "SPEAKER_00"
+        }
+      ],
+      "message": "Command here. Rescue 2. Highway is not passable beyond the pileup. Vehicles are scattered across both lanes with debris and ash over the roadway. Listening."
+    },
+    {
+      "speaker": "SPEAKER_01",
+      "start": 15.629,
+      "end": 22.377,
+      "words": [
+        {
+          "word": "Rescue",
+          "start": 15.629,
+          "end": 15.93,
+          "score": 0.78,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "2",
+          "start": 15.95,
+          "end": 16.13,
+          "score": 0.677,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "here",
+          "start": 16.27,
+          "end": 16.41,
+          "score": 0.898,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "command.",
+          "start": 16.43,
+          "end": 16.71,
+          "score": 0.806,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "Confirm",
+          "start": 17.191,
+          "end": 17.471,
+          "score": 0.933,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "number",
+          "start": 17.511,
+          "end": 17.652,
+          "score": 0.999,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "of",
+          "start": 17.692,
+          "end": 17.732,
+          "score": 1.0,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "casualties",
+          "start": 17.792,
+          "end": 18.192,
+          "score": 0.857,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "currently",
+          "start": 18.232,
+          "end": 18.472,
+          "score": 0.652,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "under",
+          "start": 18.513,
+          "end": 18.653,
+          "score": 0.876,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "care",
+          "start": 18.693,
+          "end": 18.933,
+          "score": 0.864,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "and",
+          "start": 18.953,
+          "end": 19.514,
+          "score": 0.942,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "whether",
+          "start": 19.554,
+          "end": 19.774,
+          "score": 0.815,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "any",
+          "start": 19.854,
+          "end": 19.974,
+          "score": 0.852,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "others",
+          "start": 20.014,
+          "end": 20.174,
+          "score": 0.784,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "are",
+          "start": 20.235,
+          "end": 20.295,
+          "score": 0.894,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "visible",
+          "start": 20.335,
+          "end": 20.635,
+          "score": 0.859,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "near",
+          "start": 20.675,
+          "end": 20.775,
+          "score": 0.914,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "the",
+          "start": 20.815,
+          "end": 20.875,
+          "score": 0.998,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "vehicles.",
+          "start": 20.895,
+          "end": 21.236,
+          "score": 0.811,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "Listening.",
+          "start": 21.716,
+          "end": 22.377,
+          "score": 0.836,
+          "speaker": "SPEAKER_01"
+        }
+      ],
+      "message": "Rescue 2 here command. Confirm number of casualties currently under care and whether any others are visible near the vehicles. Listening."
+    },
+    {
+      "speaker": "SPEAKER_00",
+      "start": 22.357,
+      "end": 31.632,
+      "words": [
+        {
+          "word": "Command",
+          "start": 22.357,
+          "end": 22.778,
+          "score": 0.964,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "here,",
+          "start": 22.838,
+          "end": 23.038,
+          "score": 0.794,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "rescue",
+          "start": 23.078,
+          "end": 23.599,
+          "score": 0.732,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "two.",
+          "start": 23.719,
+          "end": 23.98,
+          "score": 0.893,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "Two",
+          "start": 24.5,
+          "end": 24.661,
+          "score": 0.987,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "people",
+          "start": 24.721,
+          "end": 24.981,
+          "score": 0.856,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "are",
+          "start": 25.041,
+          "end": 25.101,
+          "score": 0.836,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "being",
+          "start": 25.121,
+          "end": 25.282,
+          "score": 0.795,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "treated",
+          "start": 25.362,
+          "end": 25.662,
+          "score": 0.826,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "at",
+          "start": 25.722,
+          "end": 25.762,
+          "score": 0.996,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "the",
+          "start": 25.783,
+          "end": 25.843,
+          "score": 0.971,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "fire",
+          "start": 25.903,
+          "end": 26.123,
+          "score": 0.992,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "truck.",
+          "start": 26.163,
+          "end": 26.424,
+          "score": 0.912,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "No",
+          "start": 26.804,
+          "end": 26.924,
+          "score": 0.782,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "other",
+          "start": 26.984,
+          "end": 27.145,
+          "score": 0.89,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "visible",
+          "start": 27.205,
+          "end": 27.525,
+          "score": 0.902,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "casualties",
+          "start": 27.585,
+          "end": 28.066,
+          "score": 0.856,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "confirmed",
+          "start": 28.146,
+          "end": 28.687,
+          "score": 0.967,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "near",
+          "start": 28.968,
+          "end": 29.108,
+          "score": 0.806,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "the",
+          "start": 29.148,
+          "end": 29.208,
+          "score": 0.922,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "vehicle",
+          "start": 29.268,
+          "end": 29.589,
+          "score": 0.779,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "cluster",
+          "start": 29.649,
+          "end": 29.949,
+          "score": 0.856,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "at",
+          "start": 29.989,
+          "end": 30.029,
+          "score": 0.993,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "this",
+          "start": 30.049,
+          "end": 30.23,
+          "score": 0.682,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "time.",
+          "start": 30.31,
+          "end": 30.57,
+          "score": 0.955,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "Listening.",
+          "start": 31.231,
+          "end": 31.632,
+          "score": 0.928,
+          "speaker": "SPEAKER_00"
+        }
+      ],
+      "message": "Command here, rescue two. Two people are being treated at the fire truck. No other visible casualties confirmed near the vehicle cluster at this time. Listening."
+    },
+    {
+      "speaker": "SPEAKER_01",
+      "start": 32.053,
+      "end": 38.543,
+      "words": [
+        {
+          "word": "Rescue",
+          "start": 32.053,
+          "end": 32.333,
+          "score": 0.666,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "two",
+          "start": 32.373,
+          "end": 32.533,
+          "score": 0.792,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "here",
+          "start": 32.613,
+          "end": 32.714,
+          "score": 0.839,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "command.",
+          "start": 32.754,
+          "end": 33.054,
+          "score": 0.952,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "Report",
+          "start": 33.535,
+          "end": 33.835,
+          "score": 0.926,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "the",
+          "start": 33.855,
+          "end": 33.916,
+          "score": 0.94,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "scale",
+          "start": 33.996,
+          "end": 34.296,
+          "score": 0.936,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "of",
+          "start": 34.336,
+          "end": 34.376,
+          "score": 0.998,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "the",
+          "start": 34.396,
+          "end": 34.476,
+          "score": 0.832,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "pileup",
+          "start": 34.517,
+          "end": 34.877,
+          "score": 0.935,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "and",
+          "start": 34.957,
+          "end": 35.017,
+          "score": 0.672,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "any",
+          "start": 35.077,
+          "end": 35.218,
+          "score": 0.858,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "immediate",
+          "start": 35.238,
+          "end": 35.658,
+          "score": 0.79,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "hazards",
+          "start": 35.698,
+          "end": 36.019,
+          "score": 0.873,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "before",
+          "start": 36.059,
+          "end": 36.279,
+          "score": 0.975,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "further",
+          "start": 36.319,
+          "end": 36.56,
+          "score": 0.813,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "search.",
+          "start": 36.6,
+          "end": 36.86,
+          "score": 0.807,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "Listening.",
+          "start": 37.962,
+          "end": 38.543,
+          "score": 0.902,
+          "speaker": "SPEAKER_01"
+        }
+      ],
+      "message": "Rescue two here command. Report the scale of the pileup and any immediate hazards before further search. Listening."
+    },
+    {
+      "speaker": "SPEAKER_00",
+      "start": 38.607,
+      "end": 47.436,
+      "words": [
+        {
+          "word": "Command",
+          "start": 38.607,
+          "end": 39.027,
+          "score": 0.906,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "here,",
+          "start": 39.087,
+          "end": 39.288,
+          "score": 0.678,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "rescue",
+          "start": 39.528,
+          "end": 39.928,
+          "score": 0.794,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "two.",
+          "start": 40.048,
+          "end": 40.289,
+          "score": 0.829,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "It",
+          "start": 40.789,
+          "end": 40.849,
+          "score": 0.996,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "is",
+          "start": 40.909,
+          "end": 40.969,
+          "score": 0.754,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "a",
+          "start": 41.029,
+          "end": 41.049,
+          "score": 0.761,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "major",
+          "start": 41.17,
+          "end": 41.47,
+          "score": 0.81,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "pileup.",
+          "start": 41.53,
+          "end": 41.91,
+          "score": 0.899,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "Roughly",
+          "start": 42.231,
+          "end": 42.511,
+          "score": 0.924,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "15",
+          "start": 42.531,
+          "end": 42.571,
+          "score": 1.0,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "or",
+          "start": 43.031,
+          "end": 43.071,
+          "score": 0.997,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "more",
+          "start": 43.111,
+          "end": 43.232,
+          "score": 0.654,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "vehicles",
+          "start": 43.272,
+          "end": 43.692,
+          "score": 0.764,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "from",
+          "start": 43.772,
+          "end": 43.872,
+          "score": 0.986,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "what",
+          "start": 43.912,
+          "end": 44.012,
+          "score": 0.805,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "we",
+          "start": 44.052,
+          "end": 44.132,
+          "score": 0.918,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "can",
+          "start": 44.152,
+          "end": 44.273,
+          "score": 0.981,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "see,",
+          "start": 44.333,
+          "end": 44.493,
+          "score": 0.953,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "several",
+          "start": 44.753,
+          "end": 45.073,
+          "score": 0.868,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "burned",
+          "start": 45.113,
+          "end": 45.354,
+          "score": 0.772,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "out",
+          "start": 45.474,
+          "end": 45.574,
+          "score": 0.98,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "and",
+          "start": 45.754,
+          "end": 45.854,
+          "score": 0.847,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "unstable.",
+          "start": 45.934,
+          "end": 46.495,
+          "score": 0.818,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "Listening.",
+          "start": 46.995,
+          "end": 47.436,
+          "score": 0.879,
+          "speaker": "SPEAKER_00"
+        }
+      ],
+      "message": "Command here, rescue two. It is a major pileup. Roughly 15 or more vehicles from what we can see, several burned out and unstable. Listening."
+    },
+    {
+      "speaker": "SPEAKER_01",
+      "start": 47.856,
+      "end": 53.081,
+      "words": [
+        {
+          "word": "Rescue",
+          "start": 47.856,
+          "end": 48.136,
+          "score": 0.77,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "two",
+          "start": 48.156,
+          "end": 48.296,
+          "score": 0.69,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "here,",
+          "start": 48.336,
+          "end": 48.457,
+          "score": 0.936,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "command.",
+          "start": 48.477,
+          "end": 48.737,
+          "score": 0.91,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "Confirm",
+          "start": 49.237,
+          "end": 49.518,
+          "score": 0.875,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "if",
+          "start": 49.558,
+          "end": 49.618,
+          "score": 0.842,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "there",
+          "start": 49.638,
+          "end": 49.738,
+          "score": 0.82,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "is",
+          "start": 49.798,
+          "end": 49.858,
+          "score": 0.751,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "active",
+          "start": 49.938,
+          "end": 50.158,
+          "score": 0.952,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "fire,",
+          "start": 50.198,
+          "end": 50.459,
+          "score": 0.814,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "heavy",
+          "start": 50.539,
+          "end": 50.699,
+          "score": 0.982,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "smoke,",
+          "start": 50.739,
+          "end": 50.979,
+          "score": 0.875,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "or",
+          "start": 51.119,
+          "end": 51.159,
+          "score": 0.961,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "heat",
+          "start": 51.199,
+          "end": 51.42,
+          "score": 0.812,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "showing",
+          "start": 51.44,
+          "end": 51.66,
+          "score": 0.879,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "from",
+          "start": 51.68,
+          "end": 51.78,
+          "score": 0.874,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "the",
+          "start": 51.8,
+          "end": 51.86,
+          "score": 0.997,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "vehicles.",
+          "start": 51.9,
+          "end": 52.2,
+          "score": 0.745,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "Listening.",
+          "start": 52.721,
+          "end": 53.081,
+          "score": 0.89,
+          "speaker": "SPEAKER_01"
+        }
+      ],
+      "message": "Rescue two here, command. Confirm if there is active fire, heavy smoke, or heat showing from the vehicles. Listening."
+    },
+    {
+      "speaker": "SPEAKER_00",
+      "start": 53.461,
+      "end": 61.589,
+      "words": [
+        {
+          "word": "Command",
+          "start": 53.461,
+          "end": 53.782,
+          "score": 0.946,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "here,",
+          "start": 53.822,
+          "end": 54.002,
+          "score": 0.889,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "rescue",
+          "start": 54.122,
+          "end": 54.523,
+          "score": 0.747,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "two.",
+          "start": 54.583,
+          "end": 54.863,
+          "score": 0.72,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "Negative",
+          "start": 55.303,
+          "end": 55.644,
+          "score": 0.961,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "active",
+          "start": 55.744,
+          "end": 56.024,
+          "score": 0.79,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "flame.",
+          "start": 56.064,
+          "end": 56.324,
+          "score": 0.729,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "Only",
+          "start": 56.625,
+          "end": 56.785,
+          "score": 0.987,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "light",
+          "start": 56.865,
+          "end": 57.065,
+          "score": 0.814,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "smoke",
+          "start": 57.125,
+          "end": 57.365,
+          "score": 0.987,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "from",
+          "start": 57.425,
+          "end": 57.545,
+          "score": 0.768,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "some",
+          "start": 57.626,
+          "end": 57.766,
+          "score": 0.856,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "vehicle",
+          "start": 57.806,
+          "end": 58.126,
+          "score": 0.836,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "shells.",
+          "start": 58.166,
+          "end": 58.446,
+          "score": 0.955,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "Burned",
+          "start": 58.767,
+          "end": 59.027,
+          "score": 0.762,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "forest",
+          "start": 59.127,
+          "end": 59.427,
+          "score": 0.864,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "edge",
+          "start": 59.507,
+          "end": 59.648,
+          "score": 0.932,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "remains",
+          "start": 59.708,
+          "end": 59.988,
+          "score": 0.803,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "close",
+          "start": 60.108,
+          "end": 60.328,
+          "score": 0.848,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "to",
+          "start": 60.368,
+          "end": 60.408,
+          "score": 0.587,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "the",
+          "start": 60.448,
+          "end": 60.528,
+          "score": 0.833,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "roadway.",
+          "start": 60.548,
+          "end": 60.969,
+          "score": 0.82,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "Listening.",
+          "start": 61.209,
+          "end": 61.589,
+          "score": 0.803,
+          "speaker": "SPEAKER_00"
+        }
+      ],
+      "message": "Command here, rescue two. Negative active flame. Only light smoke from some vehicle shells. Burned forest edge remains close to the roadway. Listening."
+    },
+    {
+      "speaker": "SPEAKER_01",
+      "start": 61.99,
+      "end": 69.054,
+      "words": [
+        {
+          "word": "Rescue",
+          "start": 61.99,
+          "end": 62.27,
+          "score": 0.862,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "two",
+          "start": 62.29,
+          "end": 62.43,
+          "score": 0.668,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "here,",
+          "start": 62.47,
+          "end": 62.61,
+          "score": 0.843,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "command.",
+          "start": 62.63,
+          "end": 62.911,
+          "score": 0.982,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "Keep",
+          "start": 63.411,
+          "end": 63.591,
+          "score": 0.979,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "treatment",
+          "start": 63.631,
+          "end": 63.912,
+          "score": 0.804,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "area",
+          "start": 63.932,
+          "end": 64.152,
+          "score": 0.69,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "protected",
+          "start": 64.192,
+          "end": 64.592,
+          "score": 0.93,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "and",
+          "start": 64.652,
+          "end": 64.732,
+          "score": 0.881,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "continue",
+          "start": 64.773,
+          "end": 65.153,
+          "score": 0.94,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "search",
+          "start": 65.173,
+          "end": 65.393,
+          "score": 0.849,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "only",
+          "start": 65.573,
+          "end": 65.774,
+          "score": 0.956,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "along",
+          "start": 65.874,
+          "end": 66.094,
+          "score": 0.873,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "the",
+          "start": 66.114,
+          "end": 66.194,
+          "score": 0.858,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "safe",
+          "start": 66.254,
+          "end": 66.474,
+          "score": 0.72,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "edge",
+          "start": 66.554,
+          "end": 66.654,
+          "score": 0.999,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "of",
+          "start": 66.674,
+          "end": 66.714,
+          "score": 0.518,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "the",
+          "start": 66.754,
+          "end": 66.815,
+          "score": 0.997,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "pileup.",
+          "start": 66.855,
+          "end": 67.315,
+          "score": 0.708,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "listening.",
+          "start": 68.29,
+          "end": 69.054,
+          "score": 0.902,
+          "speaker": "SPEAKER_01"
+        }
+      ],
+      "message": "Rescue two here, command. Keep treatment area protected and continue search only along the safe edge of the pileup. listening."
+    }
+  ],
+  "segments": [
+    {
+      "start": 0.031,
+      "end": 5.858,
+      "text": "Rescue 2 here command. Give an initial triage update and report whether the highway remains usable for incoming units. Listening.",
+      "speaker": "SPEAKER_01",
+      "words": [
+        {
+          "word": "Rescue",
+          "start": 0.031,
+          "end": 0.411,
+          "score": 0.75,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "2",
+          "start": 0.431,
+          "end": 0.592,
+          "score": 0.666,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "here",
+          "start": 0.712,
+          "end": 0.832,
+          "score": 0.805,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "command.",
+          "start": 0.852,
+          "end": 1.132,
+          "score": 0.837,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "Give",
+          "start": 1.473,
+          "end": 1.633,
+          "score": 0.65,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "an",
+          "start": 1.653,
+          "end": 1.713,
+          "score": 0.912,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "initial",
+          "start": 1.773,
+          "end": 2.073,
+          "score": 0.851,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "triage",
+          "start": 2.133,
+          "end": 2.474,
+          "score": 0.554,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "update",
+          "start": 2.494,
+          "end": 2.794,
+          "score": 0.905,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "and",
+          "start": 2.854,
+          "end": 2.914,
+          "score": 0.706,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "report",
+          "start": 2.954,
+          "end": 3.235,
+          "score": 0.937,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "whether",
+          "start": 3.275,
+          "end": 3.435,
+          "score": 0.996,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "the",
+          "start": 3.475,
+          "end": 3.555,
+          "score": 0.759,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "highway",
+          "start": 3.595,
+          "end": 3.875,
+          "score": 0.826,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "remains",
+          "start": 3.916,
+          "end": 4.196,
+          "score": 0.744,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "usable",
+          "start": 4.316,
+          "end": 4.596,
+          "score": 0.674,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "for",
+          "start": 4.656,
+          "end": 4.736,
+          "score": 0.994,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "incoming",
+          "start": 4.777,
+          "end": 5.077,
+          "score": 0.826,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "units.",
+          "start": 5.137,
+          "end": 5.517,
+          "score": 0.858,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "Listening.",
+          "start": 5.537,
+          "end": 5.858,
+          "score": 0.934,
+          "speaker": "SPEAKER_01"
+        }
+      ]
+    },
+    {
+      "start": 6.198,
+      "end": 15.229,
+      "text": "Command here. Rescue 2. Highway is not passable beyond the pileup. Vehicles are scattered across both lanes with debris and ash over the roadway. Listening.",
+      "speaker": "SPEAKER_00",
+      "words": [
+        {
+          "word": "Command",
+          "start": 6.198,
+          "end": 6.539,
+          "score": 0.942,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "here.",
+          "start": 6.599,
+          "end": 6.819,
+          "score": 0.866,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "Rescue",
+          "start": 7.079,
+          "end": 7.46,
+          "score": 0.874,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "2.",
+          "start": 7.48,
+          "end": 7.74,
+          "score": 0.704,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "Highway",
+          "start": 8.241,
+          "end": 8.561,
+          "score": 0.943,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "is",
+          "start": 8.601,
+          "end": 8.741,
+          "score": 0.534,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "not",
+          "start": 8.861,
+          "end": 9.021,
+          "score": 0.83,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "passable",
+          "start": 9.102,
+          "end": 9.482,
+          "score": 0.86,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "beyond",
+          "start": 9.542,
+          "end": 9.742,
+          "score": 0.962,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "the",
+          "start": 9.762,
+          "end": 9.862,
+          "score": 0.557,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "pileup.",
+          "start": 9.902,
+          "end": 10.323,
+          "score": 0.798,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "Vehicles",
+          "start": 10.683,
+          "end": 11.044,
+          "score": 0.676,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "are",
+          "start": 11.104,
+          "end": 11.184,
+          "score": 0.824,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "scattered",
+          "start": 11.204,
+          "end": 11.524,
+          "score": 0.958,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "across",
+          "start": 11.584,
+          "end": 11.825,
+          "score": 0.882,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "both",
+          "start": 11.905,
+          "end": 12.105,
+          "score": 0.982,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "lanes",
+          "start": 12.185,
+          "end": 12.425,
+          "score": 0.958,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "with",
+          "start": 12.506,
+          "end": 12.646,
+          "score": 0.971,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "debris",
+          "start": 12.686,
+          "end": 13.086,
+          "score": 0.697,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "and",
+          "start": 13.246,
+          "end": 13.326,
+          "score": 0.89,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "ash",
+          "start": 13.367,
+          "end": 13.727,
+          "score": 0.831,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "over",
+          "start": 13.867,
+          "end": 13.987,
+          "score": 0.734,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "the",
+          "start": 14.007,
+          "end": 14.087,
+          "score": 0.51,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "roadway.",
+          "start": 14.147,
+          "end": 14.548,
+          "score": 0.694,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "Listening.",
+          "start": 14.848,
+          "end": 15.229,
+          "score": 0.88,
+          "speaker": "SPEAKER_00"
+        }
+      ]
+    },
+    {
+      "start": 15.629,
+      "end": 22.377,
+      "text": "Rescue 2 here command. Confirm number of casualties currently under care and whether any others are visible near the vehicles. Listening.",
+      "speaker": "SPEAKER_01",
+      "words": [
+        {
+          "word": "Rescue",
+          "start": 15.629,
+          "end": 15.93,
+          "score": 0.78,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "2",
+          "start": 15.95,
+          "end": 16.13,
+          "score": 0.677,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "here",
+          "start": 16.27,
+          "end": 16.41,
+          "score": 0.898,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "command.",
+          "start": 16.43,
+          "end": 16.71,
+          "score": 0.806,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "Confirm",
+          "start": 17.191,
+          "end": 17.471,
+          "score": 0.933,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "number",
+          "start": 17.511,
+          "end": 17.652,
+          "score": 0.999,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "of",
+          "start": 17.692,
+          "end": 17.732,
+          "score": 1.0,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "casualties",
+          "start": 17.792,
+          "end": 18.192,
+          "score": 0.857,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "currently",
+          "start": 18.232,
+          "end": 18.472,
+          "score": 0.652,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "under",
+          "start": 18.513,
+          "end": 18.653,
+          "score": 0.876,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "care",
+          "start": 18.693,
+          "end": 18.933,
+          "score": 0.864,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "and",
+          "start": 18.953,
+          "end": 19.514,
+          "score": 0.942,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "whether",
+          "start": 19.554,
+          "end": 19.774,
+          "score": 0.815,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "any",
+          "start": 19.854,
+          "end": 19.974,
+          "score": 0.852,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "others",
+          "start": 20.014,
+          "end": 20.174,
+          "score": 0.784,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "are",
+          "start": 20.235,
+          "end": 20.295,
+          "score": 0.894,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "visible",
+          "start": 20.335,
+          "end": 20.635,
+          "score": 0.859,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "near",
+          "start": 20.675,
+          "end": 20.775,
+          "score": 0.914,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "the",
+          "start": 20.815,
+          "end": 20.875,
+          "score": 0.998,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "vehicles.",
+          "start": 20.895,
+          "end": 21.236,
+          "score": 0.811,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "Listening.",
+          "start": 21.716,
+          "end": 22.377,
+          "score": 0.836,
+          "speaker": "SPEAKER_01"
+        }
+      ]
+    },
+    {
+      "start": 22.357,
+      "end": 31.632,
+      "text": "Command here, rescue two. Two people are being treated at the fire truck. No other visible casualties confirmed near the vehicle cluster at this time. Listening.",
+      "speaker": "SPEAKER_00",
+      "words": [
+        {
+          "word": "Command",
+          "start": 22.357,
+          "end": 22.778,
+          "score": 0.964,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "here,",
+          "start": 22.838,
+          "end": 23.038,
+          "score": 0.794,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "rescue",
+          "start": 23.078,
+          "end": 23.599,
+          "score": 0.732,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "two.",
+          "start": 23.719,
+          "end": 23.98,
+          "score": 0.893,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "Two",
+          "start": 24.5,
+          "end": 24.661,
+          "score": 0.987,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "people",
+          "start": 24.721,
+          "end": 24.981,
+          "score": 0.856,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "are",
+          "start": 25.041,
+          "end": 25.101,
+          "score": 0.836,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "being",
+          "start": 25.121,
+          "end": 25.282,
+          "score": 0.795,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "treated",
+          "start": 25.362,
+          "end": 25.662,
+          "score": 0.826,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "at",
+          "start": 25.722,
+          "end": 25.762,
+          "score": 0.996,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "the",
+          "start": 25.783,
+          "end": 25.843,
+          "score": 0.971,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "fire",
+          "start": 25.903,
+          "end": 26.123,
+          "score": 0.992,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "truck.",
+          "start": 26.163,
+          "end": 26.424,
+          "score": 0.912,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "No",
+          "start": 26.804,
+          "end": 26.924,
+          "score": 0.782,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "other",
+          "start": 26.984,
+          "end": 27.145,
+          "score": 0.89,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "visible",
+          "start": 27.205,
+          "end": 27.525,
+          "score": 0.902,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "casualties",
+          "start": 27.585,
+          "end": 28.066,
+          "score": 0.856,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "confirmed",
+          "start": 28.146,
+          "end": 28.687,
+          "score": 0.967,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "near",
+          "start": 28.968,
+          "end": 29.108,
+          "score": 0.806,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "the",
+          "start": 29.148,
+          "end": 29.208,
+          "score": 0.922,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "vehicle",
+          "start": 29.268,
+          "end": 29.589,
+          "score": 0.779,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "cluster",
+          "start": 29.649,
+          "end": 29.949,
+          "score": 0.856,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "at",
+          "start": 29.989,
+          "end": 30.029,
+          "score": 0.993,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "this",
+          "start": 30.049,
+          "end": 30.23,
+          "score": 0.682,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "time.",
+          "start": 30.31,
+          "end": 30.57,
+          "score": 0.955,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "Listening.",
+          "start": 31.231,
+          "end": 31.632,
+          "score": 0.928,
+          "speaker": "SPEAKER_00"
+        }
+      ]
+    },
+    {
+      "start": 32.053,
+      "end": 38.543,
+      "text": "Rescue two here command. Report the scale of the pileup and any immediate hazards before further search. Listening.",
+      "speaker": "SPEAKER_01",
+      "words": [
+        {
+          "word": "Rescue",
+          "start": 32.053,
+          "end": 32.333,
+          "score": 0.666,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "two",
+          "start": 32.373,
+          "end": 32.533,
+          "score": 0.792,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "here",
+          "start": 32.613,
+          "end": 32.714,
+          "score": 0.839,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "command.",
+          "start": 32.754,
+          "end": 33.054,
+          "score": 0.952,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "Report",
+          "start": 33.535,
+          "end": 33.835,
+          "score": 0.926,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "the",
+          "start": 33.855,
+          "end": 33.916,
+          "score": 0.94,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "scale",
+          "start": 33.996,
+          "end": 34.296,
+          "score": 0.936,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "of",
+          "start": 34.336,
+          "end": 34.376,
+          "score": 0.998,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "the",
+          "start": 34.396,
+          "end": 34.476,
+          "score": 0.832,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "pileup",
+          "start": 34.517,
+          "end": 34.877,
+          "score": 0.935,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "and",
+          "start": 34.957,
+          "end": 35.017,
+          "score": 0.672,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "any",
+          "start": 35.077,
+          "end": 35.218,
+          "score": 0.858,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "immediate",
+          "start": 35.238,
+          "end": 35.658,
+          "score": 0.79,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "hazards",
+          "start": 35.698,
+          "end": 36.019,
+          "score": 0.873,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "before",
+          "start": 36.059,
+          "end": 36.279,
+          "score": 0.975,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "further",
+          "start": 36.319,
+          "end": 36.56,
+          "score": 0.813,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "search.",
+          "start": 36.6,
+          "end": 36.86,
+          "score": 0.807,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "Listening.",
+          "start": 37.962,
+          "end": 38.543,
+          "score": 0.902,
+          "speaker": "SPEAKER_01"
+        }
+      ]
+    },
+    {
+      "start": 38.607,
+      "end": 47.436,
+      "text": "Command here, rescue two. It is a major pileup. Roughly 15 or more vehicles from what we can see, several burned out and unstable. Listening.",
+      "speaker": "SPEAKER_00",
+      "words": [
+        {
+          "word": "Command",
+          "start": 38.607,
+          "end": 39.027,
+          "score": 0.906,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "here,",
+          "start": 39.087,
+          "end": 39.288,
+          "score": 0.678,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "rescue",
+          "start": 39.528,
+          "end": 39.928,
+          "score": 0.794,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "two.",
+          "start": 40.048,
+          "end": 40.289,
+          "score": 0.829,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "It",
+          "start": 40.789,
+          "end": 40.849,
+          "score": 0.996,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "is",
+          "start": 40.909,
+          "end": 40.969,
+          "score": 0.754,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "a",
+          "start": 41.029,
+          "end": 41.049,
+          "score": 0.761,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "major",
+          "start": 41.17,
+          "end": 41.47,
+          "score": 0.81,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "pileup.",
+          "start": 41.53,
+          "end": 41.91,
+          "score": 0.899,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "Roughly",
+          "start": 42.231,
+          "end": 42.511,
+          "score": 0.924,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "15",
+          "start": 42.531,
+          "end": 42.571,
+          "score": 1.0,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "or",
+          "start": 43.031,
+          "end": 43.071,
+          "score": 0.997,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "more",
+          "start": 43.111,
+          "end": 43.232,
+          "score": 0.654,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "vehicles",
+          "start": 43.272,
+          "end": 43.692,
+          "score": 0.764,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "from",
+          "start": 43.772,
+          "end": 43.872,
+          "score": 0.986,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "what",
+          "start": 43.912,
+          "end": 44.012,
+          "score": 0.805,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "we",
+          "start": 44.052,
+          "end": 44.132,
+          "score": 0.918,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "can",
+          "start": 44.152,
+          "end": 44.273,
+          "score": 0.981,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "see,",
+          "start": 44.333,
+          "end": 44.493,
+          "score": 0.953,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "several",
+          "start": 44.753,
+          "end": 45.073,
+          "score": 0.868,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "burned",
+          "start": 45.113,
+          "end": 45.354,
+          "score": 0.772,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "out",
+          "start": 45.474,
+          "end": 45.574,
+          "score": 0.98,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "and",
+          "start": 45.754,
+          "end": 45.854,
+          "score": 0.847,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "unstable.",
+          "start": 45.934,
+          "end": 46.495,
+          "score": 0.818,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "Listening.",
+          "start": 46.995,
+          "end": 47.436,
+          "score": 0.879,
+          "speaker": "SPEAKER_00"
+        }
+      ]
+    },
+    {
+      "start": 47.856,
+      "end": 53.081,
+      "text": "Rescue two here, command. Confirm if there is active fire, heavy smoke, or heat showing from the vehicles. Listening.",
+      "speaker": "SPEAKER_01",
+      "words": [
+        {
+          "word": "Rescue",
+          "start": 47.856,
+          "end": 48.136,
+          "score": 0.77,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "two",
+          "start": 48.156,
+          "end": 48.296,
+          "score": 0.69,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "here,",
+          "start": 48.336,
+          "end": 48.457,
+          "score": 0.936,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "command.",
+          "start": 48.477,
+          "end": 48.737,
+          "score": 0.91,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "Confirm",
+          "start": 49.237,
+          "end": 49.518,
+          "score": 0.875,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "if",
+          "start": 49.558,
+          "end": 49.618,
+          "score": 0.842,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "there",
+          "start": 49.638,
+          "end": 49.738,
+          "score": 0.82,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "is",
+          "start": 49.798,
+          "end": 49.858,
+          "score": 0.751,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "active",
+          "start": 49.938,
+          "end": 50.158,
+          "score": 0.952,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "fire,",
+          "start": 50.198,
+          "end": 50.459,
+          "score": 0.814,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "heavy",
+          "start": 50.539,
+          "end": 50.699,
+          "score": 0.982,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "smoke,",
+          "start": 50.739,
+          "end": 50.979,
+          "score": 0.875,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "or",
+          "start": 51.119,
+          "end": 51.159,
+          "score": 0.961,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "heat",
+          "start": 51.199,
+          "end": 51.42,
+          "score": 0.812,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "showing",
+          "start": 51.44,
+          "end": 51.66,
+          "score": 0.879,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "from",
+          "start": 51.68,
+          "end": 51.78,
+          "score": 0.874,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "the",
+          "start": 51.8,
+          "end": 51.86,
+          "score": 0.997,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "vehicles.",
+          "start": 51.9,
+          "end": 52.2,
+          "score": 0.745,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "Listening.",
+          "start": 52.721,
+          "end": 53.081,
+          "score": 0.89,
+          "speaker": "SPEAKER_01"
+        }
+      ]
+    },
+    {
+      "start": 53.461,
+      "end": 61.589,
+      "text": "Command here, rescue two. Negative active flame. Only light smoke from some vehicle shells. Burned forest edge remains close to the roadway. Listening.",
+      "speaker": "SPEAKER_00",
+      "words": [
+        {
+          "word": "Command",
+          "start": 53.461,
+          "end": 53.782,
+          "score": 0.946,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "here,",
+          "start": 53.822,
+          "end": 54.002,
+          "score": 0.889,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "rescue",
+          "start": 54.122,
+          "end": 54.523,
+          "score": 0.747,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "two.",
+          "start": 54.583,
+          "end": 54.863,
+          "score": 0.72,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "Negative",
+          "start": 55.303,
+          "end": 55.644,
+          "score": 0.961,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "active",
+          "start": 55.744,
+          "end": 56.024,
+          "score": 0.79,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "flame.",
+          "start": 56.064,
+          "end": 56.324,
+          "score": 0.729,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "Only",
+          "start": 56.625,
+          "end": 56.785,
+          "score": 0.987,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "light",
+          "start": 56.865,
+          "end": 57.065,
+          "score": 0.814,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "smoke",
+          "start": 57.125,
+          "end": 57.365,
+          "score": 0.987,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "from",
+          "start": 57.425,
+          "end": 57.545,
+          "score": 0.768,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "some",
+          "start": 57.626,
+          "end": 57.766,
+          "score": 0.856,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "vehicle",
+          "start": 57.806,
+          "end": 58.126,
+          "score": 0.836,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "shells.",
+          "start": 58.166,
+          "end": 58.446,
+          "score": 0.955,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "Burned",
+          "start": 58.767,
+          "end": 59.027,
+          "score": 0.762,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "forest",
+          "start": 59.127,
+          "end": 59.427,
+          "score": 0.864,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "edge",
+          "start": 59.507,
+          "end": 59.648,
+          "score": 0.932,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "remains",
+          "start": 59.708,
+          "end": 59.988,
+          "score": 0.803,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "close",
+          "start": 60.108,
+          "end": 60.328,
+          "score": 0.848,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "to",
+          "start": 60.368,
+          "end": 60.408,
+          "score": 0.587,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "the",
+          "start": 60.448,
+          "end": 60.528,
+          "score": 0.833,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "roadway.",
+          "start": 60.548,
+          "end": 60.969,
+          "score": 0.82,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "Listening.",
+          "start": 61.209,
+          "end": 61.589,
+          "score": 0.803,
+          "speaker": "SPEAKER_00"
+        }
+      ]
+    },
+    {
+      "start": 61.99,
+      "end": 69.054,
+      "text": "Rescue two here, command. Keep treatment area protected and continue search only along the safe edge of the pileup. listening.",
+      "speaker": "SPEAKER_01",
+      "words": [
+        {
+          "word": "Rescue",
+          "start": 61.99,
+          "end": 62.27,
+          "score": 0.862,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "two",
+          "start": 62.29,
+          "end": 62.43,
+          "score": 0.668,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "here,",
+          "start": 62.47,
+          "end": 62.61,
+          "score": 0.843,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "command.",
+          "start": 62.63,
+          "end": 62.911,
+          "score": 0.982,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "Keep",
+          "start": 63.411,
+          "end": 63.591,
+          "score": 0.979,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "treatment",
+          "start": 63.631,
+          "end": 63.912,
+          "score": 0.804,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "area",
+          "start": 63.932,
+          "end": 64.152,
+          "score": 0.69,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "protected",
+          "start": 64.192,
+          "end": 64.592,
+          "score": 0.93,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "and",
+          "start": 64.652,
+          "end": 64.732,
+          "score": 0.881,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "continue",
+          "start": 64.773,
+          "end": 65.153,
+          "score": 0.94,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "search",
+          "start": 65.173,
+          "end": 65.393,
+          "score": 0.849,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "only",
+          "start": 65.573,
+          "end": 65.774,
+          "score": 0.956,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "along",
+          "start": 65.874,
+          "end": 66.094,
+          "score": 0.873,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "the",
+          "start": 66.114,
+          "end": 66.194,
+          "score": 0.858,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "safe",
+          "start": 66.254,
+          "end": 66.474,
+          "score": 0.72,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "edge",
+          "start": 66.554,
+          "end": 66.654,
+          "score": 0.999,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "of",
+          "start": 66.674,
+          "end": 66.714,
+          "score": 0.518,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "the",
+          "start": 66.754,
+          "end": 66.815,
+          "score": 0.997,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "pileup.",
+          "start": 66.855,
+          "end": 67.315,
+          "score": 0.708,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "listening.",
+          "start": 68.29,
+          "end": 69.054,
+          "score": 0.902,
+          "speaker": "SPEAKER_01"
+        }
+      ]
+    }
+  ],
+  "speaker_count": 2,
+  "analytics": {
+    "speaker_count": 2,
+    "people_mentioned_count": 2,
+    "civilians_mentioned_count": 0,
+    "firefighters_mentioned_count": 0,
+    "on_scene_responders_count": 1,
+    "civilians_at_safe_distance_mentioned": false,
+    "vehicles_mentioned_count": 0,
+    "emergency_vehicle_mentioned_count": 0
+  }
+}
