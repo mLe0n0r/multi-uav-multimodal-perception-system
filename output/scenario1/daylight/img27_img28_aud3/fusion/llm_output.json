@@ -1,0 +1,379 @@
+{
+  "answer": "The scene involves two distinct video feeds, likely from a surveillance or emergency context, showing fire and vehicle activity. The analysis focuses on the spatial relationship and proximity of objects, particularly the fire and the people present.",
+  "objects": [
+    {
+      "class": "person",
+      "detection_confidence": "0.85",
+      "position": {
+        "x": "-229.90 m",
+        "y": "-50.60 m",
+        "z": "0.00 m"
+      },
+      "localization_confidence": {
+        "x": "0.25",
+        "y": "0.05",
+        "z": "1.00"
+      },
+      "distance_to_fire": "16.76 m",
+      "risk_level": "medium",
+      "throughput_need": "low",
+      "inferred_role": "civilian",
+      "role_inference_basis": {
+        "source": "inference",
+        "text": "radio reports 2 civilian(s) at safe distance; matched to persons farther from fire"
+      },
+      "role_confidence": 0.75
+    },
+    {
+      "class": "person",
+      "detection_confidence": "0.87",
+      "position": {
+        "x": "-276.70 m",
+        "y": "-39.32 m",
+        "z": "0.00 m"
+      },
+      "localization_confidence": {
+        "x": "0.08",
+        "y": "0.13",
+        "z": "1.00"
+      },
+      "distance_to_fire": "6.18 m",
+      "risk_level": "medium",
+      "throughput_need": "low",
+      "inferred_role": "civilian",
+      "role_inference_basis": {
+        "source": "inference",
+        "text": "radio reports 2 civilian(s) at safe distance; matched to persons farther from fire"
+      },
+      "role_confidence": 0.75
+    },
+    {
+      "class": "person",
+      "detection_confidence": "0.85",
+      "position": {
+        "x": "-231.59 m",
+        "y": "-29.08 m",
+        "z": "0.00 m"
+      },
+      "localization_confidence": {
+        "x": "0.43",
+        "y": "0.11",
+        "z": "1.00"
+      },
+      "distance_to_fire": "9.69 m",
+      "risk_level": "medium",
+      "throughput_need": "medium",
+      "inferred_role": "firefighter",
+      "role_inference_basis": {
+        "source": "inference",
+        "text": "engine_1, rescue_2 on scene per radio (command is off-scene support); assigned to closest person near fire"
+      },
+      "role_confidence": 0.85
+    },
+    {
+      "class": "person",
+      "detection_confidence": "0.86",
+      "position": {
+        "x": "-277.16 m",
+        "y": "-50.58 m",
+        "z": "0.00 m"
+      },
+      "localization_confidence": {
+        "x": "0.08",
+        "y": "0.09",
+        "z": "1.00"
+      },
+      "distance_to_fire": "10.10 m",
+      "risk_level": "medium",
+      "throughput_need": "medium",
+      "inferred_role": "firefighter",
+      "role_inference_basis": {
+        "source": "inference",
+        "text": "engine_1, rescue_2 on scene per radio (command is off-scene support); assigned to closest person near fire"
+      },
+      "role_confidence": 0.85
+    },
+    {
+      "class": "person",
+      "detection_confidence": "0.81",
+      "position": {
+        "x": "-224.65 m",
+        "y": "-45.81 m",
+        "z": "-0.00 m"
+      },
+      "localization_confidence": {
+        "x": "0.26",
+        "y": "0.06",
+        "z": "1.00"
+      },
+      "distance_to_fire": "10.88 m",
+      "risk_level": "medium",
+      "throughput_need": "low",
+      "inferred_role": "civilian",
+      "role_inference_basis": {
+        "source": "inference",
+        "text": "radio reports 2 civilian(s) at safe distance; matched to persons farther from fire"
+      },
+      "role_confidence": 0.75
+    },
+    {
+      "class": "person",
+      "detection_confidence": "0.84",
+      "position": {
+        "x": "-278.76 m",
+        "y": "-29.10 m",
+        "z": "0.00 m"
+      },
+      "localization_confidence": {
+        "x": "0.07",
+        "y": "0.09",
+        "z": "1.00"
+      },
+      "distance_to_fire": "11.65 m",
+      "risk_level": "medium",
+      "throughput_need": "low",
+      "inferred_role": "civilian",
+      "role_inference_basis": {
+        "source": "inference",
+        "text": "radio reports 2 civilian(s) at safe distance; matched to persons farther from fire"
+      },
+      "role_confidence": 0.75
+    },
+    {
+      "class": "person",
+      "detection_confidence": "0.81",
+      "position": {
+        "x": "-229.53 m",
+        "y": "-39.22 m",
+        "z": "-0.00 m"
+      },
+      "localization_confidence": {
+        "x": "0.32",
+        "y": "0.07",
+        "z": "1.00"
+      },
+      "distance_to_fire": "7.07 m",
+      "risk_level": "medium",
+      "throughput_need": "medium",
+      "inferred_role": "firefighter",
+      "role_inference_basis": {
+        "source": "inference",
+        "text": "engine_1, rescue_2 on scene per radio (command is off-scene support); assigned to closest person near fire"
+      },
+      "role_confidence": 0.85
+    },
+    {
+      "class": "person",
+      "detection_confidence": "0.81",
+      "position": {
+        "x": "-271.30 m",
+        "y": "-46.13 m",
+        "z": "0.00 m"
+      },
+      "localization_confidence": {
+        "x": "0.12",
+        "y": "0.12",
+        "z": "1.00"
+      },
+      "distance_to_fire": "5.92 m",
+      "risk_level": "medium",
+      "throughput_need": "medium",
+      "inferred_role": "firefighter",
+      "role_inference_basis": {
+        "source": "inference",
+        "text": "engine_1, rescue_2 on scene per radio (command is off-scene support); assigned to closest person near fire"
+      },
+      "role_confidence": 0.85
+    },
+    {
+      "class": "normal_vehicle",
+      "detection_confidence": "0.92",
+      "position": {
+        "x": "-223.67 m",
+        "y": "-27.28 m",
+        "z": "0.00 m"
+      },
+      "localization_confidence": {
+        "x": "0.12",
+        "y": "0.09",
+        "z": "1.00"
+      },
+      "distance_to_fire": "7.69 m",
+      "risk_level": "medium",
+      "throughput_need": "low"
+    },
+    {
+      "class": "person",
+      "detection_confidence": "0.64",
+      "position": {
+        "x": "-554.39 m",
+        "y": "-240.84 m",
+        "z": "0.00 m"
+      },
+      "localization_confidence": {
+        "x": "0.00",
+        "y": "0.00",
+        "z": "1.00"
+      },
+      "distance_to_fire": "336.40 m",
+      "risk_level": "medium",
+      "throughput_need": "low",
+      "inferred_role": "unknown_person",
+      "role_inference_basis": {
+        "source": "inference",
+        "text": "visual_detection"
+      },
+      "role_confidence": null
+    },
+    {
+      "class": "normal_vehicle",
+      "detection_confidence": "0.90",
+      "position": {
+        "x": "-210.57 m",
+        "y": "-24.91 m",
+        "z": "0.00 m"
+      },
+      "localization_confidence": {
+        "x": "0.07",
+        "y": "0.08",
+        "z": "1.00"
+      },
+      "distance_to_fire": "16.68 m",
+      "risk_level": "medium",
+      "throughput_need": "low"
+    },
+    {
+      "class": "normal_vehicle",
+      "detection_confidence": "0.91",
+      "position": {
+        "x": "-269.00 m",
+        "y": "-29.52 m",
+        "z": "0.00 m"
+      },
+      "localization_confidence": {
+        "x": "0.03",
+        "y": "0.08",
+        "z": "1.00"
+      },
+      "distance_to_fire": "6.82 m",
+      "risk_level": "medium",
+      "throughput_need": "low"
+    },
+    {
+      "class": "normal_vehicle",
+      "detection_confidence": "0.89",
+      "position": {
+        "x": "-210.83 m",
+        "y": "-32.86 m",
+        "z": "0.00 m"
+      },
+      "localization_confidence": {
+        "x": "0.06",
+        "y": "0.06",
+        "z": "1.00"
+      },
+      "distance_to_fire": "13.23 m",
+      "risk_level": "medium",
+      "throughput_need": "low"
+    },
+    {
+      "class": "emergency_vehicle",
+      "detection_confidence": "0.91",
+      "position": {
+        "x": "-262.31 m",
+        "y": "-47.81 m",
+        "z": "0.00 m"
+      },
+      "localization_confidence": {
+        "x": "0.03",
+        "y": "0.04",
+        "z": "1.00"
+      },
+      "distance_to_fire": "11.01 m",
+      "risk_level": "medium",
+      "throughput_need": "medium"
+    },
+    {
+      "class": "emergency_vehicle",
+      "detection_confidence": "0.21",
+      "position": {
+        "x": "-218.15 m",
+        "y": "-46.16 m",
+        "z": "0.00 m"
+      },
+      "localization_confidence": {
+        "x": "0.05",
+        "y": "0.03",
+        "z": "1.00"
+      },
+      "distance_to_fire": "12.58 m",
+      "risk_level": "medium",
+      "throughput_need": "medium"
+    },
+    {
+      "class": "normal_vehicle",
+      "detection_confidence": "0.46",
+      "position": {
+        "x": "-291.56 m",
+        "y": "-7.48 m",
+        "z": "0.00 m"
+      },
+      "localization_confidence": {
+        "x": "0.02",
+        "y": "0.03",
+        "z": "1.00"
+      },
+      "distance_to_fire": "35.84 m",
+      "risk_level": "medium",
+      "throughput_need": "low"
+    },
+    {
+      "class": "normal_vehicle",
+      "audio_only": true,
+      "reason": "radio explicitly mentions 6 normal vehicle(s); 3 detected visually",
+      "risk_level": "medium",
+      "throughput_need": "low"
+    },
+    {
+      "class": "normal_vehicle",
+      "audio_only": true,
+      "reason": "radio explicitly mentions 6 normal vehicle(s); 3 detected visually",
+      "risk_level": "medium",
+      "throughput_need": "medium"
+    },
+    {
+      "class": "normal_vehicle",
+      "audio_only": true,
+      "reason": "radio explicitly mentions 6 normal vehicle(s); 3 detected visually",
+      "risk_level": "medium",
+      "throughput_need": "medium"
+    }
+  ],
+  "communications": {
+    "speaker_count": 3,
+    "service_types": [
+      "voice"
+    ],
+    "key_communications": [
+      {
+        "text": "Engine 1 here, command.",
+        "speaker": "SPEAKER_01"
+      },
+      {
+        "text": "Command here, rescue 2.",
+        "speaker": "SPEAKER_02"
+      },
+      {
+        "text": "Engine 1 here, command.",
+        "speaker": "SPEAKER_00"
+      }
+    ],
+    "service_inference_basis": []
+  },
+  "counts_by_class": {
+    "person": 9,
+    "normal_vehicle": 8,
+    "emergency_vehicle": 2
+  },
+  "has_fire": true
+}

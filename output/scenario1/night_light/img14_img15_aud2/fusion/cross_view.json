@@ -1,0 +1,370 @@
+{
+  "same_incident": false,
+  "views": [
+    "img14",
+    "img15"
+  ],
+  "visuals": {
+    "img14": {
+      "has_fire": true,
+      "image_size": {
+        "width": 3196,
+        "height": 1168
+      },
+      "camera": {
+        "position": {
+          "x": "-249.72 m",
+          "y": "-31.03 m",
+          "z": "14.41 m"
+        },
+        "orientation": {
+          "pitch": "-24.02 deg",
+          "yaw": "-0.63 deg",
+          "roll": "0.00 deg"
+        }
+      },
+      "counts_by_class": {
+        "person": 3,
+        "normal_vehicle": 3,
+        "emergency_vehicle": 0
+      },
+      "objects": [
+        {
+          "id": 0,
+          "class": "person",
+          "detection_confidence": "0.87",
+          "bbox": {
+            "xc": 0.179599,
+            "yc": 0.765411,
+            "w": 0.021902,
+            "h": 0.106164
+          },
+          "position": {
+            "x": "-268.59 m",
+            "y": "-46.14 m",
+            "z": "0.00 m"
+          },
+          "localization_confidence": {
+            "x": "0.29",
+            "y": "0.18",
+            "z": "1.00"
+          },
+          "distance_to_fire": "6.36 m"
+        },
+        {
+          "id": 1,
+          "class": "person",
+          "detection_confidence": "0.87",
+          "bbox": {
+            "xc": 0.159262,
+            "yc": 0.608305,
+            "w": 0.018148,
+            "h": 0.086473
+          },
+          "position": {
+            "x": "-274.12 m",
+            "y": "-50.62 m",
+            "z": "-0.00 m"
+          },
+          "localization_confidence": {
+            "x": "0.21",
+            "y": "0.15",
+            "z": "1.00"
+          },
+          "distance_to_fire": "12.63 m"
+        },
+        {
+          "id": 2,
+          "class": "person",
+          "detection_confidence": "0.55",
+          "bbox": {
+            "xc": 0.221683,
+            "yc": 0.673801,
+            "w": 0.015957,
+            "h": 0.059932
+          },
+          "position": {
+            "x": "-272.18 m",
+            "y": "-46.04 m",
+            "z": "0.00 m"
+          },
+          "localization_confidence": {
+            "x": "0.24",
+            "y": "0.22",
+            "z": "1.00"
+          },
+          "distance_to_fire": "7.76 m"
+        },
+        {
+          "id": 3,
+          "class": "normal_vehicle",
+          "detection_confidence": "0.88",
+          "bbox": {
+            "xc": 0.556164,
+            "yc": 0.830051,
+            "w": 0.081039,
+            "h": 0.154966
+          },
+          "position": {
+            "x": "-266.55 m",
+            "y": "-28.83 m",
+            "z": "0.00 m"
+          },
+          "localization_confidence": {
+            "x": "0.11",
+            "y": "0.16",
+            "z": "1.00"
+          },
+          "distance_to_fire": "7.25 m"
+        },
+        {
+          "id": 4,
+          "class": "normal_vehicle",
+          "detection_confidence": "0.51",
+          "bbox": {
+            "xc": 0.351377,
+            "yc": 0.615154,
+            "w": 0.020651,
+            "h": 0.096747
+          },
+          "position": {
+            "x": "-273.76 m",
+            "y": "-39.59 m",
+            "z": "0.00 m"
+          },
+          "localization_confidence": {
+            "x": "0.15",
+            "y": "0.15",
+            "z": "1.00"
+          },
+          "distance_to_fire": "6.30 m"
+        },
+        {
+          "id": 5,
+          "class": "normal_vehicle",
+          "detection_confidence": "0.41",
+          "bbox": {
+            "xc": 0.993429,
+            "yc": 0.880565,
+            "w": 0.013141,
+            "h": 0.119007
+          },
+          "position": {
+            "x": "-266.03 m",
+            "y": "-10.91 m",
+            "z": "0.00 m"
+          },
+          "localization_confidence": {
+            "x": "0.30",
+            "y": "0.13",
+            "z": "1.00"
+          },
+          "distance_to_fire": "25.18 m"
+        }
+      ]
+    },
+    "img15": {
+      "has_fire": true,
+      "image_size": {
+        "width": 2986,
+        "height": 1258
+      },
+      "camera": {
+        "position": {
+          "x": "-238.81 m",
+          "y": "-11.43 m",
+          "z": "12.28 m"
+        },
+        "orientation": {
+          "pitch": "-28.71 deg",
+          "yaw": "-91.45 deg",
+          "roll": "0.00 deg"
+        }
+      },
+      "counts_by_class": {
+        "person": 4,
+        "normal_vehicle": 3,
+        "emergency_vehicle": 1
+      },
+      "objects": [
+        {
+          "id": 0,
+          "class": "person",
+          "detection_confidence": "0.84",
+          "bbox": {
+            "xc": 0.736437,
+            "yc": 0.363672,
+            "w": 0.015405,
+            "h": 0.078696
+          },
+          "position": {
+            "x": "-252.31 m",
+            "y": "-39.30 m",
+            "z": "0.00 m"
+          },
+          "localization_confidence": {
+            "x": "0.24",
+            "y": "0.08",
+            "z": "1.00"
+          },
+          "distance_to_fire": "7.50 m"
+        },
+        {
+          "id": 1,
+          "class": "person",
+          "detection_confidence": "0.82",
+          "bbox": {
+            "xc": 0.686872,
+            "yc": 0.240461,
+            "w": 0.009377,
+            "h": 0.059618
+          },
+          "position": {
+            "x": "-252.60 m",
+            "y": "-50.13 m",
+            "z": "0.00 m"
+          },
+          "localization_confidence": {
+            "x": "0.18",
+            "y": "0.05",
+            "z": "1.00"
+          },
+          "distance_to_fire": "16.28 m"
+        },
+        {
+          "id": 2,
+          "class": "person",
+          "detection_confidence": "0.80",
+          "bbox": {
+            "xc": 0.763396,
+            "yc": 0.388315,
+            "w": 0.01507,
+            "h": 0.077107
+          },
+          "position": {
+            "x": "-253.31 m",
+            "y": "-37.91 m",
+            "z": "0.00 m"
+          },
+          "localization_confidence": {
+            "x": "0.24",
+            "y": "0.08",
+            "z": "1.00"
+          },
+          "distance_to_fire": "7.78 m"
+        },
+        {
+          "id": 3,
+          "class": "person",
+          "detection_confidence": "0.63",
+          "bbox": {
+            "xc": 0.675486,
+            "yc": 0.299285,
+            "w": 0.009377,
+            "h": 0.040541
+          },
+          "position": {
+            "x": "-250.37 m",
+            "y": "-45.34 m",
+            "z": "0.00 m"
+          },
+          "localization_confidence": {
+            "x": "0.22",
+            "y": "0.08",
+            "z": "1.00"
+          },
+          "distance_to_fire": "10.99 m"
+        },
+        {
+          "id": 4,
+          "class": "normal_vehicle",
+          "detection_confidence": "0.92",
+          "bbox": {
+            "xc": 0.396517,
+            "yc": 0.468998,
+            "w": 0.105157,
+            "h": 0.125596
+          },
+          "position": {
+            "x": "-233.23 m",
+            "y": "-32.35 m",
+            "z": "0.00 m"
+          },
+          "localization_confidence": {
+            "x": "0.09",
+            "y": "0.07",
+            "z": "1.00"
+          },
+          "distance_to_fire": "13.09 m"
+        },
+        {
+          "id": 5,
+          "class": "normal_vehicle",
+          "detection_confidence": "0.91",
+          "bbox": {
+            "xc": 0.686537,
+            "yc": 0.627186,
+            "w": 0.081045,
+            "h": 0.124006
+          },
+          "position": {
+            "x": "-245.79 m",
+            "y": "-27.46 m",
+            "z": "0.00 m"
+          },
+          "localization_confidence": {
+            "x": "0.14",
+            "y": "0.10",
+            "z": "1.00"
+          },
+          "distance_to_fire": "7.80 m"
+        },
+        {
+          "id": 6,
+          "class": "normal_vehicle",
+          "detection_confidence": "0.89",
+          "bbox": {
+            "xc": 0.338413,
+            "yc": 0.687599,
+            "w": 0.123577,
+            "h": 0.192369
+          },
+          "position": {
+            "x": "-232.72 m",
+            "y": "-24.84 m",
+            "z": "0.00 m"
+          },
+          "localization_confidence": {
+            "x": "0.11",
+            "y": "0.09",
+            "z": "1.00"
+          },
+          "distance_to_fire": "16.88 m"
+        },
+        {
+          "id": 7,
+          "class": "emergency_vehicle",
+          "detection_confidence": "0.77",
+          "bbox": {
+            "xc": 0.531145,
+            "yc": 0.236884,
+            "w": 0.103148,
+            "h": 0.18124
+          },
+          "position": {
+            "x": "-240.14 m",
+            "y": "-44.41 m",
+            "z": "0.00 m"
+          },
+          "localization_confidence": {
+            "x": "0.07",
+            "y": "0.03",
+            "z": "1.00"
+          },
+          "distance_to_fire": "10.86 m"
+        }
+      ]
+    }
+  },
+  "matches": []
+}
