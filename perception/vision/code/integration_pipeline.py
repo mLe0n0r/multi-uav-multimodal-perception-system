@@ -555,12 +555,23 @@ def run_integrated_pipeline(
         obj_id = int(obj["id"])
         pos = obj["position"]
         det_conf = detection_confidences[obj_id] if obj_id < len(detection_confidences) else 0.0
+        label_row = labels[obj_id] if obj_id < len(labels) else None
+        bbox_block = None
+        if label_row is not None:
+            cls_id, xc, yc, bw, bh = label_row
+            bbox_block = {
+                "xc": round(float(xc), 6),
+                "yc": round(float(yc), 6),
+                "w": round(float(bw), 6),
+                "h": round(float(bh), 6),
+            }
 
         objects.append(
             {
                 "id": obj_id,
                 "class": obj["class"],
                 "detection_confidence": format_confidence(det_conf),
+                "bbox": bbox_block,
                 "position": {
                     "x": format_meters(pos[0]),
                     "y": format_meters(pos[1]),
@@ -578,6 +589,7 @@ def run_integrated_pipeline(
     counts = Counter(o["class"] for o in objects if o["class"] in ("person", "normal_vehicle", "emergency_vehicle"))
     return {
         "has_fire": has_fire,
+        "image_size": {"width": int(W), "height": int(H)},
         "camera": {
             "position": {"x": format_meters(x), "y": format_meters(y), "z": format_meters(z)},
             "orientation": {
