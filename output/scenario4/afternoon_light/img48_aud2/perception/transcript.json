@@ -1,0 +1,2105 @@
+{
+  "language": "en",
+  "word_segments": [
+    {
+      "word": "All",
+      "start": 0.031,
+      "end": 0.272,
+      "score": 0.845,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "units",
+      "start": 0.372,
+      "end": 0.592,
+      "score": 0.887,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "here",
+      "start": 0.632,
+      "end": 0.753,
+      "score": 0.9,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "command.",
+      "start": 0.793,
+      "end": 1.094,
+      "score": 0.853,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "Civilian",
+      "start": 1.575,
+      "end": 1.956,
+      "score": 0.865,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "report",
+      "start": 1.996,
+      "end": 2.297,
+      "score": 0.924,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "of",
+      "start": 2.357,
+      "end": 2.397,
+      "score": 1.0,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "a",
+      "start": 2.437,
+      "end": 2.477,
+      "score": 0.5,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "brush",
+      "start": 2.517,
+      "end": 2.758,
+      "score": 0.575,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "fire",
+      "start": 2.798,
+      "end": 3.059,
+      "score": 0.741,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "along",
+      "start": 3.199,
+      "end": 3.399,
+      "score": 0.894,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "a",
+      "start": 3.439,
+      "end": 3.46,
+      "score": 1.0,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "wooded",
+      "start": 3.5,
+      "end": 3.74,
+      "score": 0.86,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "two-lane",
+      "start": 3.82,
+      "end": 4.181,
+      "score": 0.753,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "highway",
+      "start": 4.221,
+      "end": 4.582,
+      "score": 0.825,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "with",
+      "start": 5.003,
+      "end": 5.124,
+      "score": 0.998,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "traffic",
+      "start": 5.184,
+      "end": 5.505,
+      "score": 0.872,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "blocked",
+      "start": 5.565,
+      "end": 5.805,
+      "score": 0.713,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "near",
+      "start": 5.825,
+      "end": 5.926,
+      "score": 0.756,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "the",
+      "start": 5.966,
+      "end": 6.026,
+      "score": 0.999,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "roadway",
+      "start": 6.046,
+      "end": 6.407,
+      "score": 0.709,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "shoulder.",
+      "start": 6.447,
+      "end": 6.728,
+      "score": 0.812,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "Callers",
+      "start": 7.61,
+      "end": 7.891,
+      "score": 0.877,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "stated",
+      "start": 7.911,
+      "end": 8.191,
+      "score": 0.799,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "they",
+      "start": 8.231,
+      "end": 8.372,
+      "score": 0.873,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "stopped",
+      "start": 8.432,
+      "end": 8.733,
+      "score": 0.834,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "near",
+      "start": 8.753,
+      "end": 8.893,
+      "score": 0.52,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "a",
+      "start": 8.913,
+      "end": 8.933,
+      "score": 0.032,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "vehicle",
+      "start": 8.993,
+      "end": 9.314,
+      "score": 0.875,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "overturned",
+      "start": 9.354,
+      "end": 9.896,
+      "score": 0.807,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "close",
+      "start": 9.956,
+      "end": 10.156,
+      "score": 0.878,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "to",
+      "start": 10.176,
+      "end": 10.236,
+      "score": 0.251,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "the",
+      "start": 10.256,
+      "end": 10.317,
+      "score": 0.98,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "guardrail.",
+      "start": 10.357,
+      "end": 10.918,
+      "score": 0.791,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "Information",
+      "start": 11.928,
+      "end": 12.629,
+      "score": 0.862,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "is",
+      "start": 12.689,
+      "end": 12.729,
+      "score": 0.512,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "approximate.",
+      "start": 12.789,
+      "end": 13.33,
+      "score": 0.902,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "Listening.",
+      "start": 13.831,
+      "end": 14.232,
+      "score": 0.895,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "Command",
+      "start": 14.572,
+      "end": 14.853,
+      "score": 0.977,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "here.",
+      "start": 14.913,
+      "end": 15.093,
+      "score": 0.636,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "Unit",
+      "start": 15.454,
+      "end": 15.654,
+      "score": 0.798,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "Fi.",
+      "start": 15.694,
+      "end": 15.995,
+      "score": 0.926,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "Affirmative.",
+      "start": 16.335,
+      "end": 16.796,
+      "score": 0.787,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "Responding",
+      "start": 17.057,
+      "end": 17.497,
+      "score": 0.825,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "toward",
+      "start": 17.558,
+      "end": 17.738,
+      "score": 0.939,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "the",
+      "start": 17.778,
+      "end": 17.838,
+      "score": 0.999,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "highway",
+      "start": 17.878,
+      "end": 18.119,
+      "score": 0.771,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "approach.",
+      "start": 18.159,
+      "end": 18.519,
+      "score": 0.86,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "Confirm",
+      "start": 18.76,
+      "end": 19.06,
+      "score": 0.859,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "best",
+      "start": 19.08,
+      "end": 19.26,
+      "score": 0.807,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "access",
+      "start": 19.341,
+      "end": 19.601,
+      "score": 0.875,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "route",
+      "start": 19.621,
+      "end": 19.801,
+      "score": 0.636,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "or",
+      "start": 19.922,
+      "end": 19.982,
+      "score": 0.75,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "if",
+      "start": 20.062,
+      "end": 20.122,
+      "score": 1.0,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "both",
+      "start": 20.182,
+      "end": 20.322,
+      "score": 0.948,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "lanes",
+      "start": 20.362,
+      "end": 20.543,
+      "score": 0.887,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "are",
+      "start": 20.583,
+      "end": 20.663,
+      "score": 0.835,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "blocked",
+      "start": 20.683,
+      "end": 20.903,
+      "score": 0.941,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "by",
+      "start": 20.943,
+      "end": 21.023,
+      "score": 0.996,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "stopped",
+      "start": 21.084,
+      "end": 21.344,
+      "score": 0.782,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "traffic.",
+      "start": 21.364,
+      "end": 21.725,
+      "score": 0.933,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "Listening.",
+      "start": 21.885,
+      "end": 22.246,
+      "score": 0.863,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "Unit",
+      "start": 22.646,
+      "end": 22.867,
+      "score": 0.899,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "Fi",
+      "start": 22.927,
+      "end": 23.167,
+      "score": 0.914,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "here",
+      "start": 23.207,
+      "end": 23.387,
+      "score": 0.738,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "command.",
+      "start": 23.428,
+      "end": 23.728,
+      "score": 0.994,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "Unable",
+      "start": 24.049,
+      "end": 24.269,
+      "score": 0.783,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "to",
+      "start": 24.309,
+      "end": 24.349,
+      "score": 0.999,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "confirm.",
+      "start": 24.389,
+      "end": 24.73,
+      "score": 0.943,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "The",
+      "start": 25.251,
+      "end": 25.331,
+      "score": 0.859,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "call",
+      "start": 25.371,
+      "end": 25.551,
+      "score": 0.847,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "with",
+      "start": 25.571,
+      "end": 25.671,
+      "score": 0.989,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "the",
+      "start": 25.691,
+      "end": 25.751,
+      "score": 0.982,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "reporting",
+      "start": 25.772,
+      "end": 26.172,
+      "score": 0.901,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "civilian",
+      "start": 26.212,
+      "end": 26.613,
+      "score": 0.88,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "dropped",
+      "start": 26.673,
+      "end": 26.933,
+      "score": 0.564,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "before",
+      "start": 26.954,
+      "end": 27.174,
+      "score": 0.661,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "access",
+      "start": 27.274,
+      "end": 27.555,
+      "score": 0.914,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "details",
+      "start": 27.575,
+      "end": 27.915,
+      "score": 0.733,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "were",
+      "start": 27.935,
+      "end": 28.055,
+      "score": 0.876,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "obtained.",
+      "start": 28.095,
+      "end": 28.416,
+      "score": 0.763,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "Expect",
+      "start": 28.977,
+      "end": 29.378,
+      "score": 0.998,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "congestion",
+      "start": 29.418,
+      "end": 29.858,
+      "score": 0.943,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "on",
+      "start": 29.899,
+      "end": 29.959,
+      "score": 0.98,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "the",
+      "start": 29.979,
+      "end": 30.059,
+      "score": 0.837,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "highway",
+      "start": 30.099,
+      "end": 30.419,
+      "score": 0.742,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "and",
+      "start": 30.459,
+      "end": 30.88,
+      "score": 0.954,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "use",
+      "start": 30.98,
+      "end": 31.121,
+      "score": 0.785,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "caution",
+      "start": 31.201,
+      "end": 31.581,
+      "score": 0.928,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "near",
+      "start": 31.621,
+      "end": 31.742,
+      "score": 0.812,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "the",
+      "start": 31.782,
+      "end": 31.842,
+      "score": 0.998,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "treeline",
+      "start": 31.882,
+      "end": 32.283,
+      "score": 0.777,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "fire",
+      "start": 32.343,
+      "end": 32.623,
+      "score": 0.687,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "and",
+      "start": 33.044,
+      "end": 33.124,
+      "score": 0.721,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "overturned",
+      "start": 33.244,
+      "end": 33.665,
+      "score": 0.834,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "vehicle.",
+      "start": 33.705,
+      "end": 34.046,
+      "score": 0.774,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "Finished.",
+      "start": 34.927,
+      "end": 35.488,
+      "score": 0.874,
+      "speaker": "SPEAKER_00"
+    }
+  ],
+  "radio_messages": [
+    {
+      "speaker": "SPEAKER_00",
+      "start": 0.031,
+      "end": 14.232,
+      "words": [
+        {
+          "word": "All",
+          "start": 0.031,
+          "end": 0.272,
+          "score": 0.845,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "units",
+          "start": 0.372,
+          "end": 0.592,
+          "score": 0.887,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "here",
+          "start": 0.632,
+          "end": 0.753,
+          "score": 0.9,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "command.",
+          "start": 0.793,
+          "end": 1.094,
+          "score": 0.853,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "Civilian",
+          "start": 1.575,
+          "end": 1.956,
+          "score": 0.865,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "report",
+          "start": 1.996,
+          "end": 2.297,
+          "score": 0.924,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "of",
+          "start": 2.357,
+          "end": 2.397,
+          "score": 1.0,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "a",
+          "start": 2.437,
+          "end": 2.477,
+          "score": 0.5,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "brush",
+          "start": 2.517,
+          "end": 2.758,
+          "score": 0.575,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "fire",
+          "start": 2.798,
+          "end": 3.059,
+          "score": 0.741,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "along",
+          "start": 3.199,
+          "end": 3.399,
+          "score": 0.894,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "a",
+          "start": 3.439,
+          "end": 3.46,
+          "score": 1.0,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "wooded",
+          "start": 3.5,
+          "end": 3.74,
+          "score": 0.86,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "two-lane",
+          "start": 3.82,
+          "end": 4.181,
+          "score": 0.753,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "highway",
+          "start": 4.221,
+          "end": 4.582,
+          "score": 0.825,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "with",
+          "start": 5.003,
+          "end": 5.124,
+          "score": 0.998,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "traffic",
+          "start": 5.184,
+          "end": 5.505,
+          "score": 0.872,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "blocked",
+          "start": 5.565,
+          "end": 5.805,
+          "score": 0.713,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "near",
+          "start": 5.825,
+          "end": 5.926,
+          "score": 0.756,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "the",
+          "start": 5.966,
+          "end": 6.026,
+          "score": 0.999,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "roadway",
+          "start": 6.046,
+          "end": 6.407,
+          "score": 0.709,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "shoulder.",
+          "start": 6.447,
+          "end": 6.728,
+          "score": 0.812,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "Callers",
+          "start": 7.61,
+          "end": 7.891,
+          "score": 0.877,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "stated",
+          "start": 7.911,
+          "end": 8.191,
+          "score": 0.799,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "they",
+          "start": 8.231,
+          "end": 8.372,
+          "score": 0.873,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "stopped",
+          "start": 8.432,
+          "end": 8.733,
+          "score": 0.834,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "near",
+          "start": 8.753,
+          "end": 8.893,
+          "score": 0.52,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "a",
+          "start": 8.913,
+          "end": 8.933,
+          "score": 0.032,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "vehicle",
+          "start": 8.993,
+          "end": 9.314,
+          "score": 0.875,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "overturned",
+          "start": 9.354,
+          "end": 9.896,
+          "score": 0.807,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "close",
+          "start": 9.956,
+          "end": 10.156,
+          "score": 0.878,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "to",
+          "start": 10.176,
+          "end": 10.236,
+          "score": 0.251,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "the",
+          "start": 10.256,
+          "end": 10.317,
+          "score": 0.98,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "guardrail.",
+          "start": 10.357,
+          "end": 10.918,
+          "score": 0.791,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "Information",
+          "start": 11.928,
+          "end": 12.629,
+          "score": 0.862,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "is",
+          "start": 12.689,
+          "end": 12.729,
+          "score": 0.512,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "approximate.",
+          "start": 12.789,
+          "end": 13.33,
+          "score": 0.902,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "Listening.",
+          "start": 13.831,
+          "end": 14.232,
+          "score": 0.895,
+          "speaker": "SPEAKER_00"
+        }
+      ],
+      "message": "All units here command. Civilian report of a brush fire along a wooded two-lane highway with traffic blocked near the roadway shoulder. Callers stated they stopped near a vehicle overturned close to the guardrail. Information is approximate. Listening."
+    },
+    {
+      "speaker": "SPEAKER_01",
+      "start": 14.572,
+      "end": 22.246,
+      "words": [
+        {
+          "word": "Command",
+          "start": 14.572,
+          "end": 14.853,
+          "score": 0.977,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "here.",
+          "start": 14.913,
+          "end": 15.093,
+          "score": 0.636,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "Unit",
+          "start": 15.454,
+          "end": 15.654,
+          "score": 0.798,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "Fi.",
+          "start": 15.694,
+          "end": 15.995,
+          "score": 0.926,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "Affirmative.",
+          "start": 16.335,
+          "end": 16.796,
+          "score": 0.787,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "Responding",
+          "start": 17.057,
+          "end": 17.497,
+          "score": 0.825,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "toward",
+          "start": 17.558,
+          "end": 17.738,
+          "score": 0.939,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "the",
+          "start": 17.778,
+          "end": 17.838,
+          "score": 0.999,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "highway",
+          "start": 17.878,
+          "end": 18.119,
+          "score": 0.771,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "approach.",
+          "start": 18.159,
+          "end": 18.519,
+          "score": 0.86,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "Confirm",
+          "start": 18.76,
+          "end": 19.06,
+          "score": 0.859,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "best",
+          "start": 19.08,
+          "end": 19.26,
+          "score": 0.807,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "access",
+          "start": 19.341,
+          "end": 19.601,
+          "score": 0.875,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "route",
+          "start": 19.621,
+          "end": 19.801,
+          "score": 0.636,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "or",
+          "start": 19.922,
+          "end": 19.982,
+          "score": 0.75,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "if",
+          "start": 20.062,
+          "end": 20.122,
+          "score": 1.0,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "both",
+          "start": 20.182,
+          "end": 20.322,
+          "score": 0.948,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "lanes",
+          "start": 20.362,
+          "end": 20.543,
+          "score": 0.887,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "are",
+          "start": 20.583,
+          "end": 20.663,
+          "score": 0.835,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "blocked",
+          "start": 20.683,
+          "end": 20.903,
+          "score": 0.941,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "by",
+          "start": 20.943,
+          "end": 21.023,
+          "score": 0.996,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "stopped",
+          "start": 21.084,
+          "end": 21.344,
+          "score": 0.782,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "traffic.",
+          "start": 21.364,
+          "end": 21.725,
+          "score": 0.933,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "Listening.",
+          "start": 21.885,
+          "end": 22.246,
+          "score": 0.863,
+          "speaker": "SPEAKER_01"
+        }
+      ],
+      "message": "Command here. Unit Fi. Affirmative. Responding toward the highway approach. Confirm best access route or if both lanes are blocked by stopped traffic. Listening."
+    },
+    {
+      "speaker": "SPEAKER_00",
+      "start": 22.646,
+      "end": 35.488,
+      "words": [
+        {
+          "word": "Unit",
+          "start": 22.646,
+          "end": 22.867,
+          "score": 0.899,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "Fi",
+          "start": 22.927,
+          "end": 23.167,
+          "score": 0.914,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "here",
+          "start": 23.207,
+          "end": 23.387,
+          "score": 0.738,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "command.",
+          "start": 23.428,
+          "end": 23.728,
+          "score": 0.994,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "Unable",
+          "start": 24.049,
+          "end": 24.269,
+          "score": 0.783,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "to",
+          "start": 24.309,
+          "end": 24.349,
+          "score": 0.999,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "confirm.",
+          "start": 24.389,
+          "end": 24.73,
+          "score": 0.943,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "The",
+          "start": 25.251,
+          "end": 25.331,
+          "score": 0.859,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "call",
+          "start": 25.371,
+          "end": 25.551,
+          "score": 0.847,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "with",
+          "start": 25.571,
+          "end": 25.671,
+          "score": 0.989,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "the",
+          "start": 25.691,
+          "end": 25.751,
+          "score": 0.982,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "reporting",
+          "start": 25.772,
+          "end": 26.172,
+          "score": 0.901,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "civilian",
+          "start": 26.212,
+          "end": 26.613,
+          "score": 0.88,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "dropped",
+          "start": 26.673,
+          "end": 26.933,
+          "score": 0.564,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "before",
+          "start": 26.954,
+          "end": 27.174,
+          "score": 0.661,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "access",
+          "start": 27.274,
+          "end": 27.555,
+          "score": 0.914,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "details",
+          "start": 27.575,
+          "end": 27.915,
+          "score": 0.733,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "were",
+          "start": 27.935,
+          "end": 28.055,
+          "score": 0.876,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "obtained.",
+          "start": 28.095,
+          "end": 28.416,
+          "score": 0.763,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "Expect",
+          "start": 28.977,
+          "end": 29.378,
+          "score": 0.998,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "congestion",
+          "start": 29.418,
+          "end": 29.858,
+          "score": 0.943,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "on",
+          "start": 29.899,
+          "end": 29.959,
+          "score": 0.98,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "the",
+          "start": 29.979,
+          "end": 30.059,
+          "score": 0.837,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "highway",
+          "start": 30.099,
+          "end": 30.419,
+          "score": 0.742,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "and",
+          "start": 30.459,
+          "end": 30.88,
+          "score": 0.954,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "use",
+          "start": 30.98,
+          "end": 31.121,
+          "score": 0.785,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "caution",
+          "start": 31.201,
+          "end": 31.581,
+          "score": 0.928,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "near",
+          "start": 31.621,
+          "end": 31.742,
+          "score": 0.812,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "the",
+          "start": 31.782,
+          "end": 31.842,
+          "score": 0.998,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "treeline",
+          "start": 31.882,
+          "end": 32.283,
+          "score": 0.777,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "fire",
+          "start": 32.343,
+          "end": 32.623,
+          "score": 0.687,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "and",
+          "start": 33.044,
+          "end": 33.124,
+          "score": 0.721,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "overturned",
+          "start": 33.244,
+          "end": 33.665,
+          "score": 0.834,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "vehicle.",
+          "start": 33.705,
+          "end": 34.046,
+          "score": 0.774,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "Finished.",
+          "start": 34.927,
+          "end": 35.488,
+          "score": 0.874,
+          "speaker": "SPEAKER_00"
+        }
+      ],
+      "message": "Unit Fi here command. Unable to confirm. The call with the reporting civilian dropped before access details were obtained. Expect congestion on the highway and use caution near the treeline fire and overturned vehicle. Finished."
+    }
+  ],
+  "segments": [
+    {
+      "start": 0.031,
+      "end": 14.232,
+      "text": "All units here command. Civilian report of a brush fire along a wooded two-lane highway with traffic blocked near the roadway shoulder. Callers stated they stopped near a vehicle overturned close to the guardrail. Information is approximate. Listening.",
+      "speaker": "SPEAKER_00",
+      "words": [
+        {
+          "word": "All",
+          "start": 0.031,
+          "end": 0.272,
+          "score": 0.845,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "units",
+          "start": 0.372,
+          "end": 0.592,
+          "score": 0.887,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "here",
+          "start": 0.632,
+          "end": 0.753,
+          "score": 0.9,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "command.",
+          "start": 0.793,
+          "end": 1.094,
+          "score": 0.853,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "Civilian",
+          "start": 1.575,
+          "end": 1.956,
+          "score": 0.865,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "report",
+          "start": 1.996,
+          "end": 2.297,
+          "score": 0.924,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "of",
+          "start": 2.357,
+          "end": 2.397,
+          "score": 1.0,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "a",
+          "start": 2.437,
+          "end": 2.477,
+          "score": 0.5,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "brush",
+          "start": 2.517,
+          "end": 2.758,
+          "score": 0.575,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "fire",
+          "start": 2.798,
+          "end": 3.059,
+          "score": 0.741,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "along",
+          "start": 3.199,
+          "end": 3.399,
+          "score": 0.894,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "a",
+          "start": 3.439,
+          "end": 3.46,
+          "score": 1.0,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "wooded",
+          "start": 3.5,
+          "end": 3.74,
+          "score": 0.86,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "two-lane",
+          "start": 3.82,
+          "end": 4.181,
+          "score": 0.753,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "highway",
+          "start": 4.221,
+          "end": 4.582,
+          "score": 0.825,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "with",
+          "start": 5.003,
+          "end": 5.124,
+          "score": 0.998,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "traffic",
+          "start": 5.184,
+          "end": 5.505,
+          "score": 0.872,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "blocked",
+          "start": 5.565,
+          "end": 5.805,
+          "score": 0.713,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "near",
+          "start": 5.825,
+          "end": 5.926,
+          "score": 0.756,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "the",
+          "start": 5.966,
+          "end": 6.026,
+          "score": 0.999,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "roadway",
+          "start": 6.046,
+          "end": 6.407,
+          "score": 0.709,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "shoulder.",
+          "start": 6.447,
+          "end": 6.728,
+          "score": 0.812,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "Callers",
+          "start": 7.61,
+          "end": 7.891,
+          "score": 0.877,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "stated",
+          "start": 7.911,
+          "end": 8.191,
+          "score": 0.799,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "they",
+          "start": 8.231,
+          "end": 8.372,
+          "score": 0.873,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "stopped",
+          "start": 8.432,
+          "end": 8.733,
+          "score": 0.834,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "near",
+          "start": 8.753,
+          "end": 8.893,
+          "score": 0.52,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "a",
+          "start": 8.913,
+          "end": 8.933,
+          "score": 0.032,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "vehicle",
+          "start": 8.993,
+          "end": 9.314,
+          "score": 0.875,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "overturned",
+          "start": 9.354,
+          "end": 9.896,
+          "score": 0.807,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "close",
+          "start": 9.956,
+          "end": 10.156,
+          "score": 0.878,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "to",
+          "start": 10.176,
+          "end": 10.236,
+          "score": 0.251,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "the",
+          "start": 10.256,
+          "end": 10.317,
+          "score": 0.98,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "guardrail.",
+          "start": 10.357,
+          "end": 10.918,
+          "score": 0.791,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "Information",
+          "start": 11.928,
+          "end": 12.629,
+          "score": 0.862,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "is",
+          "start": 12.689,
+          "end": 12.729,
+          "score": 0.512,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "approximate.",
+          "start": 12.789,
+          "end": 13.33,
+          "score": 0.902,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "Listening.",
+          "start": 13.831,
+          "end": 14.232,
+          "score": 0.895,
+          "speaker": "SPEAKER_00"
+        }
+      ]
+    },
+    {
+      "start": 14.572,
+      "end": 22.246,
+      "text": "Command here. Unit Fi. Affirmative. Responding toward the highway approach. Confirm best access route or if both lanes are blocked by stopped traffic. Listening.",
+      "speaker": "SPEAKER_01",
+      "words": [
+        {
+          "word": "Command",
+          "start": 14.572,
+          "end": 14.853,
+          "score": 0.977,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "here.",
+          "start": 14.913,
+          "end": 15.093,
+          "score": 0.636,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "Unit",
+          "start": 15.454,
+          "end": 15.654,
+          "score": 0.798,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "Fi.",
+          "start": 15.694,
+          "end": 15.995,
+          "score": 0.926,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "Affirmative.",
+          "start": 16.335,
+          "end": 16.796,
+          "score": 0.787,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "Responding",
+          "start": 17.057,
+          "end": 17.497,
+          "score": 0.825,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "toward",
+          "start": 17.558,
+          "end": 17.738,
+          "score": 0.939,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "the",
+          "start": 17.778,
+          "end": 17.838,
+          "score": 0.999,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "highway",
+          "start": 17.878,
+          "end": 18.119,
+          "score": 0.771,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "approach.",
+          "start": 18.159,
+          "end": 18.519,
+          "score": 0.86,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "Confirm",
+          "start": 18.76,
+          "end": 19.06,
+          "score": 0.859,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "best",
+          "start": 19.08,
+          "end": 19.26,
+          "score": 0.807,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "access",
+          "start": 19.341,
+          "end": 19.601,
+          "score": 0.875,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "route",
+          "start": 19.621,
+          "end": 19.801,
+          "score": 0.636,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "or",
+          "start": 19.922,
+          "end": 19.982,
+          "score": 0.75,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "if",
+          "start": 20.062,
+          "end": 20.122,
+          "score": 1.0,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "both",
+          "start": 20.182,
+          "end": 20.322,
+          "score": 0.948,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "lanes",
+          "start": 20.362,
+          "end": 20.543,
+          "score": 0.887,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "are",
+          "start": 20.583,
+          "end": 20.663,
+          "score": 0.835,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "blocked",
+          "start": 20.683,
+          "end": 20.903,
+          "score": 0.941,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "by",
+          "start": 20.943,
+          "end": 21.023,
+          "score": 0.996,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "stopped",
+          "start": 21.084,
+          "end": 21.344,
+          "score": 0.782,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "traffic.",
+          "start": 21.364,
+          "end": 21.725,
+          "score": 0.933,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "Listening.",
+          "start": 21.885,
+          "end": 22.246,
+          "score": 0.863,
+          "speaker": "SPEAKER_01"
+        }
+      ]
+    },
+    {
+      "start": 22.646,
+      "end": 35.488,
+      "text": "Unit Fi here command. Unable to confirm. The call with the reporting civilian dropped before access details were obtained. Expect congestion on the highway and use caution near the treeline fire and overturned vehicle. Finished.",
+      "speaker": "SPEAKER_00",
+      "words": [
+        {
+          "word": "Unit",
+          "start": 22.646,
+          "end": 22.867,
+          "score": 0.899,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "Fi",
+          "start": 22.927,
+          "end": 23.167,
+          "score": 0.914,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "here",
+          "start": 23.207,
+          "end": 23.387,
+          "score": 0.738,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "command.",
+          "start": 23.428,
+          "end": 23.728,
+          "score": 0.994,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "Unable",
+          "start": 24.049,
+          "end": 24.269,
+          "score": 0.783,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "to",
+          "start": 24.309,
+          "end": 24.349,
+          "score": 0.999,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "confirm.",
+          "start": 24.389,
+          "end": 24.73,
+          "score": 0.943,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "The",
+          "start": 25.251,
+          "end": 25.331,
+          "score": 0.859,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "call",
+          "start": 25.371,
+          "end": 25.551,
+          "score": 0.847,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "with",
+          "start": 25.571,
+          "end": 25.671,
+          "score": 0.989,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "the",
+          "start": 25.691,
+          "end": 25.751,
+          "score": 0.982,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "reporting",
+          "start": 25.772,
+          "end": 26.172,
+          "score": 0.901,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "civilian",
+          "start": 26.212,
+          "end": 26.613,
+          "score": 0.88,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "dropped",
+          "start": 26.673,
+          "end": 26.933,
+          "score": 0.564,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "before",
+          "start": 26.954,
+          "end": 27.174,
+          "score": 0.661,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "access",
+          "start": 27.274,
+          "end": 27.555,
+          "score": 0.914,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "details",
+          "start": 27.575,
+          "end": 27.915,
+          "score": 0.733,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "were",
+          "start": 27.935,
+          "end": 28.055,
+          "score": 0.876,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "obtained.",
+          "start": 28.095,
+          "end": 28.416,
+          "score": 0.763,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "Expect",
+          "start": 28.977,
+          "end": 29.378,
+          "score": 0.998,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "congestion",
+          "start": 29.418,
+          "end": 29.858,
+          "score": 0.943,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "on",
+          "start": 29.899,
+          "end": 29.959,
+          "score": 0.98,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "the",
+          "start": 29.979,
+          "end": 30.059,
+          "score": 0.837,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "highway",
+          "start": 30.099,
+          "end": 30.419,
+          "score": 0.742,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "and",
+          "start": 30.459,
+          "end": 30.88,
+          "score": 0.954,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "use",
+          "start": 30.98,
+          "end": 31.121,
+          "score": 0.785,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "caution",
+          "start": 31.201,
+          "end": 31.581,
+          "score": 0.928,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "near",
+          "start": 31.621,
+          "end": 31.742,
+          "score": 0.812,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "the",
+          "start": 31.782,
+          "end": 31.842,
+          "score": 0.998,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "treeline",
+          "start": 31.882,
+          "end": 32.283,
+          "score": 0.777,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "fire",
+          "start": 32.343,
+          "end": 32.623,
+          "score": 0.687,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "and",
+          "start": 33.044,
+          "end": 33.124,
+          "score": 0.721,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "overturned",
+          "start": 33.244,
+          "end": 33.665,
+          "score": 0.834,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "vehicle.",
+          "start": 33.705,
+          "end": 34.046,
+          "score": 0.774,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "Finished.",
+          "start": 34.927,
+          "end": 35.488,
+          "score": 0.874,
+          "speaker": "SPEAKER_00"
+        }
+      ]
+    }
+  ],
+  "speaker_count": 2,
+  "analytics": {
+    "speaker_count": 2,
+    "people_mentioned_count": 0,
+    "civilians_mentioned_count": 0,
+    "firefighters_mentioned_count": 0,
+    "on_scene_responders_count": 0,
+    "civilians_at_safe_distance_mentioned": false,
+    "vehicles_mentioned_count": 0,
+    "emergency_vehicle_mentioned_count": 0
+  }
+}

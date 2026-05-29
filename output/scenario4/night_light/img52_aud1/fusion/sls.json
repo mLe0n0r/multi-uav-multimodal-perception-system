@@ -1,0 +1,150 @@
+{
+  "has_fire": true,
+  "summary": "Multiple vehicles are blocked in traffic near an active brush fire, with civilians reported outside vehicles.",
+  "counts_by_class": {
+    "person": 0,
+    "normal_vehicle": 6,
+    "emergency_vehicle": 1
+  },
+  "communications": {
+    "speaker_count": 1,
+    "key_communications": [
+      {
+        "text": "All units here, command. Incident reported by civilians on a two-lane highway through wooded area. Brush fire reported active in the tree line near the roadway shoulder. Multiple vehicles blocked in traffic. Several civilians outside vehicles on the asphalt. And one vehicle reported overturned near the guardrail. Listening.",
+        "speaker": "SPEAKER_00"
+      }
+    ],
+    "service_types": [
+      "voice"
+    ],
+    "service_inference_basis": []
+  },
+  "objects": [
+    {
+      "class": "normal_vehicle",
+      "detection_confidence": "0.90",
+      "position": {
+        "x": "-29.08 m",
+        "y": "96.21 m",
+        "z": "0.00 m"
+      },
+      "localization_confidence": {
+        "x": "0.15",
+        "y": "0.22",
+        "z": "1.00"
+      },
+      "distance_to_fire": "26.32 m",
+      "risk_level": "medium",
+      "throughput_need": "low",
+      "traffic_demand_mbps": 0.3
+    },
+    {
+      "class": "normal_vehicle",
+      "detection_confidence": "0.90",
+      "position": {
+        "x": "-29.05 m",
+        "y": "102.00 m",
+        "z": "0.00 m"
+      },
+      "localization_confidence": {
+        "x": "0.15",
+        "y": "0.20",
+        "z": "1.00"
+      },
+      "distance_to_fire": "20.61 m",
+      "risk_level": "medium",
+      "throughput_need": "low",
+      "traffic_demand_mbps": 0.3
+    },
+    {
+      "class": "normal_vehicle",
+      "detection_confidence": "0.90",
+      "position": {
+        "x": "-28.88 m",
+        "y": "89.31 m",
+        "z": "0.00 m"
+      },
+      "localization_confidence": {
+        "x": "0.14",
+        "y": "0.21",
+        "z": "1.00"
+      },
+      "distance_to_fire": "33.17 m",
+      "risk_level": "medium",
+      "throughput_need": "low",
+      "traffic_demand_mbps": 0.3
+    },
+    {
+      "class": "normal_vehicle",
+      "detection_confidence": "0.88",
+      "position": {
+        "x": "-29.08 m",
+        "y": "82.57 m",
+        "z": "0.00 m"
+      },
+      "localization_confidence": {
+        "x": "0.12",
+        "y": "0.22",
+        "z": "1.00"
+      },
+      "distance_to_fire": "39.85 m",
+      "risk_level": "medium",
+      "throughput_need": "low",
+      "traffic_demand_mbps": 0.3
+    },
+    {
+      "class": "normal_vehicle",
+      "detection_confidence": "0.86",
+      "position": {
+        "x": "-26.35 m",
+        "y": "94.20 m",
+        "z": "0.00 m"
+      },
+      "localization_confidence": {
+        "x": "0.16",
+        "y": "0.24",
+        "z": "1.00"
+      },
+      "distance_to_fire": "28.81 m",
+      "risk_level": "medium",
+      "throughput_need": "low",
+      "traffic_demand_mbps": 0.3
+    },
+    {
+      "class": "normal_vehicle",
+      "detection_confidence": "0.76",
+      "position": {
+        "x": "-27.73 m",
+        "y": "87.27 m",
+        "z": "0.00 m"
+      },
+      "localization_confidence": {
+        "x": "0.13",
+        "y": "0.40",
+        "z": "1.00"
+      },
+      "distance_to_fire": "35.35 m",
+      "risk_level": "medium",
+      "throughput_need": "low",
+      "traffic_demand_mbps": 0.3
+    },
+    {
+      "class": "emergency_vehicle",
+      "detection_confidence": "0.43",
+      "position": {
+        "x": "-25.69 m",
+        "y": "99.67 m",
+        "z": "0.00 m"
+      },
+      "localization_confidence": {
+        "x": "0.13",
+        "y": "0.17",
+        "z": "1.00"
+      },
+      "distance_to_fire": "23.73 m",
+      "risk_level": "high",
+      "throughput_need": "medium",
+      "traffic_demand_mbps": 2.0
+    }
+  ]
+}

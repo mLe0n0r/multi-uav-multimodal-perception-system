@@ -1,0 +1,160 @@
+{
+  "has_fire": true,
+  "summary": "A civilian reported a brush fire near a highway with an overturned vehicle, and emergency units are responding to the scene.",
+  "counts_by_class": {
+    "person": 1,
+    "normal_vehicle": 6,
+    "emergency_vehicle": 1
+  },
+  "communications": {
+    "speaker_count": 2,
+    "key_communications": [
+      {
+        "text": "All units here command. Civilian report of a brush fire along a wooded two-lane highway with traffic blocked near the roadway shoulder. Callers stated they stopped near a vehicle overturned close to the guardrail. Information is approximate. Listening.",
+        "speaker": "SPEAKER_00"
+      },
+      {
+        "text": "Command here. Unit Fi. Affirmative. Responding toward the highway approach. Confirm best access route or if both lanes are blocked by stopped traffic. Listening.",
+        "speaker": "SPEAKER_01"
+      }
+    ],
+    "service_types": [
+      "voice"
+    ],
+    "service_inference_basis": []
+  },
+  "objects": [
+    {
+      "class": "normal_vehicle",
+      "detection_confidence": "0.90",
+      "position": {
+        "x": "-29.08 m",
+        "y": "96.21 m",
+        "z": "0.00 m"
+      },
+      "localization_confidence": {
+        "x": "0.15",
+        "y": "0.22",
+        "z": "1.00"
+      },
+      "distance_to_fire": "26.32 m",
+      "risk_level": "medium",
+      "throughput_need": "low"
+    },
+    {
+      "class": "normal_vehicle",
+      "detection_confidence": "0.90",
+      "position": {
+        "x": "-29.05 m",
+        "y": "102.00 m",
+        "z": "0.00 m"
+      },
+      "localization_confidence": {
+        "x": "0.15",
+        "y": "0.20",
+        "z": "1.00"
+      },
+      "distance_to_fire": "20.61 m",
+      "risk_level": "medium",
+      "throughput_need": "low"
+    },
+    {
+      "class": "normal_vehicle",
+      "detection_confidence": "0.90",
+      "position": {
+        "x": "-28.88 m",
+        "y": "89.31 m",
+        "z": "0.00 m"
+      },
+      "localization_confidence": {
+        "x": "0.14",
+        "y": "0.21",
+        "z": "1.00"
+      },
+      "distance_to_fire": "33.17 m",
+      "risk_level": "medium",
+      "throughput_need": "low"
+    },
+    {
+      "class": "normal_vehicle",
+      "detection_confidence": "0.88",
+      "position": {
+        "x": "-29.08 m",
+        "y": "82.57 m",
+        "z": "0.00 m"
+      },
+      "localization_confidence": {
+        "x": "0.12",
+        "y": "0.22",
+        "z": "1.00"
+      },
+      "distance_to_fire": "39.85 m",
+      "risk_level": "medium",
+      "throughput_need": "low"
+    },
+    {
+      "class": "normal_vehicle",
+      "detection_confidence": "0.86",
+      "position": {
+        "x": "-26.35 m",
+        "y": "94.20 m",
+        "z": "0.00 m"
+      },
+      "localization_confidence": {
+        "x": "0.16",
+        "y": "0.24",
+        "z": "1.00"
+      },
+      "distance_to_fire": "28.81 m",
+      "risk_level": "medium",
+      "throughput_need": "low"
+    },
+    {
+      "class": "normal_vehicle",
+      "detection_confidence": "0.76",
+      "position": {
+        "x": "-27.73 m",
+        "y": "87.27 m",
+        "z": "0.00 m"
+      },
+      "localization_confidence": {
+        "x": "0.13",
+        "y": "0.40",
+        "z": "1.00"
+      },
+      "distance_to_fire": "35.35 m",
+      "risk_level": "medium",
+      "throughput_need": "low"
+    },
+    {
+      "class": "emergency_vehicle",
+      "detection_confidence": "0.43",
+      "position": {
+        "x": "-25.69 m",
+        "y": "99.67 m",
+        "z": "0.00 m"
+      },
+      "localization_confidence": {
+        "x": "0.13",
+        "y": "0.17",
+        "z": "1.00"
+      },
+      "distance_to_fire": "23.73 m",
+      "risk_level": "high",
+      "throughput_need": "medium"
+    },
+    {
+      "class": "person",
+      "audio_only": true,
+      "reason": "radio indicates 1 on-scene responder(s); 0 matched visually as firefighter",
+      "risk_level": "medium",
+      "throughput_need": "low",
+      "inferred_role": "firefighter",
+      "role_inference_basis": {
+        "source": "inference",
+        "text": ""
+      },
+      "role_confidence": null
+    }
+  ]
+}

@@ -1,0 +1,278 @@
+{
+  "has_fire": true,
+  "summary": "Emergency services are coordinating a response to a brush fire near a highway, involving multiple vehicles and civilians.",
+  "counts_by_class": {
+    "person": 8,
+    "normal_vehicle": 4,
+    "emergency_vehicle": 0
+  },
+  "communications": {
+    "speaker_count": 1,
+    "key_communications": [
+      {
+        "text": "All units here, command. Incident reported by civilians on a two-lane highway through wooded area. Brush fire reported active in the tree line near the roadway shoulder. Multiple vehicles blocked in traffic. Several civilians outside vehicles on the asphalt. And one vehicle reported overturned near the guardrail. Listening.",
+        "speaker": "SPEAKER_00"
+      }
+    ],
+    "service_types": [
+      "voice"
+    ],
+    "service_inference_basis": []
+  },
+  "objects": [
+    {
+      "class": "normal_vehicle",
+      "detection_confidence": "0.85",
+      "position": {
+        "x": "17.25 m",
+        "y": "138.04 m",
+        "z": "0.00 m"
+      },
+      "localization_confidence": {
+        "x": "0.14",
+        "y": "0.06",
+        "z": "1.00"
+      },
+      "distance_to_fire": "17.88 m",
+      "risk_level": "medium",
+      "throughput_need": "low",
+      "traffic_demand_mbps": 0.3
+    },
+    {
+      "class": "normal_vehicle",
+      "detection_confidence": "0.78",
+      "position": {
+        "x": "16.19 m",
+        "y": "144.70 m",
+        "z": "0.00 m"
+      },
+      "localization_confidence": {
+        "x": "0.16",
+        "y": "0.08",
+        "z": "1.00"
+      },
+      "distance_to_fire": "13.65 m",
+      "risk_level": "medium",
+      "throughput_need": "low",
+      "traffic_demand_mbps": 0.3
+    },
+    {
+      "class": "normal_vehicle",
+      "detection_confidence": "0.56",
+      "position": {
+        "x": "17.32 m",
+        "y": "110.22 m",
+        "z": "0.00 m"
+      },
+      "localization_confidence": {
+        "x": "0.10",
+        "y": "0.03",
+        "z": "1.00"
+      },
+      "distance_to_fire": "40.21 m",
+      "risk_level": "medium",
+      "throughput_need": "low",
+      "traffic_demand_mbps": 0.3
+    },
+    {
+      "class": "person",
+      "detection_confidence": "0.79",
+      "position": {
+        "x": "-6.63 m",
+        "y": "135.18 m",
+        "z": "0.35 m"
+      },
+      "localization_confidence": {
+        "x": "0.30",
+        "y": "0.08",
+        "z": "1.00"
+      },
+      "distance_to_fire": "16.68 m",
+      "risk_level": "medium",
+      "inferred_role": null,
+      "role_inference_basis": {
+        "source": "inference",
+        "text": ""
+      },
+      "role_confidence": null,
+      "throughput_need": "low",
+      "traffic_demand_mbps": 0.3
+    },
+    {
+      "class": "person",
+      "detection_confidence": "0.74",
+      "position": {
+        "x": "-7.31 m",
+        "y": "125.51 m",
+        "z": "0.32 m"
+      },
+      "localization_confidence": {
+        "x": "0.25",
+        "y": "0.06",
+        "z": "1.00"
+      },
+      "distance_to_fire": "26.55 m",
+      "risk_level": "medium",
+      "inferred_role": null,
+      "role_inference_basis": {
+        "source": "inference",
+        "text": ""
+      },
+      "role_confidence": null,
+      "throughput_need": "low",
+      "traffic_demand_mbps": 0.3
+    },
+    {
+      "class": "person",
+      "detection_confidence": "0.74",
+      "position": {
+        "x": "-7.68 m",
+        "y": "130.13 m",
+        "z": "0.43 m"
+      },
+      "localization_confidence": {
+        "x": "0.27",
+        "y": "0.07",
+        "z": "1.00"
+      },
+      "distance_to_fire": "22.57 m",
+      "risk_level": "medium",
+      "inferred_role": null,
+      "role_inference_basis": {
+        "source": "inference",
+        "text": ""
+      },
+      "role_confidence": null,
+      "throughput_need": "low",
+      "traffic_demand_mbps": 0.3
+    },
+    {
+      "class": "person",
+      "detection_confidence": "0.71",
+      "position": {
+        "x": "-6.81 m",
+        "y": "124.32 m",
+        "z": "0.34 m"
+      },
+      "localization_confidence": {
+        "x": "0.25",
+        "y": "0.06",
+        "z": "1.00"
+      },
+      "distance_to_fire": "27.77 m",
+      "risk_level": "medium",
+      "inferred_role": null,
+      "role_inference_basis": {
+        "source": "inference",
+        "text": ""
+      },
+      "role_confidence": null,
+      "throughput_need": "low",
+      "traffic_demand_mbps": 0.3
+    },
+    {
+      "class": "person",
+      "detection_confidence": "0.70",
+      "position": {
+        "x": "-4.15 m",
+        "y": "134.96 m",
+        "z": "-0.22 m"
+      },
+      "localization_confidence": {
+        "x": "0.31",
+        "y": "0.08",
+        "z": "1.00"
+      },
+      "distance_to_fire": "15.22 m",
+      "risk_level": "medium",
+      "inferred_role": null,
+      "role_inference_basis": {
+        "source": "inference",
+        "text": ""
+      },
+      "role_confidence": null,
+      "throughput_need": "low",
+      "traffic_demand_mbps": 0.3
+    },
+    {
+      "class": "person",
+      "detection_confidence": "0.62",
+      "position": {
+        "x": "-4.07 m",
+        "y": "125.26 m",
+        "z": "-0.45 m"
+      },
+      "localization_confidence": {
+        "x": "0.26",
+        "y": "0.07",
+        "z": "1.00"
+      },
+      "distance_to_fire": "24.07 m",
+      "risk_level": "medium",
+      "inferred_role": null,
+      "role_inference_basis": {
+        "source": "inference",
+        "text": ""
+      },
+      "role_confidence": null,
+      "throughput_need": "low",
+      "traffic_demand_mbps": 0.3
+    },
+    {
+      "class": "person",
+      "detection_confidence": "0.58",
+      "position": {
+        "x": "-7.92 m",
+        "y": "131.13 m",
+        "z": "0.66 m"
+      },
+      "localization_confidence": {
+        "x": "0.27",
+        "y": "0.07",
+        "z": "1.00"
+      },
+      "distance_to_fire": "22.19 m",
+      "risk_level": "medium",
+      "inferred_role": null,
+      "role_inference_basis": {
+        "source": "inference",
+        "text": ""
+      },
+      "role_confidence": null,
+      "throughput_need": "low",
+      "traffic_demand_mbps": 0.3
+    },
+    {
+      "class": "person",
+      "detection_confidence": "0.66",
+      "position": {
+        "x": "16.66 m",
+        "y": "140.26 m",
+        "z": "-0.00 m"
+      },
+      "localization_confidence": {
+        "x": "0.29",
+        "y": "0.11",
+        "z": "1.00"
+      },
+      "distance_to_fire": "16.29 m",
+      "risk_level": "low",
+      "throughput_need": "low",
+      "inferred_role": "civilian",
+      "role_inference_basis": {
+        "source": "inference",
+        "text": "Civilians mentioned in the context of an incident report."
+      },
+      "role_confidence": 0.9,
+      "traffic_demand_mbps": 0.3
+    },
+    {
+      "class": "normal_vehicle",
+      "audio_only": true,
+      "reason": "radio explicitly mentions 1 normal vehicle(s); 0 detected visually",
+      "risk_level": "medium",
+      "throughput_need": "medium",
+      "traffic_demand_mbps": 0.3
+    }
+  ]
+}

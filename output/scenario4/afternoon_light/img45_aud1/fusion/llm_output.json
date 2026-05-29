@@ -1,0 +1,192 @@
+{
+  "has_fire": true,
+  "summary": "Multiple civilians and vehicles are present near an active brush fire on a highway, with reports of an overturned vehicle.",
+  "counts_by_class": {
+    "person": 7,
+    "normal_vehicle": 1,
+    "emergency_vehicle": 0
+  },
+  "communications": {
+    "speaker_count": 1,
+    "key_communications": [
+      {
+        "text": "All units here, command. Incident reported by civilians on a two-lane highway through wooded area. Brush fire reported active in the tree line near the roadway shoulder. Multiple vehicles blocked in traffic. Several civilians outside vehicles on the asphalt. And one vehicle reported overturned near the guardrail. Listening.",
+        "speaker": "SPEAKER_00"
+      }
+    ],
+    "service_types": [
+      "voice"
+    ],
+    "service_inference_basis": []
+  },
+  "objects": [
+    {
+      "class": "person",
+      "detection_confidence": "0.79",
+      "position": {
+        "x": "-1.05 m",
+        "y": "132.90 m",
+        "z": "0.00 m"
+      },
+      "localization_confidence": {
+        "x": "0.30",
+        "y": "0.08",
+        "z": "1.00"
+      },
+      "distance_to_fire": "16.68 m",
+      "risk_level": "medium",
+      "throughput_need": "low",
+      "inferred_role": "civilian",
+      "role_inference_basis": {
+        "source": "inference",
+        "text": "Civilians mentioned in the initial report."
+      },
+      "role_confidence": 1.0
+    },
+    {
+      "class": "person",
+      "detection_confidence": "0.74",
+      "position": {
+        "x": "-0.36 m",
+        "y": "122.99 m",
+        "z": "0.00 m"
+      },
+      "localization_confidence": {
+        "x": "0.25",
+        "y": "0.06",
+        "z": "1.00"
+      },
+      "distance_to_fire": "26.55 m",
+      "risk_level": "medium",
+      "throughput_need": "low",
+      "inferred_role": "civilian",
+      "role_inference_basis": {
+        "source": "inference",
+        "text": "Civilians mentioned in the initial report."
+      },
+      "role_confidence": 1.0
+    },
+    {
+      "class": "person",
+      "detection_confidence": "0.74",
+      "position": {
+        "x": "0.10 m",
+        "y": "127.13 m",
+        "z": "0.00 m"
+      },
+      "localization_confidence": {
+        "x": "0.27",
+        "y": "0.07",
+        "z": "1.00"
+      },
+      "distance_to_fire": "22.57 m",
+      "risk_level": "medium",
+      "throughput_need": "low",
+      "inferred_role": "civilian",
+      "role_inference_basis": {
+        "source": "inference",
+        "text": "Civilians mentioned in the initial report."
+      },
+      "role_confidence": 1.0
+    },
+    {
+      "class": "person",
+      "detection_confidence": "0.71",
+      "position": {
+        "x": "-0.88 m",
+        "y": "121.68 m",
+        "z": "0.00 m"
+      },
+      "localization_confidence": {
+        "x": "0.25",
+        "y": "0.06",
+        "z": "1.00"
+      },
+      "distance_to_fire": "27.77 m",
+      "risk_level": "medium",
+      "throughput_need": "low",
+      "inferred_role": "civilian",
+      "role_inference_basis": {
+        "source": "inference",
+        "text": "Civilians mentioned in the initial report."
+      },
+      "role_confidence": 1.0
+    },
+    {
+      "class": "person",
+      "detection_confidence": "0.70",
+      "position": {
+        "x": "-3.65 m",
+        "y": "133.99 m",
+        "z": "0.00 m"
+      },
+      "localization_confidence": {
+        "x": "0.31",
+        "y": "0.08",
+        "z": "1.00"
+      },
+      "distance_to_fire": "15.22 m",
+      "risk_level": "medium",
+      "throughput_need": "low",
+      "inferred_role": "civilian",
+      "role_inference_basis": {
+        "source": "inference",
+        "text": "Civilians mentioned in the initial report."
+      },
+      "role_confidence": 1.0
+    },
+    {
+      "class": "person",
+      "detection_confidence": "0.62",
+      "position": {
+        "x": "-3.75 m",
+        "y": "125.13 m",
+        "z": "0.00 m"
+      },
+      "localization_confidence": {
+        "x": "0.26",
+        "y": "0.07",
+        "z": "1.00"
+      },
+      "distance_to_fire": "24.07 m",
+      "risk_level": "medium",
+      "throughput_need": "low",
+      "inferred_role": "civilian",
+      "role_inference_basis": {
+        "source": "inference",
+        "text": "Civilians mentioned in the initial report."
+      },
+      "role_confidence": 1.0
+    },
+    {
+      "class": "person",
+      "detection_confidence": "0.58",
+      "position": {
+        "x": "0.41 m",
+        "y": "127.59 m",
+        "z": "0.00 m"
+      },
+      "localization_confidence": {
+        "x": "0.27",
+        "y": "0.07",
+        "z": "1.00"
+      },
+      "distance_to_fire": "22.19 m",
+      "risk_level": "medium",
+      "throughput_need": "low",
+      "inferred_role": "civilian",
+      "role_inference_basis": {
+        "source": "inference",
+        "text": "Civilians mentioned in the initial report."
+      },
+      "role_confidence": 1.0
+    },
+    {
+      "class": "normal_vehicle",
+      "audio_only": true,
+      "reason": "radio explicitly mentions 1 normal vehicle(s); 0 detected visually",
+      "risk_level": "medium",
+      "throughput_need": "low"
+    }
+  ]
+}
