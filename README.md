@@ -14,10 +14,9 @@ M2PS is a proof-of-concept Multi-UAV Multimodal Perception System designed to bu
 ---
 
 ## ⚙️ Architecture
+M2PS pipeline:
 
-<img src="./systemPipeline.png" alt="M2PS pipeline" width="650">
-
-*M2PS pipeline.*
+<img src="./systemPipeline.png" alt="M2PS pipeline" width="750">
 
 ---
 
