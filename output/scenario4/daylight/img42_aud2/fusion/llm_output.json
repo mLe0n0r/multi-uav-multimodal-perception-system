@@ -1,6 +1,6 @@
 {
   "has_fire": true,
-  "summary": "Units are coordinating a response to a brush fire near a highway where a vehicle was overturned.",
+  "summary": "A civilian reported a brush fire along a highway with traffic blocked near an overturned vehicle.",
   "counts_by_class": {
     "person": 7,
     "normal_vehicle": 8,
@@ -43,7 +43,7 @@
       "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": "civilian report"
+        "text": "Person ID 0 is assigned as civilian (proximity rank 3)."
       },
       "role_confidence": 0.8
     },
@@ -66,7 +66,7 @@
       "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": "civilian report"
+        "text": "Person ID 1 is assigned as civilian (proximity rank 5)."
       },
       "role_confidence": 0.8
     },
@@ -89,7 +89,7 @@
       "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": "civilian report"
+        "text": "Person ID 2 is assigned as civilian (proximity rank 6)."
       },
       "role_confidence": 0.8
     },
@@ -112,7 +112,7 @@
       "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": "civilian report"
+        "text": "Person ID 3 is assigned as civilian (proximity rank 7)."
       },
       "role_confidence": 0.8
     },
@@ -135,9 +135,9 @@
       "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": "civilian report"
+        "text": "Person ID 4 is the closest remaining person and not identified as a firefighter based on rule 1. Assigned as civilian."
       },
-      "role_confidence": 0.8
+      "role_confidence": 0.9
     },
     {
       "class": "person",
@@ -158,9 +158,9 @@
       "inferred_role": "firefighter",
       "role_inference_basis": {
         "source": "inference",
-        "text": "field radio unit on scene per radio (command is off-scene support); assigned to closest person near fire"
+        "text": "ROLE_CONTEXT.has_fire is true and radio_signals.on_scene_responders_count >= 1 implies an on-scene field unit exists; person ID 5 has proximity_rank == 1 (closest to fire), thus assigned as the responder operating at the fire."
       },
-      "role_confidence": 0.85
+      "role_confidence": 1.0
     },
     {
       "class": "person",
@@ -181,7 +181,7 @@
       "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": "civilian report"
+        "text": "Person ID 6 is assigned as civilian (proximity rank 4)."
       },
       "role_confidence": 0.8
     },
@@ -284,7 +284,7 @@
         "z": "1.00"
       },
       "distance_to_fire": "25.55 m",
-      "risk_level": "low",
+      "risk_level": "medium",
       "throughput_need": "low"
     },
     {
@@ -321,5 +321,8 @@
       "risk_level": "medium",
       "throughput_need": "low"
     }
-  ]
+  ],
+  "_metadata": {
+    "role_assignment_llm_applied": true
+  }
 }

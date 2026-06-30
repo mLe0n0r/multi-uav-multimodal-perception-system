@@ -1,230 +1,33 @@
 {
-  "scene_description": "A scene involving emergency response, likely a fire, with multiple vehicles and personnel involved.",
+  "has_fire": true,
+  "summary": "Fire is actively spreading beneath a structure, and multiple civilian vehicles are exposed to heat.",
+  "counts_by_class": {
+    "person": 9,
+    "normal_vehicle": 4,
+    "emergency_vehicle": 0
+  },
+  "communications": {
+    "speaker_count": 3,
+    "key_communications": [
+      {
+        "text": "Engine 1 here, Command.",
+        "speaker": "SPEAKER_02"
+      },
+      {
+        "text": "Command here, Engine 1.",
+        "speaker": "SPEAKER_00"
+      },
+      {
+        "text": "Command here, Rescue 2.",
+        "speaker": "SPEAKER_01"
+      }
+    ],
+    "service_types": [
+      "voice"
+    ],
+    "service_inference_basis": []
+  },
   "objects": [
-    {
-      "class": "person",
-      "detection_confidence": "0.84",
-      "position": {
-        "x": "-402.38 m",
-        "y": "148.14 m",
-        "z": "0.00 m"
-      },
-      "localization_confidence": {
-        "x": "0.17",
-        "y": "0.14",
-        "z": "1.00"
-      },
-      "distance_to_fire": "253.17 m",
-      "risk_level": "medium",
-      "throughput_need": "low",
-      "inferred_role": "civilian",
-      "role_inference_basis": {
-        "source": "inference",
-        "text": "radio reports 7 civilian(s) at safe distance; matched to persons farther from fire"
-      },
-      "role_confidence": 0.75
-    },
-    {
-      "class": "normal_vehicle",
-      "detection_confidence": "0.88",
-      "position": {
-        "x": "-104.13 m",
-        "y": "-43.09 m",
-        "z": "0.00 m"
-      },
-      "localization_confidence": {
-        "x": "0.26",
-        "y": "0.19",
-        "z": "1.00"
-      },
-      "distance_to_fire": "8.05 m",
-      "risk_level": "medium",
-      "throughput_need": "low"
-    },
-    {
-      "class": "person",
-      "detection_confidence": "0.84",
-      "position": {
-        "x": "-364.00 m",
-        "y": "-4.48 m",
-        "z": "0.00 m"
-      },
-      "localization_confidence": {
-        "x": "0.22",
-        "y": "0.23",
-        "z": "1.00"
-      },
-      "distance_to_fire": "351.04 m",
-      "risk_level": "medium",
-      "throughput_need": "low",
-      "inferred_role": "civilian",
-      "role_inference_basis": {
-        "source": "inference",
-        "text": "radio reports 7 civilian(s) at safe distance; matched to persons farther from fire"
-      },
-      "role_confidence": 0.75
-    },
-    {
-      "class": "person",
-      "detection_confidence": "0.83",
-      "position": {
-        "x": "-372.37 m",
-        "y": "155.63 m",
-        "z": "0.00 m"
-      },
-      "localization_confidence": {
-        "x": "0.21",
-        "y": "0.15",
-        "z": "1.00"
-      },
-      "distance_to_fire": "281.41 m",
-      "risk_level": "medium",
-      "throughput_need": "low",
-      "inferred_role": "civilian",
-      "role_inference_basis": {
-        "source": "inference",
-        "text": "radio reports 7 civilian(s) at safe distance; matched to persons farther from fire"
-      },
-      "role_confidence": 0.75
-    },
-    {
-      "class": "person",
-      "detection_confidence": "0.82",
-      "position": {
-        "x": "-436.92 m",
-        "y": "160.28 m",
-        "z": "0.00 m"
-      },
-      "localization_confidence": {
-        "x": "0.14",
-        "y": "0.13",
-        "z": "1.00"
-      },
-      "distance_to_fire": "216.96 m",
-      "risk_level": "medium",
-      "throughput_need": "medium",
-      "inferred_role": "firefighter",
-      "role_inference_basis": {
-        "source": "inference",
-        "text": "engine_1, rescue_2 on scene per radio (command is off-scene support); assigned to closest person near fire"
-      },
-      "role_confidence": 0.85
-    },
-    {
-      "class": "person",
-      "detection_confidence": "0.78",
-      "position": {
-        "x": "-386.63 m",
-        "y": "146.08 m",
-        "z": "0.00 m"
-      },
-      "localization_confidence": {
-        "x": "0.19",
-        "y": "0.16",
-        "z": "1.00"
-      },
-      "distance_to_fire": "269.02 m",
-      "risk_level": "medium",
-      "throughput_need": "low",
-      "inferred_role": "civilian",
-      "role_inference_basis": {
-        "source": "inference",
-        "text": "radio reports 7 civilian(s) at safe distance; matched to persons farther from fire"
-      },
-      "role_confidence": 0.75
-    },
-    {
-      "class": "person",
-      "detection_confidence": "0.78",
-      "position": {
-        "x": "-363.49 m",
-        "y": "129.90 m",
-        "z": "0.00 m"
-      },
-      "localization_confidence": {
-        "x": "0.22",
-        "y": "0.18",
-        "z": "1.00"
-      },
-      "distance_to_fire": "295.08 m",
-      "risk_level": "medium",
-      "throughput_need": "low",
-      "inferred_role": "civilian",
-      "role_inference_basis": {
-        "source": "inference",
-        "text": "radio reports 7 civilian(s) at safe distance; matched to persons farther from fire"
-      },
-      "role_confidence": 0.75
-    },
-    {
-      "class": "person",
-      "detection_confidence": "0.75",
-      "position": {
-        "x": "-380.99 m",
-        "y": "173.34 m",
-        "z": "0.00 m"
-      },
-      "localization_confidence": {
-        "x": "0.20",
-        "y": "0.14",
-        "z": "1.00"
-      },
-      "distance_to_fire": "270.69 m",
-      "risk_level": "medium",
-      "throughput_need": "low",
-      "inferred_role": "civilian",
-      "role_inference_basis": {
-        "source": "inference",
-        "text": "radio reports 7 civilian(s) at safe distance; matched to persons farther from fire"
-      },
-      "role_confidence": 0.75
-    },
-    {
-      "class": "person",
-      "detection_confidence": "0.68",
-      "position": {
-        "x": "-429.04 m",
-        "y": "169.44 m",
-        "z": "0.00 m"
-      },
-      "localization_confidence": {
-        "x": "0.15",
-        "y": "0.16",
-        "z": "1.00"
-      },
-      "distance_to_fire": "223.36 m",
-      "risk_level": "medium",
-      "throughput_need": "medium",
-      "inferred_role": "firefighter",
-      "role_inference_basis": {
-        "source": "inference",
-        "text": "engine_1, rescue_2 on scene per radio (command is off-scene support); assigned to closest person near fire"
-      },
-      "role_confidence": 0.85
-    },
-    {
-      "class": "person",
-      "detection_confidence": "0.56",
-      "position": {
-        "x": "-410.69 m",
-        "y": "-241.73 m",
-        "z": "0.00 m"
-      },
-      "localization_confidence": {
-        "x": "0.17",
-        "y": "0.13",
-        "z": "1.00"
-      },
-      "distance_to_fire": "360.73 m",
-      "risk_level": "medium",
-      "throughput_need": "low",
-      "inferred_role": "civilian",
-      "role_inference_basis": {
-        "source": "inference",
-        "text": "radio reports 7 civilian(s) at safe distance; matched to persons farther from fire"
-      },
-      "role_confidence": 0.75
-    },
     {
       "class": "normal_vehicle",
       "detection_confidence": "0.88",
@@ -275,62 +78,233 @@
       "distance_to_fire": "887.35 m",
       "risk_level": "medium",
       "throughput_need": "low"
-    }
-  ],
-  "people": [
-    {
-      "name": "Personnel",
-      "attributes": [
-        "involved in emergency response"
-      ]
-    }
-  ],
-  "actions": [
-    {
-      "action": "Responding to emergency",
-      "subjects": [
-        "Personnel"
-      ],
-      "objects": [
-        "Vehicle"
-      ]
-    }
-  ],
-  "events": [
-    {
-      "event": "Fire incident",
-      "details": "An emergency situation requiring response, implied by the dialogue and context."
     },
     {
-      "event": "Firefighting operation",
-      "details": "Firefighters are actively engaged in an operation, using water hoses."
+      "class": "normal_vehicle",
+      "detection_confidence": "0.88",
+      "position": {
+        "x": "-104.13 m",
+        "y": "-43.09 m",
+        "z": "0.00 m"
+      },
+      "localization_confidence": {
+        "x": "0.26",
+        "y": "0.19",
+        "z": "1.00"
+      },
+      "distance_to_fire": "8.05 m",
+      "risk_level": "medium",
+      "throughput_need": "low"
+    },
+    {
+      "class": "person",
+      "detection_confidence": "0.84",
+      "position": {
+        "x": "-402.38 m",
+        "y": "148.14 m",
+        "z": "0.00 m"
+      },
+      "localization_confidence": {
+        "x": "0.17",
+        "y": "0.14",
+        "z": "1.00"
+      },
+      "distance_to_fire": "253.17 m",
+      "risk_level": "medium",
+      "inferred_role": "civilian",
+      "role_inference_basis": {
+        "source": "inference",
+        "text": "Third closest person; not the closest to fire or explicitly identified as responders."
+      },
+      "role_confidence": 0.9,
+      "throughput_need": "low"
+    },
+    {
+      "class": "person",
+      "detection_confidence": "0.84",
+      "position": {
+        "x": "-364.00 m",
+        "y": "-4.48 m",
+        "z": "0.00 m"
+      },
+      "localization_confidence": {
+        "x": "0.22",
+        "y": "0.23",
+        "z": "1.00"
+      },
+      "distance_to_fire": "351.04 m",
+      "risk_level": "medium",
+      "inferred_role": "civilian",
+      "role_inference_basis": {
+        "source": "inference",
+        "text": "Eighth closest person; inferred as civilian based on proximity and lack of responder designation."
+      },
+      "role_confidence": 0.9,
+      "throughput_need": "low"
+    },
+    {
+      "class": "person",
+      "detection_confidence": "0.83",
+      "position": {
+        "x": "-372.37 m",
+        "y": "155.63 m",
+        "z": "0.00 m"
+      },
+      "localization_confidence": {
+        "x": "0.21",
+        "y": "0.15",
+        "z": "1.00"
+      },
+      "distance_to_fire": "281.41 m",
+      "risk_level": "medium",
+      "inferred_role": "civilian",
+      "role_inference_basis": {
+        "source": "inference",
+        "text": "Sixth closest person; inferred as civilian based on proximity and lack of responder designation."
+      },
+      "role_confidence": 0.9,
+      "throughput_need": "low"
+    },
+    {
+      "class": "person",
+      "detection_confidence": "0.82",
+      "position": {
+        "x": "-436.92 m",
+        "y": "160.28 m",
+        "z": "0.00 m"
+      },
+      "localization_confidence": {
+        "x": "0.14",
+        "y": "0.13",
+        "z": "1.00"
+      },
+      "distance_to_fire": "216.96 m",
+      "risk_level": "medium",
+      "inferred_role": "firefighter",
+      "role_inference_basis": {
+        "source": "inference",
+        "text": "Proximity rank is 1 (closest to fire), and on-scene field units exist (engine_1, rescue_2) implying a responder operating at the fire."
+      },
+      "role_confidence": 1.0,
+      "throughput_need": "medium"
+    },
+    {
+      "class": "person",
+      "detection_confidence": "0.78",
+      "position": {
+        "x": "-386.63 m",
+        "y": "146.08 m",
+        "z": "0.00 m"
+      },
+      "localization_confidence": {
+        "x": "0.19",
+        "y": "0.16",
+        "z": "1.00"
+      },
+      "distance_to_fire": "269.02 m",
+      "risk_level": "medium",
+      "inferred_role": "civilian",
+      "role_inference_basis": {
+        "source": "inference",
+        "text": "Fourth closest person; inferred as civilian based on proximity and lack of responder designation."
+      },
+      "role_confidence": 0.9,
+      "throughput_need": "low"
+    },
+    {
+      "class": "person",
+      "detection_confidence": "0.78",
+      "position": {
+        "x": "-363.49 m",
+        "y": "129.90 m",
+        "z": "0.00 m"
+      },
+      "localization_confidence": {
+        "x": "0.22",
+        "y": "0.18",
+        "z": "1.00"
+      },
+      "distance_to_fire": "295.08 m",
+      "risk_level": "medium",
+      "inferred_role": "civilian",
+      "role_inference_basis": {
+        "source": "inference",
+        "text": "Seventh closest person; inferred as civilian based on proximity and lack of responder designation."
+      },
+      "role_confidence": 0.9,
+      "throughput_need": "low"
+    },
+    {
+      "class": "person",
+      "detection_confidence": "0.75",
+      "position": {
+        "x": "-380.99 m",
+        "y": "173.34 m",
+        "z": "0.00 m"
+      },
+      "localization_confidence": {
+        "x": "0.20",
+        "y": "0.14",
+        "z": "1.00"
+      },
+      "distance_to_fire": "270.69 m",
+      "risk_level": "medium",
+      "inferred_role": "civilian",
+      "role_inference_basis": {
+        "source": "inference",
+        "text": "Fifth closest person; inferred as civilian based on proximity and lack of responder designation."
+      },
+      "role_confidence": 0.9,
+      "throughput_need": "low"
+    },
+    {
+      "class": "person",
+      "detection_confidence": "0.68",
+      "position": {
+        "x": "-429.04 m",
+        "y": "169.44 m",
+        "z": "0.00 m"
+      },
+      "localization_confidence": {
+        "x": "0.15",
+        "y": "0.16",
+        "z": "1.00"
+      },
+      "distance_to_fire": "223.36 m",
+      "risk_level": "medium",
+      "inferred_role": "possible_responder",
+      "role_inference_basis": {
+        "source": "inference",
+        "text": "Second closest person, inferred as a possible responder based on scene context and available resources."
+      },
+      "role_confidence": 0.8,
+      "throughput_need": "medium"
+    },
+    {
+      "class": "person",
+      "detection_confidence": "0.56",
+      "position": {
+        "x": "-410.69 m",
+        "y": "-241.73 m",
+        "z": "0.00 m"
+      },
+      "localization_confidence": {
+        "x": "0.17",
+        "y": "0.13",
+        "z": "1.00"
+      },
+      "distance_to_fire": "360.73 m",
+      "risk_level": "medium",
+      "inferred_role": "civilian",
+      "role_inference_basis": {
+        "source": "inference",
+        "text": "Ninth closest person; inferred as civilian based on proximity and lack of responder designation."
+      },
+      "role_confidence": 0.9,
+      "throughput_need": "low"
     }
   ],
-  "communications": {
-    "speaker_count": 3,
-    "service_types": [
-      "voice"
-    ],
-    "key_communications": [
-      {
-        "text": "Engine 1 here, Command.",
-        "speaker": "SPEAKER_02"
-      },
-      {
-        "text": "Command here, Engine 1.",
-        "speaker": "SPEAKER_00"
-      },
-      {
-        "text": "Command here, Rescue 2.",
-        "speaker": "SPEAKER_01"
-      }
-    ],
-    "service_inference_basis": []
-  },
-  "counts_by_class": {
-    "person": 9,
-    "normal_vehicle": 4,
-    "emergency_vehicle": 0
-  },
-  "has_fire": true
+  "_metadata": {
+    "role_assignment_llm_applied": true
+  }
 }

@@ -1,6 +1,6 @@
 {
   "has_fire": true,
-  "summary": "Emergency responders are coordinating cooling operations on vehicles near a fire while maintaining observation of civilians.",
+  "summary": "Fire is active on two vehicles near the incident site, with civilians remaining at a safe distance.",
   "counts_by_class": {
     "person": 3,
     "normal_vehicle": 4,
@@ -43,9 +43,9 @@
       "inferred_role": "firefighter",
       "role_inference_basis": {
         "source": "inference",
-        "text": "engine_1 on scene per radio (command is off-scene support); assigned to closest person near fire"
+        "text": "ROLE_CONTEXT.has_fire is true and an on-scene field unit exists (engine_1), implying the closest person (proximity_rank=1) is the responder operating at the fire."
       },
-      "role_confidence": 0.85,
+      "role_confidence": 1.0,
       "traffic_demand_mbps": 1.0
     },
     {
@@ -123,13 +123,13 @@
     {
       "class": "person",
       "audio_only": true,
-      "reason": "radio reports 2 civilian(s) at safe distance; 0 matched visually as civilian",
+      "reason": "radio mentions 2 civilian(s); 0 labeled civilian visually; gap-fill for occluded / not visible civilian",
       "risk_level": "medium",
       "throughput_need": "low",
       "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": ""
+        "text": "no role inferred from radio or proximity"
       },
       "role_confidence": null,
       "traffic_demand_mbps": 0.3
@@ -137,13 +137,13 @@
     {
       "class": "person",
       "audio_only": true,
-      "reason": "radio reports 2 civilian(s) at safe distance; 0 matched visually as civilian",
+      "reason": "radio mentions 2 civilian(s); 0 labeled civilian visually; gap-fill for occluded / not visible civilian",
       "risk_level": "medium",
       "throughput_need": "low",
       "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": ""
+        "text": "no role inferred from radio or proximity"
       },
       "role_confidence": null,
       "traffic_demand_mbps": 0.3

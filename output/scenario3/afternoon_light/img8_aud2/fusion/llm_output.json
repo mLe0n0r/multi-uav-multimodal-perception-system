@@ -1,6 +1,6 @@
 {
   "has_fire": true,
-  "summary": "Fire is active, and emergency responders are coordinating assessment of the fire line and nearby structures.",
+  "summary": "Emergency responders are coordinating assessment of a wildfire and a civilian near a structure.",
   "counts_by_class": {
     "person": 2,
     "normal_vehicle": 0,
@@ -25,7 +25,25 @@
     "service_types": [
       "voice"
     ],
-    "service_inference_basis": []
+    "service_inference_basis": [],
+    "objects": [
+      {
+        "id": 0,
+        "class": "person",
+        "risk_level": "medium"
+      },
+      {
+        "id": 1,
+        "class": "person",
+        "risk_level": "medium"
+      },
+      {
+        "id": 2,
+        "class": "emergency_vehicle",
+        "risk_level": "medium",
+        "throughput_need": "medium"
+      }
+    ]
   },
   "objects": [
     {
@@ -47,9 +65,9 @@
       "inferred_role": "firefighter",
       "role_inference_basis": {
         "source": "inference",
-        "text": "engine_1, rescue_2 on scene per radio (command is off-scene support); assigned to closest person near fire"
+        "text": "ROLE_CONTEXT.has_fire is true and on-scene field units exist (engine_1, rescue_2), assigning the closest person (proximity_rank=1) as the responder operating at the fire."
       },
-      "role_confidence": 0.85
+      "role_confidence": 1.0
     },
     {
       "class": "person",
@@ -66,13 +84,13 @@
       },
       "distance_to_fire": "16.92 m",
       "risk_level": "medium",
-      "throughput_need": "medium",
-      "inferred_role": "firefighter",
+      "throughput_need": "low",
+      "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": "engine_1, rescue_2 on scene per radio (command is off-scene support); assigned to closest person near fire"
+        "text": "The remaining person is inferred to be a civilian based on proximity rank and lack of firefighter assignment."
       },
-      "role_confidence": 0.85
+      "role_confidence": 0.99
     },
     {
       "class": "emergency_vehicle",
@@ -91,5 +109,8 @@
       "risk_level": "medium",
       "throughput_need": "medium"
     }
-  ]
+  ],
+  "_metadata": {
+    "role_assignment_llm_applied": true
+  }
 }

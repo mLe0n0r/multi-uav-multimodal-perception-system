@@ -5,8 +5,11 @@ __pycache__/
 venv/
 *_env/
 
-# Secrets
+# Secrets (never commit real keys)
 .env
+.env.*
+!.env.example
+!**/.env.example
 
 # Large weights (place manually in perception/vision/weights/)
 perception/vision/weights/best.pt

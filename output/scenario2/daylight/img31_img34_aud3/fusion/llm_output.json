@@ -1,9 +1,9 @@
 {
   "has_fire": true,
-  "summary": "Firefighters are coordinating rescue operations and requesting thermal imagery to assess heat spread and smoke movement near exposed civilian vehicles.",
+  "summary": "Fire is active near a structure, causing heavy smoke and exposing civilian vehicles.",
   "counts_by_class": {
-    "person": 9,
-    "normal_vehicle": 4,
+    "person": 8,
+    "normal_vehicle": 3,
     "emergency_vehicle": 1
   },
   "communications": {
@@ -58,7 +58,7 @@
       "position": {
         "x": "-110.57 m",
         "y": "-43.22 m",
-        "z": "0.39 m"
+        "z": "0.38 m"
       },
       "localization_confidence": {
         "x": "0.18",
@@ -75,7 +75,7 @@
       "position": {
         "x": "-109.24 m",
         "y": "-32.01 m",
-        "z": "-0.36 m"
+        "z": "-0.37 m"
       },
       "localization_confidence": {
         "x": "0.18",
@@ -118,13 +118,13 @@
       },
       "distance_to_fire": "13.95 m",
       "risk_level": "medium",
-      "throughput_need": "low",
       "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": "radio reports 7 civilian(s) at safe distance; matched to persons farther from fire"
+        "text": "Fourth closest person mentioned in context of civilian exposure."
       },
-      "role_confidence": 0.75
+      "role_confidence": 0.95,
+      "throughput_need": "low"
     },
     {
       "class": "person",
@@ -141,13 +141,13 @@
       },
       "distance_to_fire": "13.59 m",
       "risk_level": "medium",
-      "throughput_need": "low",
       "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": "radio reports 7 civilian(s) at safe distance; matched to persons farther from fire"
+        "text": "Third closest person mentioned in context of civilian exposure."
       },
-      "role_confidence": 0.75
+      "role_confidence": 0.95,
+      "throughput_need": "low"
     },
     {
       "class": "person",
@@ -164,13 +164,13 @@
       },
       "distance_to_fire": "15.51 m",
       "risk_level": "medium",
-      "throughput_need": "low",
       "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": "radio reports 7 civilian(s) at safe distance; matched to persons farther from fire"
+        "text": "Sixth closest person mentioned in context of civilian exposure."
       },
-      "role_confidence": 0.75
+      "role_confidence": 0.95,
+      "throughput_need": "low"
     },
     {
       "class": "person",
@@ -187,13 +187,13 @@
       },
       "distance_to_fire": "12.71 m",
       "risk_level": "medium",
-      "throughput_need": "low",
       "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": "radio reports 7 civilian(s) at safe distance; matched to persons farther from fire"
+        "text": "Second closest person mentioned in context of civilian exposure."
       },
-      "role_confidence": 0.75
+      "role_confidence": 0.95,
+      "throughput_need": "low"
     },
     {
       "class": "person",
@@ -210,13 +210,13 @@
       },
       "distance_to_fire": "15.05 m",
       "risk_level": "medium",
-      "throughput_need": "low",
       "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": "radio reports 7 civilian(s) at safe distance; matched to persons farther from fire"
+        "text": "Fifth closest person mentioned in context of civilian exposure."
       },
-      "role_confidence": 0.75
+      "role_confidence": 0.95,
+      "throughput_need": "low"
     },
     {
       "class": "person",
@@ -233,13 +233,13 @@
       },
       "distance_to_fire": "16.21 m",
       "risk_level": "medium",
-      "throughput_need": "low",
       "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": "radio reports 7 civilian(s) at safe distance; matched to persons farther from fire"
+        "text": "Eighth closest person mentioned in context of civilian exposure."
       },
-      "role_confidence": 0.75
+      "role_confidence": 0.95,
+      "throughput_need": "low"
     },
     {
       "class": "person",
@@ -256,13 +256,14 @@
       },
       "distance_to_fire": "3.67 m",
       "risk_level": "medium",
-      "throughput_need": "medium",
       "inferred_role": "firefighter",
       "role_inference_basis": {
         "source": "inference",
-        "text": "rescue_2 on scene per radio (command is off-scene support); assigned to closest person near fire"
+        "text": "Proximity rank is 1 (closest to fire), and there is an on-scene field unit (rescue_2) operating at the fire."
       },
-      "role_confidence": 0.85
+      "role_confidence": 1.0,
+      "throughput_need": "medium",
+      "thermal_imagery_consumer": true
     },
     {
       "class": "person",
@@ -279,33 +280,16 @@
       },
       "distance_to_fire": "16.13 m",
       "risk_level": "medium",
-      "throughput_need": "low",
       "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": "radio reports 7 civilian(s) at safe distance; matched to persons farther from fire"
+        "text": "Seventh closest person mentioned in context of civilian exposure."
       },
-      "role_confidence": 0.75
-    },
-    {
-      "class": "person",
-      "audio_only": true,
-      "reason": "radio indicates 1 on-scene responder(s); 0 matched visually as firefighter",
-      "risk_level": "medium",
-      "throughput_need": "medium",
-      "inferred_role": "firefighter",
-      "role_inference_basis": {
-        "source": "inference",
-        "text": ""
-      },
-      "role_confidence": null
-    },
-    {
-      "class": "normal_vehicle",
-      "audio_only": true,
-      "reason": "radio explicitly mentions 3 normal vehicle(s); 2 detected visually",
-      "risk_level": "medium",
-      "throughput_need": "medium"
+      "role_confidence": 0.95,
+      "throughput_need": "low"
     }
-  ]
+  ],
+  "_metadata": {
+    "role_assignment_llm_applied": true
+  }
 }

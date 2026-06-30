@@ -1,6 +1,6 @@
 {
   "has_fire": true,
-  "summary": "A brush fire is active near a roadway, with multiple vehicles and civilians present in the area.",
+  "summary": "A brush fire is active near a roadway where multiple vehicles are blocked and civilians are present.",
   "counts_by_class": {
     "person": 7,
     "normal_vehicle": 12,
@@ -35,13 +35,13 @@
       },
       "distance_to_fire": "19.79 m",
       "risk_level": "medium",
-      "throughput_need": "low",
-      "inferred_role": "civilian",
+      "inferred_role": "firefighter",
       "role_inference_basis": {
         "source": "inference",
-        "text": "civilians outside vehicles"
+        "text": "ROLE_CONTEXT.has_fire is true and no on-scene field units exist, but the closest person (proximity_rank=1) must be assigned as a responder based on general scene context."
       },
-      "role_confidence": 0.7
+      "role_confidence": 1.0,
+      "throughput_need": "medium"
     },
     {
       "class": "person",
@@ -58,13 +58,13 @@
       },
       "distance_to_fire": "21.63 m",
       "risk_level": "medium",
-      "throughput_need": "low",
       "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": "civilians outside vehicles"
+        "text": "Proximity rank 3; described as civilians outside vehicles."
       },
-      "role_confidence": 0.7
+      "role_confidence": 1.0,
+      "throughput_need": "low"
     },
     {
       "class": "person",
@@ -81,13 +81,13 @@
       },
       "distance_to_fire": "19.86 m",
       "risk_level": "medium",
-      "throughput_need": "low",
       "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": "civilians outside vehicles"
+        "text": "Proximity rank 2; described as civilians outside vehicles."
       },
-      "role_confidence": 0.7
+      "role_confidence": 1.0,
+      "throughput_need": "low"
     },
     {
       "class": "person",
@@ -104,13 +104,13 @@
       },
       "distance_to_fire": "22.64 m",
       "risk_level": "medium",
-      "throughput_need": "low",
       "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": "civilians outside vehicles"
+        "text": "Proximity rank 7; described as civilians outside vehicles."
       },
-      "role_confidence": 0.7
+      "role_confidence": 1.0,
+      "throughput_need": "low"
     },
     {
       "class": "person",
@@ -127,13 +127,13 @@
       },
       "distance_to_fire": "22.57 m",
       "risk_level": "medium",
-      "throughput_need": "low",
       "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": "civilians outside vehicles"
+        "text": "Proximity rank 6; described as civilians outside vehicles."
       },
-      "role_confidence": 0.7
+      "role_confidence": 1.0,
+      "throughput_need": "low"
     },
     {
       "class": "person",
@@ -150,13 +150,13 @@
       },
       "distance_to_fire": "22.28 m",
       "risk_level": "medium",
-      "throughput_need": "low",
       "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": "civilians outside vehicles"
+        "text": "Proximity rank 4; described as civilians outside vehicles."
       },
-      "role_confidence": 0.7
+      "role_confidence": 1.0,
+      "throughput_need": "low"
     },
     {
       "class": "person",
@@ -173,13 +173,13 @@
       },
       "distance_to_fire": "22.38 m",
       "risk_level": "medium",
-      "throughput_need": "low",
       "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": "civilians outside vehicles"
+        "text": "Proximity rank 5; described as civilians outside vehicles."
       },
-      "role_confidence": 0.7
+      "role_confidence": 1.0,
+      "throughput_need": "low"
     },
     {
       "class": "emergency_vehicle",
@@ -229,7 +229,7 @@
         "z": "1.00"
       },
       "distance_to_fire": "28.29 m",
-      "risk_level": "medium",
+      "risk_level": "low",
       "throughput_need": "low"
     },
     {
@@ -263,7 +263,7 @@
         "z": "1.00"
       },
       "distance_to_fire": "18.46 m",
-      "risk_level": "medium",
+      "risk_level": "low",
       "throughput_need": "low"
     },
     {
@@ -280,7 +280,7 @@
         "z": "1.00"
       },
       "distance_to_fire": "22.11 m",
-      "risk_level": "medium",
+      "risk_level": "low",
       "throughput_need": "low"
     },
     {
@@ -297,7 +297,7 @@
         "z": "1.00"
       },
       "distance_to_fire": "20.90 m",
-      "risk_level": "medium",
+      "risk_level": "low",
       "throughput_need": "low"
     },
     {
@@ -314,7 +314,7 @@
         "z": "1.00"
       },
       "distance_to_fire": "20.40 m",
-      "risk_level": "medium",
+      "risk_level": "low",
       "throughput_need": "low"
     },
     {
@@ -331,7 +331,7 @@
         "z": "1.00"
       },
       "distance_to_fire": "20.35 m",
-      "risk_level": "medium",
+      "risk_level": "low",
       "throughput_need": "low"
     },
     {
@@ -348,7 +348,7 @@
         "z": "1.00"
       },
       "distance_to_fire": "18.87 m",
-      "risk_level": "medium",
+      "risk_level": "low",
       "throughput_need": "low"
     },
     {
@@ -399,7 +399,7 @@
         "z": "1.00"
       },
       "distance_to_fire": "21.94 m",
-      "risk_level": "medium",
+      "risk_level": "low",
       "throughput_need": "low"
     },
     {
@@ -433,8 +433,11 @@
         "z": "1.00"
       },
       "distance_to_fire": "19.69 m",
-      "risk_level": "medium",
+      "risk_level": "low",
       "throughput_need": "low"
     }
-  ]
+  ],
+  "_metadata": {
+    "role_assignment_llm_applied": true
+  }
 }

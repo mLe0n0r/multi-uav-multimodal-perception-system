@@ -1,6 +1,6 @@
 {
   "has_fire": true,
-  "summary": "Fire conditions are present near the house. Two emergency responders are on scene, and communication is ongoing regarding the situation.",
+  "summary": "Emergency responders are coordinating a rescue operation near a structure with heavy smoke and fire.",
   "counts_by_class": {
     "person": 2,
     "normal_vehicle": 0,
@@ -21,33 +21,22 @@
     "service_types": [
       "voice"
     ],
-    "service_inference_basis": []
+    "service_inference_basis": [],
+    "objects": [
+      {
+        "id": 0,
+        "class": "emergency_vehicle",
+        "risk_level": "medium",
+        "throughput_need": "medium"
+      },
+      {
+        "id": 1,
+        "class": "person",
+        "risk_level": "medium"
+      }
+    ]
   },
   "objects": [
-    {
-      "class": "person",
-      "detection_confidence": "0.78",
-      "position": {
-        "x": "-20.76 m",
-        "y": "-132.42 m",
-        "z": "0.00 m"
-      },
-      "localization_confidence": {
-        "x": "0.31",
-        "y": "0.12",
-        "z": "1.00"
-      },
-      "distance_to_fire": "22.17 m",
-      "risk_level": "low",
-      "throughput_need": "medium",
-      "inferred_role": "firefighter",
-      "role_inference_basis": {
-        "source": "inference",
-        "text": "rescue_2 on scene per radio (command is off-scene support); assigned to closest person near fire"
-      },
-      "role_confidence": 0.85,
-      "traffic_demand_mbps": 1.0
-    },
     {
       "class": "emergency_vehicle",
       "detection_confidence": "0.13",
@@ -68,14 +57,38 @@
     },
     {
       "class": "person",
-      "audio_only": true,
-      "reason": "radio indicates 2 on-scene responder(s); 1 matched visually as firefighter",
+      "detection_confidence": "0.78",
+      "position": {
+        "x": "-20.76 m",
+        "y": "-132.42 m",
+        "z": "0.00 m"
+      },
+      "localization_confidence": {
+        "x": "0.31",
+        "y": "0.12",
+        "z": "1.00"
+      },
+      "distance_to_fire": "22.17 m",
       "risk_level": "medium",
-      "throughput_need": "low",
       "inferred_role": "firefighter",
       "role_inference_basis": {
         "source": "inference",
-        "text": ""
+        "text": "ROLE_CONTEXT.has_fire is true and an on-scene field unit exists (rescue_2), making the closest person (proximity_rank=1) the responder operating at the fire."
+      },
+      "role_confidence": 1.0,
+      "throughput_need": "medium",
+      "traffic_demand_mbps": 1.0
+    },
+    {
+      "class": "person",
+      "audio_only": true,
+      "reason": "radio mentions 0 civilian(s); 0 labeled civilian visually; gap-fill for occluded / not visible civilian",
+      "risk_level": "medium",
+      "throughput_need": "low",
+      "inferred_role": "civilian",
+      "role_inference_basis": {
+        "source": "inference",
+        "text": "no role inferred from radio or proximity"
       },
       "role_confidence": null,
       "traffic_demand_mbps": 0.3

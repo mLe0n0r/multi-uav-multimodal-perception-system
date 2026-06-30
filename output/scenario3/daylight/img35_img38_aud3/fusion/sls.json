@@ -1,10 +1,10 @@
 {
   "has_fire": true,
-  "summary": "Two persons and one vehicle are visible near a fire, with communications regarding the location and status of personnel.",
+  "summary": "Two persons and one normal vehicle are detected near a fire scene.",
   "counts_by_class": {
     "person": 2,
     "normal_vehicle": 1,
-    "emergency_vehicle": 0
+    "emergency_vehicle": 1
   },
   "communications": {
     "speaker_count": 2,
@@ -25,6 +25,24 @@
   },
   "objects": [
     {
+      "class": "normal_vehicle",
+      "detection_confidence": "0.56",
+      "position": {
+        "x": "-178.98 m",
+        "y": "-113.67 m",
+        "z": "0.00 m"
+      },
+      "localization_confidence": {
+        "x": "0.08",
+        "y": "0.09",
+        "z": "1.00"
+      },
+      "distance_to_fire": "23.90 m",
+      "risk_level": "medium",
+      "throughput_need": "low",
+      "traffic_demand_mbps": 0.3
+    },
+    {
       "class": "person",
       "detection_confidence": "0.79",
       "position": {
@@ -39,13 +57,13 @@
       },
       "distance_to_fire": "12.62 m",
       "risk_level": "medium",
-      "throughput_need": "medium",
       "inferred_role": "firefighter",
       "role_inference_basis": {
         "source": "inference",
-        "text": "rescue_2 on scene per radio (command is off-scene support); assigned to closest person near fire"
+        "text": "Proximity rank 1 means closest to fire. Since there is an on-scene field unit (rescue_2), the closest person must be the responder operating at the fire."
       },
-      "role_confidence": 0.85,
+      "role_confidence": 1.0,
+      "throughput_need": "medium",
       "traffic_demand_mbps": 1.0
     },
     {
@@ -63,29 +81,19 @@
       },
       "distance_to_fire": "17.59 m",
       "risk_level": "medium",
-      "throughput_need": "medium",
-      "inferred_role": "firefighter",
+      "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": "rescue_2 on scene per radio (command is off-scene support); assigned to closest person near fire"
+        "text": "The remaining person is inferred as a civilian based on context and proximity ranking."
       },
-      "role_confidence": 0.85,
-      "traffic_demand_mbps": 1.0
+      "role_confidence": 0.98,
+      "throughput_need": "low",
+      "traffic_demand_mbps": 0.3
     },
     {
-      "class": "normal_vehicle",
-      "detection_confidence": "0.56",
-      "position": {
-        "x": "-178.98 m",
-        "y": "-113.67 m",
-        "z": "0.00 m"
-      },
-      "localization_confidence": {
-        "x": "0.08",
-        "y": "0.09",
-        "z": "1.00"
-      },
-      "distance_to_fire": "23.90 m",
+      "class": "emergency_vehicle",
+      "audio_only": true,
+      "reason": "radio explicitly mentions 1 emergency vehicle(s); 0 detected visually",
       "risk_level": "medium",
       "throughput_need": "low",
       "traffic_demand_mbps": 0.3

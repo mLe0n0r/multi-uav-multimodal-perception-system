@@ -1,6 +1,6 @@
 {
   "has_fire": true,
-  "summary": "A brush fire is active near a highway, with multiple vehicles blocked and civilians present near the scene.",
+  "summary": "A brush fire is active near a roadway shoulder with multiple vehicles blocked in traffic and civilians outside their vehicles.",
   "counts_by_class": {
     "person": 8,
     "normal_vehicle": 11,
@@ -39,9 +39,9 @@
       "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": "civilians outside vehicles"
+        "text": "The remaining persons are inferred as civilians based on proximity and lack of specific role assignment from radio signals."
       },
-      "role_confidence": 0.8
+      "role_confidence": 0.85
     },
     {
       "class": "person",
@@ -62,9 +62,9 @@
       "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": "civilians outside vehicles"
+        "text": "Inferred as civilian due to distance and absence of responder designation."
       },
-      "role_confidence": 0.8
+      "role_confidence": 0.85
     },
     {
       "class": "person",
@@ -85,9 +85,9 @@
       "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": "civilians outside vehicles"
+        "text": "Inferred as civilian due to distance and absence of responder designation."
       },
-      "role_confidence": 0.8
+      "role_confidence": 0.85
     },
     {
       "class": "person",
@@ -108,9 +108,9 @@
       "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": "civilians outside vehicles"
+        "text": "Inferred as civilian due to distance and absence of responder designation."
       },
-      "role_confidence": 0.8
+      "role_confidence": 0.85
     },
     {
       "class": "person",
@@ -131,9 +131,9 @@
       "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": "civilians outside vehicles"
+        "text": "Inferred as civilian due to distance and absence of responder designation."
       },
-      "role_confidence": 0.8
+      "role_confidence": 0.85
     },
     {
       "class": "person",
@@ -150,13 +150,13 @@
       },
       "distance_to_fire": "12.43 m",
       "risk_level": "medium",
-      "throughput_need": "low",
-      "inferred_role": "civilian",
+      "throughput_need": "medium",
+      "inferred_role": "firefighter",
       "role_inference_basis": {
         "source": "inference",
-        "text": "civilians outside vehicles"
+        "text": "ROLE_CONTEXT.has_fire is true and no on-scene field units exist (radio_signals.on_scene_field_units is empty), but the closest person (proximity_rank=1) must be assigned as a responder based on rule 1 if an engine/rescue implies one responder working at the fire."
       },
-      "role_confidence": 0.8
+      "role_confidence": 0.95
     },
     {
       "class": "person",
@@ -177,9 +177,9 @@
       "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": "civilians outside vehicles"
+        "text": "Inferred as civilian due to distance and absence of responder designation."
       },
-      "role_confidence": 0.8
+      "role_confidence": 0.85
     },
     {
       "class": "person",
@@ -200,9 +200,9 @@
       "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": "civilians outside vehicles"
+        "text": "Inferred as civilian due to distance and absence of responder designation."
       },
-      "role_confidence": 0.8
+      "role_confidence": 0.85
     },
     {
       "class": "normal_vehicle",
@@ -391,5 +391,8 @@
       "risk_level": "medium",
       "throughput_need": "low"
     }
-  ]
+  ],
+  "_metadata": {
+    "role_assignment_llm_applied": true
+  }
 }

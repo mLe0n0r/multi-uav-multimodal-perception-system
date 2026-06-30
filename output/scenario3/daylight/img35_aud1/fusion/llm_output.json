@@ -1,6 +1,6 @@
 {
   "has_fire": true,
-  "summary": "Firefighters are coordinating an exposure assessment and confirming the absence of persons near a structure due to smoke.",
+  "summary": "A command exchange occurred regarding an active wildfire, with a request to assess exposure near a structure.",
   "counts_by_class": {
     "person": 1,
     "normal_vehicle": 1,
@@ -44,14 +44,14 @@
         "z": "1.00"
       },
       "distance_to_fire": "12.62 m",
-      "risk_level": "low",
+      "risk_level": "medium",
       "throughput_need": "medium",
       "inferred_role": "firefighter",
       "role_inference_basis": {
         "source": "inference",
-        "text": "field radio unit on scene per radio (command is off-scene support); assigned to closest person near fire"
+        "text": "ROLE_CONTEXT.has_fire is true and an on-scene field unit exists (radio_signals.on_scene_field_units is empty but radio_signals.on_scene_responders_count >= 1), so the closest person (proximity_rank=1) is assigned as firefighter."
       },
-      "role_confidence": 0.85
+      "role_confidence": null
     },
     {
       "class": "normal_vehicle",
@@ -67,8 +67,11 @@
         "z": "1.00"
       },
       "distance_to_fire": "23.90 m",
-      "risk_level": "low",
+      "risk_level": "medium",
       "throughput_need": "low"
     }
-  ]
+  ],
+  "_metadata": {
+    "role_assignment_llm_applied": true
+  }
 }

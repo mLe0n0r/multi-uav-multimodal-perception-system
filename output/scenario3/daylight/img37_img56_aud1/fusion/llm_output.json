@@ -1,6 +1,6 @@
 {
   "has_fire": true,
-  "summary": "Fire is active in the forested area, and responders are assessing potential exposure near a structure.",
+  "summary": "Units are coordinating fire conditions and exposure assessment near a structure.",
   "counts_by_class": {
     "person": 1,
     "normal_vehicle": 0,
@@ -45,13 +45,16 @@
       },
       "distance_to_fire": "19.66 m",
       "risk_level": "medium",
-      "throughput_need": "medium",
-      "inferred_role": "firefighter",
+      "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": "field radio unit on scene per radio (command is off-scene support); assigned to closest person near fire"
+        "text": "The remaining persons are civilians based on rule 2."
       },
-      "role_confidence": 0.85
+      "role_confidence": 1.0,
+      "throughput_need": "low"
     }
-  ]
+  ],
+  "_metadata": {
+    "role_assignment_llm_applied": true
+  }
 }

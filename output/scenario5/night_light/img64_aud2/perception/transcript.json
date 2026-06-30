@@ -4291,11 +4291,11 @@
   "analytics": {
     "speaker_count": 2,
     "people_mentioned_count": 2,
-    "civilians_mentioned_count": 0,
+    "civilians_mentioned_count": 2,
     "firefighters_mentioned_count": 0,
     "on_scene_responders_count": 1,
     "civilians_at_safe_distance_mentioned": false,
     "vehicles_mentioned_count": 0,
-    "emergency_vehicle_mentioned_count": 0
+    "emergency_vehicle_mentioned_count": 1
   }
 }

@@ -1,10 +1,10 @@
 {
   "has_fire": false,
-  "summary": "A major vehicle pileup has occurred, but there is no active fire or heavy smoke visible from the vehicles.",
+  "summary": "A rescue team is coordinating an update on a major vehicle pileup and confirming the absence of active fire or heavy smoke.",
   "counts_by_class": {
-    "person": 1,
+    "person": 2,
     "normal_vehicle": 9,
-    "emergency_vehicle": 0
+    "emergency_vehicle": 1
   },
   "communications": {
     "speaker_count": 2,
@@ -30,7 +30,7 @@
       "position": {
         "x": "-96.59 m",
         "y": "143.52 m",
-        "z": "-0.67 m"
+        "z": "-0.66 m"
       },
       "localization_confidence": {
         "x": "0.17",
@@ -45,7 +45,7 @@
       "detection_confidence": "0.91",
       "position": {
         "x": "-96.50 m",
-        "y": "137.37 m",
+        "y": "137.38 m",
         "z": "-1.56 m"
       },
       "localization_confidence": {
@@ -60,7 +60,7 @@
       "class": "normal_vehicle",
       "detection_confidence": "0.88",
       "position": {
-        "x": "-94.13 m",
+        "x": "-94.14 m",
         "y": "130.31 m",
         "z": "0.45 m"
       },
@@ -78,7 +78,7 @@
       "position": {
         "x": "-93.45 m",
         "y": "140.53 m",
-        "z": "-0.79 m"
+        "z": "-0.78 m"
       },
       "localization_confidence": {
         "x": "0.15",
@@ -92,9 +92,9 @@
       "class": "normal_vehicle",
       "detection_confidence": "0.87",
       "position": {
-        "x": "-97.32 m",
-        "y": "133.63 m",
-        "z": "0.61 m"
+        "x": "-97.33 m",
+        "y": "133.64 m",
+        "z": "0.62 m"
       },
       "localization_confidence": {
         "x": "0.13",
@@ -124,7 +124,7 @@
       "class": "normal_vehicle",
       "detection_confidence": "0.76",
       "position": {
-        "x": "-97.21 m",
+        "x": "-97.22 m",
         "y": "127.06 m",
         "z": "1.13 m"
       },
@@ -171,15 +171,38 @@
     {
       "class": "person",
       "audio_only": true,
-      "reason": "radio indicates 1 on-scene responder(s); 0 matched visually as firefighter",
+      "reason": "radio mentions 2 civilian(s); 0 labeled civilian visually; gap-fill for occluded / not visible civilian",
       "risk_level": "medium",
-      "throughput_need": "low",
-      "inferred_role": "firefighter",
+      "throughput_need": "medium",
+      "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": ""
+        "text": "no role inferred from radio or proximity"
       },
       "role_confidence": null
+    },
+    {
+      "class": "person",
+      "audio_only": true,
+      "reason": "radio mentions 2 civilian(s); 0 labeled civilian visually; gap-fill for occluded / not visible civilian",
+      "risk_level": "medium",
+      "throughput_need": "medium",
+      "inferred_role": "civilian",
+      "role_inference_basis": {
+        "source": "inference",
+        "text": "no role inferred from radio or proximity"
+      },
+      "role_confidence": null
+    },
+    {
+      "class": "emergency_vehicle",
+      "audio_only": true,
+      "reason": "radio explicitly mentions 1 emergency vehicle(s); 0 detected visually",
+      "risk_level": "medium",
+      "throughput_need": "medium"
     }
-  ]
+  ],
+  "_metadata": {
+    "role_assignment_llm_applied": true
+  }
 }

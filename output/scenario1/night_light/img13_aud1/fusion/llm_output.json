@@ -1,6 +1,6 @@
 {
   "has_fire": true,
-  "summary": "Fire suppression is underway, and thermal imagery is being requested to assess the risk to nearby vehicles and potential occupants.",
+  "summary": "Two emergency vehicles are engaged in fire suppression near a building with potential interior risk.",
   "counts_by_class": {
     "person": 3,
     "normal_vehicle": 2,
@@ -50,9 +50,9 @@
       "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": "radio reports 2 civilian(s) at safe distance; matched to persons farther from fire"
+        "text": "This person is the closest visual detection but not operating the scene based on Rule 1; they are described as civilians at safe distance by radio signals."
       },
-      "role_confidence": 0.75
+      "role_confidence": 0.95
     },
     {
       "class": "person",
@@ -69,14 +69,13 @@
       },
       "distance_to_fire": "6.27 m",
       "risk_level": "medium",
-      "throughput_need": "high",
+      "throughput_need": "medium",
       "inferred_role": "firefighter",
       "role_inference_basis": {
         "source": "inference",
-        "text": "engine_1 on scene per radio (command is off-scene support); assigned to closest person near fire; radio requests thermal imagery for this unit (engine/responder)"
+        "text": "Proximity rank is 1 (closest to fire), and an on-scene field unit exists (engine_1) with a responder count of 1, implying this person operates at the fire."
       },
-      "role_confidence": 0.85,
-      "thermal_imagery_consumer": true
+      "role_confidence": 1.0
     },
     {
       "class": "person",
@@ -97,9 +96,9 @@
       "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": "radio reports 2 civilian(s) at safe distance; matched to persons farther from fire"
+        "text": "This person is further away and also fits the description of a civilian mentioned in the context of safe distance monitoring."
       },
-      "role_confidence": 0.75
+      "role_confidence": 0.95
     },
     {
       "class": "normal_vehicle",
@@ -140,7 +139,10 @@
       "audio_only": true,
       "reason": "radio explicitly mentions 2 normal vehicle(s); 1 detected visually",
       "risk_level": "medium",
-      "throughput_need": "low"
+      "throughput_need": "medium"
     }
-  ]
+  ],
+  "_metadata": {
+    "role_assignment_llm_applied": true
+  }
 }

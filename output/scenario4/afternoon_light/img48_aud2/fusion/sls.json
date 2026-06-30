@@ -1,6 +1,6 @@
 {
   "has_fire": true,
-  "summary": "Units are coordinating a response to a brush fire near a highway where a vehicle was overturned, with instructions to use caution near the fire and vehicle.",
+  "summary": "A civilian reported a brush fire along a highway with traffic blocked near the shoulder and an overturned vehicle.",
   "counts_by_class": {
     "person": 8,
     "normal_vehicle": 3,
@@ -39,13 +39,13 @@
       },
       "distance_to_fire": "24.97 m",
       "risk_level": "medium",
-      "throughput_need": "low",
       "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": "civilian"
+        "text": "Not the closest person and no specific role assignment based on radio context."
       },
-      "role_confidence": 0.5,
+      "role_confidence": 0.9,
+      "throughput_need": "low",
       "traffic_demand_mbps": 0.3
     },
     {
@@ -63,13 +63,13 @@
       },
       "distance_to_fire": "28.71 m",
       "risk_level": "medium",
-      "throughput_need": "low",
       "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": "civilian"
+        "text": "Not the closest person and no specific role assignment based on radio context."
       },
-      "role_confidence": 0.5,
+      "role_confidence": 0.9,
+      "throughput_need": "low",
       "traffic_demand_mbps": 0.3
     },
     {
@@ -87,13 +87,13 @@
       },
       "distance_to_fire": "25.15 m",
       "risk_level": "medium",
-      "throughput_need": "low",
       "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": "civilian"
+        "text": "Not the closest person and no specific role assignment based on radio context."
       },
-      "role_confidence": 0.5,
+      "role_confidence": 0.9,
+      "throughput_need": "low",
       "traffic_demand_mbps": 0.3
     },
     {
@@ -110,14 +110,14 @@
         "z": "1.00"
       },
       "distance_to_fire": "17.96 m",
-      "risk_level": "medium",
-      "throughput_need": "low",
+      "risk_level": "high",
       "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": "civilian"
+        "text": "Not the closest person and no specific role assignment based on radio context."
       },
-      "role_confidence": 0.5,
+      "role_confidence": 0.9,
+      "throughput_need": "low",
       "traffic_demand_mbps": 0.3
     },
     {
@@ -135,13 +135,13 @@
       },
       "distance_to_fire": "21.05 m",
       "risk_level": "medium",
-      "throughput_need": "low",
       "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": "civilian"
+        "text": "Not the closest person and no specific role assignment based on radio context."
       },
-      "role_confidence": 0.5,
+      "role_confidence": 0.9,
+      "throughput_need": "low",
       "traffic_demand_mbps": 0.3
     },
     {
@@ -159,13 +159,13 @@
       },
       "distance_to_fire": "28.03 m",
       "risk_level": "medium",
-      "throughput_need": "low",
       "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": "civilian"
+        "text": "Not the closest person and no specific role assignment based on radio context."
       },
-      "role_confidence": 0.5,
+      "role_confidence": 0.9,
+      "throughput_need": "low",
       "traffic_demand_mbps": 0.3
     },
     {
@@ -182,14 +182,14 @@
         "z": "1.00"
       },
       "distance_to_fire": "16.29 m",
-      "risk_level": "medium",
-      "throughput_need": "medium",
+      "risk_level": "high",
       "inferred_role": "firefighter",
       "role_inference_basis": {
         "source": "inference",
-        "text": "field radio unit on scene per radio (command is off-scene support); assigned to closest person near fire"
+        "text": "Proximity rank is 1 (closest to fire), and there is an on-scene responder count of 1. Rule 1 applies."
       },
-      "role_confidence": 0.85,
+      "role_confidence": 1.0,
+      "throughput_need": "medium",
       "traffic_demand_mbps": 1.0
     },
     {
@@ -207,13 +207,13 @@
       },
       "distance_to_fire": "24.17 m",
       "risk_level": "medium",
-      "throughput_need": "low",
       "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": "civilian"
+        "text": "Not the closest person and no specific role assignment based on radio context."
       },
-      "role_confidence": 0.5,
+      "role_confidence": 0.9,
+      "throughput_need": "low",
       "traffic_demand_mbps": 0.3
     },
     {

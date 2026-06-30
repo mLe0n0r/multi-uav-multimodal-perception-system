@@ -2,7 +2,7 @@
   "has_fire": true,
   "summary": "Firefighters are coordinating rescue operations and requesting thermal imagery to assess heat spread and smoke movement near exposed vehicles.",
   "counts_by_class": {
-    "person": 8,
+    "person": 2,
     "normal_vehicle": 3,
     "emergency_vehicle": 0
   },
@@ -89,104 +89,26 @@
     {
       "class": "person",
       "audio_only": true,
-      "reason": "radio reports 7 civilian(s) at safe distance; 0 matched visually as civilian",
+      "reason": "radio mentions 2 person(s) and 2 civilian(s); 0 detected visually (0 as civilian); gap-fill for not visible / occluded",
       "risk_level": "medium",
       "throughput_need": "low",
       "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": ""
+        "text": "no role inferred from radio or proximity"
       },
       "role_confidence": null
     },
     {
       "class": "person",
       "audio_only": true,
-      "reason": "radio reports 7 civilian(s) at safe distance; 0 matched visually as civilian",
+      "reason": "radio mentions 2 person(s) and 2 civilian(s); 0 detected visually (0 as civilian); gap-fill for not visible / occluded",
       "risk_level": "medium",
       "throughput_need": "low",
       "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": ""
-      },
-      "role_confidence": null
-    },
-    {
-      "class": "person",
-      "audio_only": true,
-      "reason": "radio reports 7 civilian(s) at safe distance; 0 matched visually as civilian",
-      "risk_level": "medium",
-      "throughput_need": "low",
-      "inferred_role": "civilian",
-      "role_inference_basis": {
-        "source": "inference",
-        "text": ""
-      },
-      "role_confidence": null
-    },
-    {
-      "class": "person",
-      "audio_only": true,
-      "reason": "radio reports 7 civilian(s) at safe distance; 0 matched visually as civilian",
-      "risk_level": "medium",
-      "throughput_need": "low",
-      "inferred_role": "civilian",
-      "role_inference_basis": {
-        "source": "inference",
-        "text": ""
-      },
-      "role_confidence": null
-    },
-    {
-      "class": "person",
-      "audio_only": true,
-      "reason": "radio reports 7 civilian(s) at safe distance; 0 matched visually as civilian",
-      "risk_level": "medium",
-      "throughput_need": "low",
-      "inferred_role": "civilian",
-      "role_inference_basis": {
-        "source": "inference",
-        "text": ""
-      },
-      "role_confidence": null
-    },
-    {
-      "class": "person",
-      "audio_only": true,
-      "reason": "radio reports 7 civilian(s) at safe distance; 0 matched visually as civilian",
-      "risk_level": "medium",
-      "throughput_need": "low",
-      "inferred_role": "civilian",
-      "role_inference_basis": {
-        "source": "inference",
-        "text": ""
-      },
-      "role_confidence": null
-    },
-    {
-      "class": "person",
-      "audio_only": true,
-      "reason": "radio reports 7 civilian(s) at safe distance; 0 matched visually as civilian",
-      "risk_level": "medium",
-      "throughput_need": "low",
-      "inferred_role": "civilian",
-      "role_inference_basis": {
-        "source": "inference",
-        "text": ""
-      },
-      "role_confidence": null
-    },
-    {
-      "class": "person",
-      "audio_only": true,
-      "reason": "radio indicates 1 on-scene responder(s); 0 matched visually as firefighter",
-      "risk_level": "medium",
-      "throughput_need": "low",
-      "inferred_role": "firefighter",
-      "role_inference_basis": {
-        "source": "inference",
-        "text": ""
+        "text": "no role inferred from radio or proximity"
       },
       "role_confidence": null
     }

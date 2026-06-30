@@ -1,8 +1,8 @@
 {
   "has_fire": false,
-  "summary": "Search teams are assessing a highway pileup and the surrounding area for fire and fuel leaks.",
+  "summary": "A command exchange occurred regarding a highway pileup and the presence of residual smoke near a burned forest edge.",
   "counts_by_class": {
-    "person": 2,
+    "person": 1,
     "normal_vehicle": 5,
     "emergency_vehicle": 0
   },
@@ -18,10 +18,10 @@
         "speaker": "SPEAKER_00"
       }
     ],
+    "service_inference_basis": [],
     "service_types": [
       "voice"
-    ],
-    "service_inference_basis": []
+    ]
   },
   "objects": [
     {
@@ -38,13 +38,13 @@
         "z": "1.00"
       },
       "risk_level": "low",
-      "throughput_need": "low",
-      "inferred_role": "unknown_person",
+      "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": "no persons visible"
+        "text": "No fire is present (ROLE_CONTEXT.has_fire=false). Since there are no on-scene field units or responders, the person is classified as a civilian."
       },
-      "role_confidence": 0.0,
+      "role_confidence": 1.0,
+      "throughput_need": "low",
       "traffic_demand_mbps": 0.3
     },
     {
@@ -130,20 +130,6 @@
       },
       "risk_level": "low",
       "throughput_need": "low",
-      "traffic_demand_mbps": 0.3
-    },
-    {
-      "class": "person",
-      "audio_only": true,
-      "reason": "radio indicates 1 on-scene responder(s); 0 matched visually as firefighter",
-      "risk_level": "medium",
-      "throughput_need": "medium",
-      "inferred_role": "firefighter",
-      "role_inference_basis": {
-        "source": "inference",
-        "text": ""
-      },
-      "role_confidence": null,
       "traffic_demand_mbps": 0.3
     }
   ]

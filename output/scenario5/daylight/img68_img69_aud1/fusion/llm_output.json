@@ -1,5 +1,28 @@
 {
-  "answer": "No objects were detected.",
+  "has_fire": false,
+  "summary": "A multi-vehicle pileup is visible along a highway with burned forest edge, but no active fire or occupants were detected.",
+  "counts_by_class": {
+    "person": 0,
+    "normal_vehicle": 13,
+    "emergency_vehicle": 0
+  },
+  "communications": {
+    "speaker_count": 2,
+    "key_communications": [
+      {
+        "text": "Unit Phi here command. Report highway access and immediate hazards at the pileup. Listening.",
+        "speaker": "SPEAKER_01"
+      },
+      {
+        "text": "Command here. Unit Phi. Both lanes appear obstructed by a large pileup, more than a dozen vehicles involved, with burned out cars and ash across the roadway. Listening.",
+        "speaker": "SPEAKER_00"
+      }
+    ],
+    "service_types": [
+      "voice"
+    ],
+    "service_inference_basis": []
+  },
   "objects": [
     {
       "class": "normal_vehicle",
@@ -19,27 +42,11 @@
     },
     {
       "class": "normal_vehicle",
-      "detection_confidence": "0.92",
-      "position": {
-        "x": "-125.31 m",
-        "y": "137.73 m",
-        "z": "0.00 m"
-      },
-      "localization_confidence": {
-        "x": "0.17",
-        "y": "0.16",
-        "z": "1.00"
-      },
-      "risk_level": "medium",
-      "throughput_need": "low"
-    },
-    {
-      "class": "normal_vehicle",
       "detection_confidence": "0.87",
       "position": {
-        "x": "-116.27 m",
-        "y": "139.17 m",
-        "z": "0.00 m"
+        "x": "-96.43 m",
+        "y": "136.92 m",
+        "z": "-5.00 m"
       },
       "localization_confidence": {
         "x": "0.12",
@@ -51,27 +58,11 @@
     },
     {
       "class": "normal_vehicle",
-      "detection_confidence": "0.91",
-      "position": {
-        "x": "-138.58 m",
-        "y": "126.83 m",
-        "z": "0.00 m"
-      },
-      "localization_confidence": {
-        "x": "0.10",
-        "y": "0.20",
-        "z": "1.00"
-      },
-      "risk_level": "medium",
-      "throughput_need": "low"
-    },
-    {
-      "class": "normal_vehicle",
       "detection_confidence": "0.86",
       "position": {
-        "x": "-118.37 m",
-        "y": "132.38 m",
-        "z": "0.00 m"
+        "x": "-91.45 m",
+        "y": "127.12 m",
+        "z": "-4.29 m"
       },
       "localization_confidence": {
         "x": "0.11",
@@ -83,47 +74,15 @@
     },
     {
       "class": "normal_vehicle",
-      "detection_confidence": "0.89",
-      "position": {
-        "x": "-131.71 m",
-        "y": "129.55 m",
-        "z": "0.00 m"
-      },
-      "localization_confidence": {
-        "x": "0.12",
-        "y": "0.21",
-        "z": "1.00"
-      },
-      "risk_level": "medium",
-      "throughput_need": "low"
-    },
-    {
-      "class": "normal_vehicle",
       "detection_confidence": "0.86",
       "position": {
-        "x": "-116.99 m",
-        "y": "144.34 m",
-        "z": "0.00 m"
+        "x": "-103.07 m",
+        "y": "141.88 m",
+        "z": "-0.46 m"
       },
       "localization_confidence": {
         "x": "0.11",
         "y": "0.20",
-        "z": "1.00"
-      },
-      "risk_level": "medium",
-      "throughput_need": "low"
-    },
-    {
-      "class": "normal_vehicle",
-      "detection_confidence": "0.88",
-      "position": {
-        "x": "-122.24 m",
-        "y": "149.82 m",
-        "z": "0.00 m"
-      },
-      "localization_confidence": {
-        "x": "0.16",
-        "y": "0.18",
         "z": "1.00"
       },
       "risk_level": "medium",
@@ -147,47 +106,15 @@
     },
     {
       "class": "normal_vehicle",
-      "detection_confidence": "0.88",
-      "position": {
-        "x": "-131.81 m",
-        "y": "134.54 m",
-        "z": "0.00 m"
-      },
-      "localization_confidence": {
-        "x": "0.13",
-        "y": "0.17",
-        "z": "1.00"
-      },
-      "risk_level": "medium",
-      "throughput_need": "low"
-    },
-    {
-      "class": "normal_vehicle",
       "detection_confidence": "0.69",
       "position": {
-        "x": "-118.80 m",
-        "y": "141.88 m",
-        "z": "0.00 m"
+        "x": "-14.50 m",
+        "y": "113.64 m",
+        "z": "-91.06 m"
       },
       "localization_confidence": {
         "x": "0.09",
         "y": "0.17",
-        "z": "1.00"
-      },
-      "risk_level": "medium",
-      "throughput_need": "low"
-    },
-    {
-      "class": "normal_vehicle",
-      "detection_confidence": "0.87",
-      "position": {
-        "x": "-146.45 m",
-        "y": "115.87 m",
-        "z": "-0.00 m"
-      },
-      "localization_confidence": {
-        "x": "0.08",
-        "y": "0.23",
         "z": "1.00"
       },
       "risk_level": "medium",
@@ -211,27 +138,11 @@
     },
     {
       "class": "normal_vehicle",
-      "detection_confidence": "0.82",
-      "position": {
-        "x": "-136.39 m",
-        "y": "121.35 m",
-        "z": "0.00 m"
-      },
-      "localization_confidence": {
-        "x": "0.10",
-        "y": "0.18",
-        "z": "1.00"
-      },
-      "risk_level": "medium",
-      "throughput_need": "low"
-    },
-    {
-      "class": "normal_vehicle",
       "detection_confidence": "0.49",
       "position": {
-        "x": "-115.98 m",
-        "y": "135.15 m",
-        "z": "0.00 m"
+        "x": "-96.26 m",
+        "y": "130.83 m",
+        "z": "-5.62 m"
       },
       "localization_confidence": {
         "x": "0.11",
@@ -243,15 +154,15 @@
     },
     {
       "class": "normal_vehicle",
-      "detection_confidence": "0.79",
+      "detection_confidence": "0.44",
       "position": {
-        "x": "-144.19 m",
-        "y": "113.45 m",
-        "z": "-0.00 m"
+        "x": "-87.61 m",
+        "y": "112.83 m",
+        "z": "-6.26 m"
       },
       "localization_confidence": {
-        "x": "0.14",
-        "y": "0.22",
+        "x": "0.08",
+        "y": "0.07",
         "z": "1.00"
       },
       "risk_level": "medium",
@@ -259,15 +170,31 @@
     },
     {
       "class": "normal_vehicle",
-      "detection_confidence": "0.44",
+      "detection_confidence": "0.88",
       "position": {
-        "x": "-117.10 m",
-        "y": "127.71 m",
+        "x": "-122.24 m",
+        "y": "149.82 m",
         "z": "0.00 m"
       },
       "localization_confidence": {
+        "x": "0.16",
+        "y": "0.18",
+        "z": "1.00"
+      },
+      "risk_level": "medium",
+      "throughput_need": "low"
+    },
+    {
+      "class": "normal_vehicle",
+      "detection_confidence": "0.87",
+      "position": {
+        "x": "-146.45 m",
+        "y": "115.87 m",
+        "z": "-0.00 m"
+      },
+      "localization_confidence": {
         "x": "0.08",
-        "y": "0.07",
+        "y": "0.23",
         "z": "1.00"
       },
       "risk_level": "medium",
@@ -304,42 +231,6 @@
       },
       "risk_level": "medium",
       "throughput_need": "low"
-    },
-    {
-      "class": "person",
-      "audio_only": true,
-      "reason": "radio indicates 1 on-scene responder(s); 0 matched visually as firefighter",
-      "risk_level": "medium",
-      "throughput_need": "low",
-      "inferred_role": "firefighter",
-      "role_inference_basis": {
-        "source": "inference",
-        "text": ""
-      },
-      "role_confidence": null
     }
-  ],
-  "communications": {
-    "speaker_count": 2,
-    "service_types": [
-      "voice"
-    ],
-    "key_communications": [
-      {
-        "text": "Unit Phi here command. Report highway access and immediate hazards at the pileup. Listening.",
-        "speaker": "SPEAKER_01"
-      },
-      {
-        "text": "Command here. Unit Phi. Both lanes appear obstructed by a large pileup, more than a dozen vehicles involved, with burned out cars and ash across the roadway. Listening.",
-        "speaker": "SPEAKER_00"
-      }
-    ],
-    "service_inference_basis": []
-  },
-  "counts_by_class": {
-    "person": 1,
-    "normal_vehicle": 19,
-    "emergency_vehicle": 0
-  },
-  "has_fire": false
+  ]
 }

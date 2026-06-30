@@ -1,5 +1,8 @@
 {
-  "same_incident": false,
+  "same_incident": true,
+  "same_incident_camera_distance_m": 37.01,
+  "same_incident_footprint_overlap": 0.0564,
+  "same_incident_criterion": "camera_distance",
   "views": [
     "img0",
     "img3"
@@ -410,5 +413,55 @@
       ]
     }
   },
-  "matches": []
+  "matches": [
+    {
+      "view_a": "img0",
+      "id_a": 0,
+      "view_b": "img3",
+      "id_b": 2,
+      "position": {
+        "x": "-223.03 m",
+        "y": "-29.05 m",
+        "z": "-0.21 m"
+      }
+    },
+    {
+      "view_a": "img0",
+      "id_a": 1,
+      "view_b": "img3",
+      "id_b": 1,
+      "position": {
+        "x": "-230.09 m",
+        "y": "-46.61 m",
+        "z": "-0.11 m"
+      }
+    },
+    {
+      "view_a": "img0",
+      "id_a": 2,
+      "view_b": "img3",
+      "id_b": 6,
+      "position": {
+        "x": "-230.45 m",
+        "y": "-28.52 m",
+        "z": "-1.15 m"
+      }
+    },
+    {
+      "view_a": "img0",
+      "id_a": 5,
+      "view_b": "img3",
+      "id_b": 9,
+      "position": {
+        "x": "-234.73 m",
+        "y": "-51.72 m",
+        "z": "-1.19 m"
+      }
+    }
+  ],
+  "counts_after_match": {
+    "person": 5,
+    "vehicle": 6,
+    "emergency_vehicle": 1
+  }
 }

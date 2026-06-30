@@ -1,5 +1,8 @@
 {
-  "same_incident": false,
+  "same_incident": true,
+  "same_incident_camera_distance_m": 30.64,
+  "same_incident_footprint_overlap": 0.0,
+  "same_incident_criterion": "camera_distance",
   "views": [
     "img2",
     "img54"
@@ -194,7 +197,7 @@
       "camera": {
         "position": {
           "x": "-224.09 m",
-          "y": "-1049.74 m",
+          "y": "-10.50 m",
           "z": "12.74 m"
         },
         "orientation": {
@@ -221,7 +224,7 @@
           },
           "position": {
             "x": "-222.42 m",
-            "y": "-1060.98 m",
+            "y": "-21.74 m",
             "z": "0.00 m"
           },
           "localization_confidence": {
@@ -243,7 +246,7 @@
           },
           "position": {
             "x": "-224.75 m",
-            "y": "-1069.12 m",
+            "y": "-29.88 m",
             "z": "0.00 m"
           },
           "localization_confidence": {
@@ -265,7 +268,7 @@
           },
           "position": {
             "x": "-180.52 m",
-            "y": "-1091.43 m",
+            "y": "-52.19 m",
             "z": "0.00 m"
           },
           "localization_confidence": {
@@ -287,7 +290,7 @@
           },
           "position": {
             "x": "-198.00 m",
-            "y": "-1087.66 m",
+            "y": "-48.42 m",
             "z": "0.00 m"
           },
           "localization_confidence": {
@@ -309,7 +312,7 @@
           },
           "position": {
             "x": "-215.56 m",
-            "y": "-1065.83 m",
+            "y": "-26.59 m",
             "z": "0.00 m"
           },
           "localization_confidence": {
@@ -331,7 +334,7 @@
           },
           "position": {
             "x": "-217.89 m",
-            "y": "-1077.55 m",
+            "y": "-38.30 m",
             "z": "0.00 m"
           },
           "localization_confidence": {
@@ -353,7 +356,7 @@
           },
           "position": {
             "x": "-225.96 m",
-            "y": "-1065.32 m",
+            "y": "-26.08 m",
             "z": "0.00 m"
           },
           "localization_confidence": {
@@ -366,5 +369,44 @@
       ]
     }
   },
-  "matches": []
+  "matches": [
+    {
+      "view_a": "img2",
+      "id_a": 2,
+      "view_b": "img54",
+      "id_b": 1,
+      "position": {
+        "x": "-223.55 m",
+        "y": "-29.30 m",
+        "z": "0.09 m"
+      }
+    },
+    {
+      "view_a": "img2",
+      "id_a": 4,
+      "view_b": "img54",
+      "id_b": 4,
+      "position": {
+        "x": "-233.06 m",
+        "y": "-28.37 m",
+        "z": "-0.79 m"
+      }
+    },
+    {
+      "view_a": "img2",
+      "id_a": 6,
+      "view_b": "img54",
+      "id_b": 5,
+      "position": {
+        "x": "-230.88 m",
+        "y": "-40.48 m",
+        "z": "-1.25 m"
+      }
+    }
+  ],
+  "counts_after_match": {
+    "person": 5,
+    "vehicle": 5,
+    "emergency_vehicle": 1
+  }
 }

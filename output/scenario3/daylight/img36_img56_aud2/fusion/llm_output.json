@@ -1,8 +1,8 @@
 {
   "has_fire": true,
-  "summary": "Firefighters are coordinating operations near a structure, with one person visible near the house.",
+  "summary": "Firefighters are coordinating assessment of exposures beyond a clearing where a person is visible near a house.",
   "counts_by_class": {
-    "person": 2,
+    "person": 0,
     "normal_vehicle": 0,
     "emergency_vehicle": 2
   },
@@ -61,32 +61,6 @@
       "distance_to_fire": "13.03 m",
       "risk_level": "medium",
       "throughput_need": "medium"
-    },
-    {
-      "class": "person",
-      "audio_only": true,
-      "reason": "radio indicates 2 on-scene responder(s); 0 matched visually as firefighter",
-      "risk_level": "medium",
-      "throughput_need": "low",
-      "inferred_role": "firefighter",
-      "role_inference_basis": {
-        "source": "inference",
-        "text": ""
-      },
-      "role_confidence": null
-    },
-    {
-      "class": "person",
-      "audio_only": true,
-      "reason": "radio indicates 2 on-scene responder(s); 0 matched visually as firefighter",
-      "risk_level": "medium",
-      "throughput_need": "low",
-      "inferred_role": "firefighter",
-      "role_inference_basis": {
-        "source": "inference",
-        "text": ""
-      },
-      "role_confidence": null
     }
   ]
 }

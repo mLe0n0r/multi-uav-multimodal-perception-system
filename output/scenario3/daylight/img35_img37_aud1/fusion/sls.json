@@ -1,6 +1,6 @@
 {
   "has_fire": true,
-  "summary": "Fire is active in the forested area, and units are coordinating exposure assessment near a structure.",
+  "summary": "Units are coordinating an exposure assessment regarding a wildfire, but no persons were visually confirmed near the house.",
   "counts_by_class": {
     "person": 2,
     "normal_vehicle": 1,
@@ -31,6 +31,24 @@
   },
   "objects": [
     {
+      "class": "normal_vehicle",
+      "detection_confidence": "0.56",
+      "position": {
+        "x": "-178.98 m",
+        "y": "-113.67 m",
+        "z": "0.00 m"
+      },
+      "localization_confidence": {
+        "x": "0.08",
+        "y": "0.09",
+        "z": "1.00"
+      },
+      "distance_to_fire": "23.90 m",
+      "risk_level": "low",
+      "throughput_need": "low",
+      "traffic_demand_mbps": 0.3
+    },
+    {
       "class": "person",
       "detection_confidence": "0.79",
       "position": {
@@ -44,14 +62,14 @@
         "z": "1.00"
       },
       "distance_to_fire": "12.62 m",
-      "risk_level": "medium",
+      "risk_level": "low",
       "throughput_need": "medium",
       "inferred_role": "firefighter",
       "role_inference_basis": {
         "source": "inference",
-        "text": "field radio unit on scene per radio (command is off-scene support); assigned to closest person near fire"
+        "text": "ROLE_CONTEXT.has_fire is true and an on-scene field unit exists (radio_signals.on_scene_responders_count >= 1). Person ID 1 has proximity_rank == 1 (closest to fire), thus assigned the role of firefighter."
       },
-      "role_confidence": 0.85,
+      "role_confidence": 1.0,
       "traffic_demand_mbps": 1.0
     },
     {
@@ -69,30 +87,12 @@
       },
       "distance_to_fire": "19.66 m",
       "risk_level": "medium",
-      "throughput_need": "medium",
-      "inferred_role": "firefighter",
+      "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": "field radio unit on scene per radio (command is off-scene support); assigned to closest person near fire"
+        "text": "Person ID 2 is at a safe distance relative to the closest person/firefighter and is not explicitly mentioned as an on-scene responder or civilian in context."
       },
-      "role_confidence": 0.85,
-      "traffic_demand_mbps": 1.0
-    },
-    {
-      "class": "normal_vehicle",
-      "detection_confidence": "0.56",
-      "position": {
-        "x": "-178.98 m",
-        "y": "-113.67 m",
-        "z": "0.00 m"
-      },
-      "localization_confidence": {
-        "x": "0.08",
-        "y": "0.09",
-        "z": "1.00"
-      },
-      "distance_to_fire": "23.90 m",
-      "risk_level": "medium",
+      "role_confidence": 0.98,
       "throughput_need": "low",
       "traffic_demand_mbps": 0.3
     }

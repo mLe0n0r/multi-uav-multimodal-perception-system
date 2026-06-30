@@ -1,8 +1,8 @@
 {
   "has_fire": false,
-  "summary": "A search operation is underway at a highway pileup, but no visible occupants or active fire were detected.",
+  "summary": "A command is being issued regarding a highway pileup and the search for occupants or hazards near burned-out vehicles.",
   "counts_by_class": {
-    "person": 1,
+    "person": 0,
     "normal_vehicle": 6,
     "emergency_vehicle": 0
   },
@@ -37,7 +37,7 @@
         "y": "0.15",
         "z": "1.00"
       },
-      "risk_level": "low",
+      "risk_level": "medium",
       "throughput_need": "low"
     },
     {
@@ -53,7 +53,7 @@
         "y": "0.17",
         "z": "1.00"
       },
-      "risk_level": "low",
+      "risk_level": "medium",
       "throughput_need": "low"
     },
     {
@@ -69,7 +69,7 @@
         "y": "0.20",
         "z": "1.00"
       },
-      "risk_level": "low",
+      "risk_level": "medium",
       "throughput_need": "low"
     },
     {
@@ -85,7 +85,7 @@
         "y": "0.16",
         "z": "1.00"
       },
-      "risk_level": "low",
+      "risk_level": "medium",
       "throughput_need": "low"
     },
     {
@@ -101,7 +101,7 @@
         "y": "0.13",
         "z": "1.00"
       },
-      "risk_level": "low",
+      "risk_level": "medium",
       "throughput_need": "low"
     },
     {
@@ -117,21 +117,8 @@
         "y": "0.13",
         "z": "1.00"
       },
-      "risk_level": "low",
-      "throughput_need": "low"
-    },
-    {
-      "class": "person",
-      "audio_only": true,
-      "reason": "radio indicates 1 on-scene responder(s); 0 matched visually as firefighter",
       "risk_level": "medium",
-      "throughput_need": "low",
-      "inferred_role": "firefighter",
-      "role_inference_basis": {
-        "source": "inference",
-        "text": ""
-      },
-      "role_confidence": null
+      "throughput_need": "low"
     }
   ]
 }

@@ -1,10 +1,10 @@
 {
   "has_fire": false,
-  "summary": "A major vehicle pileup has occurred, but there is no active fire or heavy smoke visible from the vehicles.",
+  "summary": "A major vehicle pileup has occurred with scattered vehicles showing signs of burning and smoke near the roadway.",
   "counts_by_class": {
     "person": 2,
     "normal_vehicle": 23,
-    "emergency_vehicle": 0
+    "emergency_vehicle": 1
   },
   "communications": {
     "speaker_count": 2,
@@ -37,14 +37,14 @@
         "y": "0.30",
         "z": "1.00"
       },
-      "risk_level": "low",
+      "risk_level": "medium",
       "throughput_need": "low",
-      "inferred_role": "unknown_person",
+      "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": "no specific role inferred"
+        "text": "No fire detected (has_fire=false). No on-scene field units or responders exist. Defaulting to civilian."
       },
-      "role_confidence": 0.0
+      "role_confidence": 1.0
     },
     {
       "class": "normal_vehicle",
@@ -59,7 +59,7 @@
         "y": "0.11",
         "z": "1.00"
       },
-      "risk_level": "low",
+      "risk_level": "medium",
       "throughput_need": "low"
     },
     {
@@ -75,7 +75,7 @@
         "y": "0.09",
         "z": "1.00"
       },
-      "risk_level": "low",
+      "risk_level": "medium",
       "throughput_need": "low"
     },
     {
@@ -91,7 +91,7 @@
         "y": "0.09",
         "z": "1.00"
       },
-      "risk_level": "low",
+      "risk_level": "medium",
       "throughput_need": "low"
     },
     {
@@ -107,7 +107,7 @@
         "y": "0.07",
         "z": "1.00"
       },
-      "risk_level": "low",
+      "risk_level": "medium",
       "throughput_need": "low"
     },
     {
@@ -123,7 +123,7 @@
         "y": "0.06",
         "z": "1.00"
       },
-      "risk_level": "low",
+      "risk_level": "medium",
       "throughput_need": "low"
     },
     {
@@ -139,7 +139,7 @@
         "y": "0.09",
         "z": "1.00"
       },
-      "risk_level": "low",
+      "risk_level": "medium",
       "throughput_need": "low"
     },
     {
@@ -155,7 +155,7 @@
         "y": "0.06",
         "z": "1.00"
       },
-      "risk_level": "low",
+      "risk_level": "medium",
       "throughput_need": "low"
     },
     {
@@ -171,7 +171,7 @@
         "y": "0.05",
         "z": "1.00"
       },
-      "risk_level": "low",
+      "risk_level": "medium",
       "throughput_need": "low"
     },
     {
@@ -187,7 +187,7 @@
         "y": "0.04",
         "z": "1.00"
       },
-      "risk_level": "low",
+      "risk_level": "medium",
       "throughput_need": "low"
     },
     {
@@ -203,7 +203,7 @@
         "y": "0.06",
         "z": "1.00"
       },
-      "risk_level": "low",
+      "risk_level": "medium",
       "throughput_need": "low"
     },
     {
@@ -219,7 +219,7 @@
         "y": "0.05",
         "z": "1.00"
       },
-      "risk_level": "low",
+      "risk_level": "medium",
       "throughput_need": "low"
     },
     {
@@ -235,7 +235,7 @@
         "y": "0.05",
         "z": "1.00"
       },
-      "risk_level": "low",
+      "risk_level": "medium",
       "throughput_need": "low"
     },
     {
@@ -251,7 +251,7 @@
         "y": "0.04",
         "z": "1.00"
       },
-      "risk_level": "low",
+      "risk_level": "medium",
       "throughput_need": "low"
     },
     {
@@ -267,7 +267,7 @@
         "y": "0.05",
         "z": "1.00"
       },
-      "risk_level": "low",
+      "risk_level": "medium",
       "throughput_need": "low"
     },
     {
@@ -283,7 +283,7 @@
         "y": "0.05",
         "z": "1.00"
       },
-      "risk_level": "low",
+      "risk_level": "medium",
       "throughput_need": "low"
     },
     {
@@ -299,7 +299,7 @@
         "y": "0.04",
         "z": "1.00"
       },
-      "risk_level": "low",
+      "risk_level": "medium",
       "throughput_need": "low"
     },
     {
@@ -315,7 +315,7 @@
         "y": "0.04",
         "z": "1.00"
       },
-      "risk_level": "low",
+      "risk_level": "medium",
       "throughput_need": "low"
     },
     {
@@ -331,7 +331,7 @@
         "y": "0.04",
         "z": "1.00"
       },
-      "risk_level": "low",
+      "risk_level": "medium",
       "throughput_need": "low"
     },
     {
@@ -347,7 +347,7 @@
         "y": "0.04",
         "z": "1.00"
       },
-      "risk_level": "low",
+      "risk_level": "medium",
       "throughput_need": "low"
     },
     {
@@ -363,7 +363,7 @@
         "y": "0.03",
         "z": "1.00"
       },
-      "risk_level": "low",
+      "risk_level": "medium",
       "throughput_need": "low"
     },
     {
@@ -379,7 +379,7 @@
         "y": "0.03",
         "z": "1.00"
       },
-      "risk_level": "low",
+      "risk_level": "medium",
       "throughput_need": "low"
     },
     {
@@ -395,7 +395,7 @@
         "y": "0.06",
         "z": "1.00"
       },
-      "risk_level": "low",
+      "risk_level": "medium",
       "throughput_need": "low"
     },
     {
@@ -411,21 +411,31 @@
         "y": "0.06",
         "z": "1.00"
       },
-      "risk_level": "low",
+      "risk_level": "medium",
       "throughput_need": "low"
     },
     {
       "class": "person",
       "audio_only": true,
-      "reason": "radio indicates 1 on-scene responder(s); 0 matched visually as firefighter",
+      "reason": "radio mentions 2 civilian(s); 1 labeled civilian visually; gap-fill for occluded / not visible civilian",
       "risk_level": "medium",
-      "throughput_need": "low",
-      "inferred_role": "firefighter",
+      "throughput_need": "medium",
+      "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": ""
+        "text": "no role inferred from radio or proximity"
       },
       "role_confidence": null
+    },
+    {
+      "class": "emergency_vehicle",
+      "audio_only": true,
+      "reason": "radio explicitly mentions 1 emergency vehicle(s); 0 detected visually",
+      "risk_level": "medium",
+      "throughput_need": "medium"
     }
-  ]
+  ],
+  "_metadata": {
+    "role_assignment_llm_applied": true
+  }
 }

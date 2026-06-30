@@ -1,6 +1,6 @@
 {
   "has_fire": true,
-  "summary": "Multiple civilians and vehicles are present near an active brush fire on a highway, with reports of an overturned vehicle.",
+  "summary": "Multiple persons and vehicles are present near a brush fire in a wooded area.",
   "counts_by_class": {
     "person": 7,
     "normal_vehicle": 1,
@@ -35,13 +35,13 @@
       },
       "distance_to_fire": "16.68 m",
       "risk_level": "medium",
-      "throughput_need": "low",
       "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": "Civilians mentioned in the initial report."
+        "text": "The remaining persons are assigned based on civilian mentions and proximity rank relative to the fire/responder status."
       },
-      "role_confidence": 1.0,
+      "role_confidence": 0.95,
+      "throughput_need": "low",
       "traffic_demand_mbps": 0.3
     },
     {
@@ -59,13 +59,13 @@
       },
       "distance_to_fire": "26.55 m",
       "risk_level": "medium",
-      "throughput_need": "low",
       "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": "Civilians mentioned in the initial report."
+        "text": "Assigned as a civilian based on distance and lack of responder role inference."
       },
-      "role_confidence": 1.0,
+      "role_confidence": 0.9,
+      "throughput_need": "low",
       "traffic_demand_mbps": 0.3
     },
     {
@@ -83,13 +83,13 @@
       },
       "distance_to_fire": "22.57 m",
       "risk_level": "medium",
-      "throughput_need": "low",
       "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": "Civilians mentioned in the initial report."
+        "text": "Assigned as a civilian based on distance and lack of responder role inference."
       },
-      "role_confidence": 1.0,
+      "role_confidence": 0.9,
+      "throughput_need": "low",
       "traffic_demand_mbps": 0.3
     },
     {
@@ -107,13 +107,13 @@
       },
       "distance_to_fire": "27.77 m",
       "risk_level": "medium",
-      "throughput_need": "low",
       "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": "Civilians mentioned in the initial report."
+        "text": "Assigned as a civilian based on distance and lack of responder role inference."
       },
-      "role_confidence": 1.0,
+      "role_confidence": 0.9,
+      "throughput_need": "low",
       "traffic_demand_mbps": 0.3
     },
     {
@@ -131,14 +131,14 @@
       },
       "distance_to_fire": "15.22 m",
       "risk_level": "medium",
-      "throughput_need": "low",
-      "inferred_role": "civilian",
+      "inferred_role": "firefighter",
       "role_inference_basis": {
         "source": "inference",
-        "text": "Civilians mentioned in the initial report."
+        "text": "ROLE_CONTEXT.has_fire is true and no on-scene field units exist (radio_signals.on_scene_field_units non-empty OR radio_signals.on_scene_responders_count >= 1), so the closest person (proximity_rank=1) is inferred as the responder operating at the fire."
       },
       "role_confidence": 1.0,
-      "traffic_demand_mbps": 0.3
+      "throughput_need": "medium",
+      "traffic_demand_mbps": 1.0
     },
     {
       "class": "person",
@@ -155,13 +155,13 @@
       },
       "distance_to_fire": "24.07 m",
       "risk_level": "medium",
-      "throughput_need": "low",
       "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": "Civilians mentioned in the initial report."
+        "text": "Assigned as a civilian based on distance and lack of responder role inference."
       },
-      "role_confidence": 1.0,
+      "role_confidence": 0.9,
+      "throughput_need": "low",
       "traffic_demand_mbps": 0.3
     },
     {
@@ -179,13 +179,13 @@
       },
       "distance_to_fire": "22.19 m",
       "risk_level": "medium",
-      "throughput_need": "low",
       "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": "Civilians mentioned in the initial report."
+        "text": "Assigned as a civilian based on distance and lack of responder role inference for closest person (ID 4)."
       },
-      "role_confidence": 1.0,
+      "role_confidence": 0.9,
+      "throughput_need": "low",
       "traffic_demand_mbps": 0.3
     },
     {

@@ -1,8 +1,8 @@
 {
   "has_fire": false,
-  "summary": "A search operation is underway at a highway pileup, but no visible occupants or active fire were detected.",
+  "summary": "A large vehicle pileup is visible along a highway with burned-out cars and ash. No active flames are visible in the forest edge.",
   "counts_by_class": {
-    "person": 1,
+    "person": 0,
     "normal_vehicle": 9,
     "emergency_vehicle": 0
   },
@@ -175,20 +175,6 @@
       },
       "risk_level": "medium",
       "throughput_need": "low",
-      "traffic_demand_mbps": 0.3
-    },
-    {
-      "class": "person",
-      "audio_only": true,
-      "reason": "radio indicates 1 on-scene responder(s); 0 matched visually as firefighter",
-      "risk_level": "medium",
-      "throughput_need": "low",
-      "inferred_role": "firefighter",
-      "role_inference_basis": {
-        "source": "inference",
-        "text": ""
-      },
-      "role_confidence": null,
       "traffic_demand_mbps": 0.3
     }
   ]

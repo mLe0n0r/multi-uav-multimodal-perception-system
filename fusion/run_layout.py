@@ -114,7 +114,6 @@ def load_cross_view(run_dir: Path | str) -> Optional[Dict[str, Any]]:
 
 
 def visual_views_from_cross_view(bundle: Dict[str, Any]) -> List[Dict[str, Any]]:
-    """Expand embedded visuals dict into a list with _view_id set."""
     views: List[Dict[str, Any]] = []
     for view_id in bundle.get("views", []):
         data = copy.deepcopy((bundle.get("visuals") or {}).get(view_id))
@@ -143,6 +142,11 @@ def llm_output_path(run_dir: Path | str) -> Path:
 
 def sls_path(run_dir: Path | str) -> Path:
     return fusion_dir(run_dir) / SLS_NAME
+
+
+def sls_path_for_view(run_dir: Path | str, view_id: str) -> Path:
+    """Per-view SLS when multi-UAV views are independent incidents."""
+    return fusion_dir(run_dir) / f"sls_{view_id}.json"
 
 
 def is_multi_view_run(run_dir: Path | str) -> bool:
@@ -213,6 +217,19 @@ def primary_visual_path(run_dir: Path | str) -> Path:
     if not views:
         raise FileNotFoundError(f"No visual JSON in {perception_dir(run_dir)}")
     return views[0][1]
+
+
+def run_has_complete_sls(run_dir: Path | str) -> bool:
+    """Mono or fused multi: fusion/sls.json; independent multi: sls_<view_id>.json each."""
+    if not is_multi_view_run(run_dir):
+        return sls_path(run_dir).is_file()
+    matching = load_cross_view(run_dir)
+    if matching and matching.get("same_incident"):
+        return sls_path(run_dir).is_file()
+    views = discover_visual_views(run_dir)
+    if len(views) > 1:
+        return all(sls_path_for_view(run_dir, vid).is_file() for vid, _ in views)
+    return sls_path(run_dir).is_file()
 
 
 def load_primary_visual(run_dir: Path | str) -> Dict[str, Any]:

@@ -1,10 +1,10 @@
 {
   "has_fire": true,
-  "summary": "Fire is active in the forested area, and visual confirmation of a person near a house has been made.",
+  "summary": "Fire is active in a forested area, and visual confirmation indicates a person near the fire's smoke path.",
   "counts_by_class": {
-    "person": 2,
+    "person": 1,
     "normal_vehicle": 0,
-    "emergency_vehicle": 0
+    "emergency_vehicle": 1
   },
   "communications": {
     "speaker_count": 3,
@@ -43,26 +43,23 @@
       },
       "distance_to_fire": "17.59 m",
       "risk_level": "medium",
-      "throughput_need": "medium",
       "inferred_role": "firefighter",
       "role_inference_basis": {
         "source": "inference",
-        "text": "engine_1, rescue_2 on scene per radio (command is off-scene support); assigned to closest person near fire"
+        "text": "ROLE_CONTEXT.has_fire is true and on-scene field units exist (engine_1, rescue_2), and person 0 has proximity_rank == 1 (closest to fire). Rule 1 applies."
       },
-      "role_confidence": 0.85
+      "role_confidence": 1.0,
+      "throughput_need": "medium"
     },
     {
-      "class": "person",
+      "class": "emergency_vehicle",
       "audio_only": true,
-      "reason": "radio indicates 2 on-scene responder(s); 1 matched visually as firefighter",
+      "reason": "radio explicitly mentions 1 emergency vehicle(s); 0 detected visually",
       "risk_level": "medium",
-      "throughput_need": "low",
-      "inferred_role": "firefighter",
-      "role_inference_basis": {
-        "source": "inference",
-        "text": ""
-      },
-      "role_confidence": null
+      "throughput_need": "medium"
     }
-  ]
+  ],
+  "_metadata": {
+    "role_assignment_llm_applied": true
+  }
 }

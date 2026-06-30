@@ -1,8 +1,8 @@
 {
   "has_fire": true,
-  "summary": "Firefighters are coordinating a response near a house, confirming no visual contact with civilians but noting calls from the porch site.",
+  "summary": "A rescue team is coordinating an operation near a house with heavy smoke and fire.",
   "counts_by_class": {
-    "person": 3,
+    "person": 2,
     "normal_vehicle": 0,
     "emergency_vehicle": 1
   },
@@ -39,13 +39,13 @@
       },
       "distance_to_fire": "14.77 m",
       "risk_level": "medium",
-      "throughput_need": "medium",
       "inferred_role": "firefighter",
       "role_inference_basis": {
         "source": "inference",
-        "text": "rescue_2 on scene per radio (command is off-scene support); assigned to closest person near fire"
+        "text": "Proximity rank is 1 (closest to fire), and an on-scene field unit exists (rescue_2) implies this person is the responder operating at the fire."
       },
-      "role_confidence": 0.85
+      "role_confidence": 1.0,
+      "throughput_need": "medium"
     },
     {
       "class": "person",
@@ -62,13 +62,13 @@
       },
       "distance_to_fire": "16.92 m",
       "risk_level": "medium",
-      "throughput_need": "low",
-      "inferred_role": "unknown_person",
+      "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": "no specific role inferred"
+        "text": "This person has proximity rank 2 and is not identified as a firefighter or directly related to the closest response role."
       },
-      "role_confidence": 0.0
+      "role_confidence": 1.0,
+      "throughput_need": "low"
     },
     {
       "class": "emergency_vehicle",
@@ -84,21 +84,11 @@
         "z": "1.00"
       },
       "distance_to_fire": "21.87 m",
-      "risk_level": "medium",
+      "risk_level": "low",
       "throughput_need": "medium"
-    },
-    {
-      "class": "person",
-      "audio_only": true,
-      "reason": "radio indicates 2 on-scene responder(s); 1 matched visually as firefighter",
-      "risk_level": "medium",
-      "throughput_need": "low",
-      "inferred_role": "firefighter",
-      "role_inference_basis": {
-        "source": "inference",
-        "text": ""
-      },
-      "role_confidence": null
     }
-  ]
+  ],
+  "_metadata": {
+    "role_assignment_llm_applied": true
+  }
 }

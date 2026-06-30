@@ -1,8 +1,8 @@
 {
   "has_fire": true,
-  "summary": "Engine 1 is coordinating cooling operations on vehicles near a fire, confirming no visible flame inside a structure and noting the presence of civilians.",
+  "summary": "Emergency services are coordinating cooling operations and observation near vehicles involved in a fire.",
   "counts_by_class": {
-    "person": 5,
+    "person": 4,
     "normal_vehicle": 4,
     "emergency_vehicle": 0
   },
@@ -46,9 +46,9 @@
       "class": "normal_vehicle",
       "detection_confidence": "0.51",
       "position": {
-        "x": "-235.21 m",
-        "y": "-36.71 m",
-        "z": "5.97 m"
+        "x": "-235.23 m",
+        "y": "-36.69 m",
+        "z": "5.99 m"
       },
       "localization_confidence": {
         "x": "0.15",
@@ -100,9 +100,9 @@
       "class": "person",
       "detection_confidence": "0.87",
       "position": {
-        "x": "-233.34 m",
-        "y": "-44.34 m",
-        "z": "2.08 m"
+        "x": "-233.36 m",
+        "y": "-44.32 m",
+        "z": "2.10 m"
       },
       "localization_confidence": {
         "x": "0.29",
@@ -114,9 +114,9 @@
       "inferred_role": "firefighter",
       "role_inference_basis": {
         "source": "inference",
-        "text": "engine_1 on scene per radio (command is off-scene support); assigned to closest person near fire"
+        "text": "Proximity rank 1 (closest to fire) and on-scene field unit exists implies the closest person is the responder operating at the fire."
       },
-      "role_confidence": 0.85,
+      "role_confidence": 1.0,
       "throughput_need": "medium",
       "traffic_demand_mbps": 1.0
     },
@@ -124,9 +124,9 @@
       "class": "person",
       "detection_confidence": "0.87",
       "position": {
-        "x": "-234.00 m",
-        "y": "-43.88 m",
-        "z": "5.61 m"
+        "x": "-234.02 m",
+        "y": "-43.85 m",
+        "z": "5.62 m"
       },
       "localization_confidence": {
         "x": "0.21",
@@ -138,9 +138,9 @@
       "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": "radio reports 2 civilian(s) at safe distance; matched to persons farther from fire"
+        "text": "Remaining persons are assigned as civilians based on context and proximity rank."
       },
-      "role_confidence": 0.75,
+      "role_confidence": 1.0,
       "throughput_need": "low",
       "traffic_demand_mbps": 0.3
     },
@@ -148,9 +148,9 @@
       "class": "person",
       "detection_confidence": "0.55",
       "position": {
-        "x": "-253.78 m",
-        "y": "-27.12 m",
-        "z": "19.39 m"
+        "x": "-253.76 m",
+        "y": "-27.13 m",
+        "z": "19.37 m"
       },
       "localization_confidence": {
         "x": "0.24",
@@ -159,12 +159,12 @@
       },
       "distance_to_fire": "7.76 m",
       "risk_level": "medium",
-      "inferred_role": null,
+      "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": ""
+        "text": "Civilians at safe distance mentioned in radio signals describe persons further from the fire."
       },
-      "role_confidence": null,
+      "role_confidence": 1.0,
       "throughput_need": "low",
       "traffic_demand_mbps": 0.3
     },
@@ -183,27 +183,13 @@
       },
       "distance_to_fire": "11.90 m",
       "risk_level": "medium",
-      "throughput_need": "low",
       "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": "radio reports 2 civilian(s) at safe distance; matched to persons farther from fire"
+        "text": "Remaining persons are assigned as civilians based on context and proximity rank."
       },
-      "role_confidence": 0.75,
-      "traffic_demand_mbps": 0.3
-    },
-    {
-      "class": "person",
-      "audio_only": true,
-      "reason": "radio indicates 1 on-scene responder(s); 0 matched visually as firefighter",
-      "risk_level": "medium",
+      "role_confidence": 1.0,
       "throughput_need": "low",
-      "inferred_role": "firefighter",
-      "role_inference_basis": {
-        "source": "inference",
-        "text": ""
-      },
-      "role_confidence": null,
       "traffic_demand_mbps": 0.3
     }
   ]

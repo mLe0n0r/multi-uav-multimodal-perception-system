@@ -1,8 +1,8 @@
 {
   "has_fire": true,
-  "summary": "Two units are coordinating an exposure assessment near a wildfire, confirming no visible persons at the location of interest.",
+  "summary": "Two units are coordinating regarding an active wildfire and assessing potential exposure near a structure.",
   "counts_by_class": {
-    "person": 3,
+    "person": 2,
     "normal_vehicle": 0,
     "emergency_vehicle": 0
   },
@@ -45,13 +45,13 @@
       },
       "distance_to_fire": "13.57 m",
       "risk_level": "medium",
-      "throughput_need": "low",
-      "inferred_role": "unknown_person",
+      "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": "visual_detection"
+        "text": "Person ID 0 is the second closest person and not assigned the primary firefighter role."
       },
-      "role_confidence": null
+      "role_confidence": 0.95,
+      "throughput_need": "low"
     },
     {
       "class": "person",
@@ -68,26 +68,16 @@
       },
       "distance_to_fire": "11.25 m",
       "risk_level": "medium",
-      "throughput_need": "low",
-      "inferred_role": "unknown_person",
-      "role_inference_basis": {
-        "source": "inference",
-        "text": "visual_detection"
-      },
-      "role_confidence": null
-    },
-    {
-      "class": "person",
-      "audio_only": true,
-      "reason": "radio indicates 1 on-scene responder(s); 0 matched visually as firefighter",
-      "risk_level": "medium",
-      "throughput_need": "low",
       "inferred_role": "firefighter",
       "role_inference_basis": {
         "source": "inference",
-        "text": ""
+        "text": "ROLE_CONTEXT.has_fire is true and radio_signals.on_scene_responders_count >= 1 (1 responder). Person ID 1 has proximity_rank == 1 (closest to fire)."
       },
-      "role_confidence": null
+      "role_confidence": 1.0,
+      "throughput_need": "medium"
     }
-  ]
+  ],
+  "_metadata": {
+    "role_assignment_llm_applied": true
+  }
 }

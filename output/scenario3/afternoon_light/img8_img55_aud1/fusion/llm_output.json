@@ -1,8 +1,8 @@
 {
   "has_fire": true,
-  "summary": "Fire is active in the forested area, and units are assessing exposure and visibility near a structure.",
+  "summary": "Two units are coordinating an exposure assessment near a wildfire, confirming no visible persons at the house location.",
   "counts_by_class": {
-    "person": 4,
+    "person": 3,
     "normal_vehicle": 0,
     "emergency_vehicle": 1
   },
@@ -61,14 +61,14 @@
         "z": "1.00"
       },
       "distance_to_fire": "22.33 m",
-      "risk_level": "medium",
-      "throughput_need": "low",
+      "risk_level": "low",
       "inferred_role": "unknown_person",
       "role_inference_basis": {
         "source": "inference",
-        "text": "no visual confirmation of persons near the house"
+        "text": "no role inferred from radio or proximity"
       },
-      "role_confidence": 0.0
+      "role_confidence": null,
+      "throughput_need": "low"
     },
     {
       "class": "person",
@@ -84,14 +84,14 @@
         "z": "1.00"
       },
       "distance_to_fire": "14.77 m",
-      "risk_level": "medium",
-      "throughput_need": "medium",
+      "risk_level": "low",
       "inferred_role": "firefighter",
       "role_inference_basis": {
         "source": "inference",
-        "text": "field radio unit on scene per radio (command is off-scene support); assigned to closest person near fire"
+        "text": "ROLE_CONTEXT.has_fire is true and an on-scene field unit exists (radio_signals.on_scene_field_units is empty but radio_signals.on_scene_responders_count >= 1), assigning the closest person (proximity_rank=1) as the responder operating at the fire."
       },
-      "role_confidence": 0.85
+      "role_confidence": null,
+      "throughput_need": "medium"
     },
     {
       "class": "person",
@@ -107,27 +107,17 @@
         "z": "1.00"
       },
       "distance_to_fire": "16.92 m",
-      "risk_level": "medium",
-      "throughput_need": "low",
+      "risk_level": "low",
       "inferred_role": "unknown_person",
       "role_inference_basis": {
         "source": "inference",
-        "text": "no visual confirmation of persons near the house"
+        "text": "no role inferred from radio or proximity"
       },
-      "role_confidence": 0.0
-    },
-    {
-      "class": "person",
-      "audio_only": true,
-      "reason": "radio indicates 1 on-scene responder(s); 0 matched visually as firefighter",
-      "risk_level": "medium",
-      "throughput_need": "medium",
-      "inferred_role": "firefighter",
-      "role_inference_basis": {
-        "source": "inference",
-        "text": ""
-      },
-      "role_confidence": null
+      "role_confidence": null,
+      "throughput_need": "low"
     }
-  ]
+  ],
+  "_metadata": {
+    "role_assignment_llm_applied": true
+  }
 }

@@ -1,6 +1,6 @@
 {
   "has_fire": true,
-  "summary": "Fire is active in a forested area, and command is requesting exposure assessment near a structure.",
+  "summary": "Units are coordinating an assessment of a wildfire, focusing on potential exposure near a structure.",
   "counts_by_class": {
     "person": 1,
     "normal_vehicle": 0,
@@ -27,6 +27,13 @@
         "source": "transcript",
         "text": "Command here, Unit Phi. Negative visual confirmation of persons at this time. Smoke is limiting visibility near the house and access path. Listening."
       }
+    ],
+    "objects": [
+      {
+        "id": 0,
+        "class": "person",
+        "risk_level": "medium"
+      }
     ]
   },
   "objects": [
@@ -45,14 +52,14 @@
       },
       "distance_to_fire": "16.38 m",
       "risk_level": "medium",
-      "throughput_need": "medium",
-      "inferred_role": "firefighter",
+      "throughput_need": "low",
+      "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": "field radio unit on scene per radio (command is off-scene support); assigned to closest person near fire"
+        "text": "The remaining persons are civilians based on rule 2."
       },
-      "role_confidence": 0.85,
-      "traffic_demand_mbps": 1.0
+      "role_confidence": 1.0,
+      "traffic_demand_mbps": 0.3
     }
   ]
 }

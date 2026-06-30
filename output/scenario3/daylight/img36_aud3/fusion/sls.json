@@ -1,6 +1,6 @@
 {
   "has_fire": true,
-  "summary": "Firefighters are coordinating a search near a house, confirming no visual contact with civilians but noting the presence of personnel.",
+  "summary": "Emergency responders are coordinating a search near a house where heavy smoke is present.",
   "counts_by_class": {
     "person": 2,
     "normal_vehicle": 0,
@@ -63,13 +63,13 @@
     {
       "class": "person",
       "audio_only": true,
-      "reason": "radio indicates 2 on-scene responder(s); 0 matched visually as firefighter",
+      "reason": "radio mentions 0 civilian(s); 0 labeled civilian visually; gap-fill for occluded / not visible civilian",
       "risk_level": "medium",
       "throughput_need": "low",
-      "inferred_role": "firefighter",
+      "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": ""
+        "text": "no role inferred from radio or proximity"
       },
       "role_confidence": null,
       "traffic_demand_mbps": 0.3
@@ -77,13 +77,13 @@
     {
       "class": "person",
       "audio_only": true,
-      "reason": "radio indicates 2 on-scene responder(s); 0 matched visually as firefighter",
+      "reason": "radio mentions 0 civilian(s); 0 labeled civilian visually; gap-fill for occluded / not visible civilian",
       "risk_level": "medium",
       "throughput_need": "low",
-      "inferred_role": "firefighter",
+      "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": ""
+        "text": "no role inferred from radio or proximity"
       },
       "role_confidence": null,
       "traffic_demand_mbps": 0.3

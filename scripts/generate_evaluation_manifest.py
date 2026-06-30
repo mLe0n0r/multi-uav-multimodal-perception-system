@@ -16,7 +16,7 @@ from fusion.run_layout import (
     cross_view_path,
     lighting_folder_for_group,
     run_dir_path,
-    sls_path,
+    run_has_complete_sls,
     transcript_path,
     visual_mono_path,
     visual_multi_path,
@@ -64,7 +64,7 @@ def main() -> None:
             "aud_id": f"aud{aud_match.group(1)}" if aud_match else "",
             "run_dir": rel(run_dir),
             "has_output_dir": run_dir.is_dir(),
-            "has_sls": sls_path(run_dir).is_file(),
+            "has_sls": run_has_complete_sls(run_dir),
             "transcript_path": rel(transcript_path(run_dir))
             if transcript_path(run_dir).is_file()
             else "",
@@ -131,7 +131,7 @@ def main() -> None:
         ):
             view_cols.append(f"view{i}_{c}")
 
-    out = _REPO_ROOT / "evaluation_manifest.csv"
+    out = _REPO_ROOT / "evaluation" / "evaluation_manifest.csv"
     fieldnames = base_cols + view_cols
     with open(out, "w", newline="", encoding="utf-8") as f:
         writer = csv.DictWriter(f, fieldnames=fieldnames, extrasaction="ignore")

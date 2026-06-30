@@ -7,7 +7,7 @@
   "camera": {
     "position": {
       "x": "-228.37 m",
-      "y": "44.76 m",
+      "y": "-44.76 m",
       "z": "22.44 m"
     },
     "orientation": {
@@ -34,7 +34,7 @@
       },
       "position": {
         "x": "-233.82 m",
-        "y": "60.77 m",
+        "y": "-28.75 m",
         "z": "0.00 m"
       },
       "localization_confidence": {
@@ -56,7 +56,7 @@
       },
       "position": {
         "x": "-232.02 m",
-        "y": "38.59 m",
+        "y": "-50.93 m",
         "z": "0.00 m"
       },
       "localization_confidence": {

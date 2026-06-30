@@ -1,8 +1,8 @@
 {
   "has_fire": true,
-  "summary": "Units are responding to a brush fire near a highway where a vehicle was overturned, with instructions to use caution near the fire and vehicle.",
+  "summary": "A civilian reported a brush fire along a highway with traffic blocked near an overturned vehicle; units are responding to the scene.",
   "counts_by_class": {
-    "person": 11,
+    "person": 10,
     "normal_vehicle": 14,
     "emergency_vehicle": 0
   },
@@ -277,13 +277,13 @@
       },
       "distance_to_fire": "9.00 m",
       "risk_level": "medium",
-      "throughput_need": "medium",
       "inferred_role": "firefighter",
       "role_inference_basis": {
         "source": "inference",
-        "text": "field radio unit on scene per radio (command is off-scene support); assigned to closest person near fire"
+        "text": "ROLE_CONTEXT.has_fire is true and radio_signals.on_scene_responders_count is 1 (implying an on-scene field unit exists), making the closest person (proximity_rank=1) the responder operating at the fire."
       },
-      "role_confidence": 0.85
+      "role_confidence": 1.0,
+      "throughput_need": "medium"
     },
     {
       "class": "person",
@@ -300,13 +300,13 @@
       },
       "distance_to_fire": "9.56 m",
       "risk_level": "medium",
-      "throughput_need": "low",
-      "inferred_role": null,
+      "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": ""
+        "text": "The radio mentions a civilian report but does not specify which visual person is speaking; assigned as civilian based on proximity rank and lack of firefighter assignment for this position."
       },
-      "role_confidence": null
+      "role_confidence": 0.9,
+      "throughput_need": "low"
     },
     {
       "class": "person",
@@ -323,13 +323,13 @@
       },
       "distance_to_fire": "10.69 m",
       "risk_level": "medium",
-      "throughput_need": "low",
-      "inferred_role": null,
+      "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": ""
+        "text": "Assigned as civilian due to distance (proximity_rank=3) and no specific role assignment from the radio context."
       },
-      "role_confidence": null
+      "role_confidence": 0.85,
+      "throughput_need": "low"
     },
     {
       "class": "person",
@@ -346,13 +346,13 @@
       },
       "distance_to_fire": "16.68 m",
       "risk_level": "medium",
-      "throughput_need": "low",
-      "inferred_role": null,
+      "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": ""
+        "text": "Assigned as civilian due to distance (proximity_rank=5) and no specific role assignment from the radio context."
       },
-      "role_confidence": null
+      "role_confidence": 0.85,
+      "throughput_need": "low"
     },
     {
       "class": "person",
@@ -369,13 +369,13 @@
       },
       "distance_to_fire": "26.55 m",
       "risk_level": "medium",
-      "throughput_need": "low",
-      "inferred_role": null,
+      "inferred_role": "unknown_person",
       "role_inference_basis": {
         "source": "inference",
-        "text": ""
+        "text": "no role inferred from radio or proximity"
       },
-      "role_confidence": null
+      "role_confidence": null,
+      "throughput_need": "low"
     },
     {
       "class": "person",
@@ -392,13 +392,13 @@
       },
       "distance_to_fire": "22.57 m",
       "risk_level": "medium",
-      "throughput_need": "low",
-      "inferred_role": null,
+      "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": ""
+        "text": "Assigned as civilian due to distance (proximity_rank=7) and no specific role assignment from the radio context."
       },
-      "role_confidence": null
+      "role_confidence": 0.85,
+      "throughput_need": "low"
     },
     {
       "class": "person",
@@ -415,13 +415,13 @@
       },
       "distance_to_fire": "27.77 m",
       "risk_level": "medium",
-      "throughput_need": "low",
-      "inferred_role": null,
+      "inferred_role": "unknown_person",
       "role_inference_basis": {
         "source": "inference",
-        "text": ""
+        "text": "no role inferred from radio or proximity"
       },
-      "role_confidence": null
+      "role_confidence": null,
+      "throughput_need": "low"
     },
     {
       "class": "person",
@@ -438,13 +438,13 @@
       },
       "distance_to_fire": "15.22 m",
       "risk_level": "medium",
-      "throughput_need": "low",
-      "inferred_role": null,
+      "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": ""
+        "text": "Assigned as civilian based on proximity rank and lack of firefighter assignment."
       },
-      "role_confidence": null
+      "role_confidence": 0.9,
+      "throughput_need": "low"
     },
     {
       "class": "person",
@@ -461,13 +461,13 @@
       },
       "distance_to_fire": "24.07 m",
       "risk_level": "medium",
-      "throughput_need": "low",
-      "inferred_role": null,
+      "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": ""
+        "text": "Assigned as civilian due to distance (proximity_rank=8) and no specific role assignment from the radio context."
       },
-      "role_confidence": null
+      "role_confidence": 0.9,
+      "throughput_need": "low"
     },
     {
       "class": "person",
@@ -484,26 +484,16 @@
       },
       "distance_to_fire": "22.19 m",
       "risk_level": "medium",
-      "throughput_need": "low",
-      "inferred_role": null,
+      "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": ""
+        "text": "Assigned as civilian due to distance (proximity_rank=6) and no specific role assignment from the radio context."
       },
-      "role_confidence": null
-    },
-    {
-      "class": "person",
-      "audio_only": true,
-      "reason": "radio indicates 1 on-scene responder(s); 0 matched visually as firefighter",
-      "risk_level": "medium",
-      "throughput_need": "medium",
-      "inferred_role": "firefighter",
-      "role_inference_basis": {
-        "source": "inference",
-        "text": ""
-      },
-      "role_confidence": null
+      "role_confidence": 0.9,
+      "throughput_need": "low"
     }
-  ]
+  ],
+  "_metadata": {
+    "role_assignment_llm_applied": true
+  }
 }

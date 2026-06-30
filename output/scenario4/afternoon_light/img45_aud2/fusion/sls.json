@@ -1,6 +1,6 @@
 {
   "has_fire": true,
-  "summary": "Emergency responders are coordinating a response to a brush fire near a highway where a vehicle was overturned.",
+  "summary": "A civilian reported a brush fire along a highway with traffic blocked near an overturned vehicle.",
   "counts_by_class": {
     "person": 7,
     "normal_vehicle": 0,
@@ -40,12 +40,12 @@
       "distance_to_fire": "16.68 m",
       "risk_level": "medium",
       "throughput_need": "low",
-      "inferred_role": "unknown_person",
+      "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": "visual_detection"
+        "text": "Not the closest person to the fire; inferred as civilian based on context of radio report."
       },
-      "role_confidence": null,
+      "role_confidence": 0.95,
       "traffic_demand_mbps": 0.3
     },
     {
@@ -64,12 +64,12 @@
       "distance_to_fire": "26.55 m",
       "risk_level": "medium",
       "throughput_need": "low",
-      "inferred_role": "unknown_person",
+      "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": "visual_detection"
+        "text": "Inferred as civilian based on proximity and lack of responder status."
       },
-      "role_confidence": null,
+      "role_confidence": 0.95,
       "traffic_demand_mbps": 0.3
     },
     {
@@ -88,12 +88,12 @@
       "distance_to_fire": "22.57 m",
       "risk_level": "medium",
       "throughput_need": "low",
-      "inferred_role": "unknown_person",
+      "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": "visual_detection"
+        "text": "Inferred as civilian based on proximity and lack of responder status."
       },
-      "role_confidence": null,
+      "role_confidence": 0.95,
       "traffic_demand_mbps": 0.3
     },
     {
@@ -112,12 +112,12 @@
       "distance_to_fire": "27.77 m",
       "risk_level": "medium",
       "throughput_need": "low",
-      "inferred_role": "unknown_person",
+      "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": "visual_detection"
+        "text": "Inferred as civilian based on proximity and lack of responder status."
       },
-      "role_confidence": null,
+      "role_confidence": 0.95,
       "traffic_demand_mbps": 0.3
     },
     {
@@ -139,9 +139,9 @@
       "inferred_role": "firefighter",
       "role_inference_basis": {
         "source": "inference",
-        "text": "field radio unit on scene per radio (command is off-scene support); assigned to closest person near fire"
+        "text": "Proximity rank is 1 (closest to fire), and an on-scene responder exists, implying this person operates at the fire."
       },
-      "role_confidence": 0.85,
+      "role_confidence": 1.0,
       "traffic_demand_mbps": 1.0
     },
     {
@@ -160,12 +160,12 @@
       "distance_to_fire": "24.07 m",
       "risk_level": "medium",
       "throughput_need": "low",
-      "inferred_role": "unknown_person",
+      "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": "visual_detection"
+        "text": "Inferred as civilian based on proximity and lack of responder status."
       },
-      "role_confidence": null,
+      "role_confidence": 0.95,
       "traffic_demand_mbps": 0.3
     },
     {
@@ -184,12 +184,12 @@
       "distance_to_fire": "22.19 m",
       "risk_level": "medium",
       "throughput_need": "low",
-      "inferred_role": "unknown_person",
+      "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": "visual_detection"
+        "text": "Inferred as civilian based on proximity and lack of responder status."
       },
-      "role_confidence": null,
+      "role_confidence": 0.95,
       "traffic_demand_mbps": 0.3
     }
   ]

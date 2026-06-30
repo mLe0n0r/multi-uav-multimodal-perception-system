@@ -1,6 +1,6 @@
 {
   "has_fire": true,
-  "summary": "Fire suppression is underway, and thermal imagery is being requested to assess the risk to nearby vehicles and potential occupants.",
+  "summary": "Emergency responders are coordinating fire suppression and thermal imaging for nearby vehicles and potential occupants.",
   "counts_by_class": {
     "person": 5,
     "normal_vehicle": 4,
@@ -50,9 +50,9 @@
       "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": "radio reports 2 civilian(s) at safe distance; matched to persons farther from fire"
+        "text": "The person with proximity rank 4 is inferred as a civilian based on the remaining visual count and contextual information."
       },
-      "role_confidence": 0.75,
+      "role_confidence": 0.85,
       "traffic_demand_mbps": 0.3
     },
     {
@@ -71,12 +71,12 @@
       "distance_to_fire": "6.58 m",
       "risk_level": "medium",
       "throughput_need": "low",
-      "inferred_role": "unknown_person",
+      "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": "visual_detection"
+        "text": "The person with proximity rank 2 is inferred as a civilian based on radio mentions of civilians at safe distance and general context."
       },
-      "role_confidence": null,
+      "role_confidence": 0.95,
       "traffic_demand_mbps": 0.3
     },
     {
@@ -98,9 +98,9 @@
       "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": "radio reports 2 civilian(s) at safe distance; matched to persons farther from fire"
+        "text": "The person with proximity rank 5 is inferred as a civilian based on the remaining visual count and contextual information."
       },
-      "role_confidence": 0.75,
+      "role_confidence": 0.8,
       "traffic_demand_mbps": 0.3
     },
     {
@@ -118,15 +118,14 @@
       },
       "distance_to_fire": "5.81 m",
       "risk_level": "medium",
-      "throughput_need": "high",
+      "throughput_need": "medium",
       "inferred_role": "firefighter",
       "role_inference_basis": {
         "source": "inference",
-        "text": "engine_1 on scene per radio (command is off-scene support); assigned to closest person near fire; radio requests thermal imagery for this unit (engine/responder)"
+        "text": "Proximity rank 1 (closest to fire) is assigned the role of firefighter because an on-scene field unit exists (engine_1), implying one responder operating at the fire."
       },
-      "role_confidence": 0.85,
-      "thermal_imagery_consumer": true,
-      "traffic_demand_mbps": 3.0
+      "role_confidence": 1.0,
+      "traffic_demand_mbps": 1.0
     },
     {
       "class": "person",
@@ -144,12 +143,12 @@
       "distance_to_fire": "7.32 m",
       "risk_level": "medium",
       "throughput_need": "low",
-      "inferred_role": "unknown_person",
+      "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": "visual_detection"
+        "text": "The person with proximity rank 3 is inferred as a civilian based on the remaining visual count and contextual information."
       },
-      "role_confidence": null,
+      "role_confidence": 0.9,
       "traffic_demand_mbps": 0.3
     },
     {

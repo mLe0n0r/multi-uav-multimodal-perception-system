@@ -1,9 +1,9 @@
 {
   "has_fire": true,
-  "summary": "Firefighters are coordinating suppression efforts near vehicles, with civilians located at a safe distance.",
+  "summary": "Fire is active near a structure involving multiple vehicles.",
   "counts_by_class": {
-    "person": 4,
-    "normal_vehicle": 6,
+    "person": 3,
+    "normal_vehicle": 3,
     "emergency_vehicle": 0
   },
   "communications": {
@@ -25,7 +25,25 @@
     "service_types": [
       "voice"
     ],
-    "service_inference_basis": []
+    "service_inference_basis": [],
+    "objects": [
+      {
+        "id": 0,
+        "class": "person",
+        "risk_level": "medium"
+      },
+      {
+        "id": 1,
+        "class": "person",
+        "risk_level": "low"
+      },
+      {
+        "id": 2,
+        "class": "normal_vehicle",
+        "risk_level": "medium",
+        "throughput_need": "medium"
+      }
+    ]
   },
   "objects": [
     {
@@ -47,9 +65,9 @@
       "inferred_role": "firefighter",
       "role_inference_basis": {
         "source": "inference",
-        "text": "engine_1, rescue_2 on scene per radio (command is off-scene support); assigned to closest person near fire"
+        "text": "Proximity rank is 1 (closest to fire), and on-scene field units exist (engine_1, rescue_2) implies one responder operating at the fire."
       },
-      "role_confidence": 0.85
+      "role_confidence": 1.0
     },
     {
       "class": "person",
@@ -66,13 +84,13 @@
       },
       "distance_to_fire": "12.64 m",
       "risk_level": "medium",
-      "throughput_need": "medium",
-      "inferred_role": "firefighter",
+      "throughput_need": "low",
+      "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": "engine_1, rescue_2 on scene per radio (command is off-scene support); assigned to closest person near fire"
+        "text": "The remaining person mentioned is a civilian, as radio segments explicitly mention two civilians located near the sidewalk at safe distance."
       },
-      "role_confidence": 0.85
+      "role_confidence": 1.0
     },
     {
       "class": "normal_vehicle",
@@ -94,63 +112,32 @@
     {
       "class": "person",
       "audio_only": true,
-      "reason": "radio reports 2 civilian(s) at safe distance; 0 matched visually as civilian",
+      "reason": "radio mentions 2 civilian(s); 1 labeled civilian visually; gap-fill for occluded / not visible civilian",
       "risk_level": "medium",
-      "throughput_need": "low",
+      "throughput_need": "medium",
       "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": ""
-      },
-      "role_confidence": null
-    },
-    {
-      "class": "person",
-      "audio_only": true,
-      "reason": "radio reports 2 civilian(s) at safe distance; 0 matched visually as civilian",
-      "risk_level": "medium",
-      "throughput_need": "low",
-      "inferred_role": "civilian",
-      "role_inference_basis": {
-        "source": "inference",
-        "text": ""
+        "text": "no role inferred from radio or proximity"
       },
       "role_confidence": null
     },
     {
       "class": "normal_vehicle",
       "audio_only": true,
-      "reason": "radio explicitly mentions 6 normal vehicle(s); 1 detected visually",
+      "reason": "radio explicitly mentions 3 normal vehicle(s); 1 detected visually",
       "risk_level": "medium",
-      "throughput_need": "low"
+      "throughput_need": "medium"
     },
     {
       "class": "normal_vehicle",
       "audio_only": true,
-      "reason": "radio explicitly mentions 6 normal vehicle(s); 1 detected visually",
+      "reason": "radio explicitly mentions 3 normal vehicle(s); 1 detected visually",
       "risk_level": "medium",
-      "throughput_need": "low"
-    },
-    {
-      "class": "normal_vehicle",
-      "audio_only": true,
-      "reason": "radio explicitly mentions 6 normal vehicle(s); 1 detected visually",
-      "risk_level": "medium",
-      "throughput_need": "low"
-    },
-    {
-      "class": "normal_vehicle",
-      "audio_only": true,
-      "reason": "radio explicitly mentions 6 normal vehicle(s); 1 detected visually",
-      "risk_level": "medium",
-      "throughput_need": "low"
-    },
-    {
-      "class": "normal_vehicle",
-      "audio_only": true,
-      "reason": "radio explicitly mentions 6 normal vehicle(s); 1 detected visually",
-      "risk_level": "medium",
-      "throughput_need": "low"
+      "throughput_need": "medium"
     }
-  ]
+  ],
+  "_metadata": {
+    "role_assignment_llm_applied": true
+  }
 }

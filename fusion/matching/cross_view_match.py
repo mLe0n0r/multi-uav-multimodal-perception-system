@@ -1,8 +1,8 @@
 """
 Cross-view multi-UAV matching (objectMatching.ipynb).
 
-1. Check whether views cover the same incident (ground footprint overlap).
-2. If yes, match objects via match_frames_from_loaded / match_two_frames.
+1. Decide same incident from camera ground distance and/or footprint overlap.
+2. Match objects via match_frames_from_loaded / match_two_frames.
 3. Write fusion/cross_view.json: original visuals + cross-view matches.
 
 Usage:
@@ -22,6 +22,7 @@ import math
 import re
 import sys
 from pathlib import Path
+from dataclasses import dataclass
 from typing import Any, Dict, List, Optional, Tuple
 
 import numpy as np
@@ -31,7 +32,8 @@ _REPO_ROOT = _MATCHING_DIR.parents[1]
 _VISION_INPUT = _REPO_ROOT / "perception" / "vision" / "input"
 _VISION_RESULTS = _REPO_ROOT / "perception" / "vision" / "results"
 _FUSION_ROOT = _MATCHING_DIR.parent
-for path in (_FUSION_ROOT, _MATCHING_DIR):
+_SLS_DIR = _FUSION_ROOT / "sls"
+for path in (_FUSION_ROOT, _SLS_DIR, _MATCHING_DIR):
     if str(path) not in sys.path:
         sys.path.insert(0, str(path))
 
@@ -44,6 +46,11 @@ from object_matching_core import (
 )
 from run_layout import cross_view_path, discover_visual_views, ensure_run_dirs
 
+# Eval / objects_count.csv class keys
+_COUNTS_AFTER_MATCH_KEYS = ("person", "vehicle", "emergency_vehicle")
+
+# Max horizontal camera distance (m) for same incident. Same-scene pairs are typically <100 m.
+SAME_INCIDENT_MAX_CAMERA_DISTANCE_M = 200.0
 SAME_INCIDENT_OVERLAP_THRESHOLD = 0.15
 
 
@@ -123,6 +130,15 @@ def _circle_intersection_area(r1: float, r2: float, d: float) -> float:
     return part1 + part2 - part3
 
 
+def camera_ground_distance_m(
+    visual_a: Dict[str, Any],
+    visual_b: Dict[str, Any],
+) -> float:
+    x1, y1 = camera_xy(visual_a)
+    x2, y2 = camera_xy(visual_b)
+    return float(math.hypot(x2 - x1, y2 - y1))
+
+
 def footprint_overlap_ratio(
     visual_a: Dict[str, Any],
     visual_b: Dict[str, Any],
@@ -140,20 +156,49 @@ def footprint_overlap_ratio(
     return float(inter / union)
 
 
+@dataclass(frozen=True)
+class SameIncidentCheck:
+    same_incident: bool
+    camera_distance_m: float
+    footprint_overlap: float
+    criterion: str  # camera_distance | footprint_overlap | none
+
+
 def check_same_incident(
     views: List[Tuple[str, Dict[str, Any]]],
     *,
     fov_x_deg: float = FOV_X_DEG,
-    threshold: float = SAME_INCIDENT_OVERLAP_THRESHOLD,
-) -> Tuple[bool, float]:
+    max_camera_distance_m: float = SAME_INCIDENT_MAX_CAMERA_DISTANCE_M,
+    overlap_threshold: float = SAME_INCIDENT_OVERLAP_THRESHOLD,
+) -> SameIncidentCheck:
+    """
+    Same incident if cameras are within max_camera_distance_m on the ground plane,
+    or if ground footprint circles overlap enough (views may point in different directions).
+    """
     if len(views) < 2:
-        return False, 0.0
-    ratios: List[float] = []
+        return SameIncidentCheck(False, 0.0, 0.0, "none")
+
+    distances: List[float] = []
+    overlaps: List[float] = []
     for i in range(len(views)):
         for j in range(i + 1, len(views)):
-            ratios.append(footprint_overlap_ratio(views[i][1], views[j][1], fov_x_deg=fov_x_deg))
-    min_ratio = min(ratios)
-    return min_ratio >= threshold, min_ratio
+            distances.append(camera_ground_distance_m(views[i][1], views[j][1]))
+            overlaps.append(footprint_overlap_ratio(views[i][1], views[j][1], fov_x_deg=fov_x_deg))
+
+    min_distance = min(distances)
+    min_overlap = min(overlaps)
+
+    if min_distance <= max_camera_distance_m:
+        return SameIncidentCheck(
+            True, min_distance, min_overlap, "camera_distance"
+        )
+    if min_overlap >= overlap_threshold:
+        return SameIncidentCheck(
+            True, min_distance, min_overlap, "footprint_overlap"
+        )
+    return SameIncidentCheck(
+        False, min_distance, min_overlap, "none"
+    )
 
 
 def view_id_to_frame_id(view_id: str) -> str:
@@ -261,8 +306,9 @@ def _build_frame(
         )
         from object_matching_core import labels_and_ids_from_visual
 
-        _, visual_ids = labels_and_ids_from_visual(visual)
-        if len(visual_ids) == len(frame["labels"]):
+        labels_v, visual_ids = labels_and_ids_from_visual(visual)
+        if labels_v:
+            frame["labels"] = labels_v
             frame["object_ids"] = visual_ids
         return frame
 
@@ -272,6 +318,51 @@ def _build_frame(
         telemetry_path=str(assets["telemetry"]) if assets and assets.get("telemetry") else None,
         fov_x_deg=fov_x_deg,
     )
+
+
+def _views_with_ids(views: List[Tuple[str, Dict[str, Any]]]) -> List[Dict[str, Any]]:
+    out: List[Dict[str, Any]] = []
+    for view_id, visual in views:
+        v = copy.deepcopy(visual)
+        v.setdefault("_view_id", view_id)
+        out.append(v)
+    return out
+
+
+def compute_counts_after_match(
+    views: List[Tuple[str, Dict[str, Any]]],
+    matches: List[Dict[str, Any]],
+    *,
+    same_incident: bool,
+) -> Dict[str, int]:
+    """
+    Unique objects per class after cross-view matching: each match merges two
+    detections into one entity; unmatched detections in any view count separately.
+    Implemented via union-find on perception/visual_* objects (not copied from notebook).
+    """
+    view_dicts = _views_with_ids(views)
+    if not same_incident or len(view_dicts) < 2:
+        total = {k: 0 for k in _COUNTS_AFTER_MATCH_KEYS}
+        for v in view_dicts:
+            for cls, n in (v.get("counts_by_class") or {}).items():
+                key = "vehicle" if cls == "normal_vehicle" else cls
+                if key in total:
+                    total[key] += int(n or 0)
+        return total
+
+    from fused_counts import deduped_visual_counts
+
+    matching = {
+        "same_incident": True,
+        "views": [vid for vid, _ in views],
+        "matches": matches,
+    }
+    raw = deduped_visual_counts(view_dicts, matching)
+    return {
+        "person": int(raw.get("person", 0)),
+        "vehicle": int(raw.get("normal_vehicle", raw.get("vehicle", 0))),
+        "emergency_vehicle": int(raw.get("emergency_vehicle", 0)),
+    }
 
 
 def _match_pair(
@@ -300,6 +391,7 @@ def run_cross_view_match(
     views: List[Tuple[str, Dict[str, Any]]],
     *,
     fov_x_deg: float = FOV_X_DEG,
+    max_camera_distance_m: float = SAME_INCIDENT_MAX_CAMERA_DISTANCE_M,
     overlap_threshold: float = SAME_INCIDENT_OVERLAP_THRESHOLD,
     img_root: Optional[Path] = None,
     label_dir: Optional[Path] = None,
@@ -312,12 +404,15 @@ def run_cross_view_match(
     view_ids = [v[0] for v in views]
     originals = {vid: copy.deepcopy(vis) for vid, vis in views}
 
-    same_incident, _ = check_same_incident(
-        views, fov_x_deg=fov_x_deg, threshold=overlap_threshold
+    incident = check_same_incident(
+        views,
+        fov_x_deg=fov_x_deg,
+        max_camera_distance_m=max_camera_distance_m,
+        overlap_threshold=overlap_threshold,
     )
+    same_incident = incident.same_incident
 
     matches: List[Dict[str, Any]] = []
-    notebook_counts: Optional[Dict[str, int]] = None
 
     if same_incident:
         ref_id, ref_visual = views[0]
@@ -336,7 +431,7 @@ def run_cross_view_match(
         ref_assets = assets_by_view.get(ref_id) if img_root else None
         for other_id, other_visual in views[1:]:
             other_assets = assets_by_view.get(other_id) if img_root else None
-            pair_matches, counts = _match_pair(
+            pair_matches, _ = _match_pair(
                 ref_visual,
                 other_visual,
                 ref_id,
@@ -346,16 +441,21 @@ def run_cross_view_match(
                 assets_other=other_assets,
             )
             matches.extend(pair_matches)
-            notebook_counts = counts
+
+    counts_after_match = compute_counts_after_match(
+        views, matches, same_incident=same_incident
+    )
 
     result: Dict[str, Any] = {
         "same_incident": same_incident,
+        "same_incident_camera_distance_m": round(incident.camera_distance_m, 2),
+        "same_incident_footprint_overlap": round(incident.footprint_overlap, 4),
+        "same_incident_criterion": incident.criterion,
         "views": view_ids,
         "visuals": originals,
         "matches": matches,
+        "counts_after_match": counts_after_match,
     }
-    if notebook_counts is not None:
-        result["notebook_counts_after_match"] = notebook_counts
     return result
 
 
@@ -363,6 +463,7 @@ def run_cross_view_for_run_dir(
     run_dir: Path | str,
     *,
     fov_x_deg: float = FOV_X_DEG,
+    max_camera_distance_m: float = SAME_INCIDENT_MAX_CAMERA_DISTANCE_M,
     overlap_threshold: float = SAME_INCIDENT_OVERLAP_THRESHOLD,
     img_root: Optional[Path] = None,
     label_dir: Optional[Path] = None,
@@ -378,6 +479,7 @@ def run_cross_view_for_run_dir(
     result = run_cross_view_match(
         views,
         fov_x_deg=fov_x_deg,
+        max_camera_distance_m=max_camera_distance_m,
         overlap_threshold=overlap_threshold,
         img_root=img_root,
         label_dir=label_dir,
@@ -425,10 +527,16 @@ def main() -> None:
     )
     parser.add_argument("--fov-x", type=float, default=FOV_X_DEG)
     parser.add_argument(
+        "--max-camera-distance-m",
+        type=float,
+        default=SAME_INCIDENT_MAX_CAMERA_DISTANCE_M,
+        help="Max horizontal camera distance (m) for same incident",
+    )
+    parser.add_argument(
         "--overlap-threshold",
         type=float,
         default=SAME_INCIDENT_OVERLAP_THRESHOLD,
-        help="Min ground footprint IoU to declare same incident",
+        help="Min footprint IoU fallback when distance check fails",
     )
     args = parser.parse_args()
 
@@ -442,6 +550,7 @@ def main() -> None:
     result = run_cross_view_for_run_dir(
         run_dir,
         fov_x_deg=args.fov_x,
+        max_camera_distance_m=args.max_camera_distance_m,
         overlap_threshold=args.overlap_threshold,
         img_root=img_root,
         label_dir=label_dir,
@@ -450,7 +559,11 @@ def main() -> None:
     )
     out_path = cross_view_path(run_dir)
 
-    print(f"same_incident: {result['same_incident']}")
+    print(f"same_incident: {result['same_incident']} ({result.get('same_incident_criterion')})")
+    print(
+        f"  camera_distance_m={result.get('same_incident_camera_distance_m')} "
+        f"footprint_overlap={result.get('same_incident_footprint_overlap')}"
+    )
     print(f"views: {result['views']}")
     print(f"matches: {len(result['matches'])}")
     for m in result["matches"]:
@@ -458,10 +571,10 @@ def main() -> None:
             f"  {m['view_a']}:{m['id_a']} <-> {m['view_b']}:{m['id_b']}"
             + (f" @ {m['position']}" if m.get("position") else "")
         )
-    if result.get("notebook_counts_after_match"):
-        c = result["notebook_counts_after_match"]
+    if result.get("counts_after_match"):
+        c = result["counts_after_match"]
         print(
-            f"Counts pós-match (notebook): person={c.get('person')}, "
+            f"Counts pós-match (matches + não matched): person={c.get('person')}, "
             f"vehicle={c.get('vehicle')}, emergency_vehicle={c.get('emergency_vehicle')}"
         )
     print(f"Saved {out_path}")

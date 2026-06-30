@@ -1,8 +1,8 @@
 {
   "has_fire": false,
-  "summary": "A unit is coordinating a search of a highway pileup, confirming no visible occupants or active fire.",
+  "summary": "A unit reports a large vehicle pileup with burned cars and smoke along the highway edge, but no active fire is visible.",
   "counts_by_class": {
-    "person": 2,
+    "person": 1,
     "normal_vehicle": 23,
     "emergency_vehicle": 0
   },
@@ -37,14 +37,14 @@
         "y": "0.30",
         "z": "1.00"
       },
-      "risk_level": "low",
+      "risk_level": "medium",
       "throughput_need": "low",
-      "inferred_role": "unknown_person",
+      "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": "no occupants visible"
+        "text": "No fire is present (ROLE_CONTEXT.has_fire=false). The radio traffic discusses a pileup and checking for fuel leaks/unstable vehicles, which are general scene hazards rather than immediate life-threatening proximity to fire."
       },
-      "role_confidence": 0.1,
+      "role_confidence": 1.0,
       "traffic_demand_mbps": 0.3
     },
     {
@@ -436,20 +436,6 @@
       },
       "risk_level": "medium",
       "throughput_need": "low",
-      "traffic_demand_mbps": 0.3
-    },
-    {
-      "class": "person",
-      "audio_only": true,
-      "reason": "radio indicates 1 on-scene responder(s); 0 matched visually as firefighter",
-      "risk_level": "medium",
-      "throughput_need": "low",
-      "inferred_role": "firefighter",
-      "role_inference_basis": {
-        "source": "inference",
-        "text": ""
-      },
-      "role_confidence": null,
       "traffic_demand_mbps": 0.3
     }
   ]

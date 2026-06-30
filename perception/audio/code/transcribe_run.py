@@ -30,10 +30,8 @@ from fusion.run_layout import transcript_path
 
 AUDIO_SUFFIXES = {".wav", ".mp3", ".m4a", ".flac", ".ogg"}
 
-# --- notebook audioTranscription.ipynb (células 11–13) ---
 END_WORDS = {"listening", "finished"}
 
-# --- analytics (contagens para o LLM) ---
 WORD_TO_NUM = {
     "one": 1,
     "two": 2,
@@ -47,12 +45,19 @@ WORD_TO_NUM = {
     "ten": 10,
 }
 QTY_CAPTURE = r"(\d+|one|two|three|four|five|six|seven|eight|nine|ten)"
-PEOPLE_PATTERN = re.compile(
-    rf"\b{QTY_CAPTURE}?\s*"
-    r"(?:people|persons|person|individuals|victims|responders|"
-    r"firefighters|firefighter|crew|occupants?|civilians?)\b",
+# Scene population (requires explicit quantity; excludes responders/speakers/occupants).
+SCENE_PEOPLE_PATTERN = re.compile(
+    rf"\b{QTY_CAPTURE}\s+(?:people|persons)\b",
     re.IGNORECASE,
 )
+CIVILIAN_PATTERN = re.compile(
+    rf"\b{QTY_CAPTURE}\s+"
+    r"(?:civilians?|casualties?|victims?|people\s+(?:are\s+)?being\s+treated)"
+    r"(?!\s+(?:vehicles?|cars?|trucks?))\b",
+    re.IGNORECASE,
+)
+# Legacy alias kept for imports elsewhere.
+PEOPLE_PATTERN = SCENE_PEOPLE_PATTERN
 EMERGENCY_VEHICLE_PATTERN = re.compile(
     rf"\b{QTY_CAPTURE}?\s*"
     r"(?:emergency\s+vehicles?|fire\s+trucks?|fire\s+engines?|"
@@ -66,7 +71,6 @@ NORMAL_VEHICLE_PATTERN = re.compile(
     r"(?:vehicles?|trucks?|cars?)\b",
     re.IGNORECASE,
 )
-CIVILIAN_PATTERN = re.compile(rf"\b{QTY_CAPTURE}\s+civilians?\b", re.IGNORECASE)
 FIREFIGHTER_PATTERN = re.compile(
     rf"\b{QTY_CAPTURE}\s+(?:firefighters?|fire\s+fighters?)\b",
     re.IGNORECASE,
@@ -251,16 +255,29 @@ def sum_explicit_mentions(text: str, pattern: Pattern[str]) -> int:
     return total
 
 
-def max_explicit_mentions(text: str, pattern: Pattern[str]) -> int:
+def max_explicit_mentions(
+    text: str,
+    pattern: Pattern[str],
+    *,
+    implicit_single: bool = False,
+) -> int:
     """
     Scene totals should not accumulate repeated radio updates.
     Keep the maximum explicit quantity mentioned across the transcript.
+
+    When ``implicit_single`` is True, an unquantified match (e.g. "fire truck"
+    without "one") counts as at least one mention.
     """
     best = 0
+    found_unquantified = False
     for match in pattern.finditer(text):
         n = parse_explicit_quantity(match.group(1))
         if n is not None and n > best:
             best = n
+        elif n is None:
+            found_unquantified = True
+    if implicit_single and found_unquantified:
+        best = max(best, 1)
     return best
 
 
@@ -272,18 +289,21 @@ def build_analytics(transcript: Dict[str, Any]) -> Dict[str, Any]:
         if segment.get("speaker"):
             speakers.add(str(segment["speaker"]))
 
+    civilians_n = max_explicit_mentions(text, CIVILIAN_PATTERN)
+    people_n = max_explicit_mentions(text, SCENE_PEOPLE_PATTERN)
     return {
         "speaker_count": len(speakers),
-        "people_mentioned_count": max_explicit_mentions(text, PEOPLE_PATTERN),
-        "civilians_mentioned_count": max_explicit_mentions(text, CIVILIAN_PATTERN),
+        # Single scene headcount: max explicit phrase (radio updates, not summed).
+        "people_mentioned_count": max(civilians_n, people_n),
+        "civilians_mentioned_count": civilians_n,
         "firefighters_mentioned_count": max_explicit_mentions(text, FIREFIGHTER_PATTERN),
         "on_scene_responders_count": _count_on_scene_field_units(transcript),
         "civilians_at_safe_distance_mentioned": bool(
             CIVILIANS_AT_SAFE_DISTANCE_PATTERN.search(text)
         ),
-        "vehicles_mentioned_count": sum_explicit_mentions(text, NORMAL_VEHICLE_PATTERN),
-        "emergency_vehicle_mentioned_count": sum_explicit_mentions(
-            text, EMERGENCY_VEHICLE_PATTERN
+        "vehicles_mentioned_count": max_explicit_mentions(text, NORMAL_VEHICLE_PATTERN),
+        "emergency_vehicle_mentioned_count": max_explicit_mentions(
+            text, EMERGENCY_VEHICLE_PATTERN, implicit_single=True
         ),
     }
 
@@ -295,7 +315,6 @@ def enrich_transcript(transcript: Dict[str, Any]) -> Dict[str, Any]:
 
 
 def resolve_whisperx_python() -> Path:
-    """Python do whisperx_env (como no terminal do notebook)."""
     if os.environ.get("WHISPERX_PYTHON"):
         return Path(os.environ["WHISPERX_PYTHON"])
     candidates = [

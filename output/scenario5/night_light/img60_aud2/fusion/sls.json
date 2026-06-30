@@ -1,10 +1,10 @@
 {
   "has_fire": false,
-  "summary": "A rescue team reports a major vehicle pileup with scattered vehicles, but no active fire is detected.",
+  "summary": "A major vehicle pileup is reported on a highway with scattered vehicles showing signs of burning and smoke.",
   "counts_by_class": {
     "person": 2,
     "normal_vehicle": 18,
-    "emergency_vehicle": 0
+    "emergency_vehicle": 1
   },
   "communications": {
     "speaker_count": 2,
@@ -21,7 +21,122 @@
     "service_types": [
       "voice"
     ],
-    "service_inference_basis": []
+    "service_inference_basis": [],
+    "objects": [
+      {
+        "id": 0,
+        "class": "person",
+        "risk_level": "low"
+      },
+      {
+        "id": 1,
+        "class": "normal_vehicle",
+        "risk_level": "low",
+        "throughput_need": "medium"
+      },
+      {
+        "id": 2,
+        "class": "normal_vehicle",
+        "risk_level": "low",
+        "throughput_need": "medium"
+      },
+      {
+        "id": 3,
+        "class": "normal_vehicle",
+        "risk_level": "low",
+        "throughput_need": "medium"
+      },
+      {
+        "id": 4,
+        "class": "normal_vehicle",
+        "risk_level": "low",
+        "throughput_need": "medium"
+      },
+      {
+        "id": 5,
+        "class": "normal_vehicle",
+        "risk_level": "low",
+        "throughput_need": "medium"
+      },
+      {
+        "id": 6,
+        "class": "normal_vehicle",
+        "risk_level": "low",
+        "throughput_need": "medium"
+      },
+      {
+        "id": 7,
+        "class": "normal_vehicle",
+        "risk_level": "low",
+        "throughput_need": "medium"
+      },
+      {
+        "id": 8,
+        "class": "normal_vehicle",
+        "risk_level": "low",
+        "throughput_need": "medium"
+      },
+      {
+        "id": 9,
+        "class": "normal_vehicle",
+        "risk_level": "low",
+        "throughput_need": "medium"
+      },
+      {
+        "id": 10,
+        "class": "normal_vehicle",
+        "risk_level": "low",
+        "throughput_need": "medium"
+      },
+      {
+        "id": 11,
+        "class": "normal_vehicle",
+        "risk_level": "low",
+        "throughput_need": "medium"
+      },
+      {
+        "id": 12,
+        "class": "normal_vehicle",
+        "risk_level": "low",
+        "throughput_need": "medium"
+      },
+      {
+        "id": 13,
+        "class": "normal_vehicle",
+        "risk_level": "low",
+        "throughput_need": "medium"
+      },
+      {
+        "id": 14,
+        "class": "normal_vehicle",
+        "risk_level": "low",
+        "throughput_need": "medium"
+      },
+      {
+        "id": 15,
+        "class": "normal_vehicle",
+        "risk_level": "low",
+        "throughput_need": "medium"
+      },
+      {
+        "id": 16,
+        "class": "normal_vehicle",
+        "risk_level": "low",
+        "throughput_need": "medium"
+      },
+      {
+        "id": 17,
+        "class": "normal_vehicle",
+        "risk_level": "low",
+        "throughput_need": "medium"
+      },
+      {
+        "id": 18,
+        "class": "normal_vehicle",
+        "risk_level": "low",
+        "throughput_need": "medium"
+      }
+    ]
   },
   "objects": [
     {
@@ -37,14 +152,14 @@
         "y": "0.14",
         "z": "1.00"
       },
-      "risk_level": "low",
+      "risk_level": "medium",
       "throughput_need": "low",
-      "inferred_role": "unknown_person",
+      "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": "no visual persons mentioned"
+        "text": "No fire is present (ROLE_CONTEXT.has_fire=false). The radio traffic mentions casualties being treated by a fire truck but no visible persons are confirmed near the vehicles."
       },
-      "role_confidence": 0.0,
+      "role_confidence": 1.0,
       "traffic_demand_mbps": 0.3
     },
     {
@@ -60,7 +175,7 @@
         "y": "0.18",
         "z": "1.00"
       },
-      "risk_level": "low",
+      "risk_level": "medium",
       "throughput_need": "low",
       "traffic_demand_mbps": 0.3
     },
@@ -77,7 +192,7 @@
         "y": "0.13",
         "z": "1.00"
       },
-      "risk_level": "low",
+      "risk_level": "medium",
       "throughput_need": "low",
       "traffic_demand_mbps": 0.3
     },
@@ -94,7 +209,7 @@
         "y": "0.12",
         "z": "1.00"
       },
-      "risk_level": "low",
+      "risk_level": "medium",
       "throughput_need": "low",
       "traffic_demand_mbps": 0.3
     },
@@ -111,7 +226,7 @@
         "y": "0.13",
         "z": "1.00"
       },
-      "risk_level": "low",
+      "risk_level": "medium",
       "throughput_need": "low",
       "traffic_demand_mbps": 0.3
     },
@@ -128,7 +243,7 @@
         "y": "0.10",
         "z": "1.00"
       },
-      "risk_level": "low",
+      "risk_level": "medium",
       "throughput_need": "low",
       "traffic_demand_mbps": 0.3
     },
@@ -145,7 +260,7 @@
         "y": "0.10",
         "z": "1.00"
       },
-      "risk_level": "low",
+      "risk_level": "medium",
       "throughput_need": "low",
       "traffic_demand_mbps": 0.3
     },
@@ -162,7 +277,7 @@
         "y": "0.07",
         "z": "1.00"
       },
-      "risk_level": "low",
+      "risk_level": "medium",
       "throughput_need": "low",
       "traffic_demand_mbps": 0.3
     },
@@ -179,7 +294,7 @@
         "y": "0.09",
         "z": "1.00"
       },
-      "risk_level": "low",
+      "risk_level": "medium",
       "throughput_need": "low",
       "traffic_demand_mbps": 0.3
     },
@@ -196,7 +311,7 @@
         "y": "0.07",
         "z": "1.00"
       },
-      "risk_level": "low",
+      "risk_level": "medium",
       "throughput_need": "low",
       "traffic_demand_mbps": 0.3
     },
@@ -213,7 +328,7 @@
         "y": "0.08",
         "z": "1.00"
       },
-      "risk_level": "low",
+      "risk_level": "medium",
       "throughput_need": "low",
       "traffic_demand_mbps": 0.3
     },
@@ -230,7 +345,7 @@
         "y": "0.06",
         "z": "1.00"
       },
-      "risk_level": "low",
+      "risk_level": "medium",
       "throughput_need": "low",
       "traffic_demand_mbps": 0.3
     },
@@ -247,7 +362,7 @@
         "y": "0.06",
         "z": "1.00"
       },
-      "risk_level": "low",
+      "risk_level": "medium",
       "throughput_need": "low",
       "traffic_demand_mbps": 0.3
     },
@@ -264,7 +379,7 @@
         "y": "0.07",
         "z": "1.00"
       },
-      "risk_level": "low",
+      "risk_level": "medium",
       "throughput_need": "low",
       "traffic_demand_mbps": 0.3
     },
@@ -281,7 +396,7 @@
         "y": "0.05",
         "z": "1.00"
       },
-      "risk_level": "low",
+      "risk_level": "medium",
       "throughput_need": "low",
       "traffic_demand_mbps": 0.3
     },
@@ -298,7 +413,7 @@
         "y": "0.08",
         "z": "1.00"
       },
-      "risk_level": "low",
+      "risk_level": "medium",
       "throughput_need": "low",
       "traffic_demand_mbps": 0.3
     },
@@ -315,7 +430,7 @@
         "y": "0.07",
         "z": "1.00"
       },
-      "risk_level": "low",
+      "risk_level": "medium",
       "throughput_need": "low",
       "traffic_demand_mbps": 0.3
     },
@@ -332,7 +447,7 @@
         "y": "0.05",
         "z": "1.00"
       },
-      "risk_level": "low",
+      "risk_level": "medium",
       "throughput_need": "low",
       "traffic_demand_mbps": 0.3
     },
@@ -349,22 +464,30 @@
         "y": "0.06",
         "z": "1.00"
       },
-      "risk_level": "low",
+      "risk_level": "medium",
       "throughput_need": "low",
       "traffic_demand_mbps": 0.3
     },
     {
       "class": "person",
       "audio_only": true,
-      "reason": "radio indicates 1 on-scene responder(s); 0 matched visually as firefighter",
-      "risk_level": "medium",
-      "throughput_need": "medium",
-      "inferred_role": "firefighter",
+      "reason": "Two civilians were mentioned in the transcript, and only one visual person exists. Since there is no fire and no on-scene responders explicitly interacting with people visually, we infer that at least one civilian might be occluded or at safe distance.",
+      "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": ""
+        "text": "civilians_mentioned_count (2) exceeds visual_person_count (1). Need to account for missing persons."
       },
-      "role_confidence": null,
+      "role_confidence": 0.95,
+      "risk_level": "medium",
+      "throughput_need": "low",
+      "traffic_demand_mbps": 0.3
+    },
+    {
+      "class": "emergency_vehicle",
+      "audio_only": true,
+      "reason": "radio explicitly mentions 1 emergency vehicle(s); 0 detected visually",
+      "risk_level": "medium",
+      "throughput_need": "low",
       "traffic_demand_mbps": 0.3
     }
   ]

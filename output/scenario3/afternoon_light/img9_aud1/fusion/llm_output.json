@@ -1,8 +1,8 @@
 {
   "has_fire": true,
-  "summary": "Fire is active in a forested area, and units are coordinating exposure assessment and visual confirmation near a structure.",
+  "summary": "A communication exchange occurred regarding active wildfire conditions and exposure assessment near a structure.",
   "counts_by_class": {
-    "person": 1,
+    "person": 0,
     "normal_vehicle": 0,
     "emergency_vehicle": 1
   },
@@ -46,19 +46,6 @@
       "distance_to_fire": "23.92 m",
       "risk_level": "medium",
       "throughput_need": "medium"
-    },
-    {
-      "class": "person",
-      "audio_only": true,
-      "reason": "radio indicates 1 on-scene responder(s); 0 matched visually as firefighter",
-      "risk_level": "medium",
-      "throughput_need": "low",
-      "inferred_role": "firefighter",
-      "role_inference_basis": {
-        "source": "inference",
-        "text": ""
-      },
-      "role_confidence": null
     }
   ]
 }

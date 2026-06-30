@@ -1,6 +1,6 @@
 {
   "has_fire": false,
-  "summary": "Two civilians are located at a safe distance while emergency vehicles are engaged in fire suppression efforts.",
+  "summary": "Two civilians are located at a safe distance near two involved vehicles.",
   "counts_by_class": {
     "person": 3,
     "normal_vehicle": 2,
@@ -36,7 +36,7 @@
       "detection_confidence": "0.85",
       "position": {
         "x": "-233.82 m",
-        "y": "60.77 m",
+        "y": "-28.75 m",
         "z": "0.00 m"
       },
       "localization_confidence": {
@@ -44,14 +44,14 @@
         "y": "0.55",
         "z": "1.00"
       },
-      "risk_level": "medium",
-      "throughput_need": "low",
+      "risk_level": "low",
       "inferred_role": "unknown_person",
       "role_inference_basis": {
         "source": "inference",
-        "text": "visual_detection"
+        "text": "no role inferred from radio or proximity"
       },
       "role_confidence": null,
+      "throughput_need": "low",
       "traffic_demand_mbps": 0.3
     },
     {
@@ -59,7 +59,7 @@
       "detection_confidence": "0.78",
       "position": {
         "x": "-232.02 m",
-        "y": "38.59 m",
+        "y": "-50.93 m",
         "z": "0.00 m"
       },
       "localization_confidence": {
@@ -67,26 +67,26 @@
         "y": "0.62",
         "z": "1.00"
       },
-      "risk_level": "medium",
-      "throughput_need": "low",
-      "inferred_role": "unknown_person",
+      "risk_level": "low",
+      "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": "visual_detection"
+        "text": "The radio mentions two civilians located at safe distance being monitored, implying Person ID 1 is one of them."
       },
       "role_confidence": null,
+      "throughput_need": "low",
       "traffic_demand_mbps": 0.3
     },
     {
       "class": "person",
       "audio_only": true,
-      "reason": "radio indicates 1 on-scene responder(s); 0 matched visually as firefighter",
+      "reason": "radio mentions 2 civilian(s); 1 labeled civilian visually; gap-fill for occluded / not visible civilian",
       "risk_level": "medium",
       "throughput_need": "low",
-      "inferred_role": "firefighter",
+      "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": ""
+        "text": "no role inferred from radio or proximity"
       },
       "role_confidence": null,
       "traffic_demand_mbps": 0.3

@@ -1,0 +1,3 @@
+[submodule "perception/vision/fire-detection"]
+	path = perception/vision/fire-detection
+	url = https://github.com/pedbrgs/Fire-Detection.git

@@ -1,8 +1,8 @@
 {
   "has_fire": true,
-  "summary": "Units are responding to a brush fire near a highway where a vehicle was overturned, with instructions to expect congestion and exercise caution near the fire.",
+  "summary": "Units are responding to a brush fire near an overturned vehicle on a highway; caution is advised regarding the treeline and traffic congestion.",
   "counts_by_class": {
-    "person": 8,
+    "person": 7,
     "normal_vehicle": 12,
     "emergency_vehicle": 1
   },
@@ -82,7 +82,7 @@
       "class": "normal_vehicle",
       "detection_confidence": "0.89",
       "position": {
-        "x": "-4.41 m",
+        "x": "-4.42 m",
         "y": "129.89 m",
         "z": "-2.25 m"
       },
@@ -102,7 +102,7 @@
       "position": {
         "x": "-4.57 m",
         "y": "122.04 m",
-        "z": "-2.48 m"
+        "z": "-2.47 m"
       },
       "localization_confidence": {
         "x": "0.20",
@@ -210,7 +210,7 @@
       "position": {
         "x": "-1.41 m",
         "y": "122.31 m",
-        "z": "-2.27 m"
+        "z": "-2.26 m"
       },
       "localization_confidence": {
         "x": "0.23",
@@ -226,9 +226,9 @@
       "class": "normal_vehicle",
       "detection_confidence": "0.83",
       "position": {
-        "x": "-4.83 m",
+        "x": "-4.84 m",
         "y": "136.64 m",
-        "z": "1.54 m"
+        "z": "1.55 m"
       },
       "localization_confidence": {
         "x": "0.19",
@@ -272,14 +272,14 @@
         "z": "1.00"
       },
       "distance_to_fire": "11.81 m",
-      "risk_level": "low",
-      "throughput_need": "low",
+      "risk_level": "medium",
       "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": "person mentioned in context"
+        "text": "Inferred as civilian based on context."
       },
-      "role_confidence": 0.5,
+      "role_confidence": 0.95,
+      "throughput_need": "low",
       "traffic_demand_mbps": 0.3
     },
     {
@@ -297,12 +297,12 @@
       },
       "distance_to_fire": "10.38 m",
       "risk_level": "medium",
-      "inferred_role": null,
+      "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": ""
+        "text": "Not the closest person to the fire; inferred as civilian based on context."
       },
-      "role_confidence": null,
+      "role_confidence": 0.95,
       "throughput_need": "low",
       "traffic_demand_mbps": 0.3
     },
@@ -321,12 +321,12 @@
       },
       "distance_to_fire": "12.67 m",
       "risk_level": "medium",
-      "inferred_role": null,
+      "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": ""
+        "text": "Inferred as civilian based on context."
       },
-      "role_confidence": null,
+      "role_confidence": 0.95,
       "throughput_need": "low",
       "traffic_demand_mbps": 0.3
     },
@@ -345,13 +345,13 @@
       },
       "distance_to_fire": "12.44 m",
       "risk_level": "medium",
-      "throughput_need": "low",
       "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": ""
+        "text": "Inferred as civilian based on context."
       },
-      "role_confidence": null,
+      "role_confidence": 0.95,
+      "throughput_need": "low",
       "traffic_demand_mbps": 0.3
     },
     {
@@ -372,9 +372,9 @@
       "inferred_role": "firefighter",
       "role_inference_basis": {
         "source": "inference",
-        "text": "field radio unit on scene per radio (command is off-scene support); assigned to closest person near fire"
+        "text": "Proximity rank is 1 (closest to fire), and an on-scene responder exists."
       },
-      "role_confidence": 0.85,
+      "role_confidence": 1.0,
       "throughput_need": "medium",
       "traffic_demand_mbps": 1.0
     },
@@ -382,7 +382,7 @@
       "class": "person",
       "detection_confidence": "0.54",
       "position": {
-        "x": "-6.53 m",
+        "x": "-6.54 m",
         "y": "125.49 m",
         "z": "-0.00 m"
       },
@@ -393,12 +393,12 @@
       },
       "distance_to_fire": "11.47 m",
       "risk_level": "medium",
-      "inferred_role": null,
+      "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": ""
+        "text": "Inferred as civilian based on context."
       },
-      "role_confidence": null,
+      "role_confidence": 0.95,
       "throughput_need": "low",
       "traffic_demand_mbps": 0.3
     },
@@ -417,27 +417,13 @@
       },
       "distance_to_fire": "11.51 m",
       "risk_level": "medium",
-      "throughput_need": "low",
-      "inferred_role": null,
+      "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": ""
+        "text": "Inferred as civilian based on context."
       },
-      "role_confidence": null,
-      "traffic_demand_mbps": 0.3
-    },
-    {
-      "class": "person",
-      "audio_only": true,
-      "reason": "radio indicates 1 on-scene responder(s); 0 matched visually as firefighter",
-      "risk_level": "medium",
+      "role_confidence": 0.95,
       "throughput_need": "low",
-      "inferred_role": "firefighter",
-      "role_inference_basis": {
-        "source": "inference",
-        "text": ""
-      },
-      "role_confidence": null,
       "traffic_demand_mbps": 0.3
     }
   ]

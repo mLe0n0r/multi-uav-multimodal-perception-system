@@ -1,6 +1,6 @@
 {
   "has_fire": true,
-  "summary": "Units are coordinating a response to a brush fire near a highway where a vehicle was overturned.",
+  "summary": "A civilian reported a brush fire along a highway with an overturned vehicle near the guardrail.",
   "counts_by_class": {
     "person": 8,
     "normal_vehicle": 11,
@@ -40,12 +40,12 @@
       "distance_to_fire": "16.09 m",
       "risk_level": "medium",
       "throughput_need": "low",
-      "inferred_role": "unknown_person",
+      "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": "visual_detection"
+        "text": "Not the closest person to the fire; inferred as civilian based on context."
       },
-      "role_confidence": null
+      "role_confidence": 0.9
     },
     {
       "class": "person",
@@ -63,12 +63,12 @@
       "distance_to_fire": "28.28 m",
       "risk_level": "medium",
       "throughput_need": "low",
-      "inferred_role": "unknown_person",
+      "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": "visual_detection"
+        "text": "Inferred as civilian based on proximity and lack of responder status."
       },
-      "role_confidence": null
+      "role_confidence": 0.9
     },
     {
       "class": "person",
@@ -86,12 +86,12 @@
       "distance_to_fire": "23.99 m",
       "risk_level": "medium",
       "throughput_need": "low",
-      "inferred_role": "unknown_person",
+      "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": "visual_detection"
+        "text": "Inferred as civilian based on proximity and lack of responder status."
       },
-      "role_confidence": null
+      "role_confidence": 0.9
     },
     {
       "class": "person",
@@ -109,12 +109,12 @@
       "distance_to_fire": "18.03 m",
       "risk_level": "medium",
       "throughput_need": "low",
-      "inferred_role": "unknown_person",
+      "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": "visual_detection"
+        "text": "Inferred as civilian based on proximity and lack of responder status."
       },
-      "role_confidence": null
+      "role_confidence": 0.9
     },
     {
       "class": "person",
@@ -132,12 +132,12 @@
       "distance_to_fire": "28.81 m",
       "risk_level": "medium",
       "throughput_need": "low",
-      "inferred_role": "unknown_person",
+      "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": "visual_detection"
+        "text": "Inferred as civilian based on proximity and lack of responder status."
       },
-      "role_confidence": null
+      "role_confidence": 0.9
     },
     {
       "class": "person",
@@ -158,9 +158,9 @@
       "inferred_role": "firefighter",
       "role_inference_basis": {
         "source": "inference",
-        "text": "field radio unit on scene per radio (command is off-scene support); assigned to closest person near fire"
+        "text": "Proximity rank is 1 (closest to fire), and there is an on-scene responder count of 1, implying this person is the operating unit at the fire."
       },
-      "role_confidence": 0.85
+      "role_confidence": 1.0
     },
     {
       "class": "person",
@@ -178,12 +178,12 @@
       "distance_to_fire": "23.45 m",
       "risk_level": "medium",
       "throughput_need": "low",
-      "inferred_role": "unknown_person",
+      "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": "visual_detection"
+        "text": "Inferred as civilian based on proximity and lack of responder status."
       },
-      "role_confidence": null
+      "role_confidence": 0.9
     },
     {
       "class": "person",
@@ -201,12 +201,12 @@
       "distance_to_fire": "25.07 m",
       "risk_level": "medium",
       "throughput_need": "low",
-      "inferred_role": "unknown_person",
+      "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": "visual_detection"
+        "text": "Inferred as civilian based on proximity and lack of responder status."
       },
-      "role_confidence": null
+      "role_confidence": 0.9
     },
     {
       "class": "normal_vehicle",
@@ -395,5 +395,8 @@
       "risk_level": "medium",
       "throughput_need": "low"
     }
-  ]
+  ],
+  "_metadata": {
+    "role_assignment_llm_applied": true
+  }
 }

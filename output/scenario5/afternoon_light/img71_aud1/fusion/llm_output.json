@@ -1,8 +1,8 @@
 {
   "has_fire": false,
-  "summary": "A radio communication between two units reports a pileup and residual smoke along a highway, with no visible occupants or active fire.",
+  "summary": "A command exchange occurred regarding a highway pileup and the absence of visible fire or occupants.",
   "counts_by_class": {
-    "person": 1,
+    "person": 0,
     "normal_vehicle": 9,
     "emergency_vehicle": 0
   },
@@ -167,19 +167,6 @@
       },
       "risk_level": "medium",
       "throughput_need": "low"
-    },
-    {
-      "class": "person",
-      "audio_only": true,
-      "reason": "radio indicates 1 on-scene responder(s); 0 matched visually as firefighter",
-      "risk_level": "medium",
-      "throughput_need": "low",
-      "inferred_role": "firefighter",
-      "role_inference_basis": {
-        "source": "inference",
-        "text": ""
-      },
-      "role_confidence": null
     }
   ]
 }

@@ -1,8 +1,8 @@
 {
   "has_fire": false,
-  "summary": "Units are coordinating a search of a highway pileup where no active fire is visible, but residual smoke and charred trees indicate a recent incident.",
+  "summary": "A large vehicle pileup is visible along a highway with burned-out cars and ash. No active fire was observed in the immediate vicinity.",
   "counts_by_class": {
-    "person": 1,
+    "person": 0,
     "normal_vehicle": 21,
     "emergency_vehicle": 0
   },
@@ -359,19 +359,6 @@
       },
       "risk_level": "medium",
       "throughput_need": "low"
-    },
-    {
-      "class": "person",
-      "audio_only": true,
-      "reason": "radio indicates 1 on-scene responder(s); 0 matched visually as firefighter",
-      "risk_level": "medium",
-      "throughput_need": "low",
-      "inferred_role": "firefighter",
-      "role_inference_basis": {
-        "source": "inference",
-        "text": ""
-      },
-      "role_confidence": null
     }
   ]
 }

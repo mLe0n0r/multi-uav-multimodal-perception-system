@@ -1,10 +1,10 @@
 {
   "has_fire": true,
-  "summary": "Rescue 2 is coordinating a search near a house, confirming no visual contact with civilians but noting the presence of firefighters.",
+  "summary": "Fire conditions are present near the house. Responders are coordinating and moving toward calls from the porch site.",
   "counts_by_class": {
     "person": 2,
     "normal_vehicle": 0,
-    "emergency_vehicle": 0
+    "emergency_vehicle": 1
   },
   "communications": {
     "speaker_count": 2,
@@ -38,28 +38,36 @@
         "z": "1.00"
       },
       "distance_to_fire": "17.59 m",
-      "risk_level": "low",
-      "throughput_need": "medium",
+      "risk_level": "medium",
       "inferred_role": "firefighter",
       "role_inference_basis": {
         "source": "inference",
-        "text": "rescue_2 on scene per radio (command is off-scene support); assigned to closest person near fire"
+        "text": "ROLE_CONTEXT.has_fire is true and an on-scene field unit exists (rescue_2) implies the closest person (ID 0) is operating at the fire."
       },
-      "role_confidence": 0.85,
+      "role_confidence": 1.0,
+      "throughput_need": "medium",
       "traffic_demand_mbps": 1.0
     },
     {
       "class": "person",
       "audio_only": true,
-      "reason": "radio indicates 2 on-scene responder(s); 1 matched visually as firefighter",
+      "reason": "radio mentions 0 civilian(s); 0 labeled civilian visually; gap-fill for occluded / not visible civilian",
       "risk_level": "medium",
       "throughput_need": "low",
-      "inferred_role": "firefighter",
+      "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": ""
+        "text": "no role inferred from radio or proximity"
       },
       "role_confidence": null,
+      "traffic_demand_mbps": 0.3
+    },
+    {
+      "class": "emergency_vehicle",
+      "audio_only": true,
+      "reason": "radio explicitly mentions 1 emergency vehicle(s); 0 detected visually",
+      "risk_level": "medium",
+      "throughput_need": "low",
       "traffic_demand_mbps": 0.3
     }
   ]

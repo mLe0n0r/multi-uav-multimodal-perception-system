@@ -1,10 +1,10 @@
 {
   "has_fire": true,
-  "summary": "Firefighters are coordinating a search near a house, confirming no visual contact with civilians, while responding units are moving toward the calls.",
+  "summary": "Two persons are detected near a fire scene.",
   "counts_by_class": {
-    "person": 3,
+    "person": 2,
     "normal_vehicle": 0,
-    "emergency_vehicle": 0
+    "emergency_vehicle": 1
   },
   "communications": {
     "speaker_count": 2,
@@ -39,13 +39,13 @@
       },
       "distance_to_fire": "13.57 m",
       "risk_level": "medium",
-      "throughput_need": "low",
-      "inferred_role": "unknown_person",
+      "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": "no specific role inferred"
+        "text": "The remaining person is assigned as civilian based on rule 2. No specific mention places them in immediate danger or defines their role otherwise."
       },
-      "role_confidence": 0.0,
+      "role_confidence": null,
+      "throughput_need": "low",
       "traffic_demand_mbps": 0.3
     },
     {
@@ -63,27 +63,21 @@
       },
       "distance_to_fire": "11.25 m",
       "risk_level": "medium",
-      "throughput_need": "medium",
       "inferred_role": "firefighter",
       "role_inference_basis": {
         "source": "inference",
-        "text": "rescue_2 on scene per radio (command is off-scene support); assigned to closest person near fire"
+        "text": "Proximity rank is 1 (closest to fire), and an on-scene field unit exists (rescue_2) with a responder count of 1. Rule 1 dictates the closest person operates at the fire."
       },
-      "role_confidence": 0.85,
+      "role_confidence": null,
+      "throughput_need": "medium",
       "traffic_demand_mbps": 1.0
     },
     {
-      "class": "person",
+      "class": "emergency_vehicle",
       "audio_only": true,
-      "reason": "radio indicates 2 on-scene responder(s); 1 matched visually as firefighter",
+      "reason": "radio explicitly mentions 1 emergency vehicle(s); 0 detected visually",
       "risk_level": "medium",
       "throughput_need": "low",
-      "inferred_role": "firefighter",
-      "role_inference_basis": {
-        "source": "inference",
-        "text": ""
-      },
-      "role_confidence": null,
       "traffic_demand_mbps": 0.3
     }
   ]

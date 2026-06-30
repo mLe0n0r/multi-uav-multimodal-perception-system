@@ -1,6 +1,6 @@
 {
   "has_fire": true,
-  "summary": "A brush fire is reported near a highway, with multiple vehicles blocked and civilians present near the roadway.",
+  "summary": "A brush fire is active in a wooded area near a highway, with multiple vehicles blocked and civilians present outside them.",
   "counts_by_class": {
     "person": 2,
     "normal_vehicle": 15,
@@ -34,13 +34,13 @@
         "z": "1.00"
       },
       "risk_level": "low",
-      "throughput_need": "low",
-      "inferred_role": "civilian",
+      "inferred_role": "firefighter",
       "role_inference_basis": {
         "source": "inference",
-        "text": "Several civilians outside vehicles on the asphalt."
+        "text": "ROLE_CONTEXT.has_fire is true and no on-scene field units exist, but the closest person (rank 1) must be assigned as a responder based on general scene context."
       },
-      "role_confidence": 0.8
+      "role_confidence": null,
+      "throughput_need": "medium"
     },
     {
       "class": "person",
@@ -56,13 +56,13 @@
         "z": "1.00"
       },
       "risk_level": "low",
-      "throughput_need": "low",
       "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": "Several civilians outside vehicles on the asphalt."
+        "text": "Person with proximity rank 2 is inferred to be a civilian based on radio mentions of civilians outside vehicles."
       },
-      "role_confidence": 0.8
+      "role_confidence": null,
+      "throughput_need": "low"
     },
     {
       "class": "normal_vehicle",
@@ -304,5 +304,8 @@
       "risk_level": "low",
       "throughput_need": "low"
     }
-  ]
+  ],
+  "_metadata": {
+    "role_assignment_llm_applied": true
+  }
 }

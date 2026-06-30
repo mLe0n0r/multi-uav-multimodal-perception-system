@@ -44,14 +44,18 @@ from fused_counts import (
     deduped_visual_counts,
 )
 
-# Re-export for callers that import from llm_orchestrator
 __all__ = ("VALID_CLASSES", "deduped_visual_counts")
 OLLAMA_MODEL = "gemma4:e2b"
 LLM_DIR = _LLM_DIR
 DEFAULT_PROMPT = LLM_DIR / "prompts" / "sls_orchestrator_prompt.txt"
 MULTIVIEW_PROMPT_ADDON = LLM_DIR / "prompts" / "sls_orchestrator_multiview_addon.txt"
+ROLE_ASSIGNMENT_PROMPT = LLM_DIR / "prompts" / "sls_role_assignment_prompt.txt"
+VALID_INFERRED_ROLES = frozenset(
+    {"firefighter", "possible_responder", "civilian", "unknown_person"}
+)
 NEAR_FIRE_METERS = 5.0
 RESPONDER_ROLES = frozenset({"possible_responder", "firefighter"})
+VALID_THROUGHPUT_NEED = frozenset({"low", "medium", "high"})
 EN_ROUTE_PATTERN = re.compile(
     r"\b(?:en\s+route|on\s+(?:the\s+)?way|responding\s+to|heading\s+(?:to|toward)|"
     r"deployed\s+from|minutes\s+out)\b",
@@ -153,11 +157,24 @@ def compact_visual_for_llm(visual_json: Dict[str, Any], view_id: Optional[str] =
     return out
 
 
+def compact_fused_object_for_llm(obj: Dict[str, Any]) -> Dict[str, Any]:
+    """LLM prompt fields for one fused entity; geometry is reattached in validate_objects."""
+    row: Dict[str, Any] = {
+        "id": obj.get("id"),
+        "class": obj.get("class"),
+        "distance_to_fire": obj.get("distance_to_fire"),
+        "detection_confidence": obj.get("detection_confidence"),
+    }
+    if obj.get("view_id") is not None:
+        row["view_id"] = obj.get("view_id")
+    return row
+
+
 def build_fusion_context_from_cross_view(cross_view: Dict[str, Any]) -> Dict[str, Any]:
     """
     Bundle for the LLM from cross_view.json.
 
-    - same_incident true: compact visuals + cross-view matches (fusion).
+    - same_incident true: compact fused_objects for the LLM (geometry reattached post-LLM).
     - same_incident false: full unaltered visual JSON per view (independent analysis).
     """
     same_incident = bool(cross_view.get("same_incident"))
@@ -167,9 +184,9 @@ def build_fusion_context_from_cross_view(cross_view: Dict[str, Any]) -> Dict[str
     base: Dict[str, Any] = {"views": view_ids}
 
     if not same_incident:
-        # No same_incident key — LLM treats each visual as an independent scene.
         return {
             **base,
+            "same_incident": False,
             "visuals": {
                 view_id: copy.deepcopy(raw_visuals.get(view_id, {}))
                 for view_id in view_ids
@@ -194,7 +211,7 @@ def build_fusion_context_from_cross_view(cross_view: Dict[str, Any]) -> Dict[str
         **base,
         "same_incident": True,
         "scene_by_view": scene_by_view,
-        "fused_objects": fused_objects,
+        "fused_objects": [compact_fused_object_for_llm(obj) for obj in fused_objects],
     }
 
 
@@ -234,6 +251,56 @@ def compact_transcript_for_llm(transcript_json: Dict[str, Any]) -> Dict[str, Any
     return compact
 
 
+def apply_scene_design_caps_to_analytics(
+    analytics: Dict[str, Any],
+    scene_caps: Optional[Dict[str, int]] = None,
+) -> Dict[str, Any]:
+    """
+    Radio script was authored not to exceed scene GT; cap parsed mentions when caps are known.
+    """
+    if not scene_caps:
+        return analytics
+    out = dict(analytics)
+    if scene_caps.get("person") is not None:
+        cap = int(scene_caps["person"])
+        if cap > 0:
+            for key in ("people_mentioned_count", "civilians_mentioned_count"):
+                out[key] = min(int(out.get(key, 0) or 0), cap)
+        else:
+            # Scene GT has no visible persons; radio may still report occluded casualties.
+            out["people_mentioned_count"] = min(int(out.get("people_mentioned_count", 0) or 0), cap)
+    if scene_caps.get("vehicle") is not None:
+        cap = int(scene_caps["vehicle"])
+        out["vehicles_mentioned_count"] = min(int(out.get("vehicles_mentioned_count", 0) or 0), cap)
+    if scene_caps.get("emergency_vehicle") is not None:
+        cap = int(scene_caps["emergency_vehicle"])
+        out["emergency_vehicle_mentioned_count"] = min(
+            int(out.get("emergency_vehicle_mentioned_count", 0) or 0), cap
+        )
+    return out
+
+
+def refresh_transcript_analytics(
+    transcript_json: Dict[str, Any],
+    scene_caps: Optional[Dict[str, int]] = None,
+) -> Dict[str, Any]:
+    """Recompute analytics from segments (keeps counts in sync with pattern updates)."""
+    try:
+        import sys
+        from pathlib import Path
+
+        audio_code = Path(__file__).resolve().parents[3] / "perception" / "audio" / "code"
+        if str(audio_code) not in sys.path:
+            sys.path.insert(0, str(audio_code))
+        from transcribe_run import build_analytics  # noqa: WPS433
+
+        analytics = build_analytics(transcript_json)
+        transcript_json["analytics"] = apply_scene_design_caps_to_analytics(analytics, scene_caps)
+    except Exception:
+        pass
+    return transcript_json
+
+
 def ollama_generate_options() -> Dict[str, Any]:
     return {
         "temperature": 0,
@@ -258,7 +325,6 @@ def ollama_timing_from_payload(
     wall_clock_sec: float,
     prompt_chars: int,
 ) -> Dict[str, Any]:
-    """Build timing dict from Ollama /api/generate response (durations in ns)."""
     eval_count = int(payload.get("eval_count") or 0)
     prompt_eval_count = int(payload.get("prompt_eval_count") or 0)
     eval_sec = _ns_to_seconds(payload.get("eval_duration"))
@@ -699,7 +765,7 @@ def semantic_object_from_llm(
     if obj_class == "person":
         entry.update(
             person_role_fields(
-                obj.get("inferred_role", default_role),
+                obj.get("inferred_role") or default_role,
                 obj.get("role_inference_basis", default_basis),
                 obj.get("role_confidence"),
             )
@@ -801,54 +867,110 @@ def mentioned_counts_from_transcript(transcript_json: Dict[str, Any]) -> Dict[st
     }
 
 
-def count_visual_persons_by_role(
-    llm_output: Dict[str, Any], visual_json: Dict[str, Any]
-) -> tuple[int, int]:
-    """Visual persons classified as civilian vs responder after role inference."""
-    visual_person_ids = {
-        obj.get("id")
-        for obj in visual_json.get("objects", [])
-        if obj.get("class") == "person" and obj.get("id") is not None
-    }
+def visual_entity_counts_from_llm(llm_output: Dict[str, Any]) -> Dict[str, int]:
+    """Per-class counts of visually grounded objects already in llm_output."""
+    counts = {cls: 0 for cls in VALID_CLASSES}
+    for obj in llm_output.get("objects", []):
+        if obj.get("audio_only"):
+            continue
+        cls = obj.get("class")
+        if cls in counts:
+            counts[cls] += 1
+    return counts
+
+
+def resolve_visual_baseline_counts(
+    visual_json: Dict[str, Any],
+    llm_output: Dict[str, Any],
+    views: Optional[List[Dict[str, Any]]] = None,
+    matching: Optional[Dict[str, Any]] = None,
+) -> Dict[str, int]:
+    """
+    Visual baseline for audio gap-fill.
+
+    Prefer deduplicated objects already present in llm_output (post validate/fusion).
+    Fall back to cross-view deduped counts or single-view perception.
+    """
+    llm_counts = visual_entity_counts_from_llm(llm_output)
+    if any(llm_counts.values()):
+        return llm_counts
+    view_list = views if views else [visual_json]
+    if len(view_list) > 1 and matching:
+        return deduped_visual_counts(view_list, matching)
+    return count_objects_by_class(visual_json.get("objects", []))
+
+
+def count_visual_persons_by_role(llm_output: Dict[str, Any]) -> tuple[int, int]:
     civilians = 0
     responders = 0
     for obj in llm_output.get("objects", []):
-        oid = obj.get("id")
-        if oid is None or oid not in visual_person_ids:
+        if obj.get("audio_only") or obj.get("class") != "person":
             continue
         role = (obj.get("inferred_role") or "").lower()
         if role in RESPONDER_ROLES:
             responders += 1
-        else:
+        elif role == "civilian":
             civilians += 1
     return civilians, responders
+
+
+# Radio fleet totals above this gap vs vision are treated as comms noise, not scene objects.
+MAX_VEHICLE_AUDIO_GAP = 2
+
+
+def audio_only_slots_by_class(
+    llm_output: Dict[str, Any],
+    visual_json: Dict[str, Any],
+    transcript_json: Dict[str, Any],
+    views: Optional[List[Dict[str, Any]]] = None,
+    matching: Optional[Dict[str, Any]] = None,
+) -> Dict[str, int]:
+    """
+    How many audio_only entities may be added per class.
+
+    - Persons: gap between radio civilian mentions and visual persons labeled civilian,
+      or between total people mentioned and visual body count (occluded / not seen).
+      On-scene firefighters speaking on radio are roles on visual persons, not extras.
+    - Vehicles: only mentions not already detected visually (capped gap).
+    """
+    analytics = transcript_json.get("analytics", {}) or {}
+    mentioned = mentioned_counts_from_transcript(transcript_json)
+    visual_counts = resolve_visual_baseline_counts(
+        visual_json, llm_output, views=views, matching=matching
+    )
+
+    mentioned_people = max(
+        int(analytics.get("people_mentioned_count", 0) or 0),
+        int(analytics.get("civilians_mentioned_count", 0) or 0),
+    )
+    civilians_mentioned = int(analytics.get("civilians_mentioned_count", 0) or 0)
+    visual_p = int(visual_counts.get("person", 0) or 0)
+    vis_civ, _ = count_visual_persons_by_role(llm_output)
+    body_gap = max(0, mentioned_people - visual_p)
+    civilian_gap = max(0, civilians_mentioned - vis_civ)
+    person_slots = max(body_gap, civilian_gap)
+
+    slots = {cls: 0 for cls in VALID_CLASSES}
+    slots["person"] = person_slots
+    for cls in ("normal_vehicle", "emergency_vehicle"):
+        visual_n = int(visual_counts.get(cls, 0) or 0)
+        gap = max(0, int(mentioned.get(cls, 0) or 0) - visual_n)
+        if gap > MAX_VEHICLE_AUDIO_GAP:
+            gap = 0
+        slots[cls] = gap
+    return slots
 
 
 def person_audio_only_needed(
     llm_output: Dict[str, Any],
     visual_json: Dict[str, Any],
     transcript_json: Dict[str, Any],
+    views: Optional[List[Dict[str, Any]]] = None,
+    matching: Optional[Dict[str, Any]] = None,
 ) -> int:
-    """
-    Audio-only persons: gaps per role (civilians / firefighters mentioned vs visually matched).
-    Fallback: aggregate people_mentioned_count minus visual person count.
-    """
-    analytics = transcript_json.get("analytics", {}) or {}
-    civilians_n = int(analytics.get("civilians_mentioned_count", 0) or 0)
-    firefighters_n = int(analytics.get("firefighters_mentioned_count", 0) or 0)
-    responders_n = max(firefighters_n, on_scene_responder_count(transcript_json))
-    people_n = int(analytics.get("people_mentioned_count", 0) or 0)
-
-    vis_civ, vis_ff = count_visual_persons_by_role(llm_output, visual_json)
-    slots = max(0, civilians_n - vis_civ) + max(0, responders_n - vis_ff)
-    if slots > 0:
-        return slots
-
-    visual_p = sum(
-        1 for obj in visual_json.get("objects", []) if obj.get("class") == "person"
-    )
-    aggregate_n = people_n if people_n > 0 else (civilians_n + responders_n)
-    return max(0, aggregate_n - visual_p)
+    return audio_only_slots_by_class(
+        llm_output, visual_json, transcript_json, views=views, matching=matching
+    )["person"]
 
 
 def parse_distance_meters(value: Any) -> Optional[float]:
@@ -1141,14 +1263,35 @@ def apply_throughput_need_heuristics(
         else None
     )
     has_fire = bool(llm_output.get("has_fire"))
+    role_llm_ran = bool((llm_output.get("_metadata") or {}).get("role_assignment_llm_applied"))
 
     for i, obj in enumerate(llm_output.get("objects", [])):
+        cls = obj.get("class", "")
+        if role_llm_ran and cls == "person":
+            if obj.get("audio_only"):
+                obj.setdefault("throughput_need", "low")
+                obj.pop("thermal_imagery_consumer", None)
+                continue
+            if _normalize_throughput_need(obj.get("throughput_need")):
+                obj["throughput_need"] = _normalize_throughput_need(obj.get("throughput_need"))
+                continue
+            is_consumer = bool(obj.get("thermal_imagery_consumer"))
+            if not is_consumer and thermal_requested and i == consumer_idx:
+                obj["thermal_imagery_consumer"] = True
+                is_consumer = True
+            obj["throughput_need"] = infer_throughput_need(
+                obj,
+                scene_services,
+                thermal_consumer=is_consumer,
+                has_fire=has_fire,
+            )
+            continue
+
         if obj.get("audio_only"):
             obj["throughput_need"] = "low"
             obj.pop("thermal_imagery_consumer", None)
             continue
         obj.pop("thermal_imagery_consumer", None)
-        cls = obj.get("class", "")
         is_consumer = bool(thermal_requested and i == consumer_idx and cls == "person")
         if is_consumer:
             obj["thermal_imagery_consumer"] = True
@@ -1173,10 +1316,10 @@ def default_audio_only_person_role(transcript_json: Dict[str, Any]) -> str:
     analytics = transcript_json.get("analytics", {}) or {}
     civilians = int(analytics.get("civilians_mentioned_count", 0) or 0)
     firefighters = int(analytics.get("firefighters_mentioned_count", 0) or 0)
-    responders = max(firefighters, on_scene_responder_count(transcript_json))
-    if civilians > 0 and civilians >= firefighters:
+    people = int(analytics.get("people_mentioned_count", 0) or 0)
+    if civilians > 0 or (people > 0 and firefighters == 0):
         return "civilian"
-    if responders > 0:
+    if firefighters > 0:
         return "firefighter"
     return "unknown_person"
 
@@ -1189,10 +1332,15 @@ def audio_only_reason(
     civilians_mentioned: Optional[int] = None,
     visual_civilian: Optional[int] = None,
 ) -> str:
-    if cls == "person" and civilians_mentioned is not None and visual_civilian is not None:
+    if cls == "person" and civilians_mentioned is not None and civilians_mentioned > 0:
+        if visual_civilian is not None:
+            return (
+                f"radio reports {civilians_mentioned} casualty/civilian(s); "
+                f"{visual_civilian} matched visually; others may be occluded (e.g. inside vehicle)"
+            )
         return (
-            f"radio reports {civilians_mentioned} civilian(s) at safe distance; "
-            f"{visual_civilian} matched visually as civilian"
+            f"radio reports {civilians_mentioned} casualty/civilian(s); "
+            f"not all visible in imagery (e.g. inside vehicle)"
         )
     label = cls.replace("_", " ")
     return (
@@ -1247,14 +1395,23 @@ def reconcile_audio_only_by_class(
     llm_output: Dict[str, Any],
     visual_json: Dict[str, Any],
     transcript_json: Dict[str, Any],
+    views: Optional[List[Dict[str, Any]]] = None,
+    matching: Optional[Dict[str, Any]] = None,
 ) -> Dict[str, Any]:
     """
-    Vehicles/emergency: N_radio − V_visual per class.
-    Persons: role-aware gaps (e.g. 2 civilians on radio, 1 seen as civilian → +1 audio_only).
+    Add audio_only only for radio mentions not already detected in vision.
+
+    On-scene firefighters speaking on radio are handled as roles (apply_on_scene_person_roles),
+    not as extra audio_only persons.
     """
     mentioned = mentioned_counts_from_transcript(transcript_json)
-    visual_counts = count_objects_by_class(visual_json.get("objects", []))
+    visual_counts = resolve_visual_baseline_counts(
+        visual_json, llm_output, views=views, matching=matching
+    )
     analytics = transcript_json.get("analytics", {}) or {}
+    slots = audio_only_slots_by_class(
+        llm_output, visual_json, transcript_json, views=views, matching=matching
+    )
 
     objects = llm_output.get("objects", [])
     non_audio = [obj for obj in objects if not obj.get("audio_only")]
@@ -1264,28 +1421,44 @@ def reconcile_audio_only_by_class(
         if obj.get("audio_only") and cls in audio_by_class:
             audio_by_class[cls].append(obj)
 
+    role_llm_ran = bool((llm_output.get("_metadata") or {}).get("role_assignment_llm_applied"))
     merged_audio: List[Dict[str, Any]] = []
     for cls in VALID_CLASSES:
         if cls == "person":
             civ_n = int(analytics.get("civilians_mentioned_count", 0) or 0)
-            ff_n = int(analytics.get("firefighters_mentioned_count", 0) or 0)
-            responder_n = max(ff_n, on_scene_responder_count(transcript_json))
-            visual_n = visual_counts.get("person", 0)
-            vis_civ, _ = count_visual_persons_by_role(llm_output, visual_json)
-            _, vis_ff = count_visual_persons_by_role(llm_output, visual_json)
-            civ_needed = max(0, civ_n - vis_civ)
-            ff_needed = max(0, responder_n - vis_ff)
-            needed = civ_needed + ff_needed
-            mentioned_n = int(analytics.get("people_mentioned_count", 0) or 0) or (
-                civ_n + responder_n
-            )
+            vis_civ, vis_ff = count_visual_persons_by_role(llm_output)
+            mentioned_n = int(analytics.get("people_mentioned_count", 0) or 0)
+            needed = slots["person"]
             person_kw = {"civilians_mentioned": civ_n, "visual_civilian": vis_civ}
-            role_targets = (["civilian"] * civ_needed) + (["firefighter"] * ff_needed)
+            # Occluded / not visible — never audio_only firefighter (speaker gets visual role).
+            role_targets = ["civilian"] * needed
+            visual_n = int(visual_counts.get("person", 0) or 0)
+            if role_llm_ran:
+                kept = list(audio_by_class[cls][:needed])
+                while len(kept) < needed:
+                    idx = len(kept)
+                    kept.append(
+                        make_audio_only_entry(
+                            cls,
+                            transcript_json,
+                            mentioned_n,
+                            visual_n,
+                            role_override=role_targets[idx] if idx < len(role_targets) else "civilian",
+                            reason_override=(
+                                f"radio mentions {civ_n} civilian(s); "
+                                f"{vis_civ} labeled civilian visually; "
+                                "gap-fill for occluded / not visible civilian"
+                            ),
+                            **person_kw,
+                        )
+                    )
+                merged_audio.extend(kept)
+                continue
         else:
             person_kw = {}
-            needed = max(0, mentioned.get(cls, 0) - visual_counts.get(cls, 0))
+            needed = slots[cls]
             mentioned_n = mentioned.get(cls, 0)
-            visual_n = visual_counts.get(cls, 0)
+            visual_n = int(visual_counts.get(cls, 0) or 0)
             role_targets = []
         kept: List[Dict[str, Any]] = []
         for obj in audio_by_class[cls]:
@@ -1295,12 +1468,12 @@ def reconcile_audio_only_by_class(
             reason_override = None
             if cls == "person":
                 idx = len(kept)
-                role_override = role_targets[idx] if idx < len(role_targets) else None
-                if role_override == "firefighter":
-                    reason_override = (
-                        f"radio indicates {responder_n} on-scene responder(s); "
-                        f"{vis_ff} matched visually as firefighter"
-                    )
+                role_override = role_targets[idx] if idx < len(role_targets) else "civilian"
+                reason_override = (
+                    f"radio mentions {mentioned_n} person(s) and {civ_n} civilian(s); "
+                    f"{visual_n} detected visually ({vis_civ} as civilian); "
+                    "gap-fill for not visible / occluded"
+                )
             kept.append(
                 make_audio_only_entry(
                     cls,
@@ -1318,12 +1491,12 @@ def reconcile_audio_only_by_class(
             reason_override = None
             if cls == "person":
                 idx = len(kept)
-                role_override = role_targets[idx] if idx < len(role_targets) else None
-                if role_override == "firefighter":
-                    reason_override = (
-                        f"radio indicates {responder_n} on-scene responder(s); "
-                        f"{vis_ff} matched visually as firefighter"
-                    )
+                role_override = role_targets[idx] if idx < len(role_targets) else "civilian"
+                reason_override = (
+                    f"radio mentions {mentioned_n} person(s) and {civ_n} civilian(s); "
+                    f"{visual_n} detected visually ({vis_civ} as civilian); "
+                    "gap-fill for not visible / occluded"
+                )
             kept.append(
                 make_audio_only_entry(
                     cls,
@@ -1357,22 +1530,18 @@ def max_audio_only_by_class(
         visual_counts = deduped_visual_counts(view_list, matching)
     else:
         visual_counts = count_objects_by_class(visual_json.get("objects", []))
-    mentioned = mentioned_counts_from_transcript(transcript_json or {})
-    slots = {
-        cls: max(0, mentioned.get(cls, 0) - visual_counts.get(cls, 0))
-        for cls in VALID_CLASSES
-    }
     if llm_output is not None and transcript_json is not None:
-        slots["person"] = person_audio_only_needed(
-            llm_output, visual_json, transcript_json
+        return audio_only_slots_by_class(
+            llm_output, visual_json, transcript_json, views=view_list, matching=matching
         )
-    else:
-        analytics = (transcript_json or {}).get("analytics", {}) or {}
-        people_n = int(analytics.get("people_mentioned_count", 0) or 0)
-        civ_n = int(analytics.get("civilians_mentioned_count", 0) or 0)
-        ff_n = int(analytics.get("firefighters_mentioned_count", 0) or 0)
-        aggregate = people_n if people_n > 0 else (civ_n + ff_n)
-        slots["person"] = max(0, aggregate - visual_counts.get("person", 0))
+    slots = {cls: 0 for cls in VALID_CLASSES}
+    analytics = (transcript_json or {}).get("analytics", {}) or {}
+    people_n = int(analytics.get("people_mentioned_count", 0) or 0)
+    slots["person"] = max(0, people_n - int(visual_counts.get("person", 0) or 0))
+    mentioned = mentioned_counts_from_transcript(transcript_json or {})
+    for cls in ("normal_vehicle", "emergency_vehicle"):
+        gap = max(0, mentioned.get(cls, 0) - int(visual_counts.get(cls, 0) or 0))
+        slots[cls] = 0 if gap > MAX_VEHICLE_AUDIO_GAP else gap
     return slots
 
 
@@ -1640,12 +1809,371 @@ def validate_objects(
     return llm_output
 
 
+UNKNOWN_PERSON_ROLE = "unknown_person"
+UNKNOWN_PERSON_BASIS = "no role inferred from radio or proximity"
+
+
+def build_role_radio_signals(transcript_json: Dict[str, Any]) -> Dict[str, Any]:
+    """Structured radio cues for the role-assignment LLM (not role decisions)."""
+    analytics = transcript_json.get("analytics", {}) or {}
+    units = sorted(on_scene_field_units_from_transcript(transcript_json))
+    people_mentioned = int(analytics.get("people_mentioned_count", 0) or 0)
+    civilians_mentioned = int(analytics.get("civilians_mentioned_count", 0) or 0)
+    return {
+        "on_scene_field_units": units,
+        "on_scene_responders_count": on_scene_responder_count(transcript_json),
+        "people_mentioned_count": people_mentioned,
+        "civilians_mentioned_count": civilians_mentioned,
+        "civilians_at_safe_distance_mentioned": bool(
+            analytics.get("civilians_at_safe_distance_mentioned")
+        ),
+        "firefighters_mentioned_count": int(analytics.get("firefighters_mentioned_count", 0) or 0),
+        "radio_people_mentions_max": max(people_mentioned, civilians_mentioned),
+    }
+
+
+def build_role_context_for_assignment(
+    llm_output: Dict[str, Any],
+    transcript_json: Dict[str, Any],
+) -> Dict[str, Any]:
+    """Compact person list + radio signals for the dedicated role-assignment LLM call."""
+    persons: List[Dict[str, Any]] = []
+    for obj in llm_output.get("objects", []):
+        if obj.get("class") != "person" or obj.get("audio_only"):
+            continue
+        oid = obj.get("id")
+        if oid is None:
+            continue
+        persons.append(
+            {
+                "id": int(oid),
+                "distance_to_fire": obj.get("distance_to_fire"),
+                "distance_m": parse_distance_meters(obj.get("distance_to_fire")),
+            }
+        )
+    by_distance = sorted(persons, key=lambda row: (row["distance_m"] is None, row["distance_m"] or 0.0))
+    for rank, row in enumerate(by_distance, start=1):
+        row["proximity_rank"] = rank
+    persons.sort(key=lambda row: row["proximity_rank"])
+    comms = llm_output.get("communications", {}) or {}
+    return {
+        "has_fire": bool(llm_output.get("has_fire", True)),
+        "visual_person_count": len(persons),
+        "scene_service_types": list(comms.get("service_types") or ["voice"]),
+        "radio_signals": build_role_radio_signals(transcript_json),
+        "persons": persons,
+    }
+
+
+def call_ollama_role_assignment(
+    transcript_json: Dict[str, Any],
+    role_context: Dict[str, Any],
+    *,
+    prompt: Optional[str] = None,
+    model: str = OLLAMA_MODEL,
+    ollama_url: str = "http://localhost:11434/api/generate",
+    strict_json: bool = False,
+    timeout_sec: int = 300,
+) -> Tuple[str, Dict[str, Any]]:
+    """Second LLM call: same prompt for mono and multi; only ROLE_CONTEXT size differs."""
+    ensure_ollama_ready(ollama_url)
+
+    prompt_text = (prompt or load_text(str(ROLE_ASSIGNMENT_PROMPT))).strip()
+    llm_transcript = compact_transcript_for_llm(transcript_json)
+    json_rules = (
+        "Reply with a single JSON object only. No markdown, no explanation. "
+        "Include person_roles (one per ROLE_CONTEXT.persons id) and audio_only_persons "
+        "(array, may be empty)."
+    )
+    if strict_json:
+        json_rules += " Keep the response compact."
+
+    full_prompt = (
+        f"{prompt_text}\n\n"
+        f"{json_rules}\n\n"
+        f"ROLE_CONTEXT:\n{json.dumps(role_context, ensure_ascii=False)}\n\n"
+        f"TRANSCRIPT_JSON:\n{json.dumps(llm_transcript, ensure_ascii=False)}"
+    )
+
+    prompt_chars = len(full_prompt)
+    t0 = time.perf_counter()
+    try:
+        response = requests.post(
+            ollama_url,
+            json={
+                "model": model,
+                "prompt": full_prompt,
+                "stream": False,
+                "format": "json",
+                "options": ollama_generate_options(),
+            },
+            timeout=timeout_sec,
+        )
+        response.raise_for_status()
+    except requests.HTTPError as exc:
+        status = exc.response.status_code if exc.response is not None else None
+        if status == 404:
+            raise RuntimeError(
+                f"Ollama returned 404 for {ollama_url}. "
+                f"Start Ollama and pull the model, e.g. ollama pull {OLLAMA_MODEL}"
+            ) from exc
+        raise
+    except requests.RequestException as exc:
+        raise RuntimeError(
+            f"Failed to call Ollama at {ollama_url}: {exc}. "
+            "Ensure the Ollama app is running."
+        ) from exc
+
+    wall_clock_sec = time.perf_counter() - t0
+    payload = response.json()
+    timing = ollama_timing_from_payload(
+        payload, wall_clock_sec=wall_clock_sec, prompt_chars=prompt_chars
+    )
+    text = (payload.get("response") or "").strip()
+    if not text:
+        reason = payload.get("done_reason", "unknown")
+        raise RuntimeError(
+            f"Role-assignment Ollama returned empty response (done_reason={reason})."
+        )
+    return text, timing
+
+
+def _normalize_inferred_role(value: object) -> Optional[str]:
+    if value is None:
+        return None
+    text = str(value).strip().lower()
+    if text in VALID_INFERRED_ROLES:
+        return text
+    if text in RESPONDER_ROLES:
+        return "firefighter"
+    return None
+
+
+def _normalize_throughput_need(value: object) -> Optional[str]:
+    if value is None:
+        return None
+    text = str(value).strip().lower()
+    return text if text in VALID_THROUGHPUT_NEED else None
+
+
+def _person_fields_from_role_row(row: Dict[str, Any], *, role: str) -> Dict[str, Any]:
+    fields: Dict[str, Any] = {
+        "inferred_role": role,
+        "role_inference_basis": normalize_role_inference_basis(row.get("role_inference_basis")),
+        "role_confidence": row.get("role_confidence"),
+    }
+    throughput = _normalize_throughput_need(row.get("throughput_need"))
+    if throughput:
+        fields["throughput_need"] = throughput
+    if row.get("thermal_imagery_consumer") is True:
+        fields["thermal_imagery_consumer"] = True
+    return fields
+
+
+def _apply_person_semantic_fields(obj: Dict[str, Any], fields: Dict[str, Any]) -> None:
+    obj["inferred_role"] = fields["inferred_role"]
+    obj["role_inference_basis"] = fields["role_inference_basis"]
+    if fields.get("role_confidence") is not None:
+        obj["role_confidence"] = fields["role_confidence"]
+    if fields.get("throughput_need"):
+        obj["throughput_need"] = fields["throughput_need"]
+    if fields.get("thermal_imagery_consumer"):
+        obj["thermal_imagery_consumer"] = True
+    else:
+        obj.pop("thermal_imagery_consumer", None)
+
+
+def parse_role_assignment_payload(payload: Dict[str, Any]) -> Dict[int, Dict[str, Any]]:
+    """Map person id -> role fields from the dedicated role-assignment response."""
+    rows: List[Dict[str, Any]] = []
+    if isinstance(payload.get("person_roles"), list):
+        rows.extend(payload["person_roles"])
+    if isinstance(payload.get("assignments"), list):
+        rows.extend(payload["assignments"])
+    for obj in payload.get("objects", []) or []:
+        if isinstance(obj, dict) and obj.get("class") == "person" and obj.get("id") is not None:
+            rows.append(obj)
+
+    by_id: Dict[int, Dict[str, Any]] = {}
+    for row in rows:
+        if not isinstance(row, dict) or row.get("id") is None:
+            continue
+        oid = int(row["id"])
+        role = _normalize_inferred_role(row.get("inferred_role"))
+        if role is None:
+            continue
+        by_id[oid] = _person_fields_from_role_row(row, role=role)
+    return by_id
+
+
+def parse_audio_only_persons_payload(payload: Dict[str, Any]) -> List[Dict[str, Any]]:
+    """Audio-only person rows from the role-assignment LLM response."""
+    rows = payload.get("audio_only_persons")
+    if not isinstance(rows, list):
+        return []
+    out: List[Dict[str, Any]] = []
+    for row in rows:
+        if not isinstance(row, dict):
+            continue
+        role = _normalize_inferred_role(row.get("inferred_role")) or "civilian"
+        if role in RESPONDER_ROLES:
+            continue
+        if role != "civilian":
+            role = "civilian"
+        reason = str(row.get("reason") or "").strip()
+        basis = normalize_role_inference_basis(
+            row.get("role_inference_basis")
+            or ({"source": "inference", "text": reason} if reason else None)
+        )
+        entry = _person_fields_from_role_row(row, role=role)
+        entry["reason"] = reason or (basis or {}).get("text", "")
+        entry["role_inference_basis"] = basis
+        out.append(entry)
+    return out
+
+
+def merge_audio_only_persons_from_role_llm(
+    llm_output: Dict[str, Any],
+    audio_only_rows: List[Dict[str, Any]],
+) -> int:
+    """Replace person audio_only entries with the role-assignment LLM decision."""
+    kept = [
+        obj
+        for obj in llm_output.get("objects", [])
+        if not (obj.get("class") == "person" and obj.get("audio_only"))
+    ]
+    merged = 0
+    for row in audio_only_rows:
+        entry: Dict[str, Any] = {
+            "id": None,
+            "class": "person",
+            "audio_only": True,
+            "reason": row.get("reason", ""),
+            "inferred_role": row.get("inferred_role", "civilian"),
+            "role_inference_basis": row.get("role_inference_basis"),
+        }
+        if row.get("role_confidence") is not None:
+            entry["role_confidence"] = row["role_confidence"]
+        entry.setdefault("risk_level", "medium")
+        entry["throughput_need"] = _normalize_throughput_need(row.get("throughput_need")) or "low"
+        kept.append(entry)
+        merged += 1
+    llm_output["objects"] = kept
+    return merged
+
+
+def merge_role_assignments_into_output(
+    llm_output: Dict[str, Any],
+    roles_by_id: Dict[int, Dict[str, Any]],
+) -> int:
+    """Overwrite visual person roles from the dedicated role-assignment pass."""
+    merged = 0
+    for obj in llm_output.get("objects", []):
+        if obj.get("class") != "person" or obj.get("audio_only"):
+            continue
+        oid = obj.get("id")
+        if oid is None:
+            continue
+        role_fields = roles_by_id.get(int(oid))
+        if not role_fields:
+            continue
+        _apply_person_semantic_fields(obj, role_fields)
+        merged += 1
+    return merged
+
+
+def apply_role_assignment_llm(
+    llm_output: Dict[str, Any],
+    transcript_json: Dict[str, Any],
+    *,
+    model: str = OLLAMA_MODEL,
+    ollama_url: str = "http://localhost:11434/api/generate",
+    prompt_path: Optional[Path] = None,
+    max_attempts: int = 3,
+    timeout_sec: int = 300,
+) -> Tuple[Dict[str, Any], Optional[Dict[str, Any]]]:
+    """
+    Dedicated role-assignment LLM pass (identical for mono and multi).
+
+    Runs after validate_objects so person ids match fused or mono visual entities.
+    """
+    role_context = build_role_context_for_assignment(llm_output, transcript_json)
+    signals = role_context.get("radio_signals") or {}
+    has_radio_people = int(signals.get("radio_people_mentions_max", 0) or 0) > 0
+    if not role_context["persons"] and not has_radio_people:
+        return llm_output, None
+
+    prompt = load_text(str(prompt_path or ROLE_ASSIGNMENT_PROMPT))
+    last_error: Optional[Exception] = None
+
+    print(
+        f"Calling Ollama role assignment ({model}) for "
+        f"{len(role_context['persons'])} visual person(s) ..."
+    )
+    for attempt in range(1, max_attempts + 1):
+        try:
+            response_text, _ = call_ollama_role_assignment(
+                transcript_json,
+                role_context,
+                prompt=prompt,
+                model=model,
+                ollama_url=ollama_url,
+                strict_json=attempt > 1,
+                timeout_sec=timeout_sec,
+            )
+            payload = parse_llm_json(response_text)
+            roles_by_id = parse_role_assignment_payload(payload)
+            audio_only_rows = parse_audio_only_persons_payload(payload)
+            expected = {int(p["id"]) for p in role_context["persons"]}
+            if expected and not roles_by_id:
+                raise ValueError("role assignment response contained no valid person_roles")
+            merged = 0
+            if expected:
+                merged = merge_role_assignments_into_output(llm_output, roles_by_id)
+                if merged == 0:
+                    raise ValueError("no person roles merged from role assignment response")
+                missing = expected - set(roles_by_id)
+                if missing:
+                    print(
+                        f"Role assignment warning: missing ids {sorted(missing)} "
+                        f"({merged}/{len(expected)} assigned)"
+                    )
+                else:
+                    print(f"Role assignment: {merged}/{len(expected)} visual persons")
+            n_audio = merge_audio_only_persons_from_role_llm(llm_output, audio_only_rows)
+            print(f"Role assignment: {n_audio} audio_only person(s) from LLM gap analysis")
+            break
+        except (ValueError, RuntimeError, json.JSONDecodeError) as exc:
+            last_error = exc
+            if attempt < max_attempts:
+                print(f"Role assignment attempt {attempt}/{max_attempts} failed ({exc}); retrying...")
+                continue
+    else:
+        assert last_error is not None
+        raise last_error
+
+    meta = llm_output.setdefault("_metadata", {})
+    meta.pop("role_assignment_timing", None)
+    meta.pop("reprocess_wall_sec", None)
+    meta["role_assignment_llm_applied"] = True
+    return llm_output, None
+
+
 def normalize_all_person_fields(llm_output: Dict[str, Any]) -> Dict[str, Any]:
     for obj in llm_output.get("objects", []):
-        if obj.get("class") == "person":
-            obj["role_inference_basis"] = normalize_role_inference_basis(
-                obj.get("role_inference_basis")
-            )
+        if obj.get("class") != "person":
+            continue
+        role = obj.get("inferred_role")
+        if role is None or not str(role).strip():
+            obj["inferred_role"] = UNKNOWN_PERSON_ROLE
+        obj["role_inference_basis"] = normalize_role_inference_basis(
+            obj.get("role_inference_basis")
+        )
+        if not (obj.get("role_inference_basis") or {}).get("text"):
+            obj["role_inference_basis"] = {
+                "source": "inference",
+                "text": UNKNOWN_PERSON_BASIS,
+            }
     return llm_output
 
 
@@ -1789,7 +2317,6 @@ def distinct_speaker_count(transcript_json: Dict[str, Any]) -> int:
 def key_communications_limit(
     speaker_count: int, candidates: Optional[List[Dict[str, Any]]] = None
 ) -> int:
-    """One opening check-in per detected speaker, capped for safety."""
     if speaker_count > 0:
         return min(speaker_count, MAX_KEY_COMMUNICATIONS_CAP)
     if candidates:
@@ -1839,7 +2366,6 @@ def _append_distinct_speaker_segments(
 def pick_opening_addressing_communications(
     segments: List[Dict[str, Any]], speaker_count: int
 ) -> List[Dict[str, Any]]:
-    """First unit check-ins in chronological order; exactly one excerpt per speaker."""
     if not segments:
         return []
 
@@ -1883,7 +2409,6 @@ def pick_opening_addressing_communications(
 def reconcile_key_communications(
     comms: Dict[str, Any], transcript_json: Dict[str, Any]
 ) -> None:
-    """Opening radio check-ins (one per speaker, up to speaker_count), no time."""
     analytics = transcript_json.get("analytics", {}) or {}
     speaker_count = int(
         comms.get("speaker_count")
@@ -2173,6 +2698,11 @@ def main() -> None:
         help=f"Ollama model tag (default: {OLLAMA_MODEL})",
     )
     parser.add_argument("--ollama-url", default="http://localhost:11434/api/generate")
+    parser.add_argument(
+        "--skip-role-llm",
+        action="store_true",
+        help="Skip the dedicated second LLM call for person role assignment",
+    )
 
     args = parser.parse_args()
 
@@ -2193,7 +2723,7 @@ def main() -> None:
             transcript_path_str = str(transcript_path(run_dir))
         if not transcript_path_str:
             parser.error("Provide --transcript-json or --run-dir with perception/transcript.json")
-        transcript_json = load_json(transcript_path_str)
+        transcript_json = refresh_transcript_analytics(load_json(transcript_path_str))
         output_path = Path(args.output) if args.output else None
         if output_path is None and run_dir:
             output_path = llm_output_path(run_dir)
@@ -2207,7 +2737,9 @@ def main() -> None:
         visual_json = views[0]
         for v in views:
             v.setdefault("_view_id", v.get("_view_id", "mono"))
-        transcript_json = load_json(str(transcript_path(run_dir)))
+        transcript_json = refresh_transcript_analytics(
+            load_json(str(transcript_path(run_dir)))
+        )
         output_path = Path(args.output) if args.output else llm_output_path(run_dir)
         multi_view = is_multi_view_run(run_dir)
         if multi_view:
@@ -2227,7 +2759,10 @@ def main() -> None:
                     f"({n_match} cross-view matches + transcript)"
                 )
             else:
-                print("Multi-view independent analysis (different incidents)")
+                print(
+                    "Multi-view independent analysis (same_incident=false): "
+                    "LLM must tag each object with view_id; sls_builder writes fusion/sls_<view>.json"
+                )
 
     model_name = args.model
     response_text = ""
@@ -2282,17 +2817,31 @@ def main() -> None:
         views=views if multi_view else None,
         matching=cross_view,
     )
-    fused_for_proximity: Optional[List[Dict[str, Any]]] = None
-    if multi_view and cross_view and cross_view.get("same_incident"):
-        fused_for_proximity, _ = build_fused_object_list(views, cross_view)
-    llm_output = apply_on_scene_person_roles(
+    if args.skip_role_llm:
+        fused_for_proximity: Optional[List[Dict[str, Any]]] = None
+        if multi_view and cross_view and cross_view.get("same_incident"):
+            fused_for_proximity, _ = build_fused_object_list(views, cross_view)
+        llm_output = apply_on_scene_person_roles(
+            llm_output,
+            visual_json,
+            transcript_json,
+            fused_objects=fused_for_proximity,
+        )
+    else:
+        llm_output, _ = apply_role_assignment_llm(
+            llm_output,
+            transcript_json,
+            model=model_name,
+            ollama_url=args.ollama_url,
+        )
+    llm_output = apply_throughput_need_heuristics(llm_output, transcript_json)
+    llm_output = reconcile_audio_only_by_class(
         llm_output,
         visual_json,
         transcript_json,
-        fused_objects=fused_for_proximity,
+        views=views if multi_view else None,
+        matching=cross_view,
     )
-    llm_output = apply_throughput_need_heuristics(llm_output, transcript_json)
-    llm_output = reconcile_audio_only_by_class(llm_output, visual_json, transcript_json)
     llm_output = reconcile_communications(llm_output, transcript_json)
     llm_output = reconcile_counts_by_class(
         llm_output, visual_json, views=views if multi_view else None, matching=cross_view

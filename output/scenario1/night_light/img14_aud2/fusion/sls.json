@@ -1,6 +1,6 @@
 {
   "has_fire": true,
-  "summary": "Fire is active on vehicles, and emergency response is coordinating access and cooling operations.",
+  "summary": "Two vehicles are involved in a fire near civilian positions; smoke infiltration is ongoing.",
   "counts_by_class": {
     "person": 3,
     "normal_vehicle": 3,
@@ -43,9 +43,9 @@
       "inferred_role": "firefighter",
       "role_inference_basis": {
         "source": "inference",
-        "text": "engine_1 on scene per radio (command is off-scene support); assigned to closest person near fire"
+        "text": "Proximity rank 1 (closest to fire) is assigned the role of firefighter because an on-scene field unit exists and a responder count is present."
       },
-      "role_confidence": 0.85,
+      "role_confidence": 1.0,
       "traffic_demand_mbps": 1.0
     },
     {
@@ -67,9 +67,9 @@
       "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": "radio reports 2 civilian(s) at safe distance; matched to persons farther from fire"
+        "text": "The remaining person is inferred as a civilian based on civilian mentions and safe distance context."
       },
-      "role_confidence": 0.75,
+      "role_confidence": 0.95,
       "traffic_demand_mbps": 0.3
     },
     {
@@ -91,9 +91,9 @@
       "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": "radio reports 2 civilian(s) at safe distance; matched to persons farther from fire"
+        "text": "The remaining persons are inferred as civilians based on civilian mentions and safe distance context."
       },
-      "role_confidence": 0.75,
+      "role_confidence": 0.95,
       "traffic_demand_mbps": 0.3
     },
     {

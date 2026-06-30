@@ -1,6 +1,6 @@
 {
   "has_fire": true,
-  "summary": "A brush fire is active near a roadway, with multiple vehicles blocked and civilians present near the scene.",
+  "summary": "A brush fire is active near a roadway where multiple vehicles are blocked and civilians are present.",
   "counts_by_class": {
     "person": 8,
     "normal_vehicle": 3,
@@ -35,13 +35,13 @@
       },
       "distance_to_fire": "24.97 m",
       "risk_level": "medium",
-      "throughput_need": "low",
       "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": "Civilians are mentioned in the initial report."
+        "text": "Civilians mentioned in transcript are assigned based on proximity and context."
       },
-      "role_confidence": 0.5,
+      "role_confidence": 1.0,
+      "throughput_need": "low",
       "traffic_demand_mbps": 0.3
     },
     {
@@ -59,13 +59,13 @@
       },
       "distance_to_fire": "28.71 m",
       "risk_level": "medium",
-      "throughput_need": "low",
       "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": "Civilians are mentioned in the initial report."
+        "text": "Civilians mentioned in transcript are assigned based on proximity and context."
       },
-      "role_confidence": 0.5,
+      "role_confidence": 1.0,
+      "throughput_need": "low",
       "traffic_demand_mbps": 0.3
     },
     {
@@ -83,13 +83,13 @@
       },
       "distance_to_fire": "25.15 m",
       "risk_level": "medium",
-      "throughput_need": "low",
       "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": "Civilians are mentioned in the initial report."
+        "text": "Civilians mentioned in transcript are assigned based on proximity and context."
       },
-      "role_confidence": 0.5,
+      "role_confidence": 1.0,
+      "throughput_need": "low",
       "traffic_demand_mbps": 0.3
     },
     {
@@ -106,14 +106,14 @@
         "z": "1.00"
       },
       "distance_to_fire": "17.96 m",
-      "risk_level": "medium",
-      "throughput_need": "low",
+      "risk_level": "high",
       "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": "Civilians are mentioned in the initial report."
+        "text": "Civilians mentioned in transcript are assigned based on proximity and context."
       },
-      "role_confidence": 0.5,
+      "role_confidence": 1.0,
+      "throughput_need": "low",
       "traffic_demand_mbps": 0.3
     },
     {
@@ -131,13 +131,13 @@
       },
       "distance_to_fire": "21.05 m",
       "risk_level": "medium",
-      "throughput_need": "low",
       "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": "Civilians are mentioned in the initial report."
+        "text": "Civilians mentioned in transcript are assigned based on proximity and context."
       },
-      "role_confidence": 0.5,
+      "role_confidence": 1.0,
+      "throughput_need": "low",
       "traffic_demand_mbps": 0.3
     },
     {
@@ -155,13 +155,13 @@
       },
       "distance_to_fire": "28.03 m",
       "risk_level": "medium",
-      "throughput_need": "low",
       "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": "Civilians are mentioned in the initial report."
+        "text": "Civilians mentioned in transcript are assigned based on proximity and context."
       },
-      "role_confidence": 0.5,
+      "role_confidence": 1.0,
+      "throughput_need": "low",
       "traffic_demand_mbps": 0.3
     },
     {
@@ -178,15 +178,15 @@
         "z": "1.00"
       },
       "distance_to_fire": "16.29 m",
-      "risk_level": "medium",
-      "throughput_need": "low",
-      "inferred_role": "civilian",
+      "risk_level": "high",
+      "inferred_role": "firefighter",
       "role_inference_basis": {
         "source": "inference",
-        "text": "Civilians are mentioned in the initial report."
+        "text": "on_scene_field_units is empty and responders count is 0, but proximity rank 1 implies operation."
       },
-      "role_confidence": 0.5,
-      "traffic_demand_mbps": 0.3
+      "role_confidence": 1.0,
+      "throughput_need": "medium",
+      "traffic_demand_mbps": 1.0
     },
     {
       "class": "person",
@@ -203,13 +203,13 @@
       },
       "distance_to_fire": "24.17 m",
       "risk_level": "medium",
-      "throughput_need": "low",
       "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": "Civilians are mentioned in the initial report."
+        "text": "Civilians mentioned in transcript are assigned based on proximity and context."
       },
-      "role_confidence": 0.5,
+      "role_confidence": 1.0,
+      "throughput_need": "low",
       "traffic_demand_mbps": 0.3
     },
     {

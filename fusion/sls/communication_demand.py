@@ -88,9 +88,6 @@ def communication_demand_for_object(
     thermal_consumer: bool = False,
     has_fire: bool = True,
 ) -> Tuple[str, float]:
-    """
-    Return (throughput_need, traffic_demand_mbps) for one fused entity.
-    """
     if obj.get("audio_only"):
         return "low", SERVICE_MBPS["voice"]
 

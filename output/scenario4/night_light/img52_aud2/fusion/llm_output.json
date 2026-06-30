@@ -1,8 +1,8 @@
 {
   "has_fire": true,
-  "summary": "A civilian reported a brush fire near a highway with an overturned vehicle, and emergency units are responding to the scene.",
+  "summary": "Units are coordinating a response to a brush fire near a highway where a civilian reported an overturned vehicle.",
   "counts_by_class": {
-    "person": 1,
+    "person": 0,
     "normal_vehicle": 6,
     "emergency_vehicle": 1
   },
@@ -140,21 +140,8 @@
         "z": "1.00"
       },
       "distance_to_fire": "23.73 m",
-      "risk_level": "high",
-      "throughput_need": "medium"
-    },
-    {
-      "class": "person",
-      "audio_only": true,
-      "reason": "radio indicates 1 on-scene responder(s); 0 matched visually as firefighter",
       "risk_level": "medium",
-      "throughput_need": "low",
-      "inferred_role": "firefighter",
-      "role_inference_basis": {
-        "source": "inference",
-        "text": ""
-      },
-      "role_confidence": null
+      "throughput_need": "medium"
     }
   ]
 }

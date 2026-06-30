@@ -1,5 +1,8 @@
 {
   "same_incident": true,
+  "same_incident_camera_distance_m": 15.67,
+  "same_incident_footprint_overlap": 0.4902,
+  "same_incident_criterion": "camera_distance",
   "views": [
     "img19",
     "img20"
@@ -191,7 +194,7 @@
     }
   },
   "matches": [],
-  "notebook_counts_after_match": {
+  "counts_after_match": {
     "person": 5,
     "vehicle": 1,
     "emergency_vehicle": 0

@@ -1,6 +1,6 @@
 {
   "has_fire": true,
-  "summary": "A brush fire is active near a highway, with multiple vehicles blocked and civilians present near the scene.",
+  "summary": "A brush fire is active in a wooded area near a two-lane highway where multiple vehicles are blocked and civilians are present.",
   "counts_by_class": {
     "person": 7,
     "normal_vehicle": 8,
@@ -35,13 +35,13 @@
       },
       "distance_to_fire": "7.98 m",
       "risk_level": "medium",
-      "throughput_need": "low",
       "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": "Civilians are present near the roadway."
+        "text": "Inferred role based on proximity and lack of responder status."
       },
-      "role_confidence": 0.7,
+      "role_confidence": null,
+      "throughput_need": "low",
       "traffic_demand_mbps": 0.3
     },
     {
@@ -59,13 +59,13 @@
       },
       "distance_to_fire": "11.33 m",
       "risk_level": "medium",
-      "throughput_need": "low",
       "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": "Civilians are present near the roadway."
+        "text": "Inferred role based on proximity and lack of responder status."
       },
-      "role_confidence": 0.7,
+      "role_confidence": null,
+      "throughput_need": "low",
       "traffic_demand_mbps": 0.3
     },
     {
@@ -83,13 +83,13 @@
       },
       "distance_to_fire": "11.44 m",
       "risk_level": "medium",
-      "throughput_need": "low",
       "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": "Civilians are present near the roadway."
+        "text": "Inferred role based on proximity and lack of responder status."
       },
-      "role_confidence": 0.7,
+      "role_confidence": null,
+      "throughput_need": "low",
       "traffic_demand_mbps": 0.3
     },
     {
@@ -106,14 +106,14 @@
         "z": "1.00"
       },
       "distance_to_fire": "14.67 m",
-      "risk_level": "medium",
-      "throughput_need": "low",
+      "risk_level": "high",
       "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": "Civilians are present near the roadway."
+        "text": "Inferred role based on proximity and lack of responder status."
       },
-      "role_confidence": 0.7,
+      "role_confidence": null,
+      "throughput_need": "low",
       "traffic_demand_mbps": 0.3
     },
     {
@@ -131,13 +131,13 @@
       },
       "distance_to_fire": "6.44 m",
       "risk_level": "medium",
-      "throughput_need": "low",
       "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": "Civilians are present near the roadway."
+        "text": "Closest person to fire (rank 2) not assigned as firefighter; inferred role based on general civilian presence."
       },
-      "role_confidence": 0.7,
+      "role_confidence": null,
+      "throughput_need": "low",
       "traffic_demand_mbps": 0.3
     },
     {
@@ -154,15 +154,15 @@
         "z": "1.00"
       },
       "distance_to_fire": "4.89 m",
-      "risk_level": "medium",
-      "throughput_need": "medium",
-      "inferred_role": "civilian",
+      "risk_level": "low",
+      "inferred_role": "firefighter",
       "role_inference_basis": {
         "source": "inference",
-        "text": "Civilians are present near the roadway."
+        "text": "Proximity rank is 1 and an on-scene field unit count is zero, implying this person must be the responder operating at the fire."
       },
-      "role_confidence": 0.7,
-      "traffic_demand_mbps": 0.5
+      "role_confidence": null,
+      "throughput_need": "medium",
+      "traffic_demand_mbps": 1.0
     },
     {
       "class": "person",
@@ -179,13 +179,13 @@
       },
       "distance_to_fire": "10.18 m",
       "risk_level": "medium",
-      "throughput_need": "low",
       "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": "Civilians are present near the roadway."
+        "text": "Inferred role based on proximity and lack of responder status."
       },
-      "role_confidence": 0.7,
+      "role_confidence": null,
+      "throughput_need": "low",
       "traffic_demand_mbps": 0.3
     },
     {

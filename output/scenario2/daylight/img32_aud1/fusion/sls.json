@@ -1,8 +1,8 @@
 {
   "has_fire": true,
-  "summary": "Fire is actively spreading, and emergency services are engaged in suppression efforts near civilian vehicles.",
+  "summary": "Fire is actively spreading and heat conditions are complicating suppression efforts near civilian vehicles.",
   "counts_by_class": {
-    "person": 9,
+    "person": 10,
     "normal_vehicle": 3,
     "emergency_vehicle": 1
   },
@@ -47,9 +47,9 @@
       "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": "radio reports 7 civilian(s) at safe distance; matched to persons farther from fire"
+        "text": "Fifth closest person; inferred as civilian."
       },
-      "role_confidence": 0.75,
+      "role_confidence": 0.8,
       "traffic_demand_mbps": 0.3
     },
     {
@@ -71,9 +71,9 @@
       "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": "radio reports 7 civilian(s) at safe distance; matched to persons farther from fire"
+        "text": "Eighth closest person; inferred as civilian."
       },
-      "role_confidence": 0.75,
+      "role_confidence": 0.7,
       "traffic_demand_mbps": 0.3
     },
     {
@@ -95,9 +95,9 @@
       "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": "radio reports 7 civilian(s) at safe distance; matched to persons farther from fire"
+        "text": "Sixth closest person; inferred as civilian."
       },
-      "role_confidence": 0.75,
+      "role_confidence": 0.7,
       "traffic_demand_mbps": 0.3
     },
     {
@@ -119,9 +119,9 @@
       "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": "radio reports 7 civilian(s) at safe distance; matched to persons farther from fire"
+        "text": "Fourth closest person; inferred as civilian based on proximity rank and lack of responder designation."
       },
-      "role_confidence": 0.75,
+      "role_confidence": 0.7,
       "traffic_demand_mbps": 0.3
     },
     {
@@ -143,9 +143,9 @@
       "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": "radio reports 7 civilian(s) at safe distance; matched to persons farther from fire"
+        "text": "Seventh closest person; inferred as civilian."
       },
-      "role_confidence": 0.75,
+      "role_confidence": 0.8,
       "traffic_demand_mbps": 0.3
     },
     {
@@ -167,9 +167,9 @@
       "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": "radio reports 7 civilian(s) at safe distance; matched to persons farther from fire"
+        "text": "Third closest person; not the closest and no specific role assigned by radio implies civilian status."
       },
-      "role_confidence": 0.75,
+      "role_confidence": 0.8,
       "traffic_demand_mbps": 0.3
     },
     {
@@ -188,12 +188,12 @@
       "distance_to_fire": "57.56 m",
       "risk_level": "medium",
       "throughput_need": "low",
-      "inferred_role": "civilian",
+      "inferred_role": "unknown_person",
       "role_inference_basis": {
         "source": "inference",
-        "text": "radio reports 7 civilian(s) at safe distance; matched to persons farther from fire"
+        "text": "visual_detection"
       },
-      "role_confidence": 0.75,
+      "role_confidence": null,
       "traffic_demand_mbps": 0.3
     },
     {
@@ -212,12 +212,12 @@
       "distance_to_fire": "49.26 m",
       "risk_level": "medium",
       "throughput_need": "medium",
-      "inferred_role": "firefighter",
+      "inferred_role": "possible_responder",
       "role_inference_basis": {
         "source": "inference",
-        "text": "engine_1, rescue_2 on scene per radio (command is off-scene support); assigned to closest person near fire"
+        "text": "Second closest person, inferred as a responder based on scene context."
       },
-      "role_confidence": 0.85,
+      "role_confidence": 0.9,
       "traffic_demand_mbps": 1.0
     },
     {
@@ -239,9 +239,9 @@
       "inferred_role": "firefighter",
       "role_inference_basis": {
         "source": "inference",
-        "text": "engine_1, rescue_2 on scene per radio (command is off-scene support); assigned to closest person near fire"
+        "text": "Proximity rank is 1 (closest to fire), and on-scene field units exist (Engine 1, Rescue 2). Rule 1 applies."
       },
-      "role_confidence": 0.85,
+      "role_confidence": 1.0,
       "traffic_demand_mbps": 1.0
     },
     {
@@ -315,6 +315,20 @@
       "risk_level": "medium",
       "throughput_need": "medium",
       "traffic_demand_mbps": 2.0
+    },
+    {
+      "class": "person",
+      "audio_only": true,
+      "reason": "radio mentions 7 civilian(s); 6 labeled civilian visually; gap-fill for occluded / not visible civilian",
+      "risk_level": "medium",
+      "throughput_need": "low",
+      "inferred_role": "civilian",
+      "role_inference_basis": {
+        "source": "inference",
+        "text": "no role inferred from radio or proximity"
+      },
+      "role_confidence": null,
+      "traffic_demand_mbps": 0.3
     }
   ]
 }

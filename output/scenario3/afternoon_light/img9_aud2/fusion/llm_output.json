@@ -1,8 +1,8 @@
 {
   "has_fire": true,
-  "summary": "Firefighters are coordinating operations near a structure, confirming visibility limitations beyond the fire front.",
+  "summary": "Emergency responders are coordinating assessment of a wildfire and a civilian near a house.",
   "counts_by_class": {
-    "person": 2,
+    "person": 0,
     "normal_vehicle": 0,
     "emergency_vehicle": 1
   },
@@ -25,7 +25,15 @@
     "service_types": [
       "voice"
     ],
-    "service_inference_basis": []
+    "service_inference_basis": [],
+    "objects": [
+      {
+        "id": 0,
+        "class": "emergency_vehicle",
+        "risk_level": "medium",
+        "throughput_need": "medium"
+      }
+    ]
   },
   "objects": [
     {
@@ -44,32 +52,6 @@
       "distance_to_fire": "23.92 m",
       "risk_level": "medium",
       "throughput_need": "medium"
-    },
-    {
-      "class": "person",
-      "audio_only": true,
-      "reason": "radio indicates 2 on-scene responder(s); 0 matched visually as firefighter",
-      "risk_level": "medium",
-      "throughput_need": "low",
-      "inferred_role": "firefighter",
-      "role_inference_basis": {
-        "source": "inference",
-        "text": ""
-      },
-      "role_confidence": null
-    },
-    {
-      "class": "person",
-      "audio_only": true,
-      "reason": "radio indicates 2 on-scene responder(s); 0 matched visually as firefighter",
-      "risk_level": "medium",
-      "throughput_need": "low",
-      "inferred_role": "firefighter",
-      "role_inference_basis": {
-        "source": "inference",
-        "text": ""
-      },
-      "role_confidence": null
     }
   ]
 }

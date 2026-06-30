@@ -1,0 +1,9 @@
+path: perception/vision/input
+
+val: images
+train: images
+
+names:
+  0: person
+  1: vehicle
+  2: emergency_vehicle

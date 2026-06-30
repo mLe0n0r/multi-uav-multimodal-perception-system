@@ -1,6 +1,6 @@
 {
   "has_fire": true,
-  "summary": "A brush fire is active near a two-lane highway with multiple blocked vehicles and civilians outside vehicles.",
+  "summary": "A brush fire is active near a highway where multiple vehicles are blocked and civilians are present outside their vehicles.",
   "counts_by_class": {
     "person": 11,
     "normal_vehicle": 17,
@@ -324,13 +324,13 @@
       },
       "distance_to_fire": "9.00 m",
       "risk_level": "medium",
-      "throughput_need": "low",
-      "inferred_role": null,
+      "inferred_role": "firefighter",
       "role_inference_basis": {
         "source": "inference",
-        "text": ""
+        "text": "ROLE_CONTEXT.has_fire is true and no on-scene field units exist, but the closest person (rank 1) must be assigned as a responder based on general scene context."
       },
-      "role_confidence": null
+      "role_confidence": null,
+      "throughput_need": "medium"
     },
     {
       "class": "person",
@@ -347,13 +347,13 @@
       },
       "distance_to_fire": "9.56 m",
       "risk_level": "medium",
-      "throughput_need": "low",
-      "inferred_role": null,
+      "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": ""
+        "text": "Rank 2 civilian."
       },
-      "role_confidence": null
+      "role_confidence": 0.95,
+      "throughput_need": "low"
     },
     {
       "class": "person",
@@ -370,13 +370,13 @@
       },
       "distance_to_fire": "10.69 m",
       "risk_level": "medium",
-      "throughput_need": "low",
-      "inferred_role": null,
+      "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": ""
+        "text": "Rank 3 civilian."
       },
-      "role_confidence": null
+      "role_confidence": 0.95,
+      "throughput_need": "low"
     },
     {
       "class": "person",
@@ -393,13 +393,13 @@
       },
       "distance_to_fire": "24.97 m",
       "risk_level": "medium",
-      "throughput_need": "low",
-      "inferred_role": null,
+      "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": ""
+        "text": "Rank 8 civilian."
       },
-      "role_confidence": null
+      "role_confidence": 0.95,
+      "throughput_need": "low"
     },
     {
       "class": "person",
@@ -416,13 +416,13 @@
       },
       "distance_to_fire": "28.71 m",
       "risk_level": "medium",
-      "throughput_need": "low",
-      "inferred_role": null,
+      "inferred_role": "unknown_person",
       "role_inference_basis": {
         "source": "inference",
-        "text": ""
+        "text": "no role inferred from radio or proximity"
       },
-      "role_confidence": null
+      "role_confidence": null,
+      "throughput_need": "low"
     },
     {
       "class": "person",
@@ -439,13 +439,13 @@
       },
       "distance_to_fire": "25.15 m",
       "risk_level": "medium",
-      "throughput_need": "low",
-      "inferred_role": null,
+      "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": ""
+        "text": "Rank 9 civilian."
       },
-      "role_confidence": null
+      "role_confidence": 0.95,
+      "throughput_need": "low"
     },
     {
       "class": "person",
@@ -462,13 +462,13 @@
       },
       "distance_to_fire": "17.96 m",
       "risk_level": "medium",
-      "throughput_need": "low",
-      "inferred_role": null,
+      "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": ""
+        "text": "Rank 5 civilian."
       },
-      "role_confidence": null
+      "role_confidence": 0.95,
+      "throughput_need": "low"
     },
     {
       "class": "person",
@@ -485,13 +485,13 @@
       },
       "distance_to_fire": "21.05 m",
       "risk_level": "medium",
-      "throughput_need": "low",
-      "inferred_role": null,
+      "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": ""
+        "text": "Rank 6 civilian."
       },
-      "role_confidence": null
+      "role_confidence": 0.95,
+      "throughput_need": "low"
     },
     {
       "class": "person",
@@ -508,13 +508,13 @@
       },
       "distance_to_fire": "28.03 m",
       "risk_level": "medium",
-      "throughput_need": "low",
-      "inferred_role": null,
+      "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": ""
+        "text": "Rank 10 civilian."
       },
-      "role_confidence": null
+      "role_confidence": 0.95,
+      "throughput_need": "low"
     },
     {
       "class": "person",
@@ -531,13 +531,13 @@
       },
       "distance_to_fire": "16.29 m",
       "risk_level": "medium",
-      "throughput_need": "low",
-      "inferred_role": null,
+      "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": ""
+        "text": "Rank 4 civilian."
       },
-      "role_confidence": null
+      "role_confidence": 0.95,
+      "throughput_need": "low"
     },
     {
       "class": "person",
@@ -554,13 +554,16 @@
       },
       "distance_to_fire": "24.17 m",
       "risk_level": "medium",
-      "throughput_need": "low",
-      "inferred_role": null,
+      "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": ""
+        "text": "Rank 7 civilian."
       },
-      "role_confidence": null
+      "role_confidence": 0.95,
+      "throughput_need": "low"
     }
-  ]
+  ],
+  "_metadata": {
+    "role_assignment_llm_applied": true
+  }
 }

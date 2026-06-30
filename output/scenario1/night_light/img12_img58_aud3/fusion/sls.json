@@ -1,9 +1,9 @@
 {
   "has_fire": true,
-  "summary": "Fire is active near vehicles and structures, with emergency services coordinating suppression and ensuring civilian safety.",
+  "summary": "Two vehicles are involved in a fire near a structure, with civilians located at a safe distance.",
   "counts_by_class": {
-    "person": 6,
-    "normal_vehicle": 8,
+    "person": 4,
+    "normal_vehicle": 3,
     "emergency_vehicle": 0
   },
   "communications": {
@@ -25,27 +25,7 @@
     "service_types": [
       "voice"
     ],
-    "service_inference_basis": [],
-    "objects": [
-      {
-        "id": 0,
-        "class": "normal_vehicle",
-        "risk_level": "medium",
-        "throughput_need": "medium"
-      },
-      {
-        "id": 1,
-        "class": "normal_vehicle",
-        "risk_level": "medium",
-        "throughput_need": "medium"
-      },
-      {
-        "id": 2,
-        "class": "normal_vehicle",
-        "risk_level": "low",
-        "throughput_need": "low"
-      }
-    ]
+    "service_inference_basis": []
   },
   "objects": [
     {
@@ -106,7 +86,7 @@
       "class": "person",
       "detection_confidence": "0.77",
       "position": {
-        "x": "-226.23 m",
+        "x": "-226.22 m",
         "y": "-39.94 m",
         "z": "3.68 m"
       },
@@ -120,9 +100,9 @@
       "inferred_role": "firefighter",
       "role_inference_basis": {
         "source": "inference",
-        "text": "engine_1, rescue_2 on scene per radio (command is off-scene support); assigned to closest person near fire"
+        "text": "Proximity rank 1 (closest to fire) is assigned the role of firefighter because on-scene field units exist and this person is closest to the fire."
       },
-      "role_confidence": 0.85,
+      "role_confidence": 1.0,
       "throughput_need": "medium",
       "traffic_demand_mbps": 1.0
     },
@@ -131,8 +111,8 @@
       "detection_confidence": "0.50",
       "position": {
         "x": "-224.87 m",
-        "y": "-54.65 m",
-        "z": "-2.42 m"
+        "y": "-54.66 m",
+        "z": "-2.44 m"
       },
       "localization_confidence": {
         "x": "0.74",
@@ -144,9 +124,9 @@
       "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": "radio reports 2 civilian(s) at safe distance; matched to persons farther from fire"
+        "text": "This person is assigned the role of civilian based on proximity rank and lack of responder status."
       },
-      "role_confidence": 0.75,
+      "role_confidence": 1.0,
       "throughput_need": "low",
       "traffic_demand_mbps": 0.3
     },
@@ -165,13 +145,13 @@
       },
       "distance_to_fire": "11.90 m",
       "risk_level": "medium",
-      "throughput_need": "low",
       "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": "radio reports 2 civilian(s) at safe distance; matched to persons farther from fire"
+        "text": "This person is assigned the role of civilian as they are further from the fire and not identified as an active responder."
       },
-      "role_confidence": 0.75,
+      "role_confidence": 1.0,
+      "throughput_need": "low",
       "traffic_demand_mbps": 0.3
     },
     {
@@ -189,82 +169,14 @@
       },
       "distance_to_fire": "5.73 m",
       "risk_level": "medium",
-      "throughput_need": "medium",
-      "inferred_role": "firefighter",
+      "inferred_role": "possible_responder",
       "role_inference_basis": {
         "source": "inference",
-        "text": "engine_1, rescue_2 on scene per radio (command is off-scene support); assigned to closest person near fire"
+        "text": "The second closest person is inferred as a possible responder based on the presence of two on-scene responders operating at the fire."
       },
-      "role_confidence": 0.85,
+      "role_confidence": 0.95,
+      "throughput_need": "medium",
       "traffic_demand_mbps": 1.0
-    },
-    {
-      "class": "person",
-      "audio_only": true,
-      "reason": "radio indicates 2 on-scene responder(s); 0 matched visually as firefighter",
-      "risk_level": "medium",
-      "throughput_need": "low",
-      "inferred_role": "firefighter",
-      "role_inference_basis": {
-        "source": "inference",
-        "text": ""
-      },
-      "role_confidence": null,
-      "traffic_demand_mbps": 0.3
-    },
-    {
-      "class": "person",
-      "audio_only": true,
-      "reason": "radio indicates 2 on-scene responder(s); 0 matched visually as firefighter",
-      "risk_level": "medium",
-      "throughput_need": "low",
-      "inferred_role": "firefighter",
-      "role_inference_basis": {
-        "source": "inference",
-        "text": ""
-      },
-      "role_confidence": null,
-      "traffic_demand_mbps": 0.3
-    },
-    {
-      "class": "normal_vehicle",
-      "audio_only": true,
-      "reason": "radio explicitly mentions 6 normal vehicle(s); 1 detected visually",
-      "risk_level": "medium",
-      "throughput_need": "low",
-      "traffic_demand_mbps": 0.3
-    },
-    {
-      "class": "normal_vehicle",
-      "audio_only": true,
-      "reason": "radio explicitly mentions 6 normal vehicle(s); 1 detected visually",
-      "risk_level": "medium",
-      "throughput_need": "low",
-      "traffic_demand_mbps": 0.3
-    },
-    {
-      "class": "normal_vehicle",
-      "audio_only": true,
-      "reason": "radio explicitly mentions 6 normal vehicle(s); 1 detected visually",
-      "risk_level": "medium",
-      "throughput_need": "low",
-      "traffic_demand_mbps": 0.3
-    },
-    {
-      "class": "normal_vehicle",
-      "audio_only": true,
-      "reason": "radio explicitly mentions 6 normal vehicle(s); 1 detected visually",
-      "risk_level": "medium",
-      "throughput_need": "medium",
-      "traffic_demand_mbps": 0.3
-    },
-    {
-      "class": "normal_vehicle",
-      "audio_only": true,
-      "reason": "radio explicitly mentions 6 normal vehicle(s); 1 detected visually",
-      "risk_level": "medium",
-      "throughput_need": "medium",
-      "traffic_demand_mbps": 0.3
     }
   ]
 }

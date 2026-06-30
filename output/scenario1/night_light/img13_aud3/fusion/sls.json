@@ -1,9 +1,9 @@
 {
   "has_fire": true,
-  "summary": "Firefighters are actively suppressing vehicle fires near a structure, with civilians located at a safe distance.",
+  "summary": "Emergency services are coordinating fire suppression efforts near vehicles and civilians.",
   "counts_by_class": {
-    "person": 4,
-    "normal_vehicle": 6,
+    "person": 3,
+    "normal_vehicle": 3,
     "emergency_vehicle": 1
   },
   "communications": {
@@ -43,14 +43,14 @@
       },
       "distance_to_fire": "6.35 m",
       "risk_level": "medium",
-      "throughput_need": "medium",
-      "inferred_role": "firefighter",
+      "throughput_need": "low",
+      "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": "engine_1, rescue_2 on scene per radio (command is off-scene support); assigned to closest person near fire"
+        "text": "Person ID 0 is the second closest to the fire (proximity_rank == 2). They are described as civilians at safe distance by radio signals. Rule 2 applies."
       },
-      "role_confidence": 0.85,
-      "traffic_demand_mbps": 1.0
+      "role_confidence": 1.0,
+      "traffic_demand_mbps": 0.3
     },
     {
       "class": "person",
@@ -71,9 +71,9 @@
       "inferred_role": "firefighter",
       "role_inference_basis": {
         "source": "inference",
-        "text": "engine_1, rescue_2 on scene per radio (command is off-scene support); assigned to closest person near fire"
+        "text": "Person ID 1 has proximity_rank == 1 (closest to fire), and there are on-scene field units/responders present. Rule 1 dictates the closest person is the responder operating at the fire."
       },
-      "role_confidence": 0.85,
+      "role_confidence": 1.0,
       "traffic_demand_mbps": 1.0
     },
     {
@@ -95,9 +95,9 @@
       "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": "radio reports 2 civilian(s) at safe distance; matched to persons farther from fire"
+        "text": "Person ID 2 is the third closest and is also described in context of civilian location/safety (Rule 2)."
       },
-      "role_confidence": 0.75,
+      "role_confidence": 1.0,
       "traffic_demand_mbps": 0.3
     },
     {
@@ -137,23 +137,9 @@
       "traffic_demand_mbps": 2.0
     },
     {
-      "class": "person",
-      "audio_only": true,
-      "reason": "radio reports 2 civilian(s) at safe distance; 1 matched visually as civilian",
-      "risk_level": "medium",
-      "throughput_need": "low",
-      "inferred_role": "civilian",
-      "role_inference_basis": {
-        "source": "inference",
-        "text": ""
-      },
-      "role_confidence": null,
-      "traffic_demand_mbps": 0.3
-    },
-    {
       "class": "normal_vehicle",
       "audio_only": true,
-      "reason": "radio explicitly mentions 6 normal vehicle(s); 1 detected visually",
+      "reason": "radio explicitly mentions 3 normal vehicle(s); 1 detected visually",
       "risk_level": "medium",
       "throughput_need": "low",
       "traffic_demand_mbps": 0.3
@@ -161,31 +147,7 @@
     {
       "class": "normal_vehicle",
       "audio_only": true,
-      "reason": "radio explicitly mentions 6 normal vehicle(s); 1 detected visually",
-      "risk_level": "medium",
-      "throughput_need": "low",
-      "traffic_demand_mbps": 0.3
-    },
-    {
-      "class": "normal_vehicle",
-      "audio_only": true,
-      "reason": "radio explicitly mentions 6 normal vehicle(s); 1 detected visually",
-      "risk_level": "medium",
-      "throughput_need": "low",
-      "traffic_demand_mbps": 0.3
-    },
-    {
-      "class": "normal_vehicle",
-      "audio_only": true,
-      "reason": "radio explicitly mentions 6 normal vehicle(s); 1 detected visually",
-      "risk_level": "medium",
-      "throughput_need": "low",
-      "traffic_demand_mbps": 0.3
-    },
-    {
-      "class": "normal_vehicle",
-      "audio_only": true,
-      "reason": "radio explicitly mentions 6 normal vehicle(s); 1 detected visually",
+      "reason": "radio explicitly mentions 3 normal vehicle(s); 1 detected visually",
       "risk_level": "medium",
       "throughput_need": "low",
       "traffic_demand_mbps": 0.3

@@ -1,4 +1,3 @@
-"""Core matching logic ported from objectMatching.ipynb (cells 2-10)."""
 from __future__ import annotations
 
 import math
@@ -11,7 +10,6 @@ import numpy as np
 from scipy.optimize import linear_sum_assignment
 
 
-# --- notebook code cell 1 ---
 FOV_X_DEG = 90.0
 GROUND_Z = 0.0
 
@@ -37,7 +35,6 @@ MAX_MULTIPLIER = {
     2: 1.25,   # emergency_vehicle
 }
 
-# --- notebook code cell 3 ---
 def intrinsics_from_fov(W, H, fov_x_deg):
     fx = W / (2.0 * np.tan(np.deg2rad(fov_x_deg) / 2.0))
     return np.array(
@@ -45,7 +42,6 @@ def intrinsics_from_fov(W, H, fov_x_deg):
         dtype=float,
     )
 
-# --- notebook code cell 4 ---
 def rotation_matrix(axis, angle_rad):
     c, s = np.cos(angle_rad), np.sin(angle_rad)
     mats = {
@@ -63,7 +59,6 @@ def rot_from_unreal(pitch_deg, yaw_deg, roll_deg):
     return rotation_matrix("z", yaw) @ rotation_matrix("y", pitch) @ rotation_matrix("x", roll)
 
 
-# --- notebook: data loading (objectMatching.ipynb cell 3) ---
 def load_yolo_labels(path: Union[str, Path]) -> List[Dict[str, Any]]:
     labels: List[Dict[str, Any]] = []
     with open(path, "r", encoding="utf-8") as f:
@@ -120,6 +115,22 @@ VISUAL_CLASS_TO_YOLO = {
     "emergency_vehicle": 2,
 }
 
+# YOLO class id 3 = fire (integration_pipeline.CLASS_NAME_TO_ID); never cross-view matched.
+YOLO_CLASS_FIRE = 3
+MATCHABLE_YOLO_CLASS_IDS = frozenset({0, 1, 2})
+EXCLUDED_VISUAL_CLASS_NAMES = frozenset({"fire", "fogo", "smoke"})
+
+
+def is_excluded_match_class(class_name_or_id: Any) -> bool:
+    if isinstance(class_name_or_id, (int, np.integer)):
+        return int(class_name_or_id) == YOLO_CLASS_FIRE
+    name = str(class_name_or_id).strip().lower()
+    return name in EXCLUDED_VISUAL_CLASS_NAMES
+
+
+def filter_matchable_labels(labels: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
+    return [lab for lab in labels if int(lab["class"]) in MATCHABLE_YOLO_CLASS_IDS]
+
 
 def labels_and_ids_from_visual(
     visual: Dict[str, Any],
@@ -134,6 +145,8 @@ def labels_and_ids_from_visual(
         if not bbox:
             continue
         cls_name = obj.get("class")
+        if is_excluded_match_class(cls_name):
+            continue
         cls = cmap.get(cls_name)
         if cls is None:
             continue
@@ -163,7 +176,7 @@ def load_frame(
     if img is None:
         raise FileNotFoundError(f"Não consegui carregar imagem: {img_path}")
 
-    labels = load_yolo_labels(label_path)
+    labels = filter_matchable_labels(load_yolo_labels(label_path))
     C_w, pitch, yaw, roll = load_telemetry(telemetry_path)
 
     H, W = img.shape[:2]
@@ -234,9 +247,7 @@ def load_frame_from_visual(
     }
 
 
-# --- notebook code cell 5 ---
 def yolo_to_xyxy(label, img_shape):
-    """Converte bbox YOLO para formato xyxy em píxeis."""
     H, W = img_shape[:2]
     xc, yc, bw, bh = label["xc"], label["yc"], label["w"], label["h"]
     return label["class"], np.array(
@@ -251,11 +262,9 @@ def yolo_to_xyxy(label, img_shape):
 
 
 def bbox_scale_single(det):
-    """Calcula escala de uma deteção pela diagonal da sua bbox."""
     x1, y1, x2, y2 = det["bbox"]
     return max(np.hypot(max(x2 - x1, 1.0), max(y2 - y1, 1.0)), 1.0)
 
-# --- notebook code cell 6 ---
 def ray_from_pixel_unreal(u, v, K, R_wc):
     """
     Pixel -> raio no mundo.
@@ -285,9 +294,6 @@ def ray_from_pixel_unreal(u, v, K, R_wc):
 
 
 def project_pixel_to_ground(u, v, frame, ground_z=0.0):
-    """
-    Projeta pixel para o plano z=ground_z.
-    """
 
     K = frame["K"]
     R_wc = frame["R_wc"]
@@ -309,9 +315,6 @@ def project_pixel_to_ground(u, v, frame, ground_z=0.0):
 
 
 def world_to_pixel_unreal(P_w, frame):
-    """
-    Projeta ponto 3D do mundo para pixel.
-    """
 
     K = frame["K"]
     R_wc = frame["R_wc"]
@@ -406,16 +409,7 @@ def enrich_matches_with_triangulation(matches, dets_a, frame_a, dets_b, frame_b)
 
     return matches
 
-# --- notebook code cell 7 ---
 def get_detection_geometry(frame):
-    """
-    Pré-calcula:
-    - classe
-    - bbox xyxy
-    - bottom-center
-    - ponto 3D no chão
-    """
-
     dets = []
 
     for i, label in enumerate(frame["labels"]):
@@ -443,11 +437,7 @@ def get_detection_geometry(frame):
 
     return dets
 
-# --- notebook code cell 8 ---
 def reprojection_distance_to_bbox(det_src, frame_dst, det_dst):
-    """
-    Projeta det_src para frame_dst e mede distância à bbox det_dst.
-    """
 
     if not det_src["valid_ground"]:
         return np.inf, None, None
@@ -466,10 +456,6 @@ def reprojection_distance_to_bbox(det_src, frame_dst, det_dst):
 
 
 def directional_uncertainty_multiplier(det_src, frame_src, frame_dst, cls):
-    """
-    Multiplicador de incerteza por direção (src -> dst).
-    Mantido fora de outras funções para leitura e reutilização mais simples.
-    """
     ray_z = abs(det_src.get("ray_z") or 0.0)
     theta_min = np.arcsin(np.clip(ray_z, 1e-6, 1.0))
     theta_eff = np.clip(theta_min, ANGLE_MIN_RAD, ANGLE_CLIP_RAD)
@@ -481,7 +467,6 @@ def directional_uncertainty_multiplier(det_src, frame_src, frame_dst, cls):
     raw_log = np.log1p(t_val / DIST_SCALE)
     u_dist = max(1.0, raw_log / max(ref_log, 1e-9))
 
-    # Diferença de perspetiva entre câmaras para esta direção.
     fwd_src = frame_src["R_wc"] @ np.array([1.0, 0.0, 0.0])
     fwd_dst = frame_dst["R_wc"] @ np.array([1.0, 0.0, 0.0])
     fwd_src /= np.linalg.norm(fwd_src)
@@ -507,7 +492,6 @@ def directional_uncertainty_multiplier(det_src, frame_src, frame_dst, cls):
 
 
 def symmetric_reprojection_cost_norm(det_a, frame_a, det_b, frame_b):
-    """Calcula custo simétrico normalizado pela bbox de destino em cada direção."""
 
     d_ab, pt_ab, _ = reprojection_distance_to_bbox(det_a, frame_b, det_b)
     d_ba, pt_ba, _ = reprojection_distance_to_bbox(det_b, frame_a, det_a)
@@ -552,9 +536,6 @@ def symmetric_reprojection_cost_norm(det_a, frame_a, det_b, frame_b):
 
 
 def build_reprojection_cost_matrix(frame_a, frame_b):
-    """
-    Constrói matriz de custo normalizado.
-    """
 
     dets_a = get_detection_geometry(frame_a)
     dets_b = get_detection_geometry(frame_b)
@@ -594,9 +575,7 @@ def build_reprojection_cost_matrix(frame_a, frame_b):
 
     return C, dets_a, dets_b, debug
 
-# --- notebook code cell 9 ---
 def _angle_factor(det_a, det_b):
-    """Estima incerteza por geometria do raio (vista rasante vs estável)."""
     ray_z_a = abs(det_a.get("ray_z") or 0.0)
     ray_z_b = abs(det_b.get("ray_z") or 0.0)
 
@@ -608,7 +587,6 @@ def _angle_factor(det_a, det_b):
 
 
 def _distance_factor(det_a, det_b):
-    """Estima incerteza por distância do objeto às câmaras."""
 
     def valid_t(det):
         t = det.get("t")
@@ -625,7 +603,6 @@ def _distance_factor(det_a, det_b):
 
 
 def _viewpoint_factor(frame_a, frame_b, cls):
-    """Estima incerteza por mudança de perspetiva entre câmaras."""
     fwd_a = frame_a["R_wc"] @ np.array([1.0, 0.0, 0.0])
     fwd_b = frame_b["R_wc"] @ np.array([1.0, 0.0, 0.0])
 
@@ -649,7 +626,6 @@ def _viewpoint_factor(frame_a, frame_b, cls):
     return 1.0 + t * (max_factor - 1.0)
 
 def dynamic_threshold(det_a, frame_a, det_b, frame_b, base_thresholds=REPROJ_THRESHOLDS_NORM):
-    """Calcula threshold dinâmico a partir de ângulo, distância e viewpoint."""
     cls = det_a["class"]
     base = base_thresholds.get(cls, 2.5)
 
@@ -669,9 +645,6 @@ def dynamic_threshold(det_a, frame_a, det_b, frame_b, base_thresholds=REPROJ_THR
 
 
 def match_frames_from_loaded(frame_a, frame_b, reproj_thresholds_norm=None):
-    """
-    Faz matching entre dois frames já carregados.
-    """
     if reproj_thresholds_norm is None:
         reproj_thresholds_norm = REPROJ_THRESHOLDS_NORM
 
@@ -762,6 +735,11 @@ def match_two_frames(
 
 
 def count_by_object_type_after_matching(matches, unmatched_a, unmatched_b, dets_a, dets_b):
+    """
+    Per notebook pair: one count per accepted match plus each unmatched detection
+    in frame A and frame B (|matches| + |unmatched_a| + |unmatched_b|), by class.
+    Used for CLI/debug on a single pair; fused cross_view totals use union-find on visuals.
+    """
     counts = {
         "person": 0,
         "vehicle": 0,

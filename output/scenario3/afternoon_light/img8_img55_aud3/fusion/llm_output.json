@@ -1,8 +1,8 @@
 {
   "has_fire": true,
-  "summary": "Two persons and an emergency vehicle are near a fire. Firefighters are on scene, and communication is ongoing.",
+  "summary": "Two responders are coordinating a search near a structure with heavy smoke and fire.",
   "counts_by_class": {
-    "person": 5,
+    "person": 3,
     "normal_vehicle": 0,
     "emergency_vehicle": 1
   },
@@ -21,7 +21,30 @@
     "service_types": [
       "voice"
     ],
-    "service_inference_basis": []
+    "service_inference_basis": [],
+    "objects": [
+      {
+        "id": 0,
+        "class": "emergency_vehicle",
+        "risk_level": "medium",
+        "throughput_need": "medium"
+      },
+      {
+        "id": 1,
+        "class": "person",
+        "risk_level": "medium"
+      },
+      {
+        "id": 2,
+        "class": "person",
+        "risk_level": "medium"
+      },
+      {
+        "id": 3,
+        "class": "person",
+        "risk_level": "medium"
+      }
+    ]
   },
   "objects": [
     {
@@ -56,13 +79,13 @@
       },
       "distance_to_fire": "22.33 m",
       "risk_level": "medium",
-      "throughput_need": "medium",
-      "inferred_role": "possible_responder",
+      "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": "person mentioned in communication"
+        "text": "This person is the third closest to the fire and inferred as a civilian since no specific firefighter role was assigned by proximity or radio context."
       },
-      "role_confidence": 0.5
+      "role_confidence": 0.8,
+      "throughput_need": "low"
     },
     {
       "class": "person",
@@ -79,13 +102,13 @@
       },
       "distance_to_fire": "14.77 m",
       "risk_level": "medium",
-      "throughput_need": "medium",
       "inferred_role": "firefighter",
       "role_inference_basis": {
         "source": "inference",
-        "text": "rescue_2 on scene per radio (command is off-scene support); assigned to closest person near fire"
+        "text": "Proximity rank is 1 (closest to fire), and an on-scene field unit exists (rescue_2) with a responder count of 1, implying this person is the closest responder operating at the fire."
       },
-      "role_confidence": 0.85
+      "role_confidence": 1.0,
+      "throughput_need": "medium"
     },
     {
       "class": "person",
@@ -102,39 +125,16 @@
       },
       "distance_to_fire": "16.92 m",
       "risk_level": "medium",
-      "throughput_need": "medium",
-      "inferred_role": "possible_responder",
+      "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": "person mentioned in communication"
+        "text": "This person is the second closest to the fire and not identified as the primary responder based on proximity rules."
       },
-      "role_confidence": 0.5
-    },
-    {
-      "class": "person",
-      "audio_only": true,
-      "reason": "radio indicates 2 on-scene responder(s); 0 matched visually as firefighter",
-      "risk_level": "medium",
-      "throughput_need": "low",
-      "inferred_role": "firefighter",
-      "role_inference_basis": {
-        "source": "inference",
-        "text": ""
-      },
-      "role_confidence": null
-    },
-    {
-      "class": "person",
-      "audio_only": true,
-      "reason": "radio indicates 2 on-scene responder(s); 0 matched visually as firefighter",
-      "risk_level": "medium",
-      "throughput_need": "medium",
-      "inferred_role": "firefighter",
-      "role_inference_basis": {
-        "source": "inference",
-        "text": ""
-      },
-      "role_confidence": null
+      "role_confidence": 0.95,
+      "throughput_need": "low"
     }
-  ]
+  ],
+  "_metadata": {
+    "role_assignment_llm_applied": true
+  }
 }

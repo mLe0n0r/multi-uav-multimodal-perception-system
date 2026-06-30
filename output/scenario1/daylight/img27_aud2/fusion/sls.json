@@ -1,6 +1,6 @@
 {
   "has_fire": true,
-  "summary": "Emergency responders are coordinating cooling operations on vehicles near a fire while maintaining observation of civilians.",
+  "summary": "Fire is active on two vehicles near the scene, and civilians are at a safe distance.",
   "counts_by_class": {
     "person": 4,
     "normal_vehicle": 3,
@@ -43,9 +43,9 @@
       "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": "radio reports 2 civilian(s) at safe distance; matched to persons farther from fire"
+        "text": "Remaining persons are assigned as civilians based on proximity and lack of responder role."
       },
-      "role_confidence": 0.75,
+      "role_confidence": 1.0,
       "traffic_demand_mbps": 0.3
     },
     {
@@ -64,12 +64,12 @@
       "distance_to_fire": "9.69 m",
       "risk_level": "medium",
       "throughput_need": "low",
-      "inferred_role": "unknown_person",
+      "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": "visual_detection"
+        "text": "Civilians mentioned in radio context; not the closest person to the fire."
       },
-      "role_confidence": null,
+      "role_confidence": 1.0,
       "traffic_demand_mbps": 0.3
     },
     {
@@ -91,9 +91,9 @@
       "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": "radio reports 2 civilian(s) at safe distance; matched to persons farther from fire"
+        "text": "Civilians mentioned in radio context; not the closest person to the fire."
       },
-      "role_confidence": 0.75,
+      "role_confidence": 1.0,
       "traffic_demand_mbps": 0.3
     },
     {
@@ -115,9 +115,9 @@
       "inferred_role": "firefighter",
       "role_inference_basis": {
         "source": "inference",
-        "text": "engine_1 on scene per radio (command is off-scene support); assigned to closest person near fire"
+        "text": "Proximity rank 1 (closest to fire) and on-scene field unit exists implies the closest person is the responder operating at the fire."
       },
-      "role_confidence": 0.85,
+      "role_confidence": 1.0,
       "traffic_demand_mbps": 1.0
     },
     {

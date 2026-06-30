@@ -1,17 +1,28 @@
 {
-  "text": "The speaker is asking for information about a situation involving a pileup and a response, likely in an emergency context. The dialogue involves a request for status updates and a confirmation of the scene's condition.",
-  "segments": [
-    {
-      "start": 0.0,
-      "end": 5.1,
-      "text": "The speaker is asking for information about a situation involving a pileup and a response, likely in an emergency context."
-    },
-    {
-      "start": 5.1,
-      "end": 10.1,
-      "text": "The dialogue involves a request for status updates and a confirmation of the scene's condition."
-    }
-  ],
+  "has_fire": false,
+  "summary": "A rescue team is coordinating an assessment of a major vehicle pileup and fire scene.",
+  "counts_by_class": {
+    "person": 2,
+    "normal_vehicle": 19,
+    "emergency_vehicle": 1
+  },
+  "communications": {
+    "speaker_count": 2,
+    "key_communications": [
+      {
+        "text": "Rescue 2 here command.",
+        "speaker": "SPEAKER_01"
+      },
+      {
+        "text": "Command here, rescue two.",
+        "speaker": "SPEAKER_00"
+      }
+    ],
+    "service_types": [
+      "voice"
+    ],
+    "service_inference_basis": []
+  },
   "objects": [
     {
       "class": "normal_vehicle",
@@ -30,28 +41,6 @@
       "throughput_need": "low"
     },
     {
-      "class": "person",
-      "detection_confidence": "0.52",
-      "position": {
-        "x": "-72.68 m",
-        "y": "89.24 m",
-        "z": "0.00 m"
-      },
-      "localization_confidence": {
-        "x": "0.44",
-        "y": "0.46",
-        "z": "1.00"
-      },
-      "risk_level": "medium",
-      "throughput_need": "low",
-      "inferred_role": "unknown_person",
-      "role_inference_basis": {
-        "source": "inference",
-        "text": "visual_detection"
-      },
-      "role_confidence": null
-    },
-    {
       "class": "normal_vehicle",
       "detection_confidence": "0.85",
       "position": {
@@ -62,22 +51,6 @@
       "localization_confidence": {
         "x": "0.18",
         "y": "0.07",
-        "z": "1.00"
-      },
-      "risk_level": "medium",
-      "throughput_need": "low"
-    },
-    {
-      "class": "normal_vehicle",
-      "detection_confidence": "0.93",
-      "position": {
-        "x": "-69.18 m",
-        "y": "81.36 m",
-        "z": "0.00 m"
-      },
-      "localization_confidence": {
-        "x": "0.05",
-        "y": "0.11",
         "z": "1.00"
       },
       "risk_level": "medium",
@@ -101,22 +74,6 @@
     },
     {
       "class": "normal_vehicle",
-      "detection_confidence": "0.93",
-      "position": {
-        "x": "-68.38 m",
-        "y": "94.43 m",
-        "z": "0.00 m"
-      },
-      "localization_confidence": {
-        "x": "0.06",
-        "y": "0.09",
-        "z": "1.00"
-      },
-      "risk_level": "medium",
-      "throughput_need": "low"
-    },
-    {
-      "class": "normal_vehicle",
       "detection_confidence": "0.83",
       "position": {
         "x": "-96.93 m",
@@ -126,22 +83,6 @@
       "localization_confidence": {
         "x": "0.23",
         "y": "0.12",
-        "z": "1.00"
-      },
-      "risk_level": "medium",
-      "throughput_need": "low"
-    },
-    {
-      "class": "normal_vehicle",
-      "detection_confidence": "0.93",
-      "position": {
-        "x": "-59.74 m",
-        "y": "83.68 m",
-        "z": "0.00 m"
-      },
-      "localization_confidence": {
-        "x": "0.03",
-        "y": "0.09",
         "z": "1.00"
       },
       "risk_level": "medium",
@@ -165,22 +106,6 @@
     },
     {
       "class": "normal_vehicle",
-      "detection_confidence": "0.75",
-      "position": {
-        "x": "-78.01 m",
-        "y": "93.82 m",
-        "z": "0.00 m"
-      },
-      "localization_confidence": {
-        "x": "0.08",
-        "y": "0.11",
-        "z": "1.00"
-      },
-      "risk_level": "medium",
-      "throughput_need": "low"
-    },
-    {
-      "class": "normal_vehicle",
       "detection_confidence": "0.76",
       "position": {
         "x": "-94.91 m",
@@ -190,22 +115,6 @@
       "localization_confidence": {
         "x": "0.12",
         "y": "0.05",
-        "z": "1.00"
-      },
-      "risk_level": "medium",
-      "throughput_need": "low"
-    },
-    {
-      "class": "normal_vehicle",
-      "detection_confidence": "0.64",
-      "position": {
-        "x": "-84.98 m",
-        "y": "102.84 m",
-        "z": "0.00 m"
-      },
-      "localization_confidence": {
-        "x": "0.17",
-        "y": "0.14",
         "z": "1.00"
       },
       "risk_level": "medium",
@@ -311,9 +220,9 @@
       "class": "normal_vehicle",
       "detection_confidence": "0.48",
       "position": {
-        "x": "-97.17 m",
-        "y": "118.41 m",
-        "z": "0.00 m"
+        "x": "-95.04 m",
+        "y": "95.48 m",
+        "z": "-5.54 m"
       },
       "localization_confidence": {
         "x": "0.16",
@@ -327,9 +236,9 @@
       "class": "normal_vehicle",
       "detection_confidence": "0.47",
       "position": {
-        "x": "-99.22 m",
-        "y": "119.56 m",
-        "z": "0.00 m"
+        "x": "-89.16 m",
+        "y": "106.50 m",
+        "z": "-4.06 m"
       },
       "localization_confidence": {
         "x": "0.15",
@@ -372,40 +281,97 @@
       "throughput_need": "low"
     },
     {
-      "class": "person",
-      "audio_only": true,
-      "reason": "radio indicates 1 on-scene responder(s); 0 matched visually as firefighter",
+      "class": "normal_vehicle",
+      "detection_confidence": "0.93",
+      "position": {
+        "x": "-69.18 m",
+        "y": "81.36 m",
+        "z": "0.00 m"
+      },
+      "localization_confidence": {
+        "x": "0.05",
+        "y": "0.11",
+        "z": "1.00"
+      },
       "risk_level": "medium",
-      "throughput_need": "medium",
-      "inferred_role": "firefighter",
+      "throughput_need": "low"
+    },
+    {
+      "class": "normal_vehicle",
+      "detection_confidence": "0.93",
+      "position": {
+        "x": "-68.38 m",
+        "y": "94.43 m",
+        "z": "0.00 m"
+      },
+      "localization_confidence": {
+        "x": "0.06",
+        "y": "0.09",
+        "z": "1.00"
+      },
+      "risk_level": "medium",
+      "throughput_need": "low"
+    },
+    {
+      "class": "normal_vehicle",
+      "detection_confidence": "0.93",
+      "position": {
+        "x": "-59.74 m",
+        "y": "83.68 m",
+        "z": "0.00 m"
+      },
+      "localization_confidence": {
+        "x": "0.03",
+        "y": "0.09",
+        "z": "1.00"
+      },
+      "risk_level": "medium",
+      "throughput_need": "low"
+    },
+    {
+      "class": "person",
+      "detection_confidence": "0.52",
+      "position": {
+        "x": "-72.68 m",
+        "y": "89.24 m",
+        "z": "0.00 m"
+      },
+      "localization_confidence": {
+        "x": "0.44",
+        "y": "0.46",
+        "z": "1.00"
+      },
+      "risk_level": "medium",
+      "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": ""
+        "text": "No fire is present (ROLE_CONTEXT.has_fire=false). Since there are no on-scene field units or responders operating at the fire, and the person is the only visual person, they are classified as a civilian."
       },
-      "role_confidence": null
+      "role_confidence": 1.0,
+      "throughput_need": "low"
+    },
+    {
+      "class": "person",
+      "audio_only": true,
+      "reason": "The radio transcript mentions two people being treated at the fire truck, implying these individuals are civilians. Since only one visual person exists, we infer that the other mentioned persons are either occluded or at safe distance but not visible.",
+      "inferred_role": "civilian",
+      "role_inference_basis": {
+        "source": "inference",
+        "text": "Transcript indicates 'Two people are being treated at the fire truck.' This suggests civilian presence beyond what is visually confirmed."
+      },
+      "role_confidence": 0.9,
+      "risk_level": "medium",
+      "throughput_need": "low"
+    },
+    {
+      "class": "emergency_vehicle",
+      "audio_only": true,
+      "reason": "radio explicitly mentions 1 emergency vehicle(s); 0 detected visually",
+      "risk_level": "medium",
+      "throughput_need": "medium"
     }
   ],
-  "communications": {
-    "speaker_count": 2,
-    "service_types": [
-      "voice"
-    ],
-    "key_communications": [
-      {
-        "text": "Rescue 2 here command.",
-        "speaker": "SPEAKER_01"
-      },
-      {
-        "text": "Command here, rescue two.",
-        "speaker": "SPEAKER_00"
-      }
-    ],
-    "service_inference_basis": []
-  },
-  "counts_by_class": {
-    "person": 2,
-    "normal_vehicle": 21,
-    "emergency_vehicle": 0
-  },
-  "has_fire": false
+  "_metadata": {
+    "role_assignment_llm_applied": true
+  }
 }

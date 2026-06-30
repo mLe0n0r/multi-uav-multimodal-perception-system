@@ -1,5 +1,8 @@
 {
   "same_incident": true,
+  "same_incident_camera_distance_m": 25.25,
+  "same_incident_footprint_overlap": 0.1526,
+  "same_incident_criterion": "camera_distance",
   "views": [
     "img4",
     "img7"
@@ -462,8 +465,8 @@
       "id_b": 2,
       "position": {
         "x": "-102.17 m",
-        "y": "-8.96 m",
-        "z": "-0.48 m"
+        "y": "-8.97 m",
+        "z": "-0.47 m"
       }
     },
     {
@@ -485,7 +488,7 @@
       "position": {
         "x": "-101.59 m",
         "y": "-10.61 m",
-        "z": "0.11 m"
+        "z": "0.12 m"
       }
     },
     {
@@ -511,7 +514,7 @@
       }
     }
   ],
-  "notebook_counts_after_match": {
+  "counts_after_match": {
     "person": 9,
     "vehicle": 3,
     "emergency_vehicle": 1

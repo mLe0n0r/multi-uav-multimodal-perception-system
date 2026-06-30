@@ -1,6 +1,6 @@
 {
   "has_fire": true,
-  "summary": "Multiple vehicles and several persons are present near an active brush fire in a wooded area.",
+  "summary": "A brush fire is active near a two-lane highway where multiple vehicles are blocked and civilians are present outside them.",
   "counts_by_class": {
     "person": 8,
     "normal_vehicle": 12,
@@ -25,7 +25,7 @@
       "detection_confidence": "0.92",
       "position": {
         "x": "-5.75 m",
-        "y": "136.28 m",
+        "y": "136.29 m",
         "z": "-0.21 m"
       },
       "localization_confidence": {
@@ -34,7 +34,7 @@
         "z": "1.00"
       },
       "distance_to_fire": "17.39 m",
-      "risk_level": "medium",
+      "risk_level": "low",
       "throughput_need": "low"
     },
     {
@@ -51,7 +51,7 @@
         "z": "1.00"
       },
       "distance_to_fire": "10.85 m",
-      "risk_level": "medium",
+      "risk_level": "low",
       "throughput_need": "low"
     },
     {
@@ -68,7 +68,7 @@
         "z": "1.00"
       },
       "distance_to_fire": "25.49 m",
-      "risk_level": "medium",
+      "risk_level": "low",
       "throughput_need": "low"
     },
     {
@@ -85,7 +85,7 @@
         "z": "1.00"
       },
       "distance_to_fire": "37.24 m",
-      "risk_level": "medium",
+      "risk_level": "low",
       "throughput_need": "low"
     },
     {
@@ -102,7 +102,7 @@
         "z": "1.00"
       },
       "distance_to_fire": "10.84 m",
-      "risk_level": "medium",
+      "risk_level": "low",
       "throughput_need": "low"
     },
     {
@@ -111,7 +111,7 @@
       "position": {
         "x": "-5.66 m",
         "y": "128.67 m",
-        "z": "-0.54 m"
+        "z": "-0.55 m"
       },
       "localization_confidence": {
         "x": "0.22",
@@ -119,7 +119,7 @@
         "z": "1.00"
       },
       "distance_to_fire": "24.69 m",
-      "risk_level": "medium",
+      "risk_level": "low",
       "throughput_need": "low"
     },
     {
@@ -136,7 +136,7 @@
         "z": "1.00"
       },
       "distance_to_fire": "31.88 m",
-      "risk_level": "medium",
+      "risk_level": "low",
       "throughput_need": "low"
     },
     {
@@ -145,7 +145,7 @@
       "position": {
         "x": "-2.44 m",
         "y": "109.81 m",
-        "z": "-0.52 m"
+        "z": "-0.53 m"
       },
       "localization_confidence": {
         "x": "0.23",
@@ -153,7 +153,7 @@
         "z": "1.00"
       },
       "distance_to_fire": "43.27 m",
-      "risk_level": "medium",
+      "risk_level": "low",
       "throughput_need": "low"
     },
     {
@@ -162,7 +162,7 @@
       "position": {
         "x": "-3.04 m",
         "y": "132.96 m",
-        "z": "-0.50 m"
+        "z": "-0.51 m"
       },
       "localization_confidence": {
         "x": "0.22",
@@ -170,7 +170,7 @@
         "z": "1.00"
       },
       "distance_to_fire": "20.05 m",
-      "risk_level": "medium",
+      "risk_level": "low",
       "throughput_need": "low"
     },
     {
@@ -187,7 +187,7 @@
         "z": "1.00"
       },
       "distance_to_fire": "39.33 m",
-      "risk_level": "medium",
+      "risk_level": "low",
       "throughput_need": "low"
     },
     {
@@ -204,7 +204,7 @@
         "z": "1.00"
       },
       "distance_to_fire": "43.71 m",
-      "risk_level": "medium",
+      "risk_level": "low",
       "throughput_need": "low"
     },
     {
@@ -221,14 +221,14 @@
         "z": "1.00"
       },
       "distance_to_fire": "31.13 m",
-      "risk_level": "medium",
+      "risk_level": "low",
       "throughput_need": "low"
     },
     {
       "class": "person",
       "detection_confidence": "0.85",
       "position": {
-        "x": "-6.97 m",
+        "x": "-6.98 m",
         "y": "124.85 m",
         "z": "0.56 m"
       },
@@ -238,20 +238,20 @@
         "z": "1.00"
       },
       "distance_to_fire": "28.87 m",
-      "risk_level": "medium",
-      "inferred_role": null,
+      "risk_level": "low",
+      "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": ""
+        "text": "This person has proximity_rank=8 and is inferred as a civilian based on Rule 2."
       },
-      "role_confidence": null,
+      "role_confidence": 0.95,
       "throughput_need": "low"
     },
     {
       "class": "person",
       "detection_confidence": "0.83",
       "position": {
-        "x": "-8.01 m",
+        "x": "-8.02 m",
         "y": "129.99 m",
         "z": "0.49 m"
       },
@@ -261,13 +261,13 @@
         "z": "1.00"
       },
       "distance_to_fire": "24.07 m",
-      "risk_level": "medium",
-      "inferred_role": null,
+      "risk_level": "low",
+      "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": ""
+        "text": "This person has proximity_rank=5 and is inferred as a civilian based on Rule 2."
       },
-      "role_confidence": null,
+      "role_confidence": 0.95,
       "throughput_need": "low"
     },
     {
@@ -284,14 +284,14 @@
         "z": "1.00"
       },
       "distance_to_fire": "28.39 m",
-      "risk_level": "medium",
-      "throughput_need": "low",
+      "risk_level": "low",
       "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": "civilians mentioned in transcript"
+        "text": "This person has proximity_rank=7 and is inferred as a civilian based on Rule 2."
       },
-      "role_confidence": 0.8
+      "role_confidence": 0.95,
+      "throughput_need": "low"
     },
     {
       "class": "person",
@@ -299,7 +299,7 @@
       "position": {
         "x": "-3.78 m",
         "y": "136.92 m",
-        "z": "0.27 m"
+        "z": "0.26 m"
       },
       "localization_confidence": {
         "x": "0.80",
@@ -307,13 +307,13 @@
         "z": "1.00"
       },
       "distance_to_fire": "16.16 m",
-      "risk_level": "medium",
-      "inferred_role": null,
+      "risk_level": "low",
+      "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": ""
+        "text": "This person has proximity_rank=2 and is described as 'Several civilians outside vehicles on the asphalt' in the transcript context (Rule 2). They are not the closest to the fire responder."
       },
-      "role_confidence": null,
+      "role_confidence": 0.95,
       "throughput_need": "low"
     },
     {
@@ -330,13 +330,13 @@
         "z": "1.00"
       },
       "distance_to_fire": "23.60 m",
-      "risk_level": "medium",
-      "inferred_role": null,
+      "risk_level": "low",
+      "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": ""
+        "text": "This person has proximity_rank=4 and is inferred as a civilian based on Rule 2."
       },
-      "role_confidence": null,
+      "role_confidence": 0.95,
       "throughput_need": "low"
     },
     {
@@ -344,8 +344,8 @@
       "detection_confidence": "0.78",
       "position": {
         "x": "-6.69 m",
-        "y": "135.68 m",
-        "z": "0.22 m"
+        "y": "135.69 m",
+        "z": "0.21 m"
       },
       "localization_confidence": {
         "x": "0.82",
@@ -353,13 +353,13 @@
         "z": "1.00"
       },
       "distance_to_fire": "18.09 m",
-      "risk_level": "medium",
-      "inferred_role": null,
+      "risk_level": "low",
+      "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": ""
+        "text": "This person has proximity_rank=3 and is inferred as a civilian based on Rule 2. They are further from the fire than ID 15."
       },
-      "role_confidence": null,
+      "role_confidence": 0.95,
       "throughput_need": "low"
     },
     {
@@ -376,14 +376,14 @@
         "z": "1.00"
       },
       "distance_to_fire": "12.38 m",
-      "risk_level": "medium",
-      "inferred_role": null,
+      "risk_level": "low",
+      "throughput_need": "medium",
+      "inferred_role": "firefighter",
       "role_inference_basis": {
         "source": "inference",
-        "text": ""
+        "text": "ROLE_CONTEXT.has_fire is true and no on-scene field units exist (radio_signals.on_scene_field_units is empty), but the closest person (proximity_rank=1) must be assigned as a responder based on Rule 1: 'If ROLE_CONTEXT.has_fire AND an on-scene field unit exists...'. Since there are no explicit responders mentioned, we infer that this person is operating at the fire."
       },
-      "role_confidence": null,
-      "throughput_need": "low"
+      "role_confidence": 0.85
     },
     {
       "class": "person",
@@ -399,14 +399,17 @@
         "z": "1.00"
       },
       "distance_to_fire": "25.17 m",
-      "risk_level": "medium",
-      "inferred_role": null,
+      "risk_level": "low",
+      "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": ""
+        "text": "This person has proximity_rank=6 and is inferred as a civilian based on Rule 2."
       },
-      "role_confidence": null,
+      "role_confidence": 0.95,
       "throughput_need": "low"
     }
-  ]
+  ],
+  "_metadata": {
+    "role_assignment_llm_applied": true
+  }
 }

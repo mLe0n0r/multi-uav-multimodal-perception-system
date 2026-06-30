@@ -1,9 +1,9 @@
 {
-  "has_fire": false,
-  "summary": "Emergency responders are coordinating cooling operations on vehicles near a fire, while civilians are noted to be at a safe distance.",
+  "has_fire": true,
+  "summary": "Two civilians are at a safe distance near two vehicles that are involved in a fire.",
   "counts_by_class": {
     "person": 3,
-    "normal_vehicle": 3,
+    "normal_vehicle": 2,
     "emergency_vehicle": 0
   },
   "communications": {
@@ -21,7 +21,19 @@
     "service_types": [
       "voice"
     ],
-    "service_inference_basis": []
+    "service_inference_basis": [],
+    "objects": [
+      {
+        "id": 0,
+        "class": "person",
+        "risk_level": "medium"
+      },
+      {
+        "id": 1,
+        "class": "person",
+        "risk_level": "medium"
+      }
+    ]
   },
   "objects": [
     {
@@ -29,7 +41,7 @@
       "detection_confidence": "0.85",
       "position": {
         "x": "-233.82 m",
-        "y": "60.77 m",
+        "y": "-28.75 m",
         "z": "0.00 m"
       },
       "localization_confidence": {
@@ -38,21 +50,21 @@
         "z": "1.00"
       },
       "risk_level": "medium",
-      "throughput_need": "low",
-      "inferred_role": "unknown_person",
+      "throughput_need": "medium",
+      "inferred_role": "firefighter",
       "role_inference_basis": {
         "source": "inference",
-        "text": "visual_detection"
+        "text": "ROLE_CONTEXT.has_fire is true and an on-scene field unit exists (engine_1), assigning the closest person (proximity_rank=1) as the responder operating at the fire."
       },
-      "role_confidence": null,
-      "traffic_demand_mbps": 0.3
+      "role_confidence": 1.0,
+      "traffic_demand_mbps": 1.0
     },
     {
       "class": "person",
       "detection_confidence": "0.78",
       "position": {
         "x": "-232.02 m",
-        "y": "38.59 m",
+        "y": "-50.93 m",
         "z": "0.00 m"
       },
       "localization_confidence": {
@@ -62,10 +74,10 @@
       },
       "risk_level": "medium",
       "throughput_need": "low",
-      "inferred_role": "unknown_person",
+      "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": "visual_detection"
+        "text": "The remaining person (proximity_rank=2) is inferred to be a civilian based on radio mentions of civilians at safe distance and visual count."
       },
       "role_confidence": null,
       "traffic_demand_mbps": 0.3
@@ -73,13 +85,13 @@
     {
       "class": "person",
       "audio_only": true,
-      "reason": "radio indicates 1 on-scene responder(s); 0 matched visually as firefighter",
+      "reason": "radio mentions 2 civilian(s); 1 labeled civilian visually; gap-fill for occluded / not visible civilian",
       "risk_level": "medium",
       "throughput_need": "low",
-      "inferred_role": "firefighter",
+      "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": ""
+        "text": "no role inferred from radio or proximity"
       },
       "role_confidence": null,
       "traffic_demand_mbps": 0.3
@@ -87,7 +99,7 @@
     {
       "class": "normal_vehicle",
       "audio_only": true,
-      "reason": "radio explicitly mentions 3 normal vehicle(s); 0 detected visually",
+      "reason": "radio explicitly mentions 2 normal vehicle(s); 0 detected visually",
       "risk_level": "medium",
       "throughput_need": "low",
       "traffic_demand_mbps": 0.3
@@ -95,15 +107,7 @@
     {
       "class": "normal_vehicle",
       "audio_only": true,
-      "reason": "radio explicitly mentions 3 normal vehicle(s); 0 detected visually",
-      "risk_level": "medium",
-      "throughput_need": "low",
-      "traffic_demand_mbps": 0.3
-    },
-    {
-      "class": "normal_vehicle",
-      "audio_only": true,
-      "reason": "radio explicitly mentions 3 normal vehicle(s); 0 detected visually",
+      "reason": "radio explicitly mentions 2 normal vehicle(s); 0 detected visually",
       "risk_level": "medium",
       "throughput_need": "low",
       "traffic_demand_mbps": 0.3

@@ -1,6 +1,6 @@
 {
   "has_fire": true,
-  "summary": "A brush fire is reported near a highway, with multiple vehicles blocked and civilians present near the scene.",
+  "summary": "A brush fire is active near a highway, with multiple vehicles and civilians present.",
   "counts_by_class": {
     "person": 8,
     "normal_vehicle": 12,
@@ -39,9 +39,9 @@
       "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": "civilians outside vehicles"
+        "text": "Not the closest to the fire (rank 8)."
       },
-      "role_confidence": 0.85
+      "role_confidence": 1.0
     },
     {
       "class": "person",
@@ -62,9 +62,9 @@
       "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": "civilians outside vehicles"
+        "text": "Not the closest to the fire (rank 5)."
       },
-      "role_confidence": 0.83
+      "role_confidence": 1.0
     },
     {
       "class": "person",
@@ -85,9 +85,9 @@
       "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": "civilians outside vehicles"
+        "text": "Not the closest to the fire (rank 7)."
       },
-      "role_confidence": 0.83
+      "role_confidence": 1.0
     },
     {
       "class": "person",
@@ -108,9 +108,9 @@
       "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": "civilians outside vehicles"
+        "text": "Not the closest to the fire (rank 2)."
       },
-      "role_confidence": 0.81
+      "role_confidence": 1.0
     },
     {
       "class": "person",
@@ -131,9 +131,9 @@
       "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": "civilians outside vehicles"
+        "text": "Not the closest to the fire (rank 4)."
       },
-      "role_confidence": 0.81
+      "role_confidence": 1.0
     },
     {
       "class": "person",
@@ -154,9 +154,9 @@
       "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": "civilians outside vehicles"
+        "text": "Not the closest to the fire (rank 3)."
       },
-      "role_confidence": 0.78
+      "role_confidence": 1.0
     },
     {
       "class": "person",
@@ -173,13 +173,13 @@
       },
       "distance_to_fire": "12.38 m",
       "risk_level": "medium",
-      "throughput_need": "low",
-      "inferred_role": "civilian",
+      "throughput_need": "medium",
+      "inferred_role": "firefighter",
       "role_inference_basis": {
         "source": "inference",
-        "text": "civilians outside vehicles"
+        "text": "Proximity rank is 1 and there are no on-scene field units or responders mentioned, implying the closest person must be operating at the fire."
       },
-      "role_confidence": 0.62
+      "role_confidence": null
     },
     {
       "class": "person",
@@ -200,9 +200,9 @@
       "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": "civilians outside vehicles"
+        "text": "Not the closest to the fire (rank 6)."
       },
-      "role_confidence": 0.51
+      "role_confidence": 1.0
     },
     {
       "class": "normal_vehicle",
@@ -235,7 +235,7 @@
         "z": "1.00"
       },
       "distance_to_fire": "10.85 m",
-      "risk_level": "low",
+      "risk_level": "medium",
       "throughput_need": "low"
     },
     {
@@ -269,7 +269,7 @@
         "z": "1.00"
       },
       "distance_to_fire": "37.24 m",
-      "risk_level": "low",
+      "risk_level": "medium",
       "throughput_need": "low"
     },
     {
@@ -408,5 +408,8 @@
       "risk_level": "medium",
       "throughput_need": "low"
     }
-  ]
+  ],
+  "_metadata": {
+    "role_assignment_llm_applied": true
+  }
 }

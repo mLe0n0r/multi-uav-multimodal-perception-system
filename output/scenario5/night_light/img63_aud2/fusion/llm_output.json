@@ -1,10 +1,10 @@
 {
   "has_fire": false,
-  "summary": "A rescue team is coordinating an assessment of a major vehicle pileup, confirming no active fire but noting smoke and burned forest edge.",
+  "summary": "A command is being given regarding a major vehicle pileup and the status of the roadway. There is no active fire detected.",
   "counts_by_class": {
     "person": 2,
     "normal_vehicle": 5,
-    "emergency_vehicle": 0
+    "emergency_vehicle": 1
   },
   "communications": {
     "speaker_count": 2,
@@ -38,13 +38,13 @@
         "z": "1.00"
       },
       "risk_level": "low",
-      "throughput_need": "low",
-      "inferred_role": "unknown_person",
+      "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": "no visual persons mentioned in context"
+        "text": "No fire is present (ROLE_CONTEXT.has_fire=false). The radio traffic mentions casualties being treated by a fire truck but no visible persons are confirmed near the vehicles."
       },
-      "role_confidence": 0.0
+      "role_confidence": 1.0,
+      "throughput_need": "low"
     },
     {
       "class": "normal_vehicle",
@@ -129,15 +129,25 @@
     {
       "class": "person",
       "audio_only": true,
-      "reason": "radio indicates 1 on-scene responder(s); 0 matched visually as firefighter",
-      "risk_level": "medium",
-      "throughput_need": "medium",
-      "inferred_role": "firefighter",
+      "reason": "Two civilians were mentioned in the transcript, and only one visual person exists. Since there is no fire and no on-scene responders explicitly interacting with people visually, we infer that at least one civilian might be occluded or at safe distance.",
+      "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": ""
+        "text": "civilians_mentioned_count (2) exceeds visual_person_count (1). Need to account for missing persons."
       },
-      "role_confidence": null
+      "role_confidence": 0.95,
+      "risk_level": "medium",
+      "throughput_need": "low"
+    },
+    {
+      "class": "emergency_vehicle",
+      "audio_only": true,
+      "reason": "radio explicitly mentions 1 emergency vehicle(s); 0 detected visually",
+      "risk_level": "medium",
+      "throughput_need": "medium"
     }
-  ]
+  ],
+  "_metadata": {
+    "role_assignment_llm_applied": true
+  }
 }

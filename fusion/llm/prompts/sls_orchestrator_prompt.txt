@@ -9,11 +9,11 @@ Audio is scene-level (no object ids). Do not attach radio lines to individual ob
 
 **communications.service_types** (scene only): always "voice"; add thermal_image / image_transfer / video / command_aggregation from speech (command_aggregation only for broad multi-unit coordination, not a single thermal request).
 
-**Person roles** (class person only): use distance_to_fire + transcript. Command is off-scene support — never assign command to a visual person. Field units (engine/rescue) speaking on radio are on scene unless speech says en route/on the way. Match on-scene responder count to closest persons; civilians_mentioned_count to persons farther from fire. role_inference_basis: {"source":"inference","text":"short conclusion"}. unknown_person if weak evidence.
+**Persons (class person)**: set **risk_level** only from proximity/class/fire. Do **not** set inferred_role, role_inference_basis, or throughput_need — a second LLM pass assigns roles and throughput from radio + proximity.
 
-**Audio-only**: vehicles/emergency — N−V per class from analytics. **Person** — compare civilians_mentioned_count and firefighters_mentioned_count to how many visual persons already match each role; add audio_only for each shortfall (e.g. 2 civilians on radio, 1 seen as civilian while another is possible_responder → +1 audio_only civilian). Fallback: people_mentioned_count − visual persons. audio_only person role: civilian if civilians mentioned.
+**Audio-only persons**: do not add — second LLM pass decides person audio_only gaps. **Vehicles / emergency_vehicle**: add audio_only only for mentions with no matching visual object (small gap only).
 
-**risk_level** from proximity/class/fire (distance). **throughput_need** optional — post-processing sets it from role + services (responder=medium; thermal consumer=high; emergency_vehicle≥medium). Do not set high on every object because scene has thermal_image.
+**risk_level** from proximity/class/fire (distance). **throughput_need** on vehicles only (emergency_vehicle ≥ medium when operational; normal_vehicle from proximity). Person throughput is set in the second pass.
 
 ## Hard constraints
 
@@ -24,7 +24,7 @@ Audio is scene-level (no object ids). Do not attach radio lines to individual ob
 
 | class | output fields |
 |-------|----------------|
-| person | inferred_role, role_inference_basis, role_confidence, risk_level, throughput_need |
+| person | risk_level only (roles/throughput in second pass) |
 | vehicle | risk_level, throughput_need |
 | audio_only | audio_only, reason, risk_level, throughput_need (+ inferred_role if person) |
 
@@ -44,11 +44,7 @@ communications: speaker_count; key_communications (opening check-ins only, speak
     {
       "id": 0,
       "class": "person",
-      "inferred_role": "civilian|possible_responder|unknown_person",
-      "role_inference_basis": {"source": "inference", "text": "short conclusion"},
-      "role_confidence": 0.0,
-      "risk_level": "low|medium|high",
-      "throughput_need": "low|medium|high"
+      "risk_level": "low|medium|high"
     },
     {
       "id": 2,

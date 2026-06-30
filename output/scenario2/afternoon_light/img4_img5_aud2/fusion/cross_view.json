@@ -1,5 +1,8 @@
 {
-  "same_incident": false,
+  "same_incident": true,
+  "same_incident_camera_distance_m": 23.79,
+  "same_incident_footprint_overlap": 0.0153,
+  "same_incident_criterion": "camera_distance",
   "views": [
     "img4",
     "img5"
@@ -520,5 +523,99 @@
       ]
     }
   },
-  "matches": []
+  "matches": [
+    {
+      "view_a": "img4",
+      "id_a": 2,
+      "view_b": "img5",
+      "id_b": 2,
+      "position": {
+        "x": "-107.00 m",
+        "y": "-26.43 m",
+        "z": "2.18 m"
+      }
+    },
+    {
+      "view_a": "img4",
+      "id_a": 3,
+      "view_b": "img5",
+      "id_b": 4,
+      "position": {
+        "x": "-95.42 m",
+        "y": "-8.19 m",
+        "z": "-1.65 m"
+      }
+    },
+    {
+      "view_a": "img4",
+      "id_a": 4,
+      "view_b": "img5",
+      "id_b": 5,
+      "position": {
+        "x": "-100.30 m",
+        "y": "-9.45 m",
+        "z": "-2.47 m"
+      }
+    },
+    {
+      "view_a": "img4",
+      "id_a": 5,
+      "view_b": "img5",
+      "id_b": 0,
+      "position": {
+        "x": "-98.76 m",
+        "y": "-9.23 m",
+        "z": "-1.79 m"
+      }
+    },
+    {
+      "view_a": "img4",
+      "id_a": 6,
+      "view_b": "img5",
+      "id_b": 3,
+      "position": {
+        "x": "-100.54 m",
+        "y": "-9.61 m",
+        "z": "-1.29 m"
+      }
+    },
+    {
+      "view_a": "img4",
+      "id_a": 7,
+      "view_b": "img5",
+      "id_b": 1,
+      "position": {
+        "x": "-97.42 m",
+        "y": "-50.44 m",
+        "z": "-0.88 m"
+      }
+    },
+    {
+      "view_a": "img4",
+      "id_a": 9,
+      "view_b": "img5",
+      "id_b": 8,
+      "position": {
+        "x": "-107.77 m",
+        "y": "-31.91 m",
+        "z": "-2.16 m"
+      }
+    },
+    {
+      "view_a": "img4",
+      "id_a": 10,
+      "view_b": "img5",
+      "id_b": 7,
+      "position": {
+        "x": "-108.41 m",
+        "y": "-35.66 m",
+        "z": "-1.93 m"
+      }
+    }
+  ],
+  "counts_after_match": {
+    "person": 9,
+    "vehicle": 3,
+    "emergency_vehicle": 1
+  }
 }

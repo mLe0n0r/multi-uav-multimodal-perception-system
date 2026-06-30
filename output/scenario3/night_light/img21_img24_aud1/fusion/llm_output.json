@@ -1,8 +1,8 @@
 {
   "has_fire": true,
-  "summary": "Fire is active in the forested area, and units are coordinating exposure assessment near a structure.",
+  "summary": "Two units are coordinating regarding an active wildfire and assessing potential exposure near a structure.",
   "counts_by_class": {
-    "person": 2,
+    "person": 1,
     "normal_vehicle": 0,
     "emergency_vehicle": 1
   },
@@ -26,26 +26,6 @@
       {
         "source": "transcript",
         "text": "Command here, Unit Phi. Negative visual confirmation of persons at this time. Smoke is limiting visibility near the house and access path. Listening."
-      }
-    ],
-    "objects": [
-      {
-        "id": 0,
-        "class": "emergency_vehicle",
-        "risk_level": "medium",
-        "throughput_need": "medium"
-      },
-      {
-        "id": 0,
-        "class": "person",
-        "inferred_role": "unknown_person",
-        "role_inference_basis": {
-          "source": "inference",
-          "text": "No persons were visually confirmed near the house."
-        },
-        "role_confidence": 0.0,
-        "risk_level": "low",
-        "throughput_need": "low"
       }
     ]
   },
@@ -81,27 +61,17 @@
         "z": "1.00"
       },
       "distance_to_fire": "18.87 m",
-      "risk_level": "medium",
-      "throughput_need": "low",
-      "inferred_role": "unknown_person",
-      "role_inference_basis": {
-        "source": "inference",
-        "text": "visual_detection"
-      },
-      "role_confidence": null
-    },
-    {
-      "class": "person",
-      "audio_only": true,
-      "reason": "radio indicates 1 on-scene responder(s); 0 matched visually as firefighter",
-      "risk_level": "medium",
-      "throughput_need": "low",
+      "risk_level": "low",
       "inferred_role": "firefighter",
       "role_inference_basis": {
         "source": "inference",
-        "text": ""
+        "text": "ROLE_CONTEXT.has_fire is true and an on-scene field unit exists (radio_signals.on_scene_field_units is empty but radio_signals.on_scene_responders_count >= 1), so the closest person (proximity_rank=1) is assigned as the responder operating at the fire."
       },
-      "role_confidence": null
+      "role_confidence": 1.0,
+      "throughput_need": "medium"
     }
-  ]
+  ],
+  "_metadata": {
+    "role_assignment_llm_applied": true
+  }
 }

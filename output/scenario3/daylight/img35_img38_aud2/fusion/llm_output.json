@@ -1,10 +1,10 @@
 {
   "has_fire": true,
-  "summary": "Fire is active in the forested area, and rescue teams are assessing a person near a house.",
+  "summary": "Fire is active in a forested area, and personnel are assessing visibility beyond the smoke.",
   "counts_by_class": {
     "person": 2,
     "normal_vehicle": 1,
-    "emergency_vehicle": 0
+    "emergency_vehicle": 1
   },
   "communications": {
     "speaker_count": 3,
@@ -29,6 +29,23 @@
   },
   "objects": [
     {
+      "class": "normal_vehicle",
+      "detection_confidence": "0.56",
+      "position": {
+        "x": "-178.98 m",
+        "y": "-113.67 m",
+        "z": "0.00 m"
+      },
+      "localization_confidence": {
+        "x": "0.08",
+        "y": "0.09",
+        "z": "1.00"
+      },
+      "distance_to_fire": "23.90 m",
+      "risk_level": "medium",
+      "throughput_need": "low"
+    },
+    {
       "class": "person",
       "detection_confidence": "0.79",
       "position": {
@@ -43,13 +60,13 @@
       },
       "distance_to_fire": "12.62 m",
       "risk_level": "medium",
-      "throughput_need": "medium",
       "inferred_role": "firefighter",
       "role_inference_basis": {
         "source": "inference",
-        "text": "engine_1, rescue_2 on scene per radio (command is off-scene support); assigned to closest person near fire"
+        "text": "ROLE_CONTEXT.has_fire is true and on-scene field units exist (engine_1, rescue_2), assigning the closest person (rank 1) as the responder operating at the fire."
       },
-      "role_confidence": 0.85
+      "role_confidence": 1.0,
+      "throughput_need": "medium"
     },
     {
       "class": "person",
@@ -66,30 +83,23 @@
       },
       "distance_to_fire": "17.59 m",
       "risk_level": "medium",
-      "throughput_need": "medium",
-      "inferred_role": "firefighter",
+      "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": "engine_1, rescue_2 on scene per radio (command is off-scene support); assigned to closest person near fire"
+        "text": "The remaining person is inferred to be a civilian based on proximity rank and context."
       },
-      "role_confidence": 0.85
+      "role_confidence": 1.0,
+      "throughput_need": "low"
     },
     {
-      "class": "normal_vehicle",
-      "detection_confidence": "0.56",
-      "position": {
-        "x": "-178.98 m",
-        "y": "-113.67 m",
-        "z": "0.00 m"
-      },
-      "localization_confidence": {
-        "x": "0.08",
-        "y": "0.09",
-        "z": "1.00"
-      },
-      "distance_to_fire": "23.90 m",
+      "class": "emergency_vehicle",
+      "audio_only": true,
+      "reason": "radio explicitly mentions 1 emergency vehicle(s); 0 detected visually",
       "risk_level": "medium",
-      "throughput_need": "low"
+      "throughput_need": "medium"
     }
-  ]
+  ],
+  "_metadata": {
+    "role_assignment_llm_applied": true
+  }
 }

@@ -1,6 +1,6 @@
 {
   "has_fire": true,
-  "summary": "Emergency responders are coordinating fire suppression and assessing potential civilian presence near vehicles and a building.",
+  "summary": "Emergency services are coordinating fire suppression and assessing potential risks to nearby vehicles and occupants.",
   "counts_by_class": {
     "person": 3,
     "normal_vehicle": 3,
@@ -14,7 +14,7 @@
         "speaker": "SPEAKER_01"
       },
       {
-        "text": "Command here, Engine 1.",
+        "text": "Command here, engine 1.",
         "speaker": "SPEAKER_00"
       }
     ],
@@ -26,7 +26,7 @@
     "service_inference_basis": [
       {
         "source": "transcript",
-        "text": "Command here, engine one, request thermal imagery to assess heat spread to nearby vehicles, listening."
+        "text": "Command here, engine 1. Request thermal imagery to assess heat spread to nearby vehicles. Listening."
       }
     ]
   },
@@ -50,9 +50,9 @@
       "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": "radio reports 2 civilian(s) at safe distance; matched to persons farther from fire"
+        "text": "The second person is mentioned in context regarding civilians at safe distance. Rule 2 applies."
       },
-      "role_confidence": 0.75,
+      "role_confidence": 1.0,
       "traffic_demand_mbps": 0.3
     },
     {
@@ -70,15 +70,14 @@
       },
       "distance_to_fire": "0.29 m",
       "risk_level": "medium",
-      "throughput_need": "high",
+      "throughput_need": "medium",
       "inferred_role": "firefighter",
       "role_inference_basis": {
         "source": "inference",
-        "text": "engine_1 on scene per radio (command is off-scene support); assigned to closest person near fire; radio requests thermal imagery for this unit (engine/responder)"
+        "text": "Proximity rank is 1 (closest to fire), and an on-scene field unit exists (engine_1). Rule 1 applies: the closest person is the responder operating at the fire."
       },
-      "role_confidence": 0.85,
-      "thermal_imagery_consumer": true,
-      "traffic_demand_mbps": 3.0
+      "role_confidence": 1.0,
+      "traffic_demand_mbps": 1.0
     },
     {
       "class": "normal_vehicle",
@@ -155,13 +154,13 @@
     {
       "class": "person",
       "audio_only": true,
-      "reason": "radio reports 2 civilian(s) at safe distance; 1 matched visually as civilian",
+      "reason": "radio mentions 2 civilian(s); 1 labeled civilian visually; gap-fill for occluded / not visible civilian",
       "risk_level": "medium",
       "throughput_need": "low",
       "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": ""
+        "text": "no role inferred from radio or proximity"
       },
       "role_confidence": null,
       "traffic_demand_mbps": 0.3

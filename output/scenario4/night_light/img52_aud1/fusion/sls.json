@@ -1,6 +1,6 @@
 {
   "has_fire": true,
-  "summary": "Multiple vehicles are blocked in traffic near an active brush fire, with civilians reported outside vehicles.",
+  "summary": "A brush fire is active near a roadway where multiple vehicles are blocked in traffic and civilians are present.",
   "counts_by_class": {
     "person": 0,
     "normal_vehicle": 6,

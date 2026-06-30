@@ -16,8 +16,18 @@ perception/vision/
   │     ├─ annotated_imgs/<scenario>/  → frames with boxes drawn
   │     ├─ labels/                  → YOLO predictions
   │     └─ data.yaml                → YOLO dataset config
-  └─ fire-detection/                → YOLOv5 fire inference backend
+  └─ fire-detection/                → git submodule (pedbrgs/Fire-Detection)
 ```
+
+Clone with submodules:
+
+```bash
+git clone --recurse-submodules <this-repo-url>
+# or, after a normal clone:
+git submodule update --init perception/vision/fire-detection
+```
+
+Upstream fire-detection code: [github.com/pedbrgs/Fire-Detection](https://github.com/pedbrgs/Fire-Detection).
 
 ## Models and roles
 
@@ -25,7 +35,7 @@ perception/vision/
 |-----------|--------|------|
 | Object detection | **YOLO** (`best.pt`, Ultralytics) | Detects **persons** and **vehicles** (inference at 640 and 1280 px) |
 | Vehicle Distinction | **MobileNet V3 Small** (`mobilenet_best.pth`) | Classifies each vehicle crop as **normal** or **emergency** |
-| Fire detection | **YOLOv5** (`yolov5s.pt`, `fire-detection/`) | State-of-Art model |
+| Fire detection | **YOLOv5** (`yolov5s.pt`, [Fire-Detection](https://github.com/pedbrgs/Fire-Detection)) | Spatial fire/smoke detection |
 | Localization | Camera telemetry + geometry | 3D position, `localization_confidence`, `distance_to_fire` |
 
 ## Day vs night processing
@@ -39,4 +49,4 @@ Batch runs may cache per-frame JSON under `output/.cache/vision/` before copying
 
 ## Weights
 
-Place `best.pt` and `mobilenet_best.pth` in `weights/`. Fire weights: `yolov5s.pt` in `weights/` or `fire-detection/`.
+Place `best.pt` and `mobilenet_best.pth` in `weights/`. Fire weights: `yolov5s.pt` in `weights/` (see [Fire-Detection](https://github.com/pedbrgs/Fire-Detection) for download links).

@@ -1,9 +1,9 @@
 {
   "has_fire": true,
-  "summary": "Engine 1 is coordinating cooling operations on vehicles near a fire, confirming no visible flame inside a structure and noting the presence of civilians.",
+  "summary": "Two vehicles are involved in a fire with smoke infiltration continuing near the structure.",
   "counts_by_class": {
-    "person": 4,
-    "normal_vehicle": 7,
+    "person": 3,
+    "normal_vehicle": 4,
     "emergency_vehicle": 0
   },
   "communications": {
@@ -21,76 +21,47 @@
     "service_types": [
       "voice"
     ],
-    "service_inference_basis": []
+    "service_inference_basis": [],
+    "objects": [
+      {
+        "id": 0,
+        "class": "normal_vehicle",
+        "risk_level": "medium",
+        "throughput_need": "medium"
+      },
+      {
+        "id": 1,
+        "class": "normal_vehicle",
+        "risk_level": "medium",
+        "throughput_need": "medium"
+      },
+      {
+        "id": 2,
+        "class": "normal_vehicle",
+        "risk_level": "low",
+        "throughput_need": "low"
+      },
+      {
+        "id": 3,
+        "class": "normal_vehicle",
+        "risk_level": "high",
+        "throughput_need": "high"
+      },
+      {
+        "id": 4,
+        "class": "person",
+        "risk_level": "low",
+        "audio_only": false
+      },
+      {
+        "id": 5,
+        "class": "person",
+        "risk_level": "low",
+        "audio_only": false
+      }
+    ]
   },
   "objects": [
-    {
-      "class": "person",
-      "detection_confidence": "0.85",
-      "position": {
-        "x": "-233.82 m",
-        "y": "60.77 m",
-        "z": "0.00 m"
-      },
-      "localization_confidence": {
-        "x": "0.65",
-        "y": "0.55",
-        "z": "1.00"
-      },
-      "risk_level": "medium",
-      "throughput_need": "low",
-      "inferred_role": "unknown_person",
-      "role_inference_basis": {
-        "source": "inference",
-        "text": "visual_detection"
-      },
-      "role_confidence": null
-    },
-    {
-      "class": "person",
-      "detection_confidence": "0.85",
-      "position": {
-        "x": "-249.33 m",
-        "y": "-29.27 m",
-        "z": "0.00 m"
-      },
-      "localization_confidence": {
-        "x": "0.37",
-        "y": "0.14",
-        "z": "1.00"
-      },
-      "distance_to_fire": "14.04 m",
-      "risk_level": "medium",
-      "throughput_need": "low",
-      "inferred_role": "unknown_person",
-      "role_inference_basis": {
-        "source": "inference",
-        "text": "visual_detection"
-      },
-      "role_confidence": null
-    },
-    {
-      "class": "person",
-      "detection_confidence": "0.78",
-      "position": {
-        "x": "-232.02 m",
-        "y": "38.59 m",
-        "z": "0.00 m"
-      },
-      "localization_confidence": {
-        "x": "0.81",
-        "y": "0.62",
-        "z": "1.00"
-      },
-      "risk_level": "medium",
-      "throughput_need": "low",
-      "inferred_role": "unknown_person",
-      "role_inference_basis": {
-        "source": "inference",
-        "text": "visual_detection"
-      },
-      "role_confidence": null
-    },
     {
       "class": "normal_vehicle",
       "detection_confidence": "0.92",
@@ -161,37 +132,63 @@
     },
     {
       "class": "person",
-      "audio_only": true,
-      "reason": "radio indicates 1 on-scene responder(s); 0 matched visually as firefighter",
+      "detection_confidence": "0.85",
+      "position": {
+        "x": "-222.77 m",
+        "y": "-28.29 m",
+        "z": "-0.64 m"
+      },
+      "localization_confidence": {
+        "x": "0.65",
+        "y": "0.55",
+        "z": "1.00"
+      },
       "risk_level": "medium",
-      "throughput_need": "low",
       "inferred_role": "firefighter",
       "role_inference_basis": {
         "source": "inference",
-        "text": ""
+        "text": "ROLE_CONTEXT.has_fire is true and an on-scene field unit exists (engine_1) with one responder operating at the fire."
+      },
+      "role_confidence": 1.0,
+      "throughput_need": "medium"
+    },
+    {
+      "class": "person",
+      "detection_confidence": "0.78",
+      "position": {
+        "x": "-232.02 m",
+        "y": "-50.93 m",
+        "z": "0.00 m"
+      },
+      "localization_confidence": {
+        "x": "0.81",
+        "y": "0.62",
+        "z": "1.00"
+      },
+      "risk_level": "medium",
+      "inferred_role": "civilian",
+      "role_inference_basis": {
+        "source": "inference",
+        "text": "The person is not the closest to the fire (proximity_rank=2), and radio signals mention civilians at safe distance."
+      },
+      "role_confidence": 1.0,
+      "throughput_need": "low"
+    },
+    {
+      "class": "person",
+      "audio_only": true,
+      "reason": "radio mentions 2 civilian(s); 1 labeled civilian visually; gap-fill for occluded / not visible civilian",
+      "risk_level": "medium",
+      "throughput_need": "medium",
+      "inferred_role": "civilian",
+      "role_inference_basis": {
+        "source": "inference",
+        "text": "no role inferred from radio or proximity"
       },
       "role_confidence": null
-    },
-    {
-      "class": "normal_vehicle",
-      "audio_only": true,
-      "reason": "radio explicitly mentions 3 normal vehicle(s); 0 detected visually",
-      "risk_level": "medium",
-      "throughput_need": "medium"
-    },
-    {
-      "class": "normal_vehicle",
-      "audio_only": true,
-      "reason": "radio explicitly mentions 3 normal vehicle(s); 0 detected visually",
-      "risk_level": "medium",
-      "throughput_need": "medium"
-    },
-    {
-      "class": "normal_vehicle",
-      "audio_only": true,
-      "reason": "radio explicitly mentions 3 normal vehicle(s); 0 detected visually",
-      "risk_level": "medium",
-      "throughput_need": "medium"
     }
-  ]
+  ],
+  "_metadata": {
+    "role_assignment_llm_applied": true
+  }
 }

@@ -1,8 +1,8 @@
 {
   "has_fire": false,
-  "summary": "Two units are coordinating a search along a highway where a pileup has occurred, but no active fire or visible occupants were detected.",
+  "summary": "A radio communication occurred regarding a highway pileup and the presence of residual smoke in the forest edge.",
   "counts_by_class": {
-    "person": 1,
+    "person": 0,
     "normal_vehicle": 9,
     "emergency_vehicle": 0
   },
@@ -30,7 +30,7 @@
       "position": {
         "x": "-96.59 m",
         "y": "143.52 m",
-        "z": "-0.67 m"
+        "z": "-0.66 m"
       },
       "localization_confidence": {
         "x": "0.17",
@@ -46,7 +46,7 @@
       "detection_confidence": "0.91",
       "position": {
         "x": "-96.50 m",
-        "y": "137.37 m",
+        "y": "137.38 m",
         "z": "-1.56 m"
       },
       "localization_confidence": {
@@ -62,7 +62,7 @@
       "class": "normal_vehicle",
       "detection_confidence": "0.88",
       "position": {
-        "x": "-94.13 m",
+        "x": "-94.14 m",
         "y": "130.31 m",
         "z": "0.45 m"
       },
@@ -81,7 +81,7 @@
       "position": {
         "x": "-93.45 m",
         "y": "140.53 m",
-        "z": "-0.79 m"
+        "z": "-0.78 m"
       },
       "localization_confidence": {
         "x": "0.15",
@@ -96,9 +96,9 @@
       "class": "normal_vehicle",
       "detection_confidence": "0.87",
       "position": {
-        "x": "-97.32 m",
-        "y": "133.63 m",
-        "z": "0.61 m"
+        "x": "-97.33 m",
+        "y": "133.64 m",
+        "z": "0.62 m"
       },
       "localization_confidence": {
         "x": "0.13",
@@ -130,7 +130,7 @@
       "class": "normal_vehicle",
       "detection_confidence": "0.76",
       "position": {
-        "x": "-97.21 m",
+        "x": "-97.22 m",
         "y": "127.06 m",
         "z": "1.13 m"
       },
@@ -175,20 +175,6 @@
       },
       "risk_level": "medium",
       "throughput_need": "low",
-      "traffic_demand_mbps": 0.3
-    },
-    {
-      "class": "person",
-      "audio_only": true,
-      "reason": "radio indicates 1 on-scene responder(s); 0 matched visually as firefighter",
-      "risk_level": "medium",
-      "throughput_need": "low",
-      "inferred_role": "firefighter",
-      "role_inference_basis": {
-        "source": "inference",
-        "text": ""
-      },
-      "role_confidence": null,
       "traffic_demand_mbps": 0.3
     }
   ]

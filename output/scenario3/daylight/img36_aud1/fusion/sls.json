@@ -1,8 +1,8 @@
 {
   "has_fire": true,
-  "summary": "Firefighters are coordinating exposure assessment and confirming the absence of persons near a structure due to smoke limitations.",
+  "summary": "Two emergency units are coordinating regarding an active wildfire and assessing potential exposure near a structure.",
   "counts_by_class": {
-    "person": 1,
+    "person": 0,
     "normal_vehicle": 0,
     "emergency_vehicle": 2
   },
@@ -65,20 +65,6 @@
       "risk_level": "medium",
       "throughput_need": "medium",
       "traffic_demand_mbps": 2.0
-    },
-    {
-      "class": "person",
-      "audio_only": true,
-      "reason": "radio indicates 1 on-scene responder(s); 0 matched visually as firefighter",
-      "risk_level": "medium",
-      "throughput_need": "low",
-      "inferred_role": "firefighter",
-      "role_inference_basis": {
-        "source": "inference",
-        "text": ""
-      },
-      "role_confidence": null,
-      "traffic_demand_mbps": 0.3
     }
   ]
 }

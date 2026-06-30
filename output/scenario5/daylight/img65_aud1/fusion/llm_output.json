@@ -1,8 +1,8 @@
 {
   "has_fire": false,
-  "summary": "Units are assessing a highway pileup and the surrounding area for fire and fuel leaks, finding no visible occupants or active flames.",
+  "summary": "A unit reported a highway pileup with burned vehicles and smoke near the forest edge, but no active fire was visible.",
   "counts_by_class": {
-    "person": 1,
+    "person": 0,
     "normal_vehicle": 19,
     "emergency_vehicle": 0
   },
@@ -18,10 +18,10 @@
         "speaker": "SPEAKER_00"
       }
     ],
+    "service_inference_basis": [],
     "service_types": [
       "voice"
-    ],
-    "service_inference_basis": []
+    ]
   },
   "objects": [
     {
@@ -37,7 +37,7 @@
         "y": "0.12",
         "z": "1.00"
       },
-      "risk_level": "medium",
+      "risk_level": "low",
       "throughput_need": "low"
     },
     {
@@ -53,7 +53,7 @@
         "y": "0.12",
         "z": "1.00"
       },
-      "risk_level": "medium",
+      "risk_level": "low",
       "throughput_need": "low"
     },
     {
@@ -69,7 +69,7 @@
         "y": "0.15",
         "z": "1.00"
       },
-      "risk_level": "medium",
+      "risk_level": "low",
       "throughput_need": "low"
     },
     {
@@ -85,7 +85,7 @@
         "y": "0.09",
         "z": "1.00"
       },
-      "risk_level": "medium",
+      "risk_level": "low",
       "throughput_need": "low"
     },
     {
@@ -101,7 +101,7 @@
         "y": "0.07",
         "z": "1.00"
       },
-      "risk_level": "medium",
+      "risk_level": "low",
       "throughput_need": "low"
     },
     {
@@ -117,7 +117,7 @@
         "y": "0.08",
         "z": "1.00"
       },
-      "risk_level": "medium",
+      "risk_level": "low",
       "throughput_need": "low"
     },
     {
@@ -133,7 +133,7 @@
         "y": "0.06",
         "z": "1.00"
       },
-      "risk_level": "medium",
+      "risk_level": "low",
       "throughput_need": "low"
     },
     {
@@ -149,7 +149,7 @@
         "y": "0.07",
         "z": "1.00"
       },
-      "risk_level": "medium",
+      "risk_level": "low",
       "throughput_need": "low"
     },
     {
@@ -165,7 +165,7 @@
         "y": "0.06",
         "z": "1.00"
       },
-      "risk_level": "medium",
+      "risk_level": "low",
       "throughput_need": "low"
     },
     {
@@ -181,7 +181,7 @@
         "y": "0.10",
         "z": "1.00"
       },
-      "risk_level": "medium",
+      "risk_level": "low",
       "throughput_need": "low"
     },
     {
@@ -197,7 +197,7 @@
         "y": "0.07",
         "z": "1.00"
       },
-      "risk_level": "medium",
+      "risk_level": "low",
       "throughput_need": "low"
     },
     {
@@ -213,7 +213,7 @@
         "y": "0.12",
         "z": "1.00"
       },
-      "risk_level": "medium",
+      "risk_level": "low",
       "throughput_need": "low"
     },
     {
@@ -229,7 +229,7 @@
         "y": "0.09",
         "z": "1.00"
       },
-      "risk_level": "medium",
+      "risk_level": "low",
       "throughput_need": "low"
     },
     {
@@ -245,7 +245,7 @@
         "y": "0.06",
         "z": "1.00"
       },
-      "risk_level": "medium",
+      "risk_level": "low",
       "throughput_need": "low"
     },
     {
@@ -261,7 +261,7 @@
         "y": "0.07",
         "z": "1.00"
       },
-      "risk_level": "medium",
+      "risk_level": "low",
       "throughput_need": "low"
     },
     {
@@ -277,7 +277,7 @@
         "y": "0.06",
         "z": "1.00"
       },
-      "risk_level": "medium",
+      "risk_level": "low",
       "throughput_need": "low"
     },
     {
@@ -293,7 +293,7 @@
         "y": "0.08",
         "z": "1.00"
       },
-      "risk_level": "medium",
+      "risk_level": "low",
       "throughput_need": "low"
     },
     {
@@ -309,7 +309,7 @@
         "y": "0.07",
         "z": "1.00"
       },
-      "risk_level": "medium",
+      "risk_level": "low",
       "throughput_need": "low"
     },
     {
@@ -325,21 +325,8 @@
         "y": "0.11",
         "z": "1.00"
       },
-      "risk_level": "medium",
+      "risk_level": "low",
       "throughput_need": "low"
-    },
-    {
-      "class": "person",
-      "audio_only": true,
-      "reason": "radio indicates 1 on-scene responder(s); 0 matched visually as firefighter",
-      "risk_level": "medium",
-      "throughput_need": "low",
-      "inferred_role": "firefighter",
-      "role_inference_basis": {
-        "source": "inference",
-        "text": ""
-      },
-      "role_confidence": null
     }
   ]
 }

@@ -1,6 +1,6 @@
 {
   "has_fire": true,
-  "summary": "Emergency vehicles are engaged in cooling operations near a fire, with civilians remaining at a safe distance.",
+  "summary": "Fire is active on two vehicles and smoke infiltration continues near the structure.",
   "counts_by_class": {
     "person": 3,
     "normal_vehicle": 3,
@@ -43,9 +43,9 @@
       "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": "radio reports 2 civilian(s) at safe distance; matched to persons farther from fire"
+        "text": "The remaining person is inferred as a civilian based on context and proximity ranking."
       },
-      "role_confidence": 0.75
+      "role_confidence": 0.98
     },
     {
       "class": "person",
@@ -66,9 +66,9 @@
       "inferred_role": "firefighter",
       "role_inference_basis": {
         "source": "inference",
-        "text": "engine_1 on scene per radio (command is off-scene support); assigned to closest person near fire"
+        "text": "Proximity rank 1 (closest to fire) is assigned the role of firefighter because an on-scene field unit exists (Engine 1), implying one responder operating at the fire."
       },
-      "role_confidence": 0.85
+      "role_confidence": 1.0
     },
     {
       "class": "normal_vehicle",
@@ -141,15 +141,18 @@
     {
       "class": "person",
       "audio_only": true,
-      "reason": "radio reports 2 civilian(s) at safe distance; 1 matched visually as civilian",
+      "reason": "radio mentions 2 civilian(s); 1 labeled civilian visually; gap-fill for occluded / not visible civilian",
       "risk_level": "medium",
-      "throughput_need": "low",
+      "throughput_need": "medium",
       "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": ""
+        "text": "no role inferred from radio or proximity"
       },
       "role_confidence": null
     }
-  ]
+  ],
+  "_metadata": {
+    "role_assignment_llm_applied": true
+  }
 }

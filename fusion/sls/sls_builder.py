@@ -86,7 +86,6 @@ def traffic_demand_mbps_for_object(
     thermal_consumer: bool = False,
     has_fire: bool = True,
 ) -> Tuple[str, float]:
-    """Fixed Mbps table from role + per-object service use (see communication_demand)."""
     return communication_demand_for_object(
         profile,
         scene_service_types,
@@ -109,13 +108,18 @@ def publish_object_with_mbps(
         "inferred_role": entry.get("inferred_role"),
         "audio_only": entry.get("audio_only"),
     }
-    _, mbps = traffic_demand_mbps_for_object(
+    need, mbps = traffic_demand_mbps_for_object(
         profile,
         scene_service_types,
         thermal_consumer=bool(obj.get("thermal_imagery_consumer")),
         has_fire=has_fire,
     )
+    entry["throughput_need"] = need
     entry["traffic_demand_mbps"] = mbps
+    if entry.get("class") == "person":
+        role = entry.get("inferred_role")
+        if role is None or not str(role).strip():
+            entry["inferred_role"] = "unknown_person"
     return entry
 
 
@@ -217,7 +221,8 @@ def build_visual_object_entry(
         "traffic_demand_mbps": mbps,
     }
     if obj_class == "person":
-        entry["inferred_role"] = semantic.get("inferred_role")
+        role = semantic.get("inferred_role")
+        entry["inferred_role"] = role if role and str(role).strip() else "unknown_person"
         entry["role_inference_basis"] = normalize_role_inference_basis(
             semantic.get("role_inference_basis")
         )
@@ -332,6 +337,77 @@ def fused_counts_for_sls(
     }
 
 
+def filter_llm_output_for_view(
+    llm_output: Dict[str, Any],
+    view_id: str,
+    visual_json: Dict[str, Any],
+) -> Dict[str, Any]:
+    """Subset LLM output for one camera when same_incident is false."""
+    view_id_str = str(view_id)
+    visual_ids = {
+        int(o["id"])
+        for o in visual_json.get("objects", [])
+        if o.get("id") is not None
+    }
+    visual_objs = [
+        o for o in llm_output.get("objects", []) if not o.get("audio_only")
+    ]
+    use_view_tags = any(o.get("view_id") is not None for o in visual_objs)
+
+    objects: List[Dict[str, Any]] = []
+    for obj in llm_output.get("objects", []):
+        if obj.get("audio_only"):
+            objects.append(obj)
+            continue
+        oid = obj.get("id")
+        if use_view_tags:
+            if str(obj.get("view_id")) == view_id_str:
+                objects.append(obj)
+        elif oid is not None and int(oid) in visual_ids:
+            tagged = copy.deepcopy(obj)
+            tagged["view_id"] = view_id_str
+            objects.append(tagged)
+
+    out = copy.deepcopy(llm_output)
+    out["objects"] = objects
+    out["counts_by_class"] = counts_from_objects(objects)
+    out["has_fire"] = bool(visual_json.get("has_fire"))
+    return out
+
+
+def _cleanup_stale_sls_files(run_dir: Path, *, independent: bool) -> None:
+    """Remove SLS files from the other multi-view mode."""
+    from run_layout import sls_path
+
+    fusion = Path(run_dir) / "fusion"
+    if independent:
+        mono = sls_path(run_dir)
+        if mono.is_file():
+            mono.unlink()
+    else:
+        for path in fusion.glob("sls_*.json"):
+            path.unlink()
+
+
+def build_independent_view_sls_files(
+    run_dir: Path,
+    llm_output: Dict[str, Any],
+    views: List[Dict[str, Any]],
+) -> List[Path]:
+    from run_layout import sls_path_for_view
+
+    _cleanup_stale_sls_files(run_dir, independent=True)
+    written: List[Path] = []
+    for visual in views:
+        view_id = str(visual.get("_view_id", "mono"))
+        subset = filter_llm_output_for_view(llm_output, view_id, visual)
+        sls = build_sls(subset, visual_json=visual)
+        out_path = sls_path_for_view(run_dir, view_id)
+        save_json(sls, str(out_path))
+        written.append(out_path)
+    return written
+
+
 def build_sls(
     llm_output: Dict[str, Any],
     visual_json: Optional[Dict[str, Any]] = None,
@@ -340,7 +416,6 @@ def build_sls(
     matching: Optional[Dict[str, Any]] = None,
 ) -> Dict[str, Any]:
     """Final SLS = llm_output semantics/geometry + traffic_demand_mbps per object."""
-    del matching  # kept for CLI compatibility; counts/objects come from llm_output
     llm_output = normalize_legacy_llm(llm_output)
     services = scene_service_types(llm_output)
     view_list = views if views else ([visual_json] if visual_json else [])
@@ -356,7 +431,10 @@ def build_sls(
         for obj in llm_output.get("objects", [])
     ]
 
-    counts = llm_output.get("counts_by_class") or counts_from_objects(objects_out)
+    if view_list:
+        counts = fused_counts_for_sls(llm_output, view_list, matching)
+    else:
+        counts = llm_output.get("counts_by_class") or counts_from_objects(objects_out)
 
     return {
         "has_fire": has_fire,
@@ -377,6 +455,7 @@ def main() -> None:
         load_primary_visual,
         load_visual_views,
         sls_path,
+        sls_path_for_view,
         visual_views_from_cross_view,
     )
 
@@ -399,16 +478,30 @@ def main() -> None:
         llm_output = load_json(llm_path)
         matching = load_cross_view(run_dir)
         if is_multi_view_run(run_dir) and matching and matching.get("same_incident"):
+            _cleanup_stale_sls_files(run_dir, independent=False)
             views = visual_views_from_cross_view(matching)
             if not views:
                 views = load_visual_views(run_dir)
             sls = build_sls(llm_output, views=views, matching=matching)
+            save_json(sls, out_path)
+            print(f"SLS saved to {out_path}")
+            print(f"counts_by_class: {sls.get('counts_by_class')}")
+            return
+        if is_multi_view_run(run_dir) and matching and not matching.get("same_incident"):
+            views = visual_views_from_cross_view(matching)
+            if not views:
+                views = load_visual_views(run_dir)
+            paths = build_independent_view_sls_files(run_dir, llm_output, views)
+            print(f"Independent multi-view: {len(paths)} SLS file(s) (same_incident=false)")
+            for path in paths:
+                sls = load_json(str(path))
+                print(f"  {path.name}: counts_by_class={sls.get('counts_by_class')}")
+            return
+        if args.visual_json:
+            visual_json = load_json(args.visual_json)
         else:
-            if args.visual_json:
-                visual_json = load_json(args.visual_json)
-            else:
-                visual_json = load_primary_visual(run_dir)
-            sls = build_sls(llm_output, visual_json)
+            visual_json = load_primary_visual(run_dir)
+        sls = build_sls(llm_output, visual_json)
     else:
         if not args.llm_output or not args.visual_json or not args.output:
             parser.error("Provide --run-dir or (--llm-output, --visual-json, --output)")

@@ -1,6 +1,6 @@
 {
   "has_fire": true,
-  "summary": "Fire is active in the forested area, and visual confirmation of persons near the fire front is currently negative.",
+  "summary": "A unit reported an active wildfire with heavy smoke moving through the forested area near a house.",
   "counts_by_class": {
     "person": 1,
     "normal_vehicle": 0,
@@ -45,13 +45,16 @@
       },
       "distance_to_fire": "18.87 m",
       "risk_level": "medium",
-      "throughput_need": "medium",
       "inferred_role": "firefighter",
       "role_inference_basis": {
         "source": "inference",
-        "text": "field radio unit on scene per radio (command is off-scene support); assigned to closest person near fire"
+        "text": "ROLE_CONTEXT.has_fire is true and an on-scene field unit exists (radio_signals.on_scene_field_units is empty but radio_signals.on_scene_responders_count >= 1), so the closest person (proximity_rank=1) is assigned as firefighter."
       },
-      "role_confidence": 0.85
+      "role_confidence": 1.0,
+      "throughput_need": "medium"
     }
-  ]
+  ],
+  "_metadata": {
+    "role_assignment_llm_applied": true
+  }
 }

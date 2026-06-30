@@ -55,6 +55,12 @@ def load_yolo_model():
 
 def _ensure_fire_detection_path() -> None:
     root = str(FIRE_DETECTION_DIR.resolve())
+    if not (FIRE_DETECTION_DIR / "models" / "common.py").is_file():
+        raise FileNotFoundError(
+            "Fire-Detection submodule not found. Run:\n"
+            "  git submodule update --init perception/vision/fire-detection\n"
+            "Upstream: https://github.com/pedbrgs/Fire-Detection"
+        )
     if root not in sys.path:
         sys.path.insert(0, root)
 
@@ -81,7 +87,8 @@ def _resolve_fire_weights(fire_weights: str | Path | None) -> Path:
         if candidate.exists():
             return candidate
     raise FileNotFoundError(
-        f"Fire weights not found. Place yolov5s.pt in {WEIGHTS_DIR} or {FIRE_DETECTION_DIR}."
+        f"Fire weights not found. Place yolov5s.pt in {WEIGHTS_DIR} "
+        "(download from the Fire-Detection repo: https://github.com/pedbrgs/Fire-Detection)."
     )
 
 

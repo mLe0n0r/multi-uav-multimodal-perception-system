@@ -1,6 +1,6 @@
 {
   "has_fire": true,
-  "summary": "Fire is active in a forested area, and units are coordinating exposure assessment near a structure.",
+  "summary": "Two units are coordinating an assessment of a wildfire, focusing on exposure concerns near a structure.",
   "counts_by_class": {
     "person": 3,
     "normal_vehicle": 0,
@@ -31,6 +31,23 @@
   },
   "objects": [
     {
+      "class": "emergency_vehicle",
+      "detection_confidence": "0.78",
+      "position": {
+        "x": "-86.97 m",
+        "y": "-118.17 m",
+        "z": "0.00 m"
+      },
+      "localization_confidence": {
+        "x": "0.08",
+        "y": "0.07",
+        "z": "1.00"
+      },
+      "distance_to_fire": "21.87 m",
+      "risk_level": "medium",
+      "throughput_need": "medium"
+    },
+    {
       "class": "person",
       "detection_confidence": "0.78",
       "position": {
@@ -45,13 +62,13 @@
       },
       "distance_to_fire": "16.38 m",
       "risk_level": "medium",
-      "throughput_need": "medium",
-      "inferred_role": "firefighter",
+      "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": "field radio unit on scene per radio (command is off-scene support); assigned to closest person near fire"
+        "text": "Civilians at safe distance description applies to persons not closest to fire. This person is inferred as a civilian based on exclusion and context."
       },
-      "role_confidence": 0.85
+      "role_confidence": 0.95,
+      "throughput_need": "low"
     },
     {
       "class": "person",
@@ -68,13 +85,13 @@
       },
       "distance_to_fire": "14.77 m",
       "risk_level": "medium",
-      "throughput_need": "medium",
-      "inferred_role": "firefighter",
+      "inferred_role": "unknown_person",
       "role_inference_basis": {
         "source": "inference",
-        "text": "field radio unit on scene per radio (command is off-scene support); assigned to closest person near fire"
+        "text": "No specific radio or visual context assigns a non-civilian role to this person based on proximity."
       },
-      "role_confidence": 0.85
+      "role_confidence": 0.5,
+      "throughput_need": "low"
     },
     {
       "class": "person",
@@ -91,30 +108,16 @@
       },
       "distance_to_fire": "16.92 m",
       "risk_level": "medium",
-      "throughput_need": "low",
-      "inferred_role": "unknown_person",
+      "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": "visual_detection"
+        "text": "The remaining visible persons are assigned the civilian role by default."
       },
-      "role_confidence": null
-    },
-    {
-      "class": "emergency_vehicle",
-      "detection_confidence": "0.78",
-      "position": {
-        "x": "-86.97 m",
-        "y": "-118.17 m",
-        "z": "0.00 m"
-      },
-      "localization_confidence": {
-        "x": "0.08",
-        "y": "0.07",
-        "z": "1.00"
-      },
-      "distance_to_fire": "21.87 m",
-      "risk_level": "medium",
-      "throughput_need": "medium"
+      "role_confidence": null,
+      "throughput_need": "low"
     }
-  ]
+  ],
+  "_metadata": {
+    "role_assignment_llm_applied": true
+  }
 }

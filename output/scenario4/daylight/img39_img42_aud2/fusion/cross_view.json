@@ -1,5 +1,8 @@
 {
-  "same_incident": false,
+  "same_incident": true,
+  "same_incident_camera_distance_m": 72.61,
+  "same_incident_footprint_overlap": 0.0,
+  "same_incident_criterion": "camera_distance",
   "views": [
     "img39",
     "img42"
@@ -762,5 +765,110 @@
       ]
     }
   },
-  "matches": []
+  "matches": [
+    {
+      "view_a": "img39",
+      "id_a": 0,
+      "view_b": "img42",
+      "id_b": 3,
+      "position": {
+        "x": "-7.19 m",
+        "y": "124.77 m",
+        "z": "0.37 m"
+      }
+    },
+    {
+      "view_a": "img39",
+      "id_a": 1,
+      "view_b": "img42",
+      "id_b": 6,
+      "position": {
+        "x": "-4.23 m",
+        "y": "128.11 m",
+        "z": "0.34 m"
+      }
+    },
+    {
+      "view_a": "img39",
+      "id_a": 9,
+      "view_b": "img42",
+      "id_b": 14,
+      "position": {
+        "x": "-2.79 m",
+        "y": "109.78 m",
+        "z": "-4.01 m"
+      }
+    },
+    {
+      "view_a": "img39",
+      "id_a": 11,
+      "view_b": "img42",
+      "id_b": 10,
+      "position": {
+        "x": "-4.76 m",
+        "y": "122.66 m",
+        "z": "-0.04 m"
+      }
+    },
+    {
+      "view_a": "img39",
+      "id_a": 12,
+      "view_b": "img42",
+      "id_b": 8,
+      "position": {
+        "x": "-5.87 m",
+        "y": "128.85 m",
+        "z": "-0.36 m"
+      }
+    },
+    {
+      "view_a": "img39",
+      "id_a": 13,
+      "view_b": "img42",
+      "id_b": 12,
+      "position": {
+        "x": "-2.32 m",
+        "y": "110.14 m",
+        "z": "-1.00 m"
+      }
+    },
+    {
+      "view_a": "img39",
+      "id_a": 14,
+      "view_b": "img42",
+      "id_b": 13,
+      "position": {
+        "x": "-5.79 m",
+        "y": "136.32 m",
+        "z": "-0.23 m"
+      }
+    },
+    {
+      "view_a": "img39",
+      "id_a": 15,
+      "view_b": "img42",
+      "id_b": 7,
+      "position": {
+        "x": "-7.00 m",
+        "y": "141.79 m",
+        "z": "0.90 m"
+      }
+    },
+    {
+      "view_a": "img39",
+      "id_a": 16,
+      "view_b": "img42",
+      "id_b": 9,
+      "position": {
+        "x": "-3.35 m",
+        "y": "133.06 m",
+        "z": "-0.13 m"
+      }
+    }
+  ],
+  "counts_after_match": {
+    "person": 7,
+    "vehicle": 16,
+    "emergency_vehicle": 0
+  }
 }

@@ -1,6 +1,6 @@
 {
   "has_fire": true,
-  "summary": "Fire is extending through the upper windows and roofline, smoke is drifting between parked vehicles and civilians.",
+  "summary": "Visual confirmation shows multiple persons and vehicles near a fire scene; communication links are degraded.",
   "counts_by_class": {
     "person": 9,
     "normal_vehicle": 3,
@@ -43,9 +43,9 @@
       "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": "radio reports 7 civilian(s) at safe distance; matched to persons farther from fire"
+        "text": "Not the closest to fire and not explicitly identified as responding; assigned civilian role by default."
       },
-      "role_confidence": 0.75
+      "role_confidence": 1.0
     },
     {
       "class": "person",
@@ -66,9 +66,9 @@
       "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": "radio reports 7 civilian(s) at safe distance; matched to persons farther from fire"
+        "text": "Assigned civilian role based on proximity rank (8)."
       },
-      "role_confidence": 0.75
+      "role_confidence": 1.0
     },
     {
       "class": "person",
@@ -89,9 +89,9 @@
       "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": "radio reports 7 civilian(s) at safe distance; matched to persons farther from fire"
+        "text": "Assigned civilian role based on proximity rank (6)."
       },
-      "role_confidence": 0.75
+      "role_confidence": 1.0
     },
     {
       "class": "person",
@@ -112,9 +112,9 @@
       "inferred_role": "firefighter",
       "role_inference_basis": {
         "source": "inference",
-        "text": "alpha, beta on scene per radio (command is off-scene support); assigned to closest person near fire"
+        "text": "Proximity rank is 1 (closest to fire), and on-scene field units exist (alpha, beta) with a responder count of 2. Rule 1 applies."
       },
-      "role_confidence": 0.85
+      "role_confidence": 1.0
     },
     {
       "class": "person",
@@ -135,9 +135,9 @@
       "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": "radio reports 7 civilian(s) at safe distance; matched to persons farther from fire"
+        "text": "Assigned civilian role based on proximity rank (4) and general context of civilians mentioned."
       },
-      "role_confidence": 0.75
+      "role_confidence": 1.0
     },
     {
       "class": "person",
@@ -158,9 +158,9 @@
       "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": "radio reports 7 civilian(s) at safe distance; matched to persons farther from fire"
+        "text": "Assigned civilian role based on proximity rank (7)."
       },
-      "role_confidence": 0.75
+      "role_confidence": 1.0
     },
     {
       "class": "person",
@@ -181,9 +181,9 @@
       "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": "radio reports 7 civilian(s) at safe distance; matched to persons farther from fire"
+        "text": "Assigned civilian role based on proximity rank (5)."
       },
-      "role_confidence": 0.75
+      "role_confidence": 1.0
     },
     {
       "class": "person",
@@ -201,12 +201,12 @@
       "distance_to_fire": "223.36 m",
       "risk_level": "medium",
       "throughput_need": "medium",
-      "inferred_role": "firefighter",
+      "inferred_role": "possible_responder",
       "role_inference_basis": {
         "source": "inference",
-        "text": "alpha, beta on scene per radio (command is off-scene support); assigned to closest person near fire"
+        "text": "Second closest person, inferred as a possible responder based on the presence of two on-scene responders."
       },
-      "role_confidence": 0.85
+      "role_confidence": 0.9
     },
     {
       "class": "person",
@@ -227,9 +227,9 @@
       "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": "radio reports 7 civilian(s) at safe distance; matched to persons farther from fire"
+        "text": "Assigned civilian role based on proximity rank (9)."
       },
-      "role_confidence": 0.75
+      "role_confidence": 1.0
     },
     {
       "class": "normal_vehicle",
@@ -282,5 +282,8 @@
       "risk_level": "medium",
       "throughput_need": "low"
     }
-  ]
+  ],
+  "_metadata": {
+    "role_assignment_llm_applied": true
+  }
 }

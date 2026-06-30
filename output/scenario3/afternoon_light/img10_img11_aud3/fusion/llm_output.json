@@ -1,10 +1,10 @@
 {
   "has_fire": true,
-  "summary": "Two persons are visible near the fire, and two firefighters are on the hose line, with no civilians explicitly mentioned.",
+  "summary": "Two persons are detected near a fire scene, and emergency vehicle activity is reported.",
   "counts_by_class": {
     "person": 2,
     "normal_vehicle": 0,
-    "emergency_vehicle": 0
+    "emergency_vehicle": 1
   },
   "communications": {
     "speaker_count": 2,
@@ -21,7 +21,19 @@
     "service_types": [
       "voice"
     ],
-    "service_inference_basis": []
+    "service_inference_basis": [],
+    "objects": [
+      {
+        "id": 0,
+        "class": "person",
+        "risk_level": "medium"
+      },
+      {
+        "id": 1,
+        "class": "person",
+        "risk_level": "medium"
+      }
+    ]
   },
   "objects": [
     {
@@ -39,13 +51,13 @@
       },
       "distance_to_fire": "22.17 m",
       "risk_level": "medium",
-      "throughput_need": "medium",
-      "inferred_role": "firefighter",
+      "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": "rescue_2 on scene per radio (command is off-scene support); assigned to closest person near fire"
+        "text": "The remaining person is inferred as a civilian based on radio mentions describing people calling for help from the house area."
       },
-      "role_confidence": 0.85
+      "role_confidence": null,
+      "throughput_need": "low"
     },
     {
       "class": "person",
@@ -62,13 +74,23 @@
       },
       "distance_to_fire": "16.38 m",
       "risk_level": "medium",
-      "throughput_need": "medium",
       "inferred_role": "firefighter",
       "role_inference_basis": {
         "source": "inference",
-        "text": "rescue_2 on scene per radio (command is off-scene support); assigned to closest person near fire"
+        "text": "Proximity rank 1 (closest to fire) is assigned the role of firefighter because an on-scene field unit exists and one responder is operating at the fire."
       },
-      "role_confidence": 0.85
+      "role_confidence": null,
+      "throughput_need": "medium"
+    },
+    {
+      "class": "emergency_vehicle",
+      "audio_only": true,
+      "reason": "radio explicitly mentions 1 emergency vehicle(s); 0 detected visually",
+      "risk_level": "medium",
+      "throughput_need": "medium"
     }
-  ]
+  ],
+  "_metadata": {
+    "role_assignment_llm_applied": true
+  }
 }

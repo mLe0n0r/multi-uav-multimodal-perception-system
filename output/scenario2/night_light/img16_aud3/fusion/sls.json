@@ -1,10 +1,10 @@
 {
   "has_fire": true,
-  "summary": "Fire is active, with smoke moving toward the sidewalk and parking area. Rescue operations are underway to manage civilian exposure.",
+  "summary": "Fire is active near structures and vehicles, with smoke moving toward the sidewalk and parking area. Thermal imagery was requested to assess heat spread.",
   "counts_by_class": {
     "person": 9,
     "normal_vehicle": 3,
-    "emergency_vehicle": 0
+    "emergency_vehicle": 1
   },
   "communications": {
     "speaker_count": 2,
@@ -54,9 +54,9 @@
       "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": "radio reports 7 civilian(s) at safe distance; matched to persons farther from fire"
+        "text": "Third closest person mentioned in context of civilian exposure."
       },
-      "role_confidence": 0.75,
+      "role_confidence": 0.9,
       "traffic_demand_mbps": 0.3
     },
     {
@@ -78,9 +78,9 @@
       "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": "radio reports 7 civilian(s) at safe distance; matched to persons farther from fire"
+        "text": "Eighth closest person mentioned in context of civilian exposure."
       },
-      "role_confidence": 0.75,
+      "role_confidence": 0.5,
       "traffic_demand_mbps": 0.3
     },
     {
@@ -102,9 +102,9 @@
       "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": "radio reports 7 civilian(s) at safe distance; matched to persons farther from fire"
+        "text": "Sixth closest person mentioned in context of civilian exposure."
       },
-      "role_confidence": 0.75,
+      "role_confidence": 0.7,
       "traffic_demand_mbps": 0.3
     },
     {
@@ -126,9 +126,9 @@
       "inferred_role": "firefighter",
       "role_inference_basis": {
         "source": "inference",
-        "text": "rescue_2 on scene per radio (command is off-scene support); assigned to closest person near fire"
+        "text": "Proximity rank is 1 (closest to fire) and an on-scene field unit exists."
       },
-      "role_confidence": 0.85,
+      "role_confidence": 1.0,
       "traffic_demand_mbps": 1.0
     },
     {
@@ -150,9 +150,9 @@
       "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": "radio reports 7 civilian(s) at safe distance; matched to persons farther from fire"
+        "text": "Fourth closest person mentioned in context of civilian exposure."
       },
-      "role_confidence": 0.75,
+      "role_confidence": 0.8,
       "traffic_demand_mbps": 0.3
     },
     {
@@ -174,9 +174,9 @@
       "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": "radio reports 7 civilian(s) at safe distance; matched to persons farther from fire"
+        "text": "Seventh closest person mentioned in context of civilian exposure."
       },
-      "role_confidence": 0.75,
+      "role_confidence": 0.6,
       "traffic_demand_mbps": 0.3
     },
     {
@@ -198,9 +198,9 @@
       "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": "radio reports 7 civilian(s) at safe distance; matched to persons farther from fire"
+        "text": "Fifth closest person mentioned in context of civilian exposure."
       },
-      "role_confidence": 0.75,
+      "role_confidence": 0.8,
       "traffic_demand_mbps": 0.3
     },
     {
@@ -219,12 +219,12 @@
       "distance_to_fire": "223.36 m",
       "risk_level": "medium",
       "throughput_need": "low",
-      "inferred_role": "unknown_person",
+      "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": "visual_detection"
+        "text": "Second closest person mentioned in context of civilian exposure."
       },
-      "role_confidence": null,
+      "role_confidence": 0.9,
       "traffic_demand_mbps": 0.3
     },
     {
@@ -246,9 +246,9 @@
       "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": "radio reports 7 civilian(s) at safe distance; matched to persons farther from fire"
+        "text": "Ninth closest person mentioned in context of civilian exposure."
       },
-      "role_confidence": 0.75,
+      "role_confidence": 0.4,
       "traffic_demand_mbps": 0.3
     },
     {
@@ -301,6 +301,14 @@
         "z": "1.00"
       },
       "distance_to_fire": "887.35 m",
+      "risk_level": "medium",
+      "throughput_need": "low",
+      "traffic_demand_mbps": 0.3
+    },
+    {
+      "class": "emergency_vehicle",
+      "audio_only": true,
+      "reason": "radio explicitly mentions 1 emergency vehicle(s); 0 detected visually",
       "risk_level": "medium",
       "throughput_need": "low",
       "traffic_demand_mbps": 0.3

@@ -1,9 +1,9 @@
 {
   "has_fire": true,
-  "summary": "Emergency services are coordinating a response to a brush fire near a highway, involving multiple vehicles and civilians.",
+  "summary": "Multiple vehicles and civilians are present near an active brush fire on a highway.",
   "counts_by_class": {
     "person": 8,
-    "normal_vehicle": 4,
+    "normal_vehicle": 3,
     "emergency_vehicle": 0
   },
   "communications": {
@@ -70,7 +70,7 @@
         "z": "1.00"
       },
       "distance_to_fire": "40.21 m",
-      "risk_level": "medium",
+      "risk_level": "low",
       "throughput_need": "low",
       "traffic_demand_mbps": 0.3
     },
@@ -78,9 +78,9 @@
       "class": "person",
       "detection_confidence": "0.79",
       "position": {
-        "x": "-6.63 m",
-        "y": "135.18 m",
-        "z": "0.35 m"
+        "x": "-6.62 m",
+        "y": "135.21 m",
+        "z": "0.37 m"
       },
       "localization_confidence": {
         "x": "0.30",
@@ -89,12 +89,12 @@
       },
       "distance_to_fire": "16.68 m",
       "risk_level": "medium",
-      "inferred_role": null,
+      "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": ""
+        "text": "Rank 3; described in general civilian context."
       },
-      "role_confidence": null,
+      "role_confidence": 0.95,
       "throughput_need": "low",
       "traffic_demand_mbps": 0.3
     },
@@ -102,9 +102,9 @@
       "class": "person",
       "detection_confidence": "0.74",
       "position": {
-        "x": "-7.31 m",
-        "y": "125.51 m",
-        "z": "0.32 m"
+        "x": "-7.30 m",
+        "y": "125.55 m",
+        "z": "0.33 m"
       },
       "localization_confidence": {
         "x": "0.25",
@@ -113,12 +113,12 @@
       },
       "distance_to_fire": "26.55 m",
       "risk_level": "medium",
-      "inferred_role": null,
+      "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": ""
+        "text": "Rank 7; described in general civilian context."
       },
-      "role_confidence": null,
+      "role_confidence": 0.95,
       "throughput_need": "low",
       "traffic_demand_mbps": 0.3
     },
@@ -126,9 +126,9 @@
       "class": "person",
       "detection_confidence": "0.74",
       "position": {
-        "x": "-7.68 m",
-        "y": "130.13 m",
-        "z": "0.43 m"
+        "x": "-7.67 m",
+        "y": "130.16 m",
+        "z": "0.44 m"
       },
       "localization_confidence": {
         "x": "0.27",
@@ -137,12 +137,12 @@
       },
       "distance_to_fire": "22.57 m",
       "risk_level": "medium",
-      "inferred_role": null,
+      "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": ""
+        "text": "Rank 5; described in general civilian context."
       },
-      "role_confidence": null,
+      "role_confidence": 0.95,
       "throughput_need": "low",
       "traffic_demand_mbps": 0.3
     },
@@ -150,9 +150,9 @@
       "class": "person",
       "detection_confidence": "0.71",
       "position": {
-        "x": "-6.81 m",
-        "y": "124.32 m",
-        "z": "0.34 m"
+        "x": "-6.80 m",
+        "y": "124.36 m",
+        "z": "0.35 m"
       },
       "localization_confidence": {
         "x": "0.25",
@@ -161,12 +161,12 @@
       },
       "distance_to_fire": "27.77 m",
       "risk_level": "medium",
-      "inferred_role": null,
+      "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": ""
+        "text": "Rank 8; described in general civilian context."
       },
-      "role_confidence": null,
+      "role_confidence": 0.95,
       "throughput_need": "low",
       "traffic_demand_mbps": 0.3
     },
@@ -174,9 +174,9 @@
       "class": "person",
       "detection_confidence": "0.70",
       "position": {
-        "x": "-4.15 m",
-        "y": "134.96 m",
-        "z": "-0.22 m"
+        "x": "-4.14 m",
+        "y": "135.00 m",
+        "z": "-0.21 m"
       },
       "localization_confidence": {
         "x": "0.31",
@@ -184,23 +184,23 @@
         "z": "1.00"
       },
       "distance_to_fire": "15.22 m",
-      "risk_level": "medium",
-      "inferred_role": null,
+      "risk_level": "low",
+      "inferred_role": "firefighter",
       "role_inference_basis": {
         "source": "inference",
-        "text": ""
+        "text": "Proximity rank is 1 and on-scene field units count is 0 but the context implies an emergency response scenario where a visual person exists near the fire. Rule 1 applies: closest person (rank 1) is assigned as firefighter if any responder presence is implied by scene service types."
       },
-      "role_confidence": null,
-      "throughput_need": "low",
-      "traffic_demand_mbps": 0.3
+      "role_confidence": 0.8,
+      "throughput_need": "medium",
+      "traffic_demand_mbps": 1.0
     },
     {
       "class": "person",
       "detection_confidence": "0.62",
       "position": {
         "x": "-4.07 m",
-        "y": "125.26 m",
-        "z": "-0.45 m"
+        "y": "125.30 m",
+        "z": "-0.44 m"
       },
       "localization_confidence": {
         "x": "0.26",
@@ -209,12 +209,12 @@
       },
       "distance_to_fire": "24.07 m",
       "risk_level": "medium",
-      "inferred_role": null,
+      "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": ""
+        "text": "Rank 6; described in general civilian context."
       },
-      "role_confidence": null,
+      "role_confidence": 0.95,
       "throughput_need": "low",
       "traffic_demand_mbps": 0.3
     },
@@ -223,8 +223,8 @@
       "detection_confidence": "0.58",
       "position": {
         "x": "-7.92 m",
-        "y": "131.13 m",
-        "z": "0.66 m"
+        "y": "131.16 m",
+        "z": "0.67 m"
       },
       "localization_confidence": {
         "x": "0.27",
@@ -232,13 +232,13 @@
         "z": "1.00"
       },
       "distance_to_fire": "22.19 m",
-      "risk_level": "medium",
-      "inferred_role": null,
+      "risk_level": "low",
+      "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": ""
+        "text": "Rank 4; described in general civilian context."
       },
-      "role_confidence": null,
+      "role_confidence": 0.95,
       "throughput_need": "low",
       "traffic_demand_mbps": 0.3
     },
@@ -256,22 +256,14 @@
         "z": "1.00"
       },
       "distance_to_fire": "16.29 m",
-      "risk_level": "low",
-      "throughput_need": "low",
+      "risk_level": "medium",
       "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": "Civilians mentioned in the context of an incident report."
+        "text": "Rank 2; described in general civilian context."
       },
-      "role_confidence": 0.9,
-      "traffic_demand_mbps": 0.3
-    },
-    {
-      "class": "normal_vehicle",
-      "audio_only": true,
-      "reason": "radio explicitly mentions 1 normal vehicle(s); 0 detected visually",
-      "risk_level": "medium",
-      "throughput_need": "medium",
+      "role_confidence": 0.95,
+      "throughput_need": "low",
       "traffic_demand_mbps": 0.3
     }
   ]

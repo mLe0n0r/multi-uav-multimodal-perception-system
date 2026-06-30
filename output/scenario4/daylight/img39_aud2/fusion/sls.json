@@ -1,8 +1,8 @@
 {
   "has_fire": true,
-  "summary": "Units are responding to a brush fire near a highway where a vehicle was overturned, with caution advised near the fire and overturned vehicle.",
+  "summary": "Civilian reports a brush fire near a highway with stopped traffic and an overturned vehicle. Emergency units are responding to the scene.",
   "counts_by_class": {
-    "person": 3,
+    "person": 2,
     "normal_vehicle": 15,
     "emergency_vehicle": 0
   },
@@ -37,15 +37,15 @@
         "y": "0.05",
         "z": "1.00"
       },
-      "risk_level": "low",
-      "throughput_need": "low",
-      "inferred_role": "unknown_person",
+      "risk_level": "medium",
+      "inferred_role": "firefighter",
       "role_inference_basis": {
         "source": "inference",
-        "text": "unknown_person"
+        "text": "ROLE_CONTEXT.has_fire is true and radio_signals.on_scene_responders_count >= 1 implies the closest person (rank 1) is the responder operating at the fire."
       },
-      "role_confidence": 0.0,
-      "traffic_demand_mbps": 0.3
+      "role_confidence": 1.0,
+      "throughput_need": "medium",
+      "traffic_demand_mbps": 1.0
     },
     {
       "class": "person",
@@ -60,14 +60,14 @@
         "y": "0.04",
         "z": "1.00"
       },
-      "risk_level": "low",
-      "throughput_need": "low",
-      "inferred_role": "unknown_person",
+      "risk_level": "medium",
+      "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": "unknown_person"
+        "text": "The second person (rank 2) is inferred to be a civilian based on context of civilian reports and proximity rank."
       },
-      "role_confidence": 0.0,
+      "role_confidence": 0.98,
+      "throughput_need": "low",
       "traffic_demand_mbps": 0.3
     },
     {
@@ -323,20 +323,6 @@
       },
       "risk_level": "low",
       "throughput_need": "low",
-      "traffic_demand_mbps": 0.3
-    },
-    {
-      "class": "person",
-      "audio_only": true,
-      "reason": "radio indicates 1 on-scene responder(s); 0 matched visually as firefighter",
-      "risk_level": "medium",
-      "throughput_need": "low",
-      "inferred_role": "firefighter",
-      "role_inference_basis": {
-        "source": "inference",
-        "text": ""
-      },
-      "role_confidence": null,
       "traffic_demand_mbps": 0.3
     }
   ]

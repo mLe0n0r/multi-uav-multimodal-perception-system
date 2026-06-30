@@ -1,10 +1,10 @@
 {
   "has_fire": true,
-  "summary": "Two persons are visually detected near a fire, and two emergency vehicles are present. Communications confirm a command structure regarding civilian exposure and firefighter locations.",
+  "summary": "Emergency responders are coordinating a search near a structure with heavy smoke and fire.",
   "counts_by_class": {
-    "person": 3,
+    "person": 2,
     "normal_vehicle": 0,
-    "emergency_vehicle": 2
+    "emergency_vehicle": 1
   },
   "communications": {
     "speaker_count": 2,
@@ -25,6 +25,23 @@
   },
   "objects": [
     {
+      "class": "emergency_vehicle",
+      "detection_confidence": "0.78",
+      "position": {
+        "x": "-108.88 m",
+        "y": "-118.10 m",
+        "z": "0.38 m"
+      },
+      "localization_confidence": {
+        "x": "0.08",
+        "y": "0.07",
+        "z": "1.00"
+      },
+      "distance_to_fire": "21.87 m",
+      "risk_level": "medium",
+      "throughput_need": "medium"
+    },
+    {
       "class": "person",
       "detection_confidence": "0.81",
       "position": {
@@ -39,29 +56,12 @@
       },
       "distance_to_fire": "14.77 m",
       "risk_level": "medium",
-      "throughput_need": "medium",
       "inferred_role": "firefighter",
       "role_inference_basis": {
         "source": "inference",
-        "text": "rescue_2 on scene per radio (command is off-scene support); assigned to closest person near fire"
+        "text": "Proximity rank 1 (closest to fire) is assigned the role of firefighter because an on-scene field unit exists and one responder is operating at the fire."
       },
-      "role_confidence": 0.85
-    },
-    {
-      "class": "emergency_vehicle",
-      "detection_confidence": "0.13",
-      "position": {
-        "x": "-77.18 m",
-        "y": "-117.74 m",
-        "z": "0.00 m"
-      },
-      "localization_confidence": {
-        "x": "0.25",
-        "y": "0.25",
-        "z": "1.00"
-      },
-      "distance_to_fire": "23.92 m",
-      "risk_level": "medium",
+      "role_confidence": 1.0,
       "throughput_need": "medium"
     },
     {
@@ -79,43 +79,16 @@
       },
       "distance_to_fire": "16.92 m",
       "risk_level": "medium",
-      "throughput_need": "low",
-      "inferred_role": "unknown_person",
+      "inferred_role": "civilian",
       "role_inference_basis": {
         "source": "inference",
-        "text": "visual_detection"
+        "text": "The second person (proximity rank 2) is inferred as a civilian based on radio context describing calls from the house area, and no specific responder roles are assigned to them."
       },
-      "role_confidence": null
-    },
-    {
-      "class": "emergency_vehicle",
-      "detection_confidence": "0.78",
-      "position": {
-        "x": "-86.97 m",
-        "y": "-118.17 m",
-        "z": "0.00 m"
-      },
-      "localization_confidence": {
-        "x": "0.08",
-        "y": "0.07",
-        "z": "1.00"
-      },
-      "distance_to_fire": "21.87 m",
-      "risk_level": "medium",
-      "throughput_need": "medium"
-    },
-    {
-      "class": "person",
-      "audio_only": true,
-      "reason": "radio indicates 2 on-scene responder(s); 1 matched visually as firefighter",
-      "risk_level": "medium",
-      "throughput_need": "low",
-      "inferred_role": "firefighter",
-      "role_inference_basis": {
-        "source": "inference",
-        "text": ""
-      },
-      "role_confidence": null
+      "role_confidence": 0.98,
+      "throughput_need": "low"
     }
-  ]
+  ],
+  "_metadata": {
+    "role_assignment_llm_applied": true
+  }
 }
