@@ -48,6 +48,6 @@ For detailed usage, see the component-level documentation:
 
 ## ℹ️ Notes
 
-This repository was developed as part of a master's dissertation on multimodal perception for multi-UAV Flying Networks with LLM-supported reasoning. The implementation is intended as a proof-of-concept.
+This repository was developed as part of a master's dissertation on multimodal perception for multi-UAV Flying Networks with LLM-supported reasoning and should be regarded as a research proof of concept.
 
 Some datasets, model weights, generated outputs or local configuration files may be excluded from version control due to size, reproducibility, or environment-specific constraints. When required, each component README indicates where those files should be placed.
